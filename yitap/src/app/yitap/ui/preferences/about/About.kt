@@ -79,98 +79,14 @@ private val product = listOf(
         photoUrl = "https://avatars.githubusercontent.com/u/31761843",
         socialUrl = "https://www.linkedin.com/in/amogh-lele/",
     ),
-    TeamMember(
-        name = "Antonio J. Roa Valverde",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/914983",
-        socialUrl = "https://x.com/6020peaks",
-    ),
-    TeamMember(
-        name = "David Sn",
-        role = Role.DevOps,
-        photoUrl = "https://i.imgur.com/b65akTl.png",
-        socialUrl = "https://codebucket.de",
-    ),
-    TeamMember(
-        name = "Goooler",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/10363352",
-        socialUrl = "https://github.com/Goooler",
-    ),
-    TeamMember(
-        name = "Harsh Shandilya",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/13348378",
-        socialUrl = "https://github.com/msfjarvis",
-    ),
-    TeamMember(
-        name = "John Andrew Camu (MrSluffy)",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/36076410",
-        socialUrl = "https://github.com/MrSluffy",
-    ),
-    TeamMember(
-        name = "Kshitij Gupta",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/18647641",
-        socialUrl = "https://x.com/Agent_Fabulous",
-    ),
-    TeamMember(
-        name = "Manuel Lorenzo",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/183264",
-        socialUrl = "https://x.com/noloman",
-    ),
-    TeamMember(
-        name = "paphonb",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/8080853",
-        socialUrl = "https://x.com/paphonb",
-    ),
-    TeamMember(
-        name = "raphtlw",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/47694127",
-        socialUrl = "https://x.com/raphtlw",
-    ),
-    TeamMember(
-        name = "Rhyse Simpson",
-        role = Role.QuickSwitchMaintenance,
-        photoUrl = "https://avatars.githubusercontent.com/u/7065700",
-        socialUrl = "https://x.com/skittles9823",
-    ),
-    TeamMember(
-        name = "SuperDragonXD",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/70206496",
-        socialUrl = "https://github.com/SuperDragonXD",
-    ),
-    TeamMember(
-        name = "Yasan Glass",
-        role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/41836211",
-        socialUrl = "https:/yasan.glass",
-    ),
 )
 
 private val supportAndPr = listOf(
     TeamMember(
-        name = "Daniel Souza",
+        name = "lingyicute",
         role = Role.Support,
-        photoUrl = "https://avatars.githubusercontent.com/u/32078304",
-        socialUrl = "https://github.com/DanGLES3",
-    ),
-    TeamMember(
-        name = "Giuseppe Longobardo",
-        role = Role.Support,
-        photoUrl = "https://avatars.githubusercontent.com/u/49398464",
-        socialUrl = "https://github.com/joseph-20",
-    ),
-    TeamMember(
-        name = "Rik Koedoot",
-        role = Role.SupportAndPr,
-        photoUrl = "https://avatars.githubusercontent.com/u/29402532",
-        socialUrl = "https://x.com/rikkoedoot",
+        photoUrl = "https://mjj.today/i/TkCAnV",
+        socialUrl = "https://github.com/lingyicute",
     ),
 )
 
@@ -178,17 +94,7 @@ private val links = listOf(
     Link(
         iconResId = R.drawable.ic_new_releases,
         labelResId = R.string.news,
-        url = "https://t.me/yitapci",
-    ),
-    Link(
-        iconResId = R.drawable.ic_help,
-        labelResId = R.string.support,
-        url = "https://t.me/lccommunity",
-    ),
-    Link(
-        iconResId = R.drawable.ic_x_twitter,
-        labelResId = R.string.x_twitter,
-        url = "https://x.com/yitapapp",
+        url = "https://t.me/xns_channel",
     ),
     Link(
         iconResId = R.drawable.ic_github,
@@ -196,9 +102,9 @@ private val links = listOf(
         url = "https://github.com/lingyicute/YiTap",
     ),
     Link(
-        iconResId = R.drawable.ic_discord,
-        labelResId = R.string.discord,
-        url = "https://discord.com/invite/3x8qNWxgGZ",
+        iconResId = R.drawable.ic_help,
+        labelResId = R.string.support,
+        url = "https://t.me/lingyicute2323",
     ),
 )
 
@@ -254,7 +160,7 @@ fun About(
                     .padding(horizontal = 16.dp),
             ) {
                 links.forEach { link ->
-                    YitapLink(
+                    YiTapLink(
                         iconResId = link.iconResId,
                         label = stringResource(id = link.labelResId),
                         modifier = Modifier.weight(weight = 1f),

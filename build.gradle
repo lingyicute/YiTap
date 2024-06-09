@@ -135,7 +135,7 @@ final def quickstepMaxSdk = "34"
 android {
     namespace "com.android.launcher3"
     defaultConfig {
-        // Yitap Launcher 14.0 Beta 2
+        // YiTap Launcher 14.0 Beta 2
         // See CONTRIBUTING.md#versioning-scheme
         versionCode 14_00_02_02
         versionName "${versionDisplayName}"
