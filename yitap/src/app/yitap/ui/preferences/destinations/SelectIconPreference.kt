@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.app.Activity
 import android.content.Intent
@@ -11,17 +11,17 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.core.graphics.drawable.toBitmap
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.data.iconoverride.IconOverrideRepository
-import app.lawnchair.icons.IconPickerItem
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.AppItem
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.ui.util.OnResult
-import app.lawnchair.util.requireSystemService
+import app.yitap.data.iconoverride.IconOverrideRepository
+import app.yitap.icons.IconPickerItem
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.LocalPreferenceInteractor
+import app.yitap.ui.preferences.components.AppItem
+import app.yitap.ui.preferences.components.controls.ClickablePreference
+import app.yitap.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.yitap.ui.preferences.components.layout.preferenceGroupItems
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.ui.util.OnResult
+import app.yitap.util.requireSystemService
 import com.android.launcher3.R
 import com.android.launcher3.util.ComponentKey
 import kotlinx.coroutines.launch

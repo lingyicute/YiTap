@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.Image
@@ -29,11 +29,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.placeholder.PlaceholderHighlight
-import app.lawnchair.ui.placeholder.fade
-import app.lawnchair.ui.placeholder.placeholder
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.util.App
+import app.yitap.ui.placeholder.PlaceholderHighlight
+import app.yitap.ui.placeholder.fade
+import app.yitap.ui.placeholder.placeholder
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.util.App
 
 @Composable
 fun AppItem(

@@ -1,4 +1,4 @@
-package app.lawnchair.root;
+package app.yitap.root;
 
 interface IRootHelper {
     oneway void goToSleep();

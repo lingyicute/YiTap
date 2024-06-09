@@ -10,7 +10,7 @@
         android:scaleType="centerInside"
         android:visibility="gone" />
 
-    <app.lawnchair.smartspace.DoubleShadowTextView
+    <app.yitap.smartspace.DoubleShadowTextView
         android:id="@+id/alarm_text"
         style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"

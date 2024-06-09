@@ -36,8 +36,8 @@ import android.window.TaskSnapshot;
 
 import java.util.HashMap;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-import app.lawnchair.compatlib.eleven.ActivityManagerCompatVR;
+import app.yitap.compat.YitapQuickstepCompat;
+import app.yitap.compatlib.eleven.ActivityManagerCompatVR;
 
 /**
  * Data for a single thumbnail.
@@ -132,7 +132,7 @@ public class ThumbnailData {
     public ThumbnailData(TaskSnapshot snapshot) {
         thumbnail = makeThumbnail(snapshot);
         insets = new Rect(snapshot.getContentInsets());
-        letterboxInsets = LawnchairQuickstepCompat.ATLEAST_T ? new Rect(snapshot.getLetterboxInsets()) : new Rect();
+        letterboxInsets = YitapQuickstepCompat.ATLEAST_T ? new Rect(snapshot.getLetterboxInsets()) : new Rect();
         orientation = snapshot.getOrientation();
         rotation = snapshot.getRotation();
         reducedResolution = snapshot.isLowResolution();

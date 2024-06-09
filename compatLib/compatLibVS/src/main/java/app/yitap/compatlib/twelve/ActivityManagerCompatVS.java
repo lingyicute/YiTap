@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.twelve;
+package app.yitap.compatlib.twelve;
 
 import static android.app.ActivityManager.RECENT_IGNORE_UNAVAILABLE;
 
@@ -17,8 +17,8 @@ import android.window.TaskSnapshot;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
-import app.lawnchair.compatlib.eleven.ActivityManagerCompatVR;
+import app.yitap.compatlib.RecentsAnimationRunnerCompat;
+import app.yitap.compatlib.eleven.ActivityManagerCompatVR;
 import java.util.List;
 
 @RequiresApi(31)

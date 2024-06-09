@@ -135,7 +135,7 @@ final def quickstepMaxSdk = "34"
 android {
     namespace "com.android.launcher3"
     defaultConfig {
-        // Lawnchair Launcher 14.0 Beta 2
+        // Yitap Launcher 14.0 Beta 2
         // See CONTRIBUTING.md#versioning-scheme
         versionCode 14_00_02_02
         versionName "${versionDisplayName}"
@@ -153,7 +153,7 @@ android {
     applicationVariants.configureEach { variant ->
         variant.outputs.configureEach {
             def channel = variant.productFlavors.last().name
-            outputFileName = "Lawnchair ${variant.versionName} $channel ${variant.buildType.name}.apk"
+            outputFileName = "Yitap ${variant.versionName} $channel ${variant.buildType.name}.apk"
         }
     }
 
@@ -214,11 +214,11 @@ android {
 
         debug {
             applicationIdSuffix ".debug"
-            resValue("string", "derived_app_name", "Lawnchair (Debug)")
+            resValue("string", "derived_app_name", "Yitap (Debug)")
         }
 
         release {
-            resValue("string", "derived_app_name", "Lawnchair")
+            resValue("string", "derived_app_name", "Yitap")
             minifyEnabled true
             shrinkResources true
             proguardFiles proguardFilesFromAosp + "proguard.pro"
@@ -248,18 +248,18 @@ android {
         }
 
         github {
-            applicationId 'app.lawnchair'
+            applicationId 'app.yitap'
             dimension "channel"
         }
 
         market {
-            applicationId "ch.deletescape.lawnchair.plah"
+            applicationId "ch.deletescape.yitap.plah"
             dimension "channel"
             isDefault true
         }
 
         configureEach {
-            resValue("string", "launcher_component", "${applicationId}/app.lawnchair.LawnchairLauncher")
+            resValue("string", "launcher_component", "${applicationId}/app.yitap.YitapLauncher")
         }
     }
 
@@ -274,15 +274,15 @@ android {
         }
 
         lawn {
-            java.srcDirs = ['src_flags', 'src_shortcuts_overrides', 'lawnchair/src', 'tests/shared']
-            aidl.srcDirs = ['lawnchair/aidl']
-            res.srcDirs = ['lawnchair/res', 'platform_frameworks_libs_systemui/animationlib/res']
-            manifest.srcFile "lawnchair/AndroidManifest.xml"
+            java.srcDirs = ['src_flags', 'src_shortcuts_overrides', 'yitap/src', 'tests/shared']
+            aidl.srcDirs = ['yitap/aidl']
+            res.srcDirs = ['yitap/res', 'platform_frameworks_libs_systemui/animationlib/res']
+            manifest.srcFile "yitap/AndroidManifest.xml"
             assets {
-                srcDirs 'lawnchair/assets'
+                srcDirs 'yitap/assets'
             }
             proto {
-                srcDirs = ['lawnchair/protos/']
+                srcDirs = ['yitap/protos/']
             }
         }
 
@@ -432,7 +432,7 @@ spotless {
         removeUnusedImports()
     }
     kotlin {
-        target("lawnchair/src/**/*.kt")
+        target("yitap/src/**/*.kt")
         ktlint().customRuleSets([
             "io.nlopez.compose.rules:ktlint:0.4.4",
         ]).editorConfigOverride([

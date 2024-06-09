@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.app.Activity
 import android.view.ContextThemeWrapper
@@ -25,26 +25,26 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.smartspace.SmartspaceViewContainer
-import app.lawnchair.smartspace.model.LawnchairSmartspace
-import app.lawnchair.smartspace.model.SmartspaceCalendar
-import app.lawnchair.smartspace.model.SmartspaceMode
-import app.lawnchair.smartspace.model.SmartspaceTimeFormat
-import app.lawnchair.smartspace.model.Smartspacer
-import app.lawnchair.smartspace.provider.SmartspaceProvider
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.theme.isSelectedThemeDark
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.smartspace.SmartspaceViewContainer
+import app.yitap.smartspace.model.YitapSmartspace
+import app.yitap.smartspace.model.SmartspaceCalendar
+import app.yitap.smartspace.model.SmartspaceMode
+import app.yitap.smartspace.model.SmartspaceTimeFormat
+import app.yitap.smartspace.model.Smartspacer
+import app.yitap.smartspace.provider.SmartspaceProvider
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.controls.MainSwitchPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.layout.DividerColumn
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.theme.isSelectedThemeDark
 import com.android.launcher3.R
 import com.kieronquinn.app.smartspacer.sdk.SmartspacerConstants
 import kotlinx.collections.immutable.toPersistentList
@@ -59,7 +59,7 @@ fun SmartspacePreferences(
     val smartspaceAdapter = preferenceManager2.enableSmartspace.getAdapter()
     val smartspaceModeAdapter = preferenceManager2.smartspaceMode.getAdapter()
     val selectedMode = smartspaceModeAdapter.state.value
-    val modeIsLawnchair = selectedMode == LawnchairSmartspace
+    val modeIsYitap = selectedMode == YitapSmartspace
 
     PreferenceLayout(
         label = stringResource(id = R.string.smartspace_widget),
@@ -67,12 +67,12 @@ fun SmartspacePreferences(
         modifier = modifier,
     ) {
         if (fromWidget) {
-            LawnchairSmartspaceSettings(smartspaceProvider)
+            YitapSmartspaceSettings(smartspaceProvider)
         } else {
             MainSwitchPreference(
                 adapter = smartspaceAdapter,
                 label = stringResource(R.string.smartspace_widget_toggle_label),
-                description = stringResource(id = R.string.smartspace_widget_toggle_description).takeIf { modeIsLawnchair },
+                description = stringResource(id = R.string.smartspace_widget_toggle_description).takeIf { modeIsYitap },
             ) {
                 PreferenceGroup {
                     SmartspaceProviderPreference(
@@ -87,11 +87,11 @@ fun SmartspacePreferences(
                 }
 
                 Crossfade(
-                    targetState = modeIsLawnchair,
+                    targetState = modeIsYitap,
                     label = "",
                 ) { targetState ->
                     if (targetState) {
-                        LawnchairSmartspaceSettings(smartspaceProvider)
+                        YitapSmartspaceSettings(smartspaceProvider)
                     }
                 }
             }
@@ -100,7 +100,7 @@ fun SmartspacePreferences(
 }
 
 @Composable
-private fun LawnchairSmartspaceSettings(
+private fun YitapSmartspaceSettings(
     smartspaceProvider: SmartspaceProvider,
     modifier: Modifier = Modifier,
 ) {

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.navigation
+package app.yitap.ui.preferences.navigation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme

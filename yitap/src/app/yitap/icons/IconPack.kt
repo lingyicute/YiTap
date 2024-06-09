@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 import android.content.ComponentName
 import android.content.Context

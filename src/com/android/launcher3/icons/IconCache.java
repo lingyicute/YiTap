@@ -79,7 +79,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-import app.lawnchair.icons.LawnchairIconProvider;
+import app.yitap.icons.YitapIconProvider;
 
 /**
  * Cache of application icons. Icons can be made from any thread.
@@ -111,7 +111,7 @@ public class IconCache extends BaseIconCache {
     private int mPendingIconRequestCount = 0;
 
     public IconCache(Context context, InvariantDeviceProfile idp) {
-        this(context, idp, LauncherFiles.APP_ICONS_DB, new LawnchairIconProvider(context));
+        this(context, idp, LauncherFiles.APP_ICONS_DB, new YitapIconProvider(context));
     }
 
     public IconCache(Context context, InvariantDeviceProfile idp, String dbFileName,

@@ -1,4 +1,4 @@
-package app.lawnchair.font
+package app.yitap.font
 
 import android.content.Context
 import android.graphics.Typeface
@@ -7,10 +7,10 @@ import android.widget.TextView
 import androidx.annotation.IdRes
 import androidx.core.content.res.use
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.preferences.BasePreferenceManager
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.lookupLifecycleOwner
-import app.lawnchair.util.runOnMainThread
+import app.yitap.preferences.BasePreferenceManager
+import app.yitap.preferences.PreferenceManager
+import app.yitap.util.lookupLifecycleOwner
+import app.yitap.util.runOnMainThread
 import com.android.launcher3.R
 import com.android.launcher3.util.MainThreadInitializedObject
 import kotlinx.coroutines.launch

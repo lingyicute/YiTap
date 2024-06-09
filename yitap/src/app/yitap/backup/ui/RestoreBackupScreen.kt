@@ -1,4 +1,4 @@
-package app.lawnchair.backup.ui
+package app.yitap.backup.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -42,17 +42,17 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.DummyLauncherBox
-import app.lawnchair.ui.preferences.components.controls.FlagSwitchPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.util.BackHandler
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.restartLauncher
+import app.yitap.backup.YitapBackup
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.DummyLauncherBox
+import app.yitap.ui.preferences.components.controls.FlagSwitchPreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.util.BackHandler
+import app.yitap.util.hasFlag
+import app.yitap.util.restartLauncher
 import com.android.launcher3.R
 import java.util.Base64
 import kotlinx.coroutines.launch
@@ -117,7 +117,7 @@ fun RestoreBackupScreen(
 @Composable
 fun ColumnScope.RestoreBackupOptions(
     isPortrait: Boolean,
-    backup: LawnchairBackup,
+    backup: YitapBackup,
     modifier: Modifier = Modifier,
     viewModel: RestoreBackupViewModel = viewModel(),
 ) {
@@ -157,7 +157,7 @@ fun ColumnScope.RestoreBackupOptions(
             darkText = backup.info.previewDarkText,
         ) {
             val wallpaper = backup.wallpaper
-            if (contents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER) && wallpaper != null) {
+            if (contents.hasFlag(YitapBackup.INCLUDE_WALLPAPER) && wallpaper != null) {
                 Image(
                     bitmap = wallpaper.asImageBitmap(),
                     contentDescription = null,
@@ -166,7 +166,7 @@ fun ColumnScope.RestoreBackupOptions(
                 )
             }
             val screenshot = backup.screenshot
-            if (contents.hasFlag(LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS) && screenshot != null) {
+            if (contents.hasFlag(YitapBackup.INCLUDE_LAYOUT_AND_SETTINGS) && screenshot != null) {
                 Image(
                     bitmap = screenshot.asImageBitmap(),
                     contentDescription = null,
@@ -184,16 +184,16 @@ fun ColumnScope.RestoreBackupOptions(
         FlagSwitchPreference(
             flags = contents,
             setFlags = viewModel::setBackupContents,
-            mask = LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS,
+            mask = YitapBackup.INCLUDE_LAYOUT_AND_SETTINGS,
             label = stringResource(id = R.string.backup_content_layout_and_settings),
-            enabled = backupContents.hasFlag(LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS),
+            enabled = backupContents.hasFlag(YitapBackup.INCLUDE_LAYOUT_AND_SETTINGS),
         )
         FlagSwitchPreference(
             flags = contents,
             setFlags = viewModel::setBackupContents,
-            mask = LawnchairBackup.INCLUDE_WALLPAPER,
+            mask = YitapBackup.INCLUDE_WALLPAPER,
             label = stringResource(id = R.string.backup_content_wallpaper),
-            enabled = backupContents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER),
+            enabled = backupContents.hasFlag(YitapBackup.INCLUDE_WALLPAPER),
         )
     }
     Box(
@@ -229,8 +229,8 @@ fun restoreBackupOpener(): () -> Unit {
     return {
         Intent(Intent.ACTION_OPEN_DOCUMENT)
             .addCategory(Intent.CATEGORY_OPENABLE)
-            .setType(LawnchairBackup.MIME_TYPE)
-            .putExtra(Intent.EXTRA_MIME_TYPES, LawnchairBackup.EXTRA_MIME_TYPES)
+            .setType(YitapBackup.MIME_TYPE)
+            .putExtra(Intent.EXTRA_MIME_TYPES, YitapBackup.EXTRA_MIME_TYPES)
             .let { request.launch(it) }
     }
 }

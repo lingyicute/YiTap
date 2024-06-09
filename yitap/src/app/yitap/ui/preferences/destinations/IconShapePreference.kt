@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.content.Context
 import androidx.compose.foundation.Canvas
@@ -47,17 +47,17 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.icons.shape.IconShapeManager
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.icons.shape.IconShape
+import app.yitap.icons.shape.IconShapeManager
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.asState
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
 import com.android.launcher3.R
 
 object IconShapeRoutes {
@@ -70,7 +70,7 @@ object IconShapeRoutes {
 fun iconShapeEntries(context: Context): List<ListPreferenceEntry<IconShape>> {
     val systemShape = IconShapeManager.getSystemIconShape(context)
     return listOf(
-        // Organized as seen in /lawnchair/res/values/strings.xml
+        // Organized as seen in /yitap/res/values/strings.xml
         ListPreferenceEntry(systemShape) { stringResource(id = R.string.icon_shape_system) },
         ListPreferenceEntry(IconShape.Circle) { stringResource(id = R.string.icon_shape_circle) },
         ListPreferenceEntry(IconShape.Cylinder) { stringResource(id = R.string.icon_shape_cylinder) },

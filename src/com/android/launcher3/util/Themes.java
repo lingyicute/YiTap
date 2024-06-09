@@ -16,8 +16,8 @@
 
 package com.android.launcher3.util;
 
-import static app.lawnchair.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_TEXT;
-import static app.lawnchair.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_THEME;
+import static app.yitap.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_TEXT;
+import static app.yitap.wallpaper.WallpaperColorsCompat.HINT_SUPPORTS_DARK_THEME;
 
 import static com.android.launcher3.LauncherPrefs.THEMED_ICONS;
 
@@ -42,12 +42,12 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.GraphicsUtils;
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorMode;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.wallpaper.WallpaperColorsCompat;
-import app.lawnchair.wallpaper.WallpaperManagerCompat;
-import app.lawnchair.ui.theme.ColorKt;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.theme.color.ColorMode;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.wallpaper.WallpaperColorsCompat;
+import app.yitap.wallpaper.WallpaperManagerCompat;
+import app.yitap.ui.theme.ColorKt;
 import com.android.launcher3.views.ActivityContext;
 
 /**
@@ -119,7 +119,7 @@ public class Themes {
     }
 
     public static float getDialogCornerRadius(Context context) {
-        return context.getResources().getDimension(R.dimen.lawnchair_dialog_corner_radius);
+        return context.getResources().getDimension(R.dimen.yitap_dialog_corner_radius);
     }
 
     public static float getDimension(Context context, int attr, float defaultValue) {

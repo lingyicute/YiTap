@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.yitap.qsb.providers
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -7,11 +7,11 @@ import android.net.Uri
 import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.qsb.LawnQsbLayout
-import app.lawnchair.qsb.ThemingMethod
-import app.lawnchair.resolveIntent
-import app.lawnchair.util.isPackageInstalled
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.qsb.LawnQsbLayout
+import app.yitap.qsb.ThemingMethod
+import app.yitap.resolveIntent
+import app.yitap.util.isPackageInstalled
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 import com.patrykmichalik.opto.core.first

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Arrangement

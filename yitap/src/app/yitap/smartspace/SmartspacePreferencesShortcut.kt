@@ -1,9 +1,9 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Routes
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.navigation.Routes
 
 class SmartspacePreferencesShortcut : AppCompatActivity() {
 

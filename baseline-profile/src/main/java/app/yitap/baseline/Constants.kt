@@ -1,5 +1,5 @@
-package app.lawnchair.baseline
+package app.yitap.baseline
 
 object Constants {
-    val PACKAGE_NAME = "app.lawnchair"
+    val PACKAGE_NAME = "app.yitap"
 }

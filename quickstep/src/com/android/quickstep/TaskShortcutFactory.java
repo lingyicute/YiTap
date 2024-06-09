@@ -65,7 +65,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Represents a system shortcut that can be shown for a recent task. Appears as
@@ -283,7 +283,7 @@ public interface TaskShortcutFactory {
         @Override
         public List<SystemShortcut> getShortcuts(BaseDraggingActivity activity,
                 TaskIdAttributeContainer taskContainer) {
-            if (!LawnchairQuickstepCompat.ATLEAST_T) return null;
+            if (!YitapQuickstepCompat.ATLEAST_T) return null;
             DeviceProfile deviceProfile = activity.getDeviceProfile();
             final Task task = taskContainer.getTask();
             final int intentFlags = task.key.baseIntent.getFlags();

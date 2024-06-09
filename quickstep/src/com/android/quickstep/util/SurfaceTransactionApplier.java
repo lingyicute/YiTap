@@ -27,7 +27,7 @@ import android.view.ViewRootImpl;
 
 import com.android.quickstep.RemoteAnimationTargets.ReleaseCheck;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Helper class to apply surface transactions in sync with RenderThread similar to
@@ -114,7 +114,7 @@ public class SurfaceTransactionApplier extends ReleaseCheck {
                         .sendToTarget();
                 return;
             }
-            if (LawnchairQuickstepCompat.ATLEAST_S) {
+            if (YitapQuickstepCompat.ATLEAST_S) {
                 mTargetViewRootImpl.mergeWithNextTransaction(t, frame);
             } else {
                 t.apply();

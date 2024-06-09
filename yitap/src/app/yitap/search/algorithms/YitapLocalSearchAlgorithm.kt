@@ -1,41 +1,41 @@
-package app.lawnchair.search.algorithms
+package app.yitap.search.algorithms
 
 import android.content.Context
 import android.content.pm.ShortcutInfo
 import android.os.Handler
-import app.lawnchair.launcher
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.search.LawnchairSearchAdapterProvider
-import app.lawnchair.search.adapter.CALCULATOR
-import app.lawnchair.search.adapter.CONTACT
-import app.lawnchair.search.adapter.ERROR
-import app.lawnchair.search.adapter.FILES
-import app.lawnchair.search.adapter.GenerateSearchTarget
-import app.lawnchair.search.adapter.HEADER_JUSTIFY
-import app.lawnchair.search.adapter.HISTORY
-import app.lawnchair.search.adapter.LOADING
-import app.lawnchair.search.adapter.SETTINGS
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SearchResult
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.WEB_SUGGESTION
-import app.lawnchair.search.adapter.createSearchTarget
-import app.lawnchair.search.algorithms.data.Calculation
-import app.lawnchair.search.algorithms.data.ContactInfo
-import app.lawnchair.search.algorithms.data.IFileInfo
-import app.lawnchair.search.algorithms.data.RecentKeyword
-import app.lawnchair.search.algorithms.data.SettingInfo
-import app.lawnchair.search.algorithms.data.calculateEquationFromString
-import app.lawnchair.search.algorithms.data.findContactsByName
-import app.lawnchair.search.algorithms.data.findSettingsByNameAndAction
-import app.lawnchair.search.algorithms.data.getRecentKeyword
-import app.lawnchair.search.algorithms.data.getStartPageSuggestions
-import app.lawnchair.search.algorithms.data.queryFilesInMediaStore
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearch
-import app.lawnchair.util.checkAndRequestFilesPermission
-import app.lawnchair.util.isDefaultLauncher
-import app.lawnchair.util.requestContactPermissionGranted
+import app.yitap.launcher
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.search.YitapSearchAdapterProvider
+import app.yitap.search.adapter.CALCULATOR
+import app.yitap.search.adapter.CONTACT
+import app.yitap.search.adapter.ERROR
+import app.yitap.search.adapter.FILES
+import app.yitap.search.adapter.GenerateSearchTarget
+import app.yitap.search.adapter.HEADER_JUSTIFY
+import app.yitap.search.adapter.HISTORY
+import app.yitap.search.adapter.LOADING
+import app.yitap.search.adapter.SETTINGS
+import app.yitap.search.adapter.SPACE
+import app.yitap.search.adapter.SearchResult
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.search.adapter.WEB_SUGGESTION
+import app.yitap.search.adapter.createSearchTarget
+import app.yitap.search.algorithms.data.Calculation
+import app.yitap.search.algorithms.data.ContactInfo
+import app.yitap.search.algorithms.data.IFileInfo
+import app.yitap.search.algorithms.data.RecentKeyword
+import app.yitap.search.algorithms.data.SettingInfo
+import app.yitap.search.algorithms.data.calculateEquationFromString
+import app.yitap.search.algorithms.data.findContactsByName
+import app.yitap.search.algorithms.data.findSettingsByNameAndAction
+import app.yitap.search.algorithms.data.getRecentKeyword
+import app.yitap.search.algorithms.data.getStartPageSuggestions
+import app.yitap.search.algorithms.data.queryFilesInMediaStore
+import app.yitap.ui.preferences.components.HiddenAppsInSearch
+import app.yitap.util.checkAndRequestFilesPermission
+import app.yitap.util.isDefaultLauncher
+import app.yitap.util.requestContactPermissionGranted
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 import com.android.launcher3.allapps.BaseAllAppsAdapter
@@ -60,7 +60,7 @@ import kotlinx.coroutines.withTimeoutOrNull
 import me.xdrop.fuzzywuzzy.FuzzySearch
 import me.xdrop.fuzzywuzzy.algorithms.WeightedRatio
 
-class LawnchairLocalSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(context) {
+class YitapLocalSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) {
 
     private val appState = LauncherAppState.getInstance(context)
     private val resultHandler = Handler(Executors.MAIN_EXECUTOR.looper)
@@ -225,7 +225,7 @@ class LawnchairLocalSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm
         generateSearchTarget.getMarketSearchItem(query)?.let { searchTargets.add(it) }
 
         val adapterItems = transformSearchResults(searchTargets)
-        LawnchairSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
+        YitapSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
         return ArrayList(adapterItems)
     }
 
@@ -357,7 +357,7 @@ class LawnchairLocalSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm
                     context,
                     query,
                     maxRecentResultCount,
-                    object : app.lawnchair.search.algorithms.data.SearchCallback {
+                    object : app.yitap.search.algorithms.data.SearchCallback {
                         override fun onSearchLoaded(items: List<Any>) {
                             results.addAll(items.map { SearchResult(HISTORY, it) })
                         }

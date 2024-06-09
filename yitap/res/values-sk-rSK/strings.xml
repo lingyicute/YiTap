@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Set Lawnchair as your default launcher to access shortcuts and more.</string>
+    <string name="set_default_launcher_tip">Set Yitap as your default launcher to access shortcuts and more.</string>
     <string name="settings">Nastavenia</string>
     <string name="general_label">Všeobecné</string>
     <string name="general_description">Farby, Balíčky ikon, Bodky upozornení</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Vymazať tlačidlo All, Polomery rohov</string>
     <string name="about_label">O aplikácii</string>
     <string name="app_info_drop_target_label">Informácie o aplikácii</string>
-    <string name="debug_restart_launcher">Reštartovať Lawnchair</string>
+    <string name="debug_restart_launcher">Reštartovať Yitap</string>
     <string name="experimental_features_label">Experimentálne funkcie</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Prilepiť</string>
     <string name="copied_toast">Skopírované do schránky.</string>
     <string name="invalid_color">Neplatná farba</string>
-    <string name="launcher_default_color">Spravované Lawnchair</string>
+    <string name="launcher_default_color">Spravované Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Pridať nové aplikácie na domovskú obrazovku</string>
     <string name="minus_one_enable">Show Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Perzský</string>
     <string name="smartspace_preferences">Predvoľby</string>
     <string name="smartspace_widget_toggle_label">Ukázať na domovskej obrazovke</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Lawnchair” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
     <string name="smartspace_mode_label">Poskytovateľ Prehľadu udalostí</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Search</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Vyhľadávanie aplikácií</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair have a revenue share agreement.\n\nSearching with %1$s helps support Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
     <string name="app_label">Aplikácia</string>
     <string name="website_label">Webová stránka</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -311,7 +311,7 @@
     <string name="gesture_handler_open_search">Otvoriť vyhľadávanie</string>
     <string name="pick_app_for_gesture">Vybrať aplikáciu</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Lawnchair is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
     <string name="translucent_background">Priesvitné pozadie</string>
     <string name="translucent_background_alpha">Sýtosť pozadia</string>
     <string name="recents_actions_label">Rýchle akcie</string>
@@ -347,10 +347,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">Žiadne aplikácie zhodujúce sa s \"<xliff:g example="Android" id="query">%1$s</xliff:g>\".</string>
     <string name="dt2s_admin_hint_title">Nutné povolenia správcu</string>
-    <string name="dt2s_admin_hint">Pre používanie dvojitého kliknutia pre uspanie, nastavte Lawnchair ako správcovskú aplikáciu zariadenia. Kliknite na Nastavenia a potom na \"Aktivujte túto aplikáciu ako správcovskú.\"</string>
+    <string name="dt2s_admin_hint">Pre používanie dvojitého kliknutia pre uspanie, nastavte Yitap ako správcovskú aplikáciu zariadenia. Kliknite na Nastavenia a potom na \"Aktivujte túto aplikáciu ako správcovskú.\"</string>
     <string name="dt2s_admin_warning">Dvojité kliknutie pre uspanie bude vypnuté.</string>
     <string name="dt2s_a11y_hint_title">Zapnút službu prístupnosti</string>
-    <string name="dt2s_a11y_hint">Pre používanie dvojitého kliknutia pre uspanie, zapnite službu prístupnosti pre Lawnchair. Otvorte nastavenia, potom vyberte Lawnchair a zapnite Použiť Lawnchair.</string>
+    <string name="dt2s_a11y_hint">Pre používanie dvojitého kliknutia pre uspanie, zapnite službu prístupnosti pre Yitap. Otvorte nastavenia, potom vyberte Yitap a zapnite Použiť Yitap.</string>
     <string name="dt2s_warning_open_settings">Otvoriť nastavenia</string>
     <string name="loading">Načítava sa…</string>
     <string name="system">Systém</string>
@@ -360,7 +360,7 @@
     <string name="suggestion_pref_screen_title">Návrhy</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Správa o chybe v Lawnchair-i</string>
+    <string name="yitap_bug_report">Správa o chybe v Yitap-i</string>
     <string name="crash_report_notif_title">%1$s spadol</string>
     <string name="action_upload_crash_report">Nahrať výpis o páde</string>
     <string name="action_copy_link">Kopírovať odkaz</string>
@@ -384,8 +384,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Lawnchair.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Lawnchair.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Návrhy</string>
     <string name="all_apps_device_search_hint">Vyhľadávanie</string>
@@ -443,5 +443,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

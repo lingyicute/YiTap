@@ -76,8 +76,8 @@ import org.xmlpull.v1.XmlPullParser;
 import java.io.InputStream;
 import java.io.StringReader;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.LawnchairAppKt;
+import app.yitap.YitapApp;
+import app.yitap.YitapAppKt;
 
 /**
  * Utility class which maintains an instance of Launcher database and provides
@@ -111,7 +111,7 @@ public class ModelDbController {
 
         try {
             if (!forMigration && dbName != null) {
-                LawnchairApp app = LawnchairAppKt.getLawnchairApp(mContext);
+                YitapApp app = YitapAppKt.getYitapApp(mContext);
                 app.renameRestoredDb(dbName);
                 app.migrateDbName(dbName);
             }

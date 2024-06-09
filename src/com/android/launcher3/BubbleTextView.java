@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 
 package com.android.launcher3;
@@ -89,10 +89,10 @@ import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.Locale;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.util.LawnchairUtilsKt;
+import app.yitap.font.FontManager;
+import app.yitap.preferences.PreferenceManager;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.util.YitapUtilsKt;
 
 /**
  * TextView that draws a bubble behind the text. We cannot use a
@@ -227,7 +227,7 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver,
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.allAppsIconTextSizePx);
             setCompoundDrawablePadding(grid.allAppsIconDrawablePaddingPx);
             defaultIconSize = grid.allAppsIconSizePx;
-            LawnchairUtilsKt.overrideAllAppsTextColor(this);
+            YitapUtilsKt.overrideAllAppsTextColor(this);
         } else if (mDisplay == DISPLAY_FOLDER) {
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.folderChildTextSizePx);
             setCompoundDrawablePadding(grid.folderChildDrawablePaddingPx);

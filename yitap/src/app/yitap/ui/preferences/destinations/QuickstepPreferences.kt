@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -10,19 +10,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.LawnchairApp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.util.PreviewLawnchair
-import app.lawnchair.util.isOnePlusStock
+import app.yitap.YitapApp
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.observeAsState
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.controls.WarningPreference
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.util.PreviewYitap
+import app.yitap.util.isOnePlusStock
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 
@@ -41,7 +41,7 @@ fun QuickstepPreferences(
         label = stringResource(id = R.string.quickstep_label),
         modifier = modifier,
     ) {
-        if (!LawnchairApp.isRecentsEnabled) QuickSwitchIgnoredWarning()
+        if (!YitapApp.isRecentsEnabled) QuickSwitchIgnoredWarning()
         PreferenceGroup(heading = stringResource(id = R.string.general_label)) {
             SwitchPreference(
                 adapter = prefs.recentsTranslucentBackground.getAdapter(),
@@ -113,7 +113,7 @@ fun QuickstepPreferences(
     }
 }
 
-@PreviewLawnchair
+@PreviewYitap
 @Composable
 private fun QuickSwitchIgnoredWarning(
     modifier: Modifier = Modifier,

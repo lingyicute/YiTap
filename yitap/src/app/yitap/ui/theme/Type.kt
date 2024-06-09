@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.theme
+package app.yitap.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.Font

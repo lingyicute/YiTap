@@ -30,8 +30,8 @@ import com.android.launcher3.R;
 import com.android.launcher3.taskbar.TaskbarActivityContext;
 import com.android.launcher3.taskbar.TaskbarDragLayer;
 
-import app.lawnchair.bubbles.DismissView;
-import app.lawnchair.common.MagnetizedObject;
+import app.yitap.bubbles.DismissView;
+import app.yitap.common.MagnetizedObject;
 
 
 /**

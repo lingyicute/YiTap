@@ -53,9 +53,9 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 import java.util.function.IntFunction;
 
-import app.lawnchair.icons.ClockMetadata;
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
-import app.lawnchair.icons.IconPreferencesKt;
+import app.yitap.icons.ClockMetadata;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.IconPreferencesKt;
 
 /**
  * Wrapper over {@link AdaptiveIconDrawable} to intercept icon flattening logic for dynamic

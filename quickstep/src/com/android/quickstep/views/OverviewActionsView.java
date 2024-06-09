@@ -42,7 +42,7 @@ import com.android.quickstep.util.LayoutUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import app.lawnchair.preferences.PreferenceManager;
+import app.yitap.preferences.PreferenceManager;
 
 /**
  * View for showing action buttons in Overview

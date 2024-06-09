@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Setează Lawnchair ca lansatorul tău implicit pentru a accesa comenzi rapide și multe altele.</string>
+    <string name="set_default_launcher_tip">Setează Yitap ca lansatorul tău implicit pentru a accesa comenzi rapide și multe altele.</string>
     <string name="settings">Setări</string>
     <string name="general_label">General</string>
     <string name="general_description">Pictograme pentru Notificări, Pachet Pictograme</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Butonul „Elimină tot”, Raza colțurilor</string>
     <string name="about_label">Despre</string>
     <string name="app_info_drop_target_label">Informații despre aplicație</string>
-    <string name="debug_restart_launcher">Repornește Lawnchair</string>
+    <string name="debug_restart_launcher">Repornește Yitap</string>
     <string name="experimental_features_label">Funcții experimentale</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Lipește</string>
     <string name="copied_toast">Copiat în clipboard.</string>
     <string name="invalid_color">Culoare invalidă</string>
-    <string name="launcher_default_color">Administrat de Lawnchair</string>
+    <string name="launcher_default_color">Administrat de Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Adaugă aplicații noi pe ecranul principal</string>
     <string name="minus_one_enable">Afișare Flux</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persan</string>
     <string name="smartspace_preferences">Preferințe</string>
     <string name="smartspace_widget_toggle_label">Afișează pe ecranul de pornire</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Lawnchair” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
     <string name="smartspace_mode_label">Furnizorul At a Glance</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Căutare Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Căutare aplicații</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair have a revenue share agreement.\n\nSearching with %1$s helps support Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
     <string name="app_label">Aplicație</string>
     <string name="website_label">Site web</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -310,7 +310,7 @@
     <string name="gesture_handler_open_search">Deschide câmpul de căutare</string>
     <string name="pick_app_for_gesture">Alege o aplicație</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Lawnchair is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
     <string name="translucent_background">Fundal translucid</string>
     <string name="translucent_background_alpha">Opacitatea fundalului</string>
     <string name="recents_actions_label">Acțiuni rapide</string>
@@ -346,10 +346,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">Nicio aplicație nu a fost găsită pentru „<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Permisiunea administratorului este necesară</string>
-    <string name="dt2s_admin_hint">Pentru a folosi dublă-atingerea pentru oprirea ecranului, setează Lawnchair ca o aplicație administrator de dispozitiv. Apasă „Deschide setările”, apoi apasă „Activează această aplicație ca administrator de dispozitiv.”</string>
+    <string name="dt2s_admin_hint">Pentru a folosi dublă-atingerea pentru oprirea ecranului, setează Yitap ca o aplicație administrator de dispozitiv. Apasă „Deschide setările”, apoi apasă „Activează această aplicație ca administrator de dispozitiv.”</string>
     <string name="dt2s_admin_warning">Dublă-atingerea pentru oprirea ecranului va fi dezactivată.</string>
     <string name="dt2s_a11y_hint_title">Activați serviciul de accesibilitate</string>
-    <string name="dt2s_a11y_hint">Pentru a folosi dublă-atingerea pentru oprirea ecranului, pornește serviciul de accesibilitate Lawnchair. Apasă „Deschide setările”, apoi selectează „Lawnchair” și activează „Utilizează Lawnchair”.</string>
+    <string name="dt2s_a11y_hint">Pentru a folosi dublă-atingerea pentru oprirea ecranului, pornește serviciul de accesibilitate Yitap. Apasă „Deschide setările”, apoi selectează „Yitap” și activează „Utilizează Yitap”.</string>
     <string name="dt2s_warning_open_settings">Deschide Setările</string>
     <string name="loading">Se încarcă…</string>
     <string name="system">Sistem</string>
@@ -359,7 +359,7 @@
     <string name="suggestion_pref_screen_title">Sugestii</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Raport de erori Lawnchair</string>
+    <string name="yitap_bug_report">Raport de erori Yitap</string>
     <string name="crash_report_notif_title">%1$s a eșuat</string>
     <string name="action_upload_crash_report">Încarcă raportul de eșuare</string>
     <string name="action_copy_link">Copiază linkul</string>
@@ -383,8 +383,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Lawnchair.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Lawnchair.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Sugestii</string>
     <string name="all_apps_device_search_hint">Caută</string>
@@ -442,5 +442,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

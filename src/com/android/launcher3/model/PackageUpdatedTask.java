@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 package com.android.launcher3.model;
 
@@ -67,7 +67,7 @@ import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences.PreferenceManager;
+import app.yitap.preferences.PreferenceManager;
 
 /**
  * Handles updates due to changes in package manager (app installed/updated/removed)

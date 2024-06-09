@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.text.TextUtils
@@ -11,9 +11,9 @@ import android.widget.TextView
 import androidx.core.text.layoutDirection
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.smartspace.model.hasIntent
+import app.yitap.smartspace.model.SmartspaceAction
+import app.yitap.smartspace.model.SmartspaceTarget
+import app.yitap.smartspace.model.hasIntent
 import com.android.launcher3.R
 import java.util.Locale
 import java.util.UUID

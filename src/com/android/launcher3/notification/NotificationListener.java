@@ -50,7 +50,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import app.lawnchair.NotificationManager;
+import app.yitap.NotificationManager;
 
 /**
  * A {@link NotificationListenerService} that sends updates to its

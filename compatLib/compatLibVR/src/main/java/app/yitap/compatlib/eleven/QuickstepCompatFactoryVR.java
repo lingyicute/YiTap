@@ -1,10 +1,10 @@
-package app.lawnchair.compatlib.eleven;
+package app.yitap.compatlib.eleven;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.ActivityOptionsCompat;
-import app.lawnchair.compatlib.ten.QuickstepCompatFactoryVQ;
+import app.yitap.compatlib.ActivityManagerCompat;
+import app.yitap.compatlib.ActivityOptionsCompat;
+import app.yitap.compatlib.ten.QuickstepCompatFactoryVQ;
 
 @RequiresApi(30)
 public class QuickstepCompatFactoryVR extends QuickstepCompatFactoryVQ {

@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 data class IconEntry(
     val packPackageName: String,

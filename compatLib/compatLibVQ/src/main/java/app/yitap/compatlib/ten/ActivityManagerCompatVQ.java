@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.ten;
+package app.yitap.compatlib.ten;
 
 import static android.app.ActivityManager.RECENT_IGNORE_UNAVAILABLE;
 
@@ -17,8 +17,8 @@ import android.view.RemoteAnimationTarget;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
+import app.yitap.compatlib.ActivityManagerCompat;
+import app.yitap.compatlib.RecentsAnimationRunnerCompat;
 import java.util.ArrayList;
 import java.util.List;
 

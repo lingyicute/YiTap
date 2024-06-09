@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.annotation.SuppressLint
 import android.app.WallpaperManager
@@ -16,10 +16,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.graphics.drawable.toBitmap
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.checkAndRequestFilesPermission
-import app.lawnchair.util.filesAndStorageGranted
-import app.lawnchair.util.scaleDownToDisplaySize
+import app.yitap.preferences.PreferenceManager
+import app.yitap.util.checkAndRequestFilesPermission
+import app.yitap.util.filesAndStorageGranted
+import app.yitap.util.scaleDownToDisplaySize
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted

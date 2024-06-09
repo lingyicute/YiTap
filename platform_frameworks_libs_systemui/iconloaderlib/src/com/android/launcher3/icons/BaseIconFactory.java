@@ -35,9 +35,9 @@ import com.android.launcher3.icons.BitmapInfo.Extender;
 
 import java.lang.annotation.Retention;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
-import app.lawnchair.icons.ExtendedBitmapDrawable;
-import app.lawnchair.icons.IconPreferencesKt;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.ExtendedBitmapDrawable;
+import app.yitap.icons.IconPreferencesKt;
 
 /**
  * This class will be moved to androidx library. There shouldn't be any dependency outside

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.placeholder
+package app.yitap.ui.placeholder
 
 import androidx.compose.animation.core.FiniteAnimationSpec
 import androidx.compose.animation.core.InfiniteRepeatableSpec

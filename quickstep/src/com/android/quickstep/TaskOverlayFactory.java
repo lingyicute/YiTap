@@ -140,8 +140,8 @@ public class TaskOverlayFactory implements ResourceBasedOverride {
      */
     private static final TaskShortcutFactory[] MENU_OPTIONS = new TaskShortcutFactory[] {
             TaskShortcutFactory.APP_INFO,
-            app.lawnchair.overview.TaskShortcutFactory.legacySplit,
-            app.lawnchair.overview.TaskShortcutFactory.killApp,
+            app.yitap.overview.TaskShortcutFactory.legacySplit,
+            app.yitap.overview.TaskShortcutFactory.killApp,
             TaskShortcutFactory.SPLIT_SELECT,
             TaskShortcutFactory.PIN,
             TaskShortcutFactory.INSTALL,

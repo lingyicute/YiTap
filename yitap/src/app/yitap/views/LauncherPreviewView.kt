@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.yitap.views
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetProviderInfo

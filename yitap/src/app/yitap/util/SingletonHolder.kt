@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.Context
 
@@ -47,5 +47,5 @@ open class SingletonHolder<out T, in A>(creator: (A) -> T) {
     fun dangerousGetInstance() = instance
 }
 
-open class LawnchairSingletonHolder<out T>(creator: (Context) -> T) :
+open class YitapSingletonHolder<out T>(creator: (Context) -> T) :
     SingletonHolder<T, Context>(ensureOnMainThread(useApplicationContext(creator)))

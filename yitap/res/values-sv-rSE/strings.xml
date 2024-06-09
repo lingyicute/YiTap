@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Ange Lawnchair som din förvalda startskärmsapp för att komma åt genvägar med mera.</string>
+    <string name="set_default_launcher_tip">Ange Yitap som din förvalda startskärmsapp för att komma åt genvägar med mera.</string>
     <string name="settings">Inställningar</string>
     <string name="general_label">Allmänt</string>
     <string name="general_description">Färger, ikonpaket, aviseringsprickar</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Rensa alla-knapp, hörnradie</string>
     <string name="about_label">Om</string>
     <string name="app_info_drop_target_label">Appinfo</string>
-    <string name="debug_restart_launcher">Starta om Lawnchair</string>
+    <string name="debug_restart_launcher">Starta om Yitap</string>
     <string name="experimental_features_label">Experimentella funktioner</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Klistra in</string>
     <string name="copied_toast">Kopierad till urklipp.</string>
     <string name="invalid_color">Ogiltig färg</string>
-    <string name="launcher_default_color">Hanteras av Lawnchair</string>
+    <string name="launcher_default_color">Hanteras av Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Lägg till nya appar på startskärmen</string>
     <string name="minus_one_enable">Visa Flöde</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persisk</string>
     <string name="smartspace_preferences">Alternativ</string>
     <string name="smartspace_widget_toggle_label">Visa på startskärmen</string>
-    <string name="smartspace_widget_toggle_description">Snabböversikt kan läggas till manuellt på startskärmen genom att placera ut ”Lawnchair”-widgeten</string>
+    <string name="smartspace_widget_toggle_description">Snabböversikt kan läggas till manuellt på startskärmen genom att placera ut ”Yitap”-widgeten</string>
     <string name="smartspace_mode_label">Snabböversiktsleverantör</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Sök</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Avstånd nederkant</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Appsökning</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair har ett avtal om intäktsdelning.\n\nSökning med %1$s hjälper till att stödja Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap har ett avtal om intäktsdelning.\n\nSökning med %1$s hjälper till att stödja Yitap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Webbplats</string>
     <string name="qsb_search_provider_app_required">App krävs</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Öppna sökning</string>
     <string name="pick_app_for_gesture">Välj app</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Dessa inställningar kommer att ignoreras eftersom Lawnchair inte är inställd som Senaste-leverantör.</string>
+    <string name="quickswitch_ignored_warning">Dessa inställningar kommer att ignoreras eftersom Yitap inte är inställd som Senaste-leverantör.</string>
     <string name="translucent_background">Genomlysande bakgrund</string>
     <string name="translucent_background_alpha">Bakgrundens ogenomskinlighet</string>
     <string name="recents_actions_label">Snabbåtgärder</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Objekt borttaget</string>
     <string name="all_apps_no_search_results">Inga appar hittades som matchar ”<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Administratörsbehörigheter krävs</string>
-    <string name="dt2s_admin_hint">För att använda dubbeltryck för att vila, ange Lawnchair som en enhetsadministratörsapp. Tryck på Öppna inställningar, tryck sedan på ”Aktivera denna enhetsadministratörsapp”.</string>
+    <string name="dt2s_admin_hint">För att använda dubbeltryck för att vila, ange Yitap som en enhetsadministratörsapp. Tryck på Öppna inställningar, tryck sedan på ”Aktivera denna enhetsadministratörsapp”.</string>
     <string name="dt2s_admin_warning">Dubbeltryck för att vila kommer att inaktiveras.</string>
     <string name="dt2s_a11y_hint_title">Aktivera tillgänglighetstjänsten</string>
-    <string name="dt2s_a11y_hint">För att använda dubbeltryck för att vila, aktivera Lawnchairs tillgänglighetstjänst. Tryck på Öppna inställningar, välj sedan Lawnchair och aktivera Använd Lawnchair.</string>
+    <string name="dt2s_a11y_hint">För att använda dubbeltryck för att vila, aktivera Yitaps tillgänglighetstjänst. Tryck på Öppna inställningar, välj sedan Yitap och aktivera Använd Yitap.</string>
     <string name="dt2s_warning_open_settings">Öppna inställningar</string>
     <string name="loading">Laddar …</string>
     <string name="system">System</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Förslag</string>
     <string name="show_suggested_apps_at_drawer_top">Visa föreslagna appar högst upp i applådan</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Buggrapport för Lawnchair</string>
+    <string name="yitap_bug_report">Buggrapport för Yitap</string>
     <string name="crash_report_notif_title">%1$s kraschade</string>
     <string name="action_upload_crash_report">Ladda upp kraschlogg</string>
     <string name="action_copy_link">Kopiera länk</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Medier, filer med mera</string>
     <string name="search_pref_result_contacts_description">Kontakter med mera</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">För att söka efter kontakter, bevilja kontakter- och telefonbehörigheter till Lawnchair.</string>
-    <string name="warn_files_permission_content">För att söka bland dina filer, bevilja lagringsbehörigheter till Lawnchair.</string>
+    <string name="warn_contact_permission_content">För att söka efter kontakter, bevilja kontakter- och telefonbehörigheter till Yitap.</string>
+    <string name="warn_files_permission_content">För att söka bland dina filer, bevilja lagringsbehörigheter till Yitap.</string>
     <string name="grant_requested_permissions">Bevilja behörigheter</string>
     <string name="pref_suggestion_label">Förslag</string>
     <string name="all_apps_device_search_hint">Sök</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global sökning (via ASI)</string>
     <string name="app_search_algorithm">Sökalgoritm</string>
     <string name="all_apps_search_result_calculator">Kalkylator</string>
-    <string name="accessibility_service_description">För att kunna låsa din telefon när en gest görs kräver Lawnchair tillgänglighetsåtkomst.\n\nLawnchair övervakar inte några användaraktiviteter, men behörigheten att göra detta krävs för alla tillgänglighetstjänster. Lawnchair förkastar alla händelser som skickas av systemet.\n\nFör att kunna låsa din telefon använder Lawnchair tillgänglighetstjänsten performGlobalAction.</string>
+    <string name="accessibility_service_description">För att kunna låsa din telefon när en gest görs kräver Yitap tillgänglighetsåtkomst.\n\nYitap övervakar inte några användaraktiviteter, men behörigheten att göra detta krävs för alla tillgänglighetstjänster. Yitap förkastar alla händelser som skickas av systemet.\n\nFör att kunna låsa din telefon använder Yitap tillgänglighetstjänsten performGlobalAction.</string>
 </resources>

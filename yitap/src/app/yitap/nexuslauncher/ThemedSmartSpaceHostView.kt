@@ -1,4 +1,4 @@
-package app.lawnchair.nexuslauncher
+package app.yitap.nexuslauncher
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -11,7 +11,7 @@ import android.widget.ImageView
 import android.widget.RemoteViews
 import android.widget.TextView
 import androidx.core.view.descendants
-import app.lawnchair.font.FontManager
+import app.yitap.font.FontManager
 import com.android.launcher3.R
 import com.android.launcher3.icons.ShadowGenerator
 import com.android.launcher3.testing.shared.ResourceUtils

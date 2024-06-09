@@ -1,14 +1,14 @@
-package app.lawnchair.gestures.handlers
+package app.yitap.gestures.handlers
 
 import android.annotation.SuppressLint
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.yitap.YitapLauncher
 import java.lang.reflect.InvocationTargetException
 
 class OpenNotificationsHandler(context: Context) : GestureHandler(context) {
 
     @SuppressLint("WrongConstant")
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: YitapLauncher) {
         try {
             Class.forName("android.app.StatusBarManager")
                 .getMethod("expandNotificationsPanel")

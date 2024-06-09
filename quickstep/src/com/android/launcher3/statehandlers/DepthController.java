@@ -42,8 +42,8 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import java.io.PrintWriter;
 import java.util.function.Consumer;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.compat.YitapQuickstepCompat;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Controls blur and wallpaper zoom, for the Launcher surface only.
@@ -85,7 +85,7 @@ public class DepthController extends BaseDepthController implements StateHandler
             mOnAttachListener = new View.OnAttachStateChangeListener() {
                 @Override
                 public void onViewAttachedToWindow(View view) {
-                    if (LawnchairQuickstepCompat.ATLEAST_S) {
+                    if (YitapQuickstepCompat.ATLEAST_S) {
                         CrossWindowBlurListeners.getInstance().addListener(mLauncher.getMainExecutor(),
                                 mCrossWindowBlurListener);
                     }
@@ -122,7 +122,7 @@ public class DepthController extends BaseDepthController implements StateHandler
     }
 
     private void removeSecondaryListeners() {
-        if (mCrossWindowBlurListener != null && LawnchairQuickstepCompat.ATLEAST_S) {
+        if (mCrossWindowBlurListener != null && YitapQuickstepCompat.ATLEAST_S) {
             CrossWindowBlurListeners.getInstance().removeListener(mCrossWindowBlurListener);
         }
         if (mOpaquenessListener != null) {
@@ -170,7 +170,7 @@ public class DepthController extends BaseDepthController implements StateHandler
     @Override
     public void applyDepthAndBlur() {
         try {
-            if (LawnchairQuickstepCompat.ATLEAST_R && mEnableDepth) {
+            if (YitapQuickstepCompat.ATLEAST_R && mEnableDepth) {
                 ensureDependencies();
                 super.applyDepthAndBlur();
             }

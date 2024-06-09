@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.yitap
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetHost

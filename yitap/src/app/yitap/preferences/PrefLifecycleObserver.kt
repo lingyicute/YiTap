@@ -1,4 +1,4 @@
-package app.lawnchair.preferences
+package app.yitap.preferences
 
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner

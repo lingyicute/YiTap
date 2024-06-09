@@ -1,12 +1,12 @@
-package app.lawnchair.gestures.handlers
+package app.yitap.gestures.handlers
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.animateToAllApps
+import app.yitap.YitapLauncher
+import app.yitap.animateToAllApps
 
 open class OpenAppDrawerGestureHandler(context: Context) : GestureHandler(context) {
 
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: YitapLauncher) {
         launcher.animateToAllApps()
     }
 }

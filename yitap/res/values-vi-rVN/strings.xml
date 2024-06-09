@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Set Lawnchair as your default launcher to access shortcuts and more.</string>
+    <string name="set_default_launcher_tip">Set Yitap as your default launcher to access shortcuts and more.</string>
     <string name="settings">Cài đặt</string>
     <string name="general_label">Chung</string>
     <string name="general_description">Màu sắc, Gói biểu tượng, Dấu chấm thông báo</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Nút xoá tất cả, độ cong của góc</string>
     <string name="about_label">Giới thiệu</string>
     <string name="app_info_drop_target_label">Thông tin ứng dụng</string>
-    <string name="debug_restart_launcher">Restart Lawnchair</string>
+    <string name="debug_restart_launcher">Restart Yitap</string>
     <string name="experimental_features_label">Tính năng thử nghiệm</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Dán</string>
     <string name="copied_toast">Đã sao chép vào clipboard.</string>
     <string name="invalid_color">Màu không hợp lệ</string>
-    <string name="launcher_default_color">Quản lí bởi Lawnchair</string>
+    <string name="launcher_default_color">Quản lí bởi Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Thêm ứng dụng mới vào màn hình chính</string>
     <string name="minus_one_enable">Hiện bản tin</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Ba Tư</string>
     <string name="smartspace_preferences">Tùy chỉnh</string>
     <string name="smartspace_widget_toggle_label">Hiện trên Màn Hình Chính</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Lawnchair” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
     <string name="smartspace_mode_label">Nhà cung cấp dịch vụ cho Xem nhanh</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Tìm kiếm</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Khoảng cách với cạnh đáy</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Tìm kiếm ứng dụng</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair có thoả thuận chia sẻ doanh thu.\n\nTìm kiếm với %1$s trợ giúp hỗ trợ Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap có thoả thuận chia sẻ doanh thu.\n\nTìm kiếm với %1$s trợ giúp hỗ trợ Yitap.</string>
     <string name="app_label">Ứng dụng</string>
     <string name="website_label">Trang web</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -308,7 +308,7 @@
     <string name="gesture_handler_open_search">Mở tìm kiếm</string>
     <string name="pick_app_for_gesture">Chọn ứng dụng</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Cài đặt này sẽ bị bỏ qua vì Lawnchair không được đặt làm nhà cung cấp gần đây.</string>
+    <string name="quickswitch_ignored_warning">Cài đặt này sẽ bị bỏ qua vì Yitap không được đặt làm nhà cung cấp gần đây.</string>
     <string name="translucent_background">Nền trong suốt</string>
     <string name="translucent_background_alpha">Độ trong suốt Nền</string>
     <string name="recents_actions_label">Thao tác nhanh</string>
@@ -344,10 +344,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">Không tìm thấy ứng dụng khớp \"<xliff:g example="Android" id="query">%1$s</xliff:g>\".</string>
     <string name="dt2s_admin_hint_title">Cần cấp Quyền Quản trị</string>
-    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set Lawnchair as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
+    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set Yitap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
     <string name="dt2s_admin_warning">Nhấp đôi để khoá màn hình sẽ được tắt.</string>
     <string name="dt2s_a11y_hint_title">Bật dịch vụ trợ năng</string>
-    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the Lawnchair accessibility service. Tap Open Settings, then select Lawnchair and turn on Use Lawnchair.</string>
+    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the Yitap accessibility service. Tap Open Settings, then select Yitap and turn on Use Yitap.</string>
     <string name="dt2s_warning_open_settings">Mở cài đặt</string>
     <string name="loading">Đang tải…</string>
     <string name="system">Hệ thống</string>
@@ -357,7 +357,7 @@
     <string name="suggestion_pref_screen_title">Gợi ý</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Báo lỗi Lawnchair</string>
+    <string name="yitap_bug_report">Báo lỗi Yitap</string>
     <string name="crash_report_notif_title">%1$s đã dừng</string>
     <string name="action_upload_crash_report">Tải lên bản ghi lỗi</string>
     <string name="action_copy_link">Sao chép liên kết</string>
@@ -381,8 +381,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Danh bạ và mục khác</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Lawnchair.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Lawnchair.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Gợi ý</string>
     <string name="all_apps_device_search_hint">Tìm kiếm</string>
@@ -440,5 +440,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

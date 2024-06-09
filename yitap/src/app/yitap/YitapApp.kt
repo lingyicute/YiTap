@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.yitap
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -36,13 +36,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.FileProvider
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.destinations.openAppInfo
-import app.lawnchair.util.restartLauncher
-import app.lawnchair.util.unsafeLazy
-import app.lawnchair.views.ComposeBottomSheet
+import app.yitap.backup.YitapBackup
+import app.yitap.preferences.PreferenceManager
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.destinations.openAppInfo
+import app.yitap.util.restartLauncher
+import app.yitap.util.unsafeLazy
+import app.yitap.views.ComposeBottomSheet
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.Launcher
@@ -52,12 +52,12 @@ import com.android.quickstep.RecentsActivity
 import com.android.systemui.shared.system.QuickStepContract
 import java.io.File
 
-class LawnchairApp : Application() {
+class YitapApp : Application() {
     private val compatible = Build.VERSION.SDK_INT in BuildConfig.QUICKSTEP_MIN_SDK..BuildConfig.QUICKSTEP_MAX_SDK
     private val isRecentsComponent: Boolean by unsafeLazy { checkRecentsComponent() }
     private val recentsEnabled: Boolean get() = compatible && isRecentsComponent
     private val isAtleastT = Utilities.ATLEAST_T
-    internal var accessibilityService: LawnchairAccessibilityService? = null
+    internal var accessibilityService: YitapAccessibilityService? = null
     val isVibrateOnIconAnimation: Boolean by unsafeLazy { getSystemUiBoolean("config_vibrateOnIconAnimation", false) }
 
     override fun onCreate() {
@@ -79,7 +79,7 @@ class LawnchairApp : Application() {
     }
 
     fun renameRestoredDb(dbName: String) {
-        val restoredDbFile = getDatabasePath(LawnchairBackup.RESTORED_DB_FILE_NAME)
+        val restoredDbFile = getDatabasePath(YitapBackup.RESTORED_DB_FILE_NAME)
         if (!restoredDbFile.exists()) return
         val dbFile = getDatabasePath(dbName)
         restoredDbFile.renameTo(dbFile)
@@ -176,7 +176,7 @@ class LawnchairApp : Application() {
         val isRecentsComponent = recentsComponent.packageName == packageName &&
             recentsComponent.className == RecentsActivity::class.java.name
         if (!isRecentsComponent) {
-            Log.d(TAG, "config_recentsComponentName ($recentsComponent) is not Lawnchair, disabling recents")
+            Log.d(TAG, "config_recentsComponentName ($recentsComponent) is not Yitap, disabling recents")
             return false
         }
 
@@ -195,10 +195,10 @@ class LawnchairApp : Application() {
     }
 
     companion object {
-        private const val TAG = "LawnchairApp"
+        private const val TAG = "YitapApp"
 
         @JvmStatic
-        lateinit var instance: LawnchairApp
+        lateinit var instance: YitapApp
             private set
 
         @JvmStatic
@@ -209,7 +209,7 @@ class LawnchairApp : Application() {
 
         fun Launcher.showQuickstepWarningIfNecessary() {
             val launcher = this
-            if (!lawnchairApp.isRecentsComponent || isRecentsEnabled) return
+            if (!yitapApp.isRecentsComponent || isRecentsEnabled) return
             ComposeBottomSheet.show(this) {
                 ModalBottomSheetContent(
                     title = { Text(text = stringResource(id = R.string.quickstep_incompatible)) },
@@ -247,4 +247,4 @@ class LawnchairApp : Application() {
     }
 }
 
-val Context.lawnchairApp get() = applicationContext as LawnchairApp
+val Context.yitapApp get() = applicationContext as YitapApp

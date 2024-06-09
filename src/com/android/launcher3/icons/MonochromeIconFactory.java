@@ -38,7 +38,7 @@ import androidx.annotation.WorkerThread;
 
 import java.nio.ByteBuffer;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 /**
  * Utility class to generate monochrome icons version for a given drawable.

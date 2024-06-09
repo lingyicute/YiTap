@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.activity.OnBackPressedDispatcher
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
@@ -40,8 +40,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.PreviewLawnchair
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.ui.util.PreviewYitap
 
 @Composable
 fun PreferenceSearchScaffold(
@@ -173,10 +173,10 @@ private fun SearchTextField(
     }
 }
 
-@PreviewLawnchair
+@PreviewYitap
 @Composable
 private fun SearchTextFieldPreview() {
-    LawnchairTheme {
+    YitapTheme {
         SearchTextField(
             value = "Example",
             onValueChange = {},

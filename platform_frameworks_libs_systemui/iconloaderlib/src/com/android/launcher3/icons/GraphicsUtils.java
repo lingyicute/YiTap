@@ -15,7 +15,7 @@
  */
 package com.android.launcher3.icons;
 
-import static app.lawnchair.icons.CustomAdaptiveIconDrawable.MASK_SIZE;
+import static app.yitap.icons.CustomAdaptiveIconDrawable.MASK_SIZE;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -37,7 +37,7 @@ import androidx.annotation.ColorInt;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 public class GraphicsUtils {
 

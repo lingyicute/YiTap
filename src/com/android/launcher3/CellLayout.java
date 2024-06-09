@@ -91,9 +91,9 @@ import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 public class CellLayout extends ViewGroup {
     private static final String TAG = "CellLayout";

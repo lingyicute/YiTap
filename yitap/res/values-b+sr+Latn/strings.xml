@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Podesite Lawnchair kao podrazumevani pokretač da biste pristupali prečicama i drugim funkcijama</string>
+    <string name="set_default_launcher_tip">Podesite Yitap kao podrazumevani pokretač da biste pristupali prečicama i drugim funkcijama</string>
     <string name="settings">Podešavanja</string>
     <string name="general_label">Opšte</string>
     <string name="general_description">Boja, paketi ikona i tačke za obaveštenja</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Dugme „Obriši sve”, radijus ugla</string>
     <string name="about_label">O aplikaciji</string>
     <string name="app_info_drop_target_label">Informacije o aplikaciji</string>
-    <string name="debug_restart_launcher">Restartuj Lawnchair</string>
+    <string name="debug_restart_launcher">Restartuj Yitap</string>
     <string name="experimental_features_label">Eksperimentalne funkcije</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Nalepi</string>
     <string name="copied_toast">Kopirano u privremenu memoriju</string>
     <string name="invalid_color">Nevažeća boja</string>
-    <string name="launcher_default_color">Upravlja aplikacija Lawnchair</string>
+    <string name="launcher_default_color">Upravlja aplikacija Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Dodaj nove aplikacije na početni ekran</string>
     <string name="minus_one_enable">Prikaži fid</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persijski</string>
     <string name="smartspace_preferences">Podešavanja</string>
     <string name="smartspace_widget_toggle_label">Prikaži na početnom ekranu</string>
-    <string name="smartspace_widget_toggle_description">„Kratak pregled” možete da dodate ručno postavljanjem vidžeta „Lawnchair”</string>
+    <string name="smartspace_widget_toggle_description">„Kratak pregled” možete da dodate ručno postavljanjem vidžeta „Yitap”</string>
     <string name="smartspace_mode_label">Dobavljač za „Kratak pregled”</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google pretraga</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Donji razmak</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Pretraga aplikacija</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair ima ugovor o podeli prihoda.\n\nPretragom pomoću usluge %1$s podržavate Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap ima ugovor o podeli prihoda.\n\nPretragom pomoću usluge %1$s podržavate Yitap.</string>
     <string name="app_label">Aplikacija</string>
     <string name="website_label">Sajt</string>
     <string name="qsb_search_provider_app_required">Potrebna je aplikacija</string>
@@ -310,7 +310,7 @@
     <string name="gesture_handler_open_search">Otvori pretragu</string>
     <string name="pick_app_for_gesture">Izaberite aplikaciju</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Ova podešavanja će biti ignorisana jer Lawnchair nije podešen kao dobavljač nedavnih aplikacija.</string>
+    <string name="quickswitch_ignored_warning">Ova podešavanja će biti ignorisana jer Yitap nije podešen kao dobavljač nedavnih aplikacija.</string>
     <string name="translucent_background">Poluprozirna pozadina</string>
     <string name="translucent_background_alpha">Neprozirnost pozadine</string>
     <string name="recents_actions_label">Brze radnje</string>
@@ -346,10 +346,10 @@
     <string name="item_removed">Stavka je uklonjena</string>
     <string name="all_apps_no_search_results">Nijedna aplikacija ne odgovara upitu „<xliff:g example="Android" id="query">%1$s</xliff:g>”</string>
     <string name="dt2s_admin_hint_title">Potrebne su administratorske dozvole</string>
-    <string name="dt2s_admin_hint">Da biste koristili funkciju „Dodirnite dvaput za stanje spavanja”, podesite Lawnchair kao aplikaciju za administratora uređaja. U podešavanjima dodirnite „Aktiviraj ovu aplikaciju za administratora uređaja”.</string>
+    <string name="dt2s_admin_hint">Da biste koristili funkciju „Dodirnite dvaput za stanje spavanja”, podesite Yitap kao aplikaciju za administratora uređaja. U podešavanjima dodirnite „Aktiviraj ovu aplikaciju za administratora uređaja”.</string>
     <string name="dt2s_admin_warning">Funkcija „Dodirnite dvaput za stanje spavanja” će biti isključena</string>
     <string name="dt2s_a11y_hint_title">Uključi uslugu pristupačnosti</string>
-    <string name="dt2s_a11y_hint">Da biste koristili funkciju „Dodirnite dvaput za stanje spavanja”, uključite uslugu pristupačnosti Lawnchaira. U podešavanjima izaberite Lawnchair i dodirnite „Koristi Lawnchair”.</string>
+    <string name="dt2s_a11y_hint">Da biste koristili funkciju „Dodirnite dvaput za stanje spavanja”, uključite uslugu pristupačnosti Yitapa. U podešavanjima izaberite Yitap i dodirnite „Koristi Yitap”.</string>
     <string name="dt2s_warning_open_settings">Otvori podešavanja</string>
     <string name="loading">Učitava se…</string>
     <string name="system">Sistemska</string>
@@ -359,7 +359,7 @@
     <string name="suggestion_pref_screen_title">Predlozi</string>
     <string name="show_suggested_apps_at_drawer_top">Prikazuj predložene aplikacije na vrhu liste aplikacija</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Izveštaj o grešci u Lawnchairu</string>
+    <string name="yitap_bug_report">Izveštaj o grešci u Yitapu</string>
     <string name="crash_report_notif_title">%1$s je otkazao</string>
     <string name="action_upload_crash_report">Otpremi evidenciju o otkazivanju</string>
     <string name="action_copy_link">Kopiraj link</string>
@@ -383,8 +383,8 @@
     <string name="search_pref_result_files_description">Mediji, fajlovi i drugo</string>
     <string name="search_pref_result_contacts_description">Kontakti i drugo</string>
     <string name="search_pref_result_web_description">Pomoću usluge <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Da biste pretraživali kontakte, dodelite Lawnchairu dozvole Kontakti i Telefon</string>
-    <string name="warn_files_permission_content">Da biste pretraživali fajlove, dodelite Lawnchairu pristup memoriji</string>
+    <string name="warn_contact_permission_content">Da biste pretraživali kontakte, dodelite Yitapu dozvole Kontakti i Telefon</string>
+    <string name="warn_files_permission_content">Da biste pretraživali fajlove, dodelite Yitapu pristup memoriji</string>
     <string name="grant_requested_permissions">Dodeli dozvole</string>
     <string name="pref_suggestion_label">Predlozi</string>
     <string name="all_apps_device_search_hint">Pretražite</string>
@@ -442,5 +442,5 @@
     <string name="search_algorithm_global_search_via_asi">Globalna pretraga (pomoću ASI-ja)</string>
     <string name="app_search_algorithm">Algoritam pretrage</string>
     <string name="all_apps_search_result_calculator">Kalkulator</string>
-    <string name="accessibility_service_description">Da biste zaključali uređaj pokretom potrebno je da dodelite Lawnchair-u pristup usluzi pristupačnosti.\n\nLawnchair ne nadgleda korisničke radnje, ali je privilegija za to potrebna svim uslugama pristupačnosti. Lawnchair odbacuje sve događaje koje pošalje sistem.\n\nKako bi zaključao uređaj, Lawnchair koristi uslugu pristupačnosti performGlobalAction.</string>
+    <string name="accessibility_service_description">Da biste zaključali uređaj pokretom potrebno je da dodelite Yitap-u pristup usluzi pristupačnosti.\n\nYitap ne nadgleda korisničke radnje, ali je privilegija za to potrebna svim uslugama pristupačnosti. Yitap odbacuje sve događaje koje pošalje sistem.\n\nKako bi zaključao uređaj, Yitap koristi uslugu pristupačnosti performGlobalAction.</string>
 </resources>

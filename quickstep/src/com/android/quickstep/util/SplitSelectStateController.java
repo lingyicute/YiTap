@@ -107,7 +107,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Represent data needed for the transient state when user has selected one app for split screen
@@ -470,7 +470,7 @@ public class SplitSelectStateController {
 
         final RemoteSplitLaunchTransitionRunner animationRunner =
                 new RemoteSplitLaunchTransitionRunner(firstTaskId, secondTaskId, callback);
-        final RemoteTransition remoteTransition = LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(animationRunner,
+        final RemoteTransition remoteTransition = YitapQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(animationRunner,
                 ActivityThread.currentActivityThread().getApplicationThread(),
                 "LaunchAppFullscreen");
         InstanceId instanceId = LogUtils.getShellShareableInstanceId().first;
@@ -515,7 +515,7 @@ public class SplitSelectStateController {
             @Nullable Consumer<Boolean> callback, String transitionName) {
         final RemoteSplitLaunchTransitionRunner animationRunner =
                 new RemoteSplitLaunchTransitionRunner(firstTaskId, secondTaskId, callback);
-        return LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(animationRunner,
+        return YitapQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(animationRunner,
                 ActivityThread.currentActivityThread().getApplicationThread(), transitionName);
     }
 

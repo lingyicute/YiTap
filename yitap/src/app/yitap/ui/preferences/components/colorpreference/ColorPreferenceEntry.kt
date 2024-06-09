@@ -1,8 +1,8 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
 import android.content.Context
 import androidx.compose.runtime.Composable
-import app.lawnchair.ui.theme.lightenColor
+import app.yitap.ui.theme.lightenColor
 
 class ColorPreferenceEntry<T>(
     val value: T,

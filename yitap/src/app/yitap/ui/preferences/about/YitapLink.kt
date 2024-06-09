@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about
+package app.yitap.ui.preferences.about
 
 import android.content.Intent
 import android.net.Uri
@@ -41,7 +41,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun LawnchairLink(
+fun YitapLink(
     @DrawableRes iconResId: Int,
     label: String,
     url: String,

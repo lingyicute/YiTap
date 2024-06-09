@@ -1,9 +1,9 @@
-package app.lawnchair.theme.color
+package app.yitap.theme.color
 
 import android.content.Context
 import android.content.res.ColorStateList
-import app.lawnchair.theme.ResourceToken
-import app.lawnchair.theme.UiColorMode
+import app.yitap.theme.ResourceToken
+import app.yitap.theme.UiColorMode
 import dev.kdrag0n.monet.theme.ColorScheme
 
 sealed interface ColorStateListToken : ResourceToken<ColorStateList>

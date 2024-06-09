@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">바로가기 등에 액세스하려면 Lawnchair를 기본 실행기로 설정하세요.</string>
+    <string name="set_default_launcher_tip">바로가기 등에 액세스하려면 Yitap를 기본 실행기로 설정하세요.</string>
     <string name="settings">설정</string>
     <string name="general_label">일반</string>
     <string name="general_description">색상, 아이콘 팩, 알림 딱지</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">모두 닫기 버튼, 가장자리 둥글기</string>
     <string name="about_label">더 보기</string>
     <string name="app_info_drop_target_label">앱 정보</string>
-    <string name="debug_restart_launcher">Lawnchair 재시작</string>
+    <string name="debug_restart_launcher">Yitap 재시작</string>
     <string name="experimental_features_label">실험적 기능</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">붙여넣기</string>
     <string name="copied_toast">클립보드에 복사되었습니다.</string>
     <string name="invalid_color">잘못된 색상</string>
-    <string name="launcher_default_color">Lawnchair에서 관리</string>
+    <string name="launcher_default_color">Yitap에서 관리</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">홈 화면에 새로운 앱 바로가기 추가</string>
     <string name="minus_one_enable">피드 활성화</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">페르시아력</string>
     <string name="smartspace_preferences">설정</string>
     <string name="smartspace_widget_toggle_label">홈 화면에 표시</string>
-    <string name="smartspace_widget_toggle_description">한눈에 보기는 Lawnchair 위젯을 배치하여 홈 화면에 수동으로 추가할 수 있습니다.</string>
+    <string name="smartspace_widget_toggle_description">한눈에 보기는 Yitap 위젯을 배치하여 홈 화면에 수동으로 추가할 수 있습니다.</string>
     <string name="smartspace_mode_label">한 눈에 보기 제공자</string>
     <string name="smartspace_mode_google">구글</string>
     <string name="smartspace_mode_google_search">구글 검색</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">하단 패딩</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">앱 검색</string>
-    <string name="search_provider_sponsored_description">%1$s과 Lawnchair는 수익 공유 계약을 맺었습니다.\n\n%1$s로 검색하면 Lawnchair 지원에 도움이 됩니다.</string>
+    <string name="search_provider_sponsored_description">%1$s과 Yitap는 수익 공유 계약을 맺었습니다.\n\n%1$s로 검색하면 Yitap 지원에 도움이 됩니다.</string>
     <string name="app_label">앱</string>
     <string name="website_label">웹사이트</string>
     <string name="qsb_search_provider_app_required">앱 필요</string>
@@ -308,7 +308,7 @@
     <string name="gesture_handler_open_search">검색 열기</string>
     <string name="pick_app_for_gesture">앱 선택</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Lawnchair가 최근 항목 제공자로 설정되지 않았으므로 이러한 설정은 무시됩니다.</string>
+    <string name="quickswitch_ignored_warning">Yitap가 최근 항목 제공자로 설정되지 않았으므로 이러한 설정은 무시됩니다.</string>
     <string name="translucent_background">반투명 배경</string>
     <string name="translucent_background_alpha">백그라운드 투명도</string>
     <string name="recents_actions_label">빠른 바로가기</string>
@@ -344,10 +344,10 @@
     <string name="item_removed">항목이 삭제되었습니다.</string>
     <string name="all_apps_no_search_results">“<xliff:g example="Android" id="query">%1$s</xliff:g>”와 연관된 앱을 찾을 수 없습니다.</string>
     <string name="dt2s_admin_hint_title">관리자 권한이 필요합니다.</string>
-    <string name="dt2s_admin_hint">두 번 눌러 화면 끄기 기능을 사용하려면 관리자 권한을 할당받아야합니다. \"설정 열기\"를 누른 후, Lawnchair 앱을 등록시켜주세요</string>
+    <string name="dt2s_admin_hint">두 번 눌러 화면 끄기 기능을 사용하려면 관리자 권한을 할당받아야합니다. \"설정 열기\"를 누른 후, Yitap 앱을 등록시켜주세요</string>
     <string name="dt2s_admin_warning">두 번 눌러 화면 끄기 기능이 비활성화 되었습니다.</string>
     <string name="dt2s_a11y_hint_title">접근성 서비스가 활성화되어야합니다</string>
-    <string name="dt2s_a11y_hint">두 번 눌러 화면 끄기를 사용하려면, 접근성 설정에서 Lawnchair를 활성화 해야 합니다. \"설정 열기\"를 눌러 \"Lawnchair를 활성화 해주세요.</string>
+    <string name="dt2s_a11y_hint">두 번 눌러 화면 끄기를 사용하려면, 접근성 설정에서 Yitap를 활성화 해야 합니다. \"설정 열기\"를 눌러 \"Yitap를 활성화 해주세요.</string>
     <string name="dt2s_warning_open_settings">설정 열기</string>
     <string name="loading">불러오는 중...</string>
     <string name="system">시스템</string>
@@ -357,7 +357,7 @@
     <string name="suggestion_pref_screen_title">제안</string>
     <string name="show_suggested_apps_at_drawer_top">앱 서랍 상단에 추천 앱 표시</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Lawnchair 버그 신고하기</string>
+    <string name="yitap_bug_report">Yitap 버그 신고하기</string>
     <string name="crash_report_notif_title">%1$s가 종료되었습니다</string>
     <string name="action_upload_crash_report">크래시 로그 업로드</string>
     <string name="action_copy_link">링크 복사</string>
@@ -381,8 +381,8 @@
     <string name="search_pref_result_files_description">미디어, 파일 등</string>
     <string name="search_pref_result_contacts_description">연락처 등</string>
     <string name="search_pref_result_web_description"><xliff:g id="startpage">Startpage</xliff:g>를 통해</string>
-    <string name="warn_contact_permission_content">연락처를 검색하려면 Lawnchair에 연락처 및 전화 권한을 부여하세요.</string>
-    <string name="warn_files_permission_content">파일을 검색하려면 Lawnchair에 저장소 권한을 부여하세요.</string>
+    <string name="warn_contact_permission_content">연락처를 검색하려면 Yitap에 연락처 및 전화 권한을 부여하세요.</string>
+    <string name="warn_files_permission_content">파일을 검색하려면 Yitap에 저장소 권한을 부여하세요.</string>
     <string name="grant_requested_permissions">권한 부여</string>
     <string name="pref_suggestion_label">제안</string>
     <string name="all_apps_device_search_hint">검색</string>
@@ -440,5 +440,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">검색 알고리듬</string>
     <string name="all_apps_search_result_calculator">계산기</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

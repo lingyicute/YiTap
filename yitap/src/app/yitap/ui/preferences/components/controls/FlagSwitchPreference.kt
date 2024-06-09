@@ -1,8 +1,8 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.yitap.ui.preferences.components.controls
 
 import androidx.compose.runtime.Composable
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.setFlag
+import app.yitap.util.hasFlag
+import app.yitap.util.setFlag
 
 @Composable
 fun FlagSwitchPreference(

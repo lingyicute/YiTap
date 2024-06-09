@@ -1,11 +1,11 @@
-package app.lawnchair.qsb
+package app.yitap.qsb
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageButton
 import androidx.core.view.isVisible
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.preferences2.PreferenceManager2
 import com.android.launcher3.R
 
 @SuppressLint("AppCompatCustomView")

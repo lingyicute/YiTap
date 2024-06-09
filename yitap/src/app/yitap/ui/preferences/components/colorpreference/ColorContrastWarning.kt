@@ -1,12 +1,12 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
 import androidx.annotation.ColorInt
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.graphics.ColorUtils
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
+import app.yitap.theme.color.ColorOption
+import app.yitap.ui.preferences.components.controls.WarningPreference
 
 private const val CONTRAST_THRESHOLD = 1.5
 

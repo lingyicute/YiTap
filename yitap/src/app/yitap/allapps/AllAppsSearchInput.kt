@@ -1,4 +1,4 @@
-package app.lawnchair.allapps
+package app.yitap.allapps
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -22,12 +22,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
-import app.lawnchair.launcher
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.theme.drawable.DrawableTokens
+import app.yitap.launcher
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.search.YitapRecentSuggestionProvider
+import app.yitap.search.algorithms.YitapSearchAlgorithm
+import app.yitap.theme.drawable.DrawableTokens
 import com.android.launcher3.Insettable
 import com.android.launcher3.LauncherState
 import com.android.launcher3.R
@@ -65,7 +65,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
         Selection.setSelection(this, 0)
     }
 
-    private lateinit var apps: LawnchairAlphabeticalAppsList<*>
+    private lateinit var apps: YitapAlphabeticalAppsList<*>
     private lateinit var appsView: ActivityAllAppsContainerView<*>
 
     private var focusedResultTitle = ""
@@ -75,7 +75,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
     private val bgAlphaAnimator = ValueAnimator.ofFloat(0f, 1f).apply { duration = 300 }
     private var bgVisible = true
     private var bgAlpha = 1f
-    private val suggestionsRecent = SearchRecentSuggestions(launcher, LawnchairRecentSuggestionProvider.AUTHORITY, LawnchairRecentSuggestionProvider.MODE)
+    private val suggestionsRecent = SearchRecentSuggestions(launcher, YitapRecentSuggestionProvider.AUTHORITY, YitapRecentSuggestionProvider.MODE)
     private val prefs = PreferenceManager.getInstance(launcher)
     private val prefs2 = PreferenceManager2.getInstance(launcher)
 
@@ -90,7 +90,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
 
         input = ViewCompat.requireViewById(this, R.id.input)
         with(input) {
-            if (prefs2.searchAlgorithm.firstBlocking() != LawnchairSearchAlgorithm.APP_SEARCH) {
+            if (prefs2.searchAlgorithm.firstBlocking() != YitapSearchAlgorithm.APP_SEARCH) {
                 setHint(R.string.all_apps_device_search_hint)
             } else {
                 setHint(R.string.all_apps_search_bar_hint)
@@ -129,7 +129,7 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
             },
             afterTextChanged = {
                 updateHint()
-                if (input.text.toString() == "/lawnchairdebug") {
+                if (input.text.toString() == "/yitapdebug") {
                     val enableDebugMenu = PreferenceManager.getInstance(context).enableDebugMenu
                     enableDebugMenu.set(!enableDebugMenu.get())
                     launcher.stateManager.goToState(LauncherState.NORMAL)
@@ -193,10 +193,10 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
     }
 
     override fun initializeSearch(appsView: ActivityAllAppsContainerView<*>) {
-        apps = appsView.searchResultList as LawnchairAlphabeticalAppsList<*>
+        apps = appsView.searchResultList as YitapAlphabeticalAppsList<*>
         this.appsView = appsView
         searchBarController.initialize(
-            LawnchairSearchAlgorithm.create(context),
+            YitapSearchAlgorithm.create(context),
             input,
             launcher,
             this,

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.controls
+package app.yitap.ui.preferences.components.controls
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -36,9 +36,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.rememberTransformAdapter
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.preferences.rememberTransformAdapter
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
 import com.android.launcher3.R
 import kotlin.math.roundToInt
 

@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.util.SparseArray
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
-import app.lawnchair.smartspace.model.SmartspaceTarget
+import app.yitap.smartspace.model.SmartspaceTarget
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes
 

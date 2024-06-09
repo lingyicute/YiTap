@@ -1,4 +1,4 @@
-package app.lawnchair.ui
+package app.yitap.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

@@ -1,4 +1,4 @@
-package app.lawnchair.views
+package app.yitap.views
 
 import android.content.Context
 import android.util.FloatProperty
@@ -29,10 +29,10 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
-import app.lawnchair.theme.color.ColorTokens
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.ProvideLifecycleState
-import app.lawnchair.util.minus
+import app.yitap.theme.color.ColorTokens
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.util.ProvideLifecycleState
+import app.yitap.util.minus
 import com.android.launcher3.Launcher
 import com.android.launcher3.anim.PendingAnimation
 import com.android.launcher3.util.SystemUiController
@@ -184,7 +184,7 @@ class ComposeBottomSheet<T>(context: Context) :
     private fun Providers(
         content: @Composable () -> Unit,
     ) {
-        LawnchairTheme {
+        YitapTheme {
             ProvideLifecycleState {
                 CompositionLocalProvider(
                     LocalContentColor provides MaterialTheme.colorScheme.onSurface,

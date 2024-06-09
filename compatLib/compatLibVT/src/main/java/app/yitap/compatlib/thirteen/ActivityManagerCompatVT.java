@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.thirteen;
+package app.yitap.compatlib.thirteen;
 
 import android.app.ActivityTaskManager;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.view.IRecentsAnimationRunner;
 import android.view.RemoteAnimationTarget;
 import android.window.TaskSnapshot;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
-import app.lawnchair.compatlib.twelve.ActivityManagerCompatVS;
+import app.yitap.compatlib.RecentsAnimationRunnerCompat;
+import app.yitap.compatlib.twelve.ActivityManagerCompatVS;
 
 @RequiresApi(33)
 public class ActivityManagerCompatVT extends ActivityManagerCompatVS {

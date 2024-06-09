@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib;
+package app.yitap.compatlib;
 
 import androidx.annotation.NonNull;
 

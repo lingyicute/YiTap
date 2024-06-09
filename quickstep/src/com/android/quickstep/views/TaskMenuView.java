@@ -51,7 +51,7 @@ import com.android.quickstep.TaskUtils;
 import com.android.quickstep.util.TaskCornerRadius;
 import com.android.quickstep.views.TaskView.TaskIdAttributeContainer;
 
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /**
  * Contains options for a recent task when long-pressing its icon.

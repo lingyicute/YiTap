@@ -1,10 +1,10 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.Context
 import android.os.Process
 import android.os.UserHandle
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
+import app.yitap.YitapLauncher
+import app.yitap.launcher
 import com.android.launcher3.BuildConfig
 import com.android.quickstep.views.RecentsView
 import com.android.systemui.shared.recents.model.Task
@@ -15,7 +15,7 @@ object RecentHelper {
     fun clearAllTaskStacks(context: Context) {
         try {
             val launcher = context.launcher
-            val recentsView = launcher.getOverviewPanel<RecentsView<LawnchairLauncher, *>>()
+            val recentsView = launcher.getOverviewPanel<RecentsView<YitapLauncher, *>>()
             val taskViewCount = recentsView.getTaskViewCount()
             val currentUserId = Process.myUserHandle().identifier
             for (i in 0..taskViewCount) {
@@ -55,12 +55,12 @@ object RecentHelper {
 
     fun isAppLocked(packageName: String, context: Context): Boolean {
         val pref = context.getSharedPreferences(
-            LawnchairLockedStateController.TASK_LOCK_STATE,
+            YitapLockedStateController.TASK_LOCK_STATE,
             Context.MODE_PRIVATE,
         )
 
         val lockedApps = pref.getStringSet(
-            LawnchairLockedStateController.TASK_LOCK_LIST_KEY_WITH_USERID,
+            YitapLockedStateController.TASK_LOCK_LIST_KEY_WITH_USERID,
             emptySet(),
         )
 

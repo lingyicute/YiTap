@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<app.lawnchair.qsb.GoogleQsbContainerView
+<app.yitap.qsb.GoogleQsbContainerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -8,8 +8,8 @@
     android:padding="0dp" >
 
     <fragment
-        android:name="app.lawnchair.qsb.GoogleQsbContainerView$QsbFragment"
+        android:name="app.yitap.qsb.GoogleQsbContainerView$QsbFragment"
         android:layout_width="match_parent"
         android:tag="qsb_view"
         android:layout_height="match_parent"/>
-</app.lawnchair.qsb.GoogleQsbContainerView>
+</app.yitap.qsb.GoogleQsbContainerView>

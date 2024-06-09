@@ -1,7 +1,7 @@
-package app.lawnchair.compatlib.fourteen;
+package app.yitap.compatlib.fourteen;
 
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.thirteen.ActivityManagerCompatVT;
+import app.yitap.compatlib.thirteen.ActivityManagerCompatVT;
 
 @RequiresApi(34)
 public class ActivityManagerCompatVU extends ActivityManagerCompatVT {}

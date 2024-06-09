@@ -20,8 +20,8 @@ import com.android.launcher3.util.window.WindowManagerProxy;
 import java.util.Collections;
 import java.util.List;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.YitapApp;
+import app.yitap.preferences2.PreferenceManager2;
 
 public class LauncherRootView extends InsettableFrameLayout {
 
@@ -125,7 +125,7 @@ public class LauncherRootView extends InsettableFrameLayout {
         int t = getTop();
         int r = getRight();
         int b = getBottom();
-        if (LawnchairApp.isRecentsEnabled()) {
+        if (YitapApp.isRecentsEnabled()) {
             SYSTEM_GESTURE_EXCLUSION_RECT.get(0).set(l, t, r, b);
         } else {
             SYSTEM_GESTURE_EXCLUSION_RECT.get(0).set(

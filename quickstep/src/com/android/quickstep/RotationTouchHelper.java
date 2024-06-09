@@ -47,7 +47,7 @@ import com.android.systemui.shared.system.TaskStackChangeListeners;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import app.lawnchair.util.LawnchairUtilsKt;
+import app.yitap.util.YitapUtilsKt;
 
 /**
  * Helper class for transforming touch events
@@ -166,7 +166,7 @@ public class RotationTouchHelper implements DisplayInfoChangeListener {
         mDisplayId = DEFAULT_DISPLAY;
 
         mOrientationTouchTransformer = new OrientationTouchTransformer(resources, mMode,
-                () -> LawnchairUtilsKt.getWindowCornerRadius(mContext));
+                () -> YitapUtilsKt.getWindowCornerRadius(mContext));
 
         // Register for navigation mode changes
         mDisplayController.addChangeListener(this);

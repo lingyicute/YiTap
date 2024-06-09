@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures
+package app.yitap.gestures
 
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.LawnchairApp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.handlers.GestureHandler
-import app.lawnchair.gestures.handlers.NoOpGestureHandler
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.YitapApp
+import app.yitap.YitapLauncher
+import app.yitap.gestures.config.GestureHandlerConfig
+import app.yitap.gestures.handlers.GestureHandler
+import app.yitap.gestures.handlers.NoOpGestureHandler
+import app.yitap.preferences2.PreferenceManager2
 import com.android.launcher3.util.VibratorWrapper
 import com.patrykmichalik.opto.domain.Preference
 import kotlinx.coroutines.MainScope
@@ -34,7 +34,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.launch
 
-class GestureController(private val launcher: LawnchairLauncher) {
+class GestureController(private val launcher: YitapLauncher) {
     private val prefs = PreferenceManager2.getInstance(launcher)
     private val scope = MainScope()
 
@@ -57,7 +57,7 @@ class GestureController(private val launcher: LawnchairLauncher) {
     }
 
     fun onHomePressed() {
-        triggerHandler(homePressHandler, LawnchairApp.isRecentsEnabled)
+        triggerHandler(homePressHandler, YitapApp.isRecentsEnabled)
     }
 
     fun onBackPressed() {

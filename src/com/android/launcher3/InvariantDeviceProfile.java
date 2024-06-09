@@ -74,7 +74,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import app.lawnchair.DeviceProfileOverrides;
+import app.yitap.DeviceProfileOverrides;
 
 public class InvariantDeviceProfile {
 
@@ -456,7 +456,7 @@ public class InvariantDeviceProfile {
                 // Supported overrides: numRows, numColumns, iconSize
                 applyPartnerDeviceProfileOverrides(context, metrics);
 
-                // Lawnchair ignores partner overrides and allows the user to customize the grid themselves
+                // Yitap ignores partner overrides and allows the user to customize the grid themselves
                 overrideOptions.applyUi(this);
 
                 final List<DeviceProfile> localSupportedProfiles = new ArrayList<>();

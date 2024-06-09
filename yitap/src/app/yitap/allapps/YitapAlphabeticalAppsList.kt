@@ -1,10 +1,10 @@
-package app.lawnchair.allapps
+package app.yitap.allapps
 
 import android.content.Context
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
-import app.lawnchair.launcher
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.launcher
+import app.yitap.preferences2.PreferenceManager2
 import com.android.launcher3.allapps.AllAppsStore
 import com.android.launcher3.allapps.AlphabeticalAppsList
 import com.android.launcher3.allapps.WorkProfileManager
@@ -14,7 +14,7 @@ import com.android.launcher3.views.ActivityContext
 import com.patrykmichalik.opto.core.onEach
 import java.util.function.Predicate
 
-class LawnchairAlphabeticalAppsList<T>(
+class YitapAlphabeticalAppsList<T>(
     context: T,
     appsStore: AllAppsStore<T>,
     workProfileManager: WorkProfileManager?,

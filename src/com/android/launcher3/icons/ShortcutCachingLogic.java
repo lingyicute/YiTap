@@ -37,7 +37,7 @@ import com.android.launcher3.icons.cache.CachingLogic;
 import com.android.launcher3.shortcuts.ShortcutKey;
 import com.android.launcher3.util.Themes;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 /**
  * Caching logic for shortcuts.

@@ -1,8 +1,8 @@
-package app.lawnchair.config
+package app.yitap.config
 
 import android.content.Context
 import android.util.Log
-import app.lawnchair.LawnchairApp
+import app.yitap.YitapApp
 import com.android.launcher3.config.FeatureFlags.BooleanFlag
 
 class DynamicFlag(
@@ -13,7 +13,7 @@ class DynamicFlag(
 
     override fun get(): Boolean {
         return try {
-            getValue(LawnchairApp.instance)
+            getValue(YitapApp.instance)
         } catch (t: Throwable) {
             Log.d("DynamicFlag", "failed to get value for ", t)
             super.get()

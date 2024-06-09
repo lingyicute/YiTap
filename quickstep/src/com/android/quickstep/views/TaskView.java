@@ -122,7 +122,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * A task in the Recents view.
@@ -832,7 +832,7 @@ public class TaskView extends FrameLayout implements Reusable {
      *         second app. {@code false} otherwise
      */
     protected boolean confirmSecondSplitSelectApp() {
-        if (!LawnchairQuickstepCompat.ATLEAST_T) return false;
+        if (!YitapQuickstepCompat.ATLEAST_T) return false;
         int index = getLastSelectedChildTaskIndex();
         TaskIdAttributeContainer container = mTaskIdAttributeContainer[index];
         if (container != null) {
@@ -974,7 +974,7 @@ public class TaskView extends FrameLayout implements Reusable {
     private ActivityOptions makeCustomAnimation(Context context, int enterResId,
             int exitResId, final Runnable callback, final Handler callbackHandler) {
         if (Utilities.ATLEAST_Q) {
-            return LawnchairQuickstepCompat.getActivityOptionsCompat().makeCustomAnimation(context, enterResId, exitResId, callbackHandler, callback, null);
+            return YitapQuickstepCompat.getActivityOptionsCompat().makeCustomAnimation(context, enterResId, exitResId, callbackHandler, callback, null);
         }
         return ActivityOptions.makeBasic();
     }

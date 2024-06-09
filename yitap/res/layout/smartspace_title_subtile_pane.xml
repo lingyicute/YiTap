@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_weight="1" />
 
-    <app.lawnchair.smartspace.DoubleShadowTextView
+    <app.yitap.smartspace.DoubleShadowTextView
         android:id="@+id/title_text"
         style="@style/EnhancedSmartspaceTextTitle"
         android:layout_width="0dp"

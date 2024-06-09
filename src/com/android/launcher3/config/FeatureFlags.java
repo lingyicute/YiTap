@@ -32,7 +32,7 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Defines a set of flags used to control various launcher behaviors.

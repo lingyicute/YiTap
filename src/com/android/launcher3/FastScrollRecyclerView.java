@@ -29,7 +29,7 @@ import com.android.launcher3.compat.AccessibilityManagerCompat;
 import com.android.launcher3.views.RecyclerViewFastScroller;
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 
 /**

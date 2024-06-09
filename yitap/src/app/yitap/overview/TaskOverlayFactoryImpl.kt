@@ -1,10 +1,10 @@
-package app.lawnchair.overview
+package app.yitap.overview
 
 import android.content.Context
 import android.graphics.Matrix
 import androidx.annotation.Keep
-import app.lawnchair.util.RecentHelper
-import app.lawnchair.util.TaskUtilLockState
+import app.yitap.util.RecentHelper
+import app.yitap.util.TaskUtilLockState
 import com.android.quickstep.TaskOverlayFactory
 import com.android.quickstep.views.OverviewActionsView
 import com.android.quickstep.views.TaskThumbnailView
@@ -18,7 +18,7 @@ class TaskOverlayFactoryImpl(@Suppress("UNUSED_PARAMETER") context: Context) : T
 
     class TaskOverlay(
         taskThumbnailView: TaskThumbnailView,
-    ) : TaskOverlayFactory.TaskOverlay<LawnchairOverviewActionsView>(taskThumbnailView) {
+    ) : TaskOverlayFactory.TaskOverlay<YitapOverviewActionsView>(taskThumbnailView) {
 
         override fun initOverlay(
             task: Task?,
@@ -41,7 +41,7 @@ class TaskOverlayFactoryImpl(@Suppress("UNUSED_PARAMETER") context: Context) : T
         private inner class OverlayUICallbacksImpl(
             isAllowedByPolicy: Boolean,
             task: Task?,
-        ) : TaskOverlayFactory.TaskOverlay<LawnchairOverviewActionsView>.OverlayUICallbacksImpl(
+        ) : TaskOverlayFactory.TaskOverlay<YitapOverviewActionsView>.OverlayUICallbacksImpl(
             isAllowedByPolicy,
             task,
         ),

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.Arrangement
@@ -28,7 +28,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.LocalIsExpandedScreen
 
 /**
  * Represents the layout of all Preference screens.

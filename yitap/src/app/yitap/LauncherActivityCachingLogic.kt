@@ -1,9 +1,9 @@
-package app.lawnchair
+package app.yitap
 
 import android.content.Context
 import android.content.pm.LauncherActivityInfo
 import androidx.annotation.Keep
-import app.lawnchair.preferences.PreferenceManager
+import app.yitap.preferences.PreferenceManager
 import com.android.launcher3.icons.LauncherActivityCachingLogic as BaseLogic
 import com.android.launcher3.util.ComponentKey
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@
     <dimen name="noqsb_hotseat_bottom_non_tall_padding">0dp</dimen>
     <dimen name="noqsb_hotseat_extra_vertical_size">34dp</dimen>
 
-    <dimen name="lawnchair_dialog_corner_radius">24dp</dimen>
+    <dimen name="yitap_dialog_corner_radius">24dp</dimen>
 
     <!-- qsb -->
     <dimen name="all_apps_search_bar_bottom_padding">36dp</dimen>

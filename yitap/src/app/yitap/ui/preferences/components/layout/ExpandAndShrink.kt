@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.AnimatedVisibilityScope

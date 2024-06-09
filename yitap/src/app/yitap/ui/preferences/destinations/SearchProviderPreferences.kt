@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -17,19 +17,19 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.qsb.providers.QsbSearchProviderType
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.LocalBottomSheetHandler
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.qsb.providers.QsbSearchProvider
+import app.yitap.qsb.providers.QsbSearchProviderType
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.components.layout.ClickableIcon
+import app.yitap.ui.preferences.components.layout.DividerColumn
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceDivider
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.util.LocalBottomSheetHandler
 import com.android.launcher3.R
 
 @Composable

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 package com.android.launcher3.touch;
 
@@ -50,7 +50,7 @@ import com.android.launcher3.testing.TestLogging;
 import com.android.launcher3.testing.shared.TestProtocol;
 import com.android.launcher3.util.TouchUtil;
 
-import app.lawnchair.LawnchairLauncher;
+import app.yitap.YitapLauncher;
 
 /**
  * Helper class to handle touch on empty space in workspace and show options
@@ -228,7 +228,7 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
     @Override
     public boolean onDoubleTap(MotionEvent event) {
         Context context = mWorkspace.getContext();
-        LawnchairLauncher launcher = Launcher.fromContext(context);
+        YitapLauncher launcher = Launcher.fromContext(context);
         launcher.getGestureController().onDoubleTap();
         return true;
     }

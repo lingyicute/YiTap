@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference.pickers
+package app.yitap.ui.preferences.components.colorpreference.pickers
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -53,19 +53,19 @@ import androidx.compose.ui.unit.sp
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.components.colorpreference.HsbColorSlider
-import app.lawnchair.ui.preferences.components.colorpreference.HsbSliderType
-import app.lawnchair.ui.preferences.components.colorpreference.RgbColorSlider
-import app.lawnchair.ui.preferences.components.colorpreference.colorStringToIntColor
-import app.lawnchair.ui.preferences.components.colorpreference.hsvValuesToIntColor
-import app.lawnchair.ui.preferences.components.colorpreference.intColorToColorString
-import app.lawnchair.ui.preferences.components.colorpreference.intColorToHsvColorArray
-import app.lawnchair.ui.preferences.components.layout.Chip
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.util.requireSystemService
+import app.yitap.theme.color.ColorOption
+import app.yitap.ui.preferences.components.colorpreference.HsbColorSlider
+import app.yitap.ui.preferences.components.colorpreference.HsbSliderType
+import app.yitap.ui.preferences.components.colorpreference.RgbColorSlider
+import app.yitap.ui.preferences.components.colorpreference.colorStringToIntColor
+import app.yitap.ui.preferences.components.colorpreference.hsvValuesToIntColor
+import app.yitap.ui.preferences.components.colorpreference.intColorToColorString
+import app.yitap.ui.preferences.components.colorpreference.intColorToHsvColorArray
+import app.yitap.ui.preferences.components.layout.Chip
+import app.yitap.ui.preferences.components.layout.ClickableIcon
+import app.yitap.ui.preferences.components.layout.DividerColumn
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.util.requireSystemService
 import com.android.launcher3.R
 import kotlinx.coroutines.launch
 

@@ -9,9 +9,9 @@ import android.util.Log
 import com.android.systemui.shared.system.ActivityManagerWrapper
 
 @SuppressLint("StaticFieldLeak")
-object LawnchairLockedStateController {
+object YitapLockedStateController {
 
-    private const val TAG = "LawnchairLockedStateController"
+    private const val TAG = "YitapLockedStateController"
     private const val RECENT_TASK_LOCKED_LIST = "com_android_systemui_recent_task_lockd_list"
     private const val RECENT_TASK_LOCKED_LIST_BK = "com_android_systemui_recent_task_locked_bk"
     private const val TASK_LOCK_LIST_KEY = "task_lock_list"
@@ -23,7 +23,7 @@ object LawnchairLockedStateController {
 
     private lateinit var applicationContext: Context
     private val backgroundThread: HandlerThread by lazy {
-        HandlerThread("Recents-LawnchairLockedStateController", 10)
+        HandlerThread("Recents-YitapLockedStateController", 10)
     }
     private val backgroundThreadHandler: Handler by lazy {
         Handler(backgroundThread.looper)
@@ -34,7 +34,7 @@ object LawnchairLockedStateController {
         applicationContext.getSharedPreferences(TASK_LOCK_STATE, Context.MODE_PRIVATE)
     }
 
-    fun initialize(context: Context): LawnchairLockedStateController {
+    fun initialize(context: Context): YitapLockedStateController {
         if (!this::applicationContext.isInitialized) {
             this.applicationContext = context
             backgroundThread.start()

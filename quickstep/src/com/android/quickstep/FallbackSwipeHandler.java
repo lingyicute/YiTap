@@ -80,7 +80,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 import java.util.function.Consumer;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Handles the navigation gestures when a 3rd party launcher is the default home activity.

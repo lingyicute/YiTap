@@ -50,7 +50,7 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.util.Themes;
 
-import app.lawnchair.theme.color.ColorTokens;
+import app.yitap.theme.color.ColorTokens;
 
 /**
  * {@link PageIndicator} which shows dots per page. The active page is shown

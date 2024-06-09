@@ -103,7 +103,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Holds the reference to SystemUI.
@@ -1297,7 +1297,7 @@ public class SystemUiProxy implements ISystemUiProxy {
     }
 
     public ArrayList<GroupedRecentTaskInfo> getRecentTasks(int numTasks, int userId) {
-        if (!LawnchairQuickstepCompat.ATLEAST_U) {
+        if (!YitapQuickstepCompat.ATLEAST_U) {
             return getRecentTasksFromWrapper(numTasks, userId);
         }
         try {

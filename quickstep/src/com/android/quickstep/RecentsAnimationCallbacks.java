@@ -42,7 +42,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Set;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Wrapper around {@link com.android.systemui.shared.system.RecentsAnimationListener} which
@@ -127,7 +127,7 @@ public class RecentsAnimationCallbacks implements
         } else {
             RemoteAnimationTarget[] nonAppTargets;
             if (!TaskAnimationManager.ENABLE_SHELL_TRANSITIONS) {
-                nonAppTargets = LawnchairQuickstepCompat.ATLEAST_T ? mSystemUiProxy.onGoingToRecentsLegacy(appTargets) : null;
+                nonAppTargets = YitapQuickstepCompat.ATLEAST_T ? mSystemUiProxy.onGoingToRecentsLegacy(appTargets) : null;
             } else {
                 final ArrayList<RemoteAnimationTarget> apps = new ArrayList<>();
                 final ArrayList<RemoteAnimationTarget> nonApps = new ArrayList<>();

@@ -31,7 +31,7 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 
 import java.util.List;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Handles additional edit text functionality to better support folder name suggestion.

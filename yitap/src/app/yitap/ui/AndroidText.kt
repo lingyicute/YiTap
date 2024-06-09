@@ -1,4 +1,4 @@
-package app.lawnchair.ui
+package app.yitap.ui
 
 import android.util.TypedValue
 import android.widget.TextView
@@ -14,7 +14,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.viewinterop.NoOpUpdate
-import app.lawnchair.ui.preferences.views.CustomFontTextView
+import app.yitap.ui.preferences.views.CustomFontTextView
 
 @Composable
 fun <T : TextView> AndroidText(

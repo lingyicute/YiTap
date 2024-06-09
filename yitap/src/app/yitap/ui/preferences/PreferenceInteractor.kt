@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.yitap.ui.preferences
 
-import app.lawnchair.ui.preferences.about.acknowledgements.OssLibrary
-import app.lawnchair.ui.preferences.destinations.IconPackInfo
+import app.yitap.ui.preferences.about.acknowledgements.OssLibrary
+import app.yitap.ui.preferences.destinations.IconPackInfo
 import kotlinx.coroutines.flow.StateFlow
 
 sealed interface PreferenceInteractor {

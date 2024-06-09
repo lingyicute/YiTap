@@ -42,9 +42,9 @@ import com.android.launcher3.model.data.PackageItemInfo;
 import com.android.launcher3.views.ActivityContext;
 import com.android.launcher3.widget.model.WidgetsListHeaderEntry;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.font.FontManager;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /**
  * A UI represents a header of an app shown in the full widgets tray.

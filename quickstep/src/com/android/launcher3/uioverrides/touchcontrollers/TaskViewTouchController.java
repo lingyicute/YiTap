@@ -47,7 +47,7 @@ import com.android.quickstep.util.VibrationConstants;
 import com.android.quickstep.views.RecentsView;
 import com.android.quickstep.views.TaskView;
 
-import app.lawnchair.util.RecentHelper;
+import app.yitap.util.RecentHelper;
 
 /**
  * Touch controller for handling task view card swipes

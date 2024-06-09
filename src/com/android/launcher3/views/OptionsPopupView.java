@@ -64,7 +64,7 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Popup shown on long pressing an empty space in launcher

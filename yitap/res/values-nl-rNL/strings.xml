@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Stel Lawnchair in als uw standaard launcher voor toegang tot snelkoppelingen en meer.</string>
+    <string name="set_default_launcher_tip">Stel Yitap in als uw standaard launcher voor toegang tot snelkoppelingen en meer.</string>
     <string name="settings">Instellingen</string>
     <string name="general_label">Algemeen</string>
     <string name="general_description">Kleuren, Icoon Pakket, Notificatie stippen</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Wis alles knop, hoek radius</string>
     <string name="about_label">Informatie</string>
     <string name="app_info_drop_target_label">App informatie</string>
-    <string name="debug_restart_launcher">Herstart Lawnchair</string>
+    <string name="debug_restart_launcher">Herstart Yitap</string>
     <string name="experimental_features_label">Experimentele functies</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Plakken</string>
     <string name="copied_toast">Gekopieerd naar klembord.</string>
     <string name="invalid_color">Ongeldige Kleur</string>
-    <string name="launcher_default_color">Beheerd door Lawnchair</string>
+    <string name="launcher_default_color">Beheerd door Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Voeg nieuwe apps toe aan startscherm</string>
     <string name="minus_one_enable">Toon feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Perzisch</string>
     <string name="smartspace_preferences">Voorkeuren</string>
     <string name="smartspace_widget_toggle_label">Toon op startscherm</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Lawnchair” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
     <string name="smartspace_mode_label">At a Glance provider</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Zoeken</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Onderkant opvulling</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Apps Doorzoeken</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair heeft een overeenkomst over het delen van inkomsten.\n\nZoeken met %1$s helpt Lawnchair te ondersteunen.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap heeft een overeenkomst over het delen van inkomsten.\n\nZoeken met %1$s helpt Yitap te ondersteunen.</string>
     <string name="app_label">App</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Zoeken openen</string>
     <string name="pick_app_for_gesture">App kiezen</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Deze instellingen worden genegeerd, omdat Lawnchair niet is ingesteld als de aanbieder van Recente apps.</string>
+    <string name="quickswitch_ignored_warning">Deze instellingen worden genegeerd, omdat Yitap niet is ingesteld als de aanbieder van Recente apps.</string>
     <string name="translucent_background">Doorschijnende achtergrond</string>
     <string name="translucent_background_alpha">Doorzichtigheid achtergrond</string>
     <string name="recents_actions_label">Snelle Acties</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">Geen apps gevonden die overeenkomen met “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Beheerdersrechten vereist</string>
-    <string name="dt2s_admin_hint">Om dubbeltik voor slapen te kunnen gebruiken, maak Lawnchair een apparaat beheerder app. Tik op “Open instellingen” en tik dan op “Activeer deze apparaat beheerder app”</string>
+    <string name="dt2s_admin_hint">Om dubbeltik voor slapen te kunnen gebruiken, maak Yitap een apparaat beheerder app. Tik op “Open instellingen” en tik dan op “Activeer deze apparaat beheerder app”</string>
     <string name="dt2s_admin_warning">Dubbeltik om te slapen wordt uitgeschakeld.</string>
     <string name="dt2s_a11y_hint_title">Toegankelijkheid service vereist</string>
-    <string name="dt2s_a11y_hint">Om dubbeltik voor slapen te kunnen gebruiken, zet de Lawnchair toegankelijkheid dienst aan. Tik op “Open instellingen”, selecteer dan Lawnchair en zet gebruik Lawnchair aan.</string>
+    <string name="dt2s_a11y_hint">Om dubbeltik voor slapen te kunnen gebruiken, zet de Yitap toegankelijkheid dienst aan. Tik op “Open instellingen”, selecteer dan Yitap en zet gebruik Yitap aan.</string>
     <string name="dt2s_warning_open_settings">Open instellingen</string>
     <string name="loading">Aan het laden…</string>
     <string name="system">Systeem</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Suggesties</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Lawnchair Bug Melding</string>
+    <string name="yitap_bug_report">Yitap Bug Melding</string>
     <string name="crash_report_notif_title">%1$s is Gecrasht</string>
     <string name="action_upload_crash_report">Upload Crash Logboek</string>
     <string name="action_copy_link">Koppeling Kopiëren</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacten en meer</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Lawnchair.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Lawnchair.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Suggesties</string>
     <string name="all_apps_device_search_hint">Zoek</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

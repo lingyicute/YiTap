@@ -33,8 +33,8 @@ body:
   - type: dropdown
     id: feature-in-version-two
     attributes:
-      label: Did the feature exist in Lawnchair v2? (Play Store version)
-      description: If so, the feature might be already in the dev's to-do list and may be closed. See [this page](https://lawnchair.app/faq#can-you-return-x-feature-from-lawnchair-2) for more information.
+      label: Did the feature exist in Yitap v2? (Play Store version)
+      description: If so, the feature might be already in the dev's to-do list and may be closed. See [this page](https://yitap.app/faq#can-you-return-x-feature-from-yitap-2) for more information.
       options:
         - "Yes"
         - "No"

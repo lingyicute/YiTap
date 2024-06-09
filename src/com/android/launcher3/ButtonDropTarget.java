@@ -43,9 +43,9 @@ import com.android.launcher3.dragndrop.DragOptions;
 import com.android.launcher3.dragndrop.DragView;
 import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.util.Themes;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableToken;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableToken;
+import app.yitap.theme.drawable.DrawableTokens;
 import com.android.launcher3.views.ActivityContext;
 
 /**

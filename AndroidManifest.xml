@@ -16,7 +16,7 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 **
-** Modifications copyright 2021, Lawnchair
+** Modifications copyright 2021, Yitap
 */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -29,7 +29,7 @@
     -->
 
     <application
-        android:name="app.lawnchair.LawnchairApp"
+        android:name="app.yitap.YitapApp"
         android:backupAgent="com.android.launcher3.LauncherBackupAgent"
         android:fullBackupOnly="true"
         android:fullBackupContent="@xml/backupscheme"

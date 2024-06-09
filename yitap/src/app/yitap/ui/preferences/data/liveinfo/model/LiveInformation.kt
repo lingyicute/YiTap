@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.data.liveinfo.model
+package app.yitap.ui.preferences.data.liveinfo.model
 
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList

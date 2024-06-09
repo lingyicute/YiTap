@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,13 +7,13 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
-import app.lawnchair.allapps.views.SearchResultView.Companion.FLAG_HIDE_SUBTITLE
-import app.lawnchair.font.FontManager
-import app.lawnchair.search.adapter.HISTORY
-import app.lawnchair.search.adapter.SETTINGS
-import app.lawnchair.search.adapter.SearchResultActionCallBack
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.WEB_SUGGESTION
+import app.yitap.allapps.views.SearchResultView.Companion.FLAG_HIDE_SUBTITLE
+import app.yitap.font.FontManager
+import app.yitap.search.adapter.HISTORY
+import app.yitap.search.adapter.SETTINGS
+import app.yitap.search.adapter.SearchResultActionCallBack
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.search.adapter.WEB_SUGGESTION
 import com.android.app.search.LayoutType
 import com.android.launcher3.R
 import com.android.launcher3.touch.ItemClickHandler

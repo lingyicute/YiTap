@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
 
 @Composable
 fun NavigationActionPreference(

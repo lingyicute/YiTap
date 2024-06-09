@@ -51,7 +51,7 @@ import com.android.launcher3.widget.custom.CustomWidgetManager;
 
 import java.util.function.IntConsumer;
 
-import app.lawnchair.LawnchairAppWidgetHostView;
+import app.yitap.YitapAppWidgetHostView;
 
 /**
  * A wrapper for LauncherAppWidgetHost. This class is created so the AppWidgetHost could run in
@@ -378,7 +378,7 @@ public class LauncherWidgetHolder {
     public AppWidgetHostView createView(@NonNull Context context, int appWidgetId,
             @NonNull LauncherAppWidgetProviderInfo appWidget) {
         if (appWidget.isCustomWidget()) {
-            LauncherAppWidgetHostView lahv = new LawnchairAppWidgetHostView(context);
+            LauncherAppWidgetHostView lahv = new YitapAppWidgetHostView(context);
             lahv.setAppWidget(0, appWidget);
             CustomWidgetManager.INSTANCE.get(context).onViewCreated(lahv);
             return lahv;
@@ -465,7 +465,7 @@ public class LauncherWidgetHolder {
             // already added the former to the workspace.
             view = mDeferredViews.get(appWidgetId);
         } else {
-            view = new LawnchairAppWidgetHostView(context);
+            view = new YitapAppWidgetHostView(context);
         }
         mViews.put(appWidgetId, view);
         return view;

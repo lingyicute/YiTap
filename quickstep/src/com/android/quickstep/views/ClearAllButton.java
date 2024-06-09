@@ -27,8 +27,8 @@ import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.statemanager.StatefulActivity;
 import com.android.launcher3.touch.PagedOrientationHandler;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.font.FontManager;
+import app.yitap.theme.drawable.DrawableTokens;
 
 public class ClearAllButton extends Button {
 

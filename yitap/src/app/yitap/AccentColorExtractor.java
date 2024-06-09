@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair;
+package app.yitap;
 
 import android.app.WallpaperColors;
 import android.content.Context;
@@ -33,8 +33,8 @@ import com.android.launcher3.widget.LocalColorExtractor;
 
 import java.util.Map;
 
-import app.lawnchair.theme.ThemeProvider;
-import app.lawnchair.theme.color.AndroidColor;
+import app.yitap.theme.ThemeProvider;
+import app.yitap.theme.color.AndroidColor;
 import dev.kdrag0n.colorkt.Color;
 import dev.kdrag0n.monet.theme.ColorScheme;
 

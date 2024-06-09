@@ -78,7 +78,7 @@ import com.android.systemui.shared.system.TaskStackChangeListeners;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import app.lawnchair.LawnchairApp;
+import app.yitap.YitapApp;
 
 /**
  * Manages the state of the system during a swipe up gesture.
@@ -97,7 +97,7 @@ public class RecentsAnimationDeviceState implements DisplayInfoChangeListener {
     private final RotationTouchHelper mRotationTouchHelper;
     private final TaskStackChangeListener mPipListener;
     // Cache for better performance since it doesn't change at runtime.
-    private final boolean mCanImeRenderGesturalNavButtons = LawnchairApp.isAtleastT()
+    private final boolean mCanImeRenderGesturalNavButtons = YitapApp.isAtleastT()
             ? InputMethodService.canImeRenderGesturalNavButtons()
             : isImeRenderingNavButtons();
 
@@ -170,7 +170,7 @@ public class RecentsAnimationDeviceState implements DisplayInfoChangeListener {
             Uri oneHandedUri = Settings.Secure.getUriFor(ONE_HANDED_ENABLED);
             SettingsCache.OnChangeListener onChangeListener = enabled -> mIsOneHandedModeEnabled = enabled;
             settingsCache.register(oneHandedUri, onChangeListener);
-            mIsOneHandedModeEnabled = LawnchairApp.isRecentsEnabled() && settingsCache.getValue(oneHandedUri);
+            mIsOneHandedModeEnabled = YitapApp.isRecentsEnabled() && settingsCache.getValue(oneHandedUri);
             runOnDestroy(() -> settingsCache.unregister(oneHandedUri, onChangeListener));
         } else {
             mIsOneHandedModeEnabled = false;
@@ -179,12 +179,12 @@ public class RecentsAnimationDeviceState implements DisplayInfoChangeListener {
         Uri swipeBottomNotificationUri = Settings.Secure.getUriFor(ONE_HANDED_SWIPE_BOTTOM_TO_NOTIFICATION_ENABLED);
         SettingsCache.OnChangeListener onChangeListener = enabled -> mIsSwipeToNotificationEnabled = enabled;
         settingsCache.register(swipeBottomNotificationUri, onChangeListener);
-        mIsSwipeToNotificationEnabled = LawnchairApp.isRecentsEnabled()
+        mIsSwipeToNotificationEnabled = YitapApp.isRecentsEnabled()
                 && settingsCache.getValue(swipeBottomNotificationUri);
         runOnDestroy(() -> settingsCache.unregister(swipeBottomNotificationUri, onChangeListener));
 
         Uri setupCompleteUri = Settings.Secure.getUriFor(Settings.Secure.USER_SETUP_COMPLETE);
-        mIsUserSetupComplete = LawnchairApp.isRecentsEnabled() && settingsCache.getValue(setupCompleteUri, 0);
+        mIsUserSetupComplete = YitapApp.isRecentsEnabled() && settingsCache.getValue(setupCompleteUri, 0);
         if (!mIsUserSetupComplete) {
             SettingsCache.OnChangeListener userSetupChangeListener = e -> mIsUserSetupComplete = e;
             settingsCache.register(setupCompleteUri, userSetupChangeListener);
@@ -192,7 +192,7 @@ public class RecentsAnimationDeviceState implements DisplayInfoChangeListener {
         }
 
         try {
-            mPipIsActive = LawnchairApp.isRecentsEnabled() && Utilities.ATLEAST_S
+            mPipIsActive = YitapApp.isRecentsEnabled() && Utilities.ATLEAST_S
                     && ActivityTaskManager.getService().getRootTaskInfo(
                             WINDOWING_MODE_PINNED, ACTIVITY_TYPE_UNDEFINED) != null;
         } catch (RemoteException e) {

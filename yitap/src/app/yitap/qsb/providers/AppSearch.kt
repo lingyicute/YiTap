@@ -1,7 +1,7 @@
-package app.lawnchair.qsb.providers
+package app.yitap.qsb.providers
 
-import app.lawnchair.animateToAllApps
-import app.lawnchair.qsb.ThemingMethod
+import app.yitap.animateToAllApps
+import app.yitap.qsb.ThemingMethod
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 

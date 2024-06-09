@@ -1,4 +1,4 @@
-package app.lawnchair.ui.util
+package app.yitap.ui.util
 
 import android.content.res.Configuration
 import androidx.compose.ui.tooling.preview.Preview
@@ -30,7 +30,7 @@ import androidx.compose.ui.tooling.preview.Wallpapers
     uiMode = Configuration.UI_MODE_NIGHT_YES,
     wallpaper = Wallpapers.RED_DOMINATED_EXAMPLE,
 )
-annotation class PreviewLawnchair
+annotation class PreviewYitap
 
 object PreviewUtils {
     // todo

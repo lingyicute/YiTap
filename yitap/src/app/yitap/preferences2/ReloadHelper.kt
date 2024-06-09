@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences2
+package app.yitap.preferences2
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.yitap.YitapLauncher
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.quickstep.TouchInteractionService
 import com.android.quickstep.util.TISBindHelper
@@ -34,7 +34,7 @@ class ReloadHelper(private val context: Context) {
     }
 
     fun recreate() {
-        LawnchairLauncher.instance?.recreateIfNotScheduled()
+        YitapLauncher.instance?.recreateIfNotScheduled()
     }
 
     fun restart() {

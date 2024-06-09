@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 public class FloatingHeaderView extends LinearLayout implements
         ValueAnimator.AnimatorUpdateListener, PluginListener<AllAppsRow>, Insettable,

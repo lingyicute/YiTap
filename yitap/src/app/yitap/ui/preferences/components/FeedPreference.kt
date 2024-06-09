@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -11,12 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.FeedBridge
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.FeedBridge
+import app.yitap.icons.CustomAdaptiveIconDrawable
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import kotlinx.collections.immutable.toPersistentList

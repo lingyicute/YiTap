@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope

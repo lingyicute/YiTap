@@ -55,9 +55,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.function.Consumer;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-import app.lawnchair.compatlib.RecentsAnimationRunnerCompat;
-import app.lawnchair.compatlib.eleven.ActivityManagerCompatVR;
+import app.yitap.compat.YitapQuickstepCompat;
+import app.yitap.compatlib.RecentsAnimationRunnerCompat;
+import app.yitap.compatlib.eleven.ActivityManagerCompatVR;
 
 public class ActivityManagerWrapper {
 
@@ -72,7 +72,7 @@ public class ActivityManagerWrapper {
     // Should match the value in AssistManager
     private static final String INVOCATION_TIME_MS_KEY = "invocation_time_ms";
 
-    private final ActivityTaskManager mAtm = LawnchairQuickstepCompat.ATLEAST_S ? ActivityTaskManager.getInstance() : null;
+    private final ActivityTaskManager mAtm = YitapQuickstepCompat.ATLEAST_S ? ActivityTaskManager.getInstance() : null;
     private ActivityManagerWrapper() { }
 
     public static ActivityManagerWrapper getInstance() {
@@ -106,7 +106,7 @@ public class ActivityManagerWrapper {
     @Nullable
     public ActivityManager.RunningTaskInfo getRunningTask(boolean filterOnlyVisibleRecents) {
         // Note: The set of running tasks from the system is ordered by recency
-        return LawnchairQuickstepCompat.getActivityManagerCompat().getRunningTask(filterOnlyVisibleRecents);
+        return YitapQuickstepCompat.getActivityManagerCompat().getRunningTask(filterOnlyVisibleRecents);
     }
 
     /**
@@ -120,7 +120,7 @@ public class ActivityManagerWrapper {
      */
     @NonNull
     public ActivityManager.RunningTaskInfo[] getRunningTasks(boolean filterOnlyVisibleRecents) {
-        var tasks = LawnchairQuickstepCompat.getActivityManagerCompat().getRunningTasks(filterOnlyVisibleRecents);
+        var tasks = YitapQuickstepCompat.getActivityManagerCompat().getRunningTasks(filterOnlyVisibleRecents);
         return tasks.toArray(new ActivityManager.RunningTaskInfo[tasks.size()]);
     }
 
@@ -129,7 +129,7 @@ public class ActivityManagerWrapper {
      */
     @NonNull
     public List<ActivityManager.RecentTaskInfo> getRecentTasks(int numTasks, int userId) {
-        return LawnchairQuickstepCompat.getActivityManagerCompat().getRecentTasks(numTasks, userId);
+        return YitapQuickstepCompat.getActivityManagerCompat().getRecentTasks(numTasks, userId);
     }
 
     /**
@@ -138,8 +138,8 @@ public class ActivityManagerWrapper {
      */
     @NonNull
     public ThumbnailData getTaskThumbnail(int taskId, boolean isLowResolution) {
-        if (!LawnchairQuickstepCompat.ATLEAST_S) {
-            var compat = LawnchairQuickstepCompat.getActivityManagerCompat();
+        if (!YitapQuickstepCompat.ATLEAST_S) {
+            var compat = YitapQuickstepCompat.getActivityManagerCompat();
             var data = compat.getTaskThumbnail(taskId, isLowResolution);
             if (data != null) {
                 return new ThumbnailData(data);
@@ -147,7 +147,7 @@ public class ActivityManagerWrapper {
                 return new ThumbnailData();
             }
         }
-        TaskSnapshot snapshot = LawnchairQuickstepCompat.getActivityManagerCompat().getTaskSnapshot(taskId, isLowResolution, true);
+        TaskSnapshot snapshot = YitapQuickstepCompat.getActivityManagerCompat().getTaskSnapshot(taskId, isLowResolution, true);
         return snapshot != null ? new ThumbnailData(snapshot) : new ThumbnailData();
     }
 
@@ -159,7 +159,7 @@ public class ActivityManagerWrapper {
      *                     want us to find the home task for you.
      */
     public void invalidateHomeTaskSnapshot(@Nullable final Activity homeActivity) {
-        LawnchairQuickstepCompat.getActivityManagerCompat().invalidateHomeTaskSnapshot(homeActivity);
+        YitapQuickstepCompat.getActivityManagerCompat().invalidateHomeTaskSnapshot(homeActivity);
     }
 
     /**
@@ -209,11 +209,11 @@ public class ActivityManagerWrapper {
                      * compat for android 12/11/10
                      */
                     public void onAnimationCanceled(Object taskSnapshot) {
-                        if (LawnchairQuickstepCompat.ATLEAST_S) {
+                        if (YitapQuickstepCompat.ATLEAST_S) {
                             animationHandler.onAnimationCanceled(
                                     ThumbnailData.wrap(new int[]{0}, new TaskSnapshot[]{(TaskSnapshot) taskSnapshot}));
-                        } else if (LawnchairQuickstepCompat.ATLEAST_R) {
-                            ActivityManagerCompatVR compat = (ActivityManagerCompatVR) LawnchairQuickstepCompat.getActivityManagerCompat();
+                        } else if (YitapQuickstepCompat.ATLEAST_R) {
+                            ActivityManagerCompatVR compat = (ActivityManagerCompatVR) YitapQuickstepCompat.getActivityManagerCompat();
                             ActivityManagerCompatVR.ThumbnailData data = compat.convertTaskSnapshotToThumbnailData(taskSnapshot);
                             HashMap<Integer, ThumbnailData> thumbnailDatas = new HashMap<>();
                             if (data != null) {
@@ -238,7 +238,7 @@ public class ActivityManagerWrapper {
                     }
                 };
             }
-            LawnchairQuickstepCompat.getActivityManagerCompat().startRecentsActivity(intent, eventTime, runner);
+            YitapQuickstepCompat.getActivityManagerCompat().startRecentsActivity(intent, eventTime, runner);
             return true;
         } catch (Exception e) {
             return false;

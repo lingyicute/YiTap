@@ -183,7 +183,7 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 public class QuickstepLauncher extends Launcher {
     private static final boolean TRACE_LAYOUTS = SystemProperties.getBoolean("persist.debug.trace_layouts", false);
@@ -1023,16 +1023,16 @@ public class QuickstepLauncher extends Launcher {
         ActivityOptionsWrapper activityOptions = mAppTransitionManager.hasControlRemoteAppTransitionPermission()
                 ? mAppTransitionManager.getActivityLaunchOptions(v)
                 : super.getActivityLaunchOptions(v, item);
-        if (mLastTouchUpTime > 0 && LawnchairQuickstepCompat.ATLEAST_S) {
+        if (mLastTouchUpTime > 0 && YitapQuickstepCompat.ATLEAST_S) {
             activityOptions.options.setSourceInfo(ActivityOptions.SourceInfo.TYPE_LAUNCHER,
                     mLastTouchUpTime);
         }
         if (item != null && (item.animationType == DEFAULT_NO_ICON
-                || item.animationType == VIEW_BACKGROUND) && LawnchairQuickstepCompat.ATLEAST_T) {
+                || item.animationType == VIEW_BACKGROUND) && YitapQuickstepCompat.ATLEAST_T) {
             activityOptions.options.setSplashScreenStyle(
                     SplashScreen.SPLASH_SCREEN_STYLE_SOLID_COLOR);
         } else {
-            if (LawnchairQuickstepCompat.ATLEAST_T) {
+            if (YitapQuickstepCompat.ATLEAST_T) {
                 activityOptions.options.setSplashScreenStyle(SplashScreen.SPLASH_SCREEN_STYLE_ICON);
             }
         }
@@ -1040,7 +1040,7 @@ public class QuickstepLauncher extends Launcher {
                 (v != null && v.getDisplay() != null) ? v.getDisplay().getDisplayId()
                         : Display.DEFAULT_DISPLAY);
         Utilities.allowBGLaunch(activityOptions.options);
-        if (LawnchairQuickstepCompat.ATLEAST_T) {
+        if (YitapQuickstepCompat.ATLEAST_T) {
             addLaunchCookie(item, activityOptions.options);
         }
         return activityOptions;

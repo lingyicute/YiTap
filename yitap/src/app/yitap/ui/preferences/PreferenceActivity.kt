@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.yitap.ui.preferences
 
 import android.app.Activity
 import android.content.Context
@@ -30,8 +30,8 @@ import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSiz
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.DisposableEffect
 import androidx.core.net.toUri
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.theme.isSelectedThemeDark
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.ui.theme.isSelectedThemeDark
 
 class PreferenceActivity : AppCompatActivity() {
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
@@ -56,7 +56,7 @@ class PreferenceActivity : AppCompatActivity() {
                 onDispose {}
             }
 
-            LawnchairTheme {
+            YitapTheme {
                 Preferences(
                     windowSizeClass,
                 )

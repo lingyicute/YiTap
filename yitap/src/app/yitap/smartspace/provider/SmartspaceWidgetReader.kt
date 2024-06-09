@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider
+package app.yitap.smartspace.provider
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -14,13 +14,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.descendants
-import app.lawnchair.BlankActivity
-import app.lawnchair.HeadlessWidgetsManager
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.util.Temperature
-import app.lawnchair.util.pendingIntent
+import app.yitap.BlankActivity
+import app.yitap.HeadlessWidgetsManager
+import app.yitap.smartspace.model.SmartspaceAction
+import app.yitap.smartspace.model.SmartspaceScores
+import app.yitap.smartspace.model.SmartspaceTarget
+import app.yitap.util.Temperature
+import app.yitap.util.pendingIntent
 import com.android.launcher3.R
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf

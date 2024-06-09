@@ -62,8 +62,8 @@ import com.android.launcher3.views.BaseDragLayer;
 
 import java.util.Arrays;
 
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /**
  * A container for shortcuts to deep links and notifications associated with an

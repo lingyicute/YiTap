@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.ClipData
 import android.content.ClipboardManager

@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -26,12 +26,12 @@ import android.os.UserManager
 import android.util.ArrayMap
 import android.util.Log
 import androidx.core.content.getSystemService
-import app.lawnchair.data.iconoverride.IconOverrideRepository
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.Constants.LAWNICONS_PACKAGE_NAME
-import app.lawnchair.util.MultiSafeCloseable
-import app.lawnchair.util.getPackageVersionCode
-import app.lawnchair.util.isPackageInstalled
+import app.yitap.data.iconoverride.IconOverrideRepository
+import app.yitap.preferences.PreferenceManager
+import app.yitap.util.Constants.LAWNICONS_PACKAGE_NAME
+import app.yitap.util.MultiSafeCloseable
+import app.yitap.util.getPackageVersionCode
+import app.yitap.util.isPackageInstalled
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 import com.android.launcher3.icons.IconProvider
@@ -41,7 +41,7 @@ import com.android.launcher3.util.SafeCloseable
 import java.util.function.Supplier
 import org.xmlpull.v1.XmlPullParser
 
-class LawnchairIconProvider @JvmOverloads constructor(
+class YitapIconProvider @JvmOverloads constructor(
     private val context: Context,
     supportsIconTheme: Boolean = false,
 ) : IconProvider(context, supportsIconTheme) {
@@ -387,7 +387,7 @@ class LawnchairIconProvider @JvmOverloads constructor(
     }
 
     companion object {
-        const val TAG = "LawnchairIconProvider"
+        const val TAG = "YitapIconProvider"
 
         val DISABLED_MAP = emptyMap<ComponentName, ThemedIconDrawable.ThemeData>()
     }

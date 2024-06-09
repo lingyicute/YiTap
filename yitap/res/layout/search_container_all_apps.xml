@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<app.lawnchair.allapps.AllAppsSearchInput xmlns:android="http://schemas.android.com/apk/res/android"
+<app.yitap.allapps.AllAppsSearchInput xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/search_container_all_apps"
     android:layout_width="match_parent"
@@ -45,7 +45,7 @@
             android:textColor="?android:textColorTertiary"
             android:textSize="20sp" />
 
-        <app.lawnchair.allapps.FallbackSearchInputView
+        <app.yitap.allapps.FallbackSearchInputView
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -90,4 +90,4 @@
         android:scaleType="center"
         android:src="@drawable/ic_remove_no_shadow"
         app:tint="?android:textColorSecondary" />
-</app.lawnchair.allapps.AllAppsSearchInput>
+</app.yitap.allapps.AllAppsSearchInput>

@@ -1,4 +1,4 @@
-package app.lawnchair.override
+package app.yitap.override
 
 import android.app.Activity
 import android.graphics.drawable.Drawable
@@ -30,16 +30,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.ui.util.addIfNotNull
-import app.lawnchair.util.navigationBarsOrDisplayCutoutPadding
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.asState
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.layout.ClickableIcon
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.ui.util.addIfNotNull
+import app.yitap.util.navigationBarsOrDisplayCutoutPadding
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 import com.android.launcher3.util.ComponentKey

@@ -1,3 +1,3 @@
-package app.lawnchair.root
+package app.yitap.root
 
 class RootNotAvailableException : Exception()

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import android.content.Context
 import androidx.compose.foundation.layout.Box
@@ -16,7 +16,7 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.Velocity
-import app.lawnchair.ui.StretchEdgeEffect
+import app.yitap.ui.StretchEdgeEffect
 
 /**
  * Creates a custom overscroll effect based off the Android 12 "stretch" animation.

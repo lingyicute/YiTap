@@ -1,12 +1,12 @@
-package app.lawnchair.data
+package app.yitap.data
 
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SimpleSQLiteQuery
-import app.lawnchair.data.iconoverride.IconOverride
-import app.lawnchair.data.iconoverride.IconOverrideDao
+import app.yitap.data.iconoverride.IconOverride
+import app.yitap.data.iconoverride.IconOverrideDao
 import com.android.launcher3.util.MainThreadInitializedObject
 
 @Database(entities = [IconOverride::class], version = 1)

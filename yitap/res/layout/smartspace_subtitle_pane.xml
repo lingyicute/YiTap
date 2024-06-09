@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <app.lawnchair.smartspace.DoubleShadowTextView
+    <app.yitap.smartspace.DoubleShadowTextView
         android:id="@+id/subtitle_text"
         style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <app.lawnchair.smartspace.DoubleShadowTextView
+    <app.yitap.smartspace.DoubleShadowTextView
         android:id="@+id/base_action_icon_subtitle"
         style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="0dp"

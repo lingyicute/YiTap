@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.yitap.qsb.providers
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetHostView
@@ -6,9 +6,9 @@ import android.content.Context
 import android.content.Intent
 import android.view.View
 import androidx.core.view.descendants
-import app.lawnchair.HeadlessWidgetsManager
-import app.lawnchair.qsb.ThemingMethod
-import app.lawnchair.util.pendingIntent
+import app.yitap.HeadlessWidgetsManager
+import app.yitap.qsb.ThemingMethod
+import app.yitap.util.pendingIntent
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 import com.android.launcher3.qsb.QsbContainerView

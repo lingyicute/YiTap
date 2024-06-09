@@ -56,8 +56,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Abstract representation of the shape of an icon shape
@@ -163,7 +163,7 @@ public abstract class IconShape {
 
     public static final class AdaptiveIconShape extends PathShape {
 
-        private final app.lawnchair.icons.shape.IconShape mIconShape;
+        private final app.yitap.icons.shape.IconShape mIconShape;
 
         public AdaptiveIconShape(Context context) {
             PreferenceManager2 preferenceManager2 = PreferenceManager2.getInstance(context);

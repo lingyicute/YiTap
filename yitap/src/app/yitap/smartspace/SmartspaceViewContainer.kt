@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.graphics.Rect
@@ -8,10 +8,10 @@ import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.widget.FrameLayout
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Routes
+import app.yitap.YitapLauncher
+import app.yitap.launcher
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.navigation.Routes
 import com.android.launcher3.CheckLongPressHelper
 import com.android.launcher3.R
 import com.android.launcher3.logging.StatsLogManager
@@ -43,7 +43,7 @@ class SmartspaceViewContainer @JvmOverloads constructor(
         val launcher = context.launcher
         val pos = Rect()
         launcher.dragLayer.getDescendantRectRelativeToSelf(smartspaceView, pos)
-        OptionsPopupView.show<LawnchairLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
+        OptionsPopupView.show<YitapLauncher>(launcher, RectF(pos), listOf(getCustomizeOption()), true)
     }
 
     private fun getCustomizeOption() = OptionsPopupView.OptionItem(

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!--
 /*
 **
-** Copyright (c) 2021, Lawnchair
+** Copyright (c) 2021, Yitap
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -52,11 +52,11 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="app.lawnchair.ui.preferences.PreferenceActivity"
+            android:name="app.yitap.ui.preferences.PreferenceActivity"
             android:autoRemoveFromRecents="true"
             android:exported="true"
             android:label="@string/settings_button_text"
-            android:theme="@style/Theme.Lawnchair"
+            android:theme="@style/Theme.Yitap"
             android:windowSoftInputMode="adjustResize"
             android:enableOnBackInvokedCallback="true">
             <intent-filter android:priority="1">
@@ -70,15 +70,15 @@
             tools:node="remove" />
 
         <activity
-            android:name="app.lawnchair.BlankActivity"
+            android:name="app.yitap.BlankActivity"
             android:theme="@style/Theme.Transparent" />
 
         <activity
-            android:name="app.lawnchair.smartspace.SmartspacePreferencesShortcut"
+            android:name="app.yitap.smartspace.SmartspacePreferencesShortcut"
             android:theme="@style/Theme.Transparent" />
 
         <receiver
-            android:name="app.lawnchair.gestures.handlers.SleepMethodDeviceAdmin$SleepDeviceAdmin"
+            android:name="app.yitap.gestures.handlers.SleepMethodDeviceAdmin$SleepDeviceAdmin"
             android:description="@string/dt2s_admin_hint"
             android:exported="true"
             android:label="@string/derived_app_name"
@@ -92,7 +92,7 @@
         </receiver>
 
         <service
-            android:name="app.lawnchair.LawnchairAccessibilityService"
+            android:name="app.yitap.YitapAccessibilityService"
             android:exported="false"
             android:label="@string/derived_app_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
@@ -105,7 +105,7 @@
         </service>
 
         <provider
-            android:name="app.lawnchair.bugreport.FileProvider"
+            android:name="app.yitap.bugreport.FileProvider"
             android:authorities="${applicationId}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -115,13 +115,13 @@
         </provider>
 
         <provider
-            android:name="app.lawnchair.search.LawnchairRecentSuggestionProvider"
-            android:authorities="${applicationId}.search.LawnchairRecentSuggestionProvider"
+            android:name="app.yitap.search.YitapRecentSuggestionProvider"
+            android:authorities="${applicationId}.search.YitapRecentSuggestionProvider"
             android:syncable="true"
             android:exported="false" />
 
         <receiver
-            android:name="app.lawnchair.bugreport.BugReportReceiver"
+            android:name="app.yitap.bugreport.BugReportReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="${applicationId}.bugreport.COPY" />
@@ -131,13 +131,13 @@
         </receiver>
 
         <service
-            android:name="app.lawnchair.bugreport.UploaderService"
+            android:name="app.yitap.bugreport.UploaderService"
             android:enabled="true"
             android:exported="false"
             android:process=":bugReport" />
 
         <receiver
-            android:name="app.lawnchair.smartspace.SmartspaceAppWidgetProvider"
+            android:name="app.yitap.smartspace.SmartspaceAppWidgetProvider"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

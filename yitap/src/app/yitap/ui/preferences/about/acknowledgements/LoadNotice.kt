@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about.acknowledgements
+package app.yitap.ui.preferences.about.acknowledgements
 
 import android.text.SpannableString
 import android.text.style.URLSpan

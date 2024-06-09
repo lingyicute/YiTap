@@ -1,4 +1,4 @@
-package app.lawnchair.bugreport
+package app.yitap.bugreport
 
 object UploaderUtils {
 

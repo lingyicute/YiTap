@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package app.lawnchair.common
+package app.yitap.common
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -31,7 +31,7 @@ import androidx.annotation.RequiresApi
 import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.FloatPropertyCompat
 import androidx.dynamicanimation.animation.SpringForce
-import app.lawnchair.animation.PhysicsAnimator
+import app.yitap.animation.PhysicsAnimator
 import kotlin.math.abs
 import kotlin.math.hypot
 

@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.util.AttributeSet

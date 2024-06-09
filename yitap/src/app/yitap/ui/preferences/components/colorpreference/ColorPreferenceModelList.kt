@@ -1,7 +1,7 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
 import android.content.Context
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.preferences2.PreferenceManager2
 import com.android.launcher3.R
 import com.android.launcher3.util.MainThreadInitializedObject
 

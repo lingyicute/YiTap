@@ -1,6 +1,6 @@
-package app.lawnchair.util
+package app.yitap.util
 
-import LawnchairLockedStateController
+import YitapLockedStateController
 import android.content.ComponentName
 import android.content.Context
 import android.os.Bundle
@@ -18,7 +18,7 @@ object TaskUtilLockState {
     private const val RECENT_LOCK_LIST = "recent_lock_list"
 
     fun setTaskLockState(context: Context, componentName: ComponentName, isState: Boolean, taskKey: Task.TaskKey) {
-        LawnchairLockedStateController.initialize(context).setTaskLockState(componentName.toShortString(), isState, taskKey.userId)
+        YitapLockedStateController.initialize(context).setTaskLockState(componentName.toShortString(), isState, taskKey.userId)
         val formatLockedAppStr = toFormatLockedAppStr(componentName.packageName, taskKey.userId)
         if (isState) {
             addLockedApp(formatLockedAppStr)
@@ -63,7 +63,7 @@ object TaskUtilLockState {
     }
 
     private fun updateSpecifiedTaskLockState(context: Context, componentName: ComponentName, taskKey: Task.TaskKey): Boolean {
-        val taskLockState = LawnchairLockedStateController.initialize(context)
+        val taskLockState = YitapLockedStateController.initialize(context)
             .getTaskLockState(componentName.toShortString(), taskKey.userId)
         Log.d(TAG, "updateSpecifiedTaskLockState: Checking if the task is locked: $taskLockState")
         if (taskLockState) {

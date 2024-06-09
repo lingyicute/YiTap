@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 fun Int.hasFlag(flag: Int): Boolean {
     return (this and flag) == flag

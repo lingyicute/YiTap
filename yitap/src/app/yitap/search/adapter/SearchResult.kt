@@ -1,4 +1,4 @@
-package app.lawnchair.search.adapter
+package app.yitap.search.adapter
 
 data class SearchResult(
     val resultType: String,

@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -12,9 +12,9 @@ import android.view.View.MeasureSpec.makeMeasureSpec
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.viewpager.widget.ViewPager
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.smartspace.provider.SmartspaceProvider
-import app.lawnchair.util.repeatOnAttached
+import app.yitap.smartspace.model.SmartspaceTarget
+import app.yitap.smartspace.provider.SmartspaceProvider
+import app.yitap.util.repeatOnAttached
 import com.android.launcher3.R
 import kotlin.math.roundToInt
 import kotlinx.coroutines.flow.launchIn

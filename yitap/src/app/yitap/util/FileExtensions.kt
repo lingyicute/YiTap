@@ -1,8 +1,8 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.net.Uri
 import androidx.core.content.FileProvider
-import app.lawnchair.LawnchairApp
+import app.yitap.YitapApp
 import java.io.File
 import okio.FileMetadata
 import okio.FileSystem
@@ -53,12 +53,12 @@ internal val Path.nameWithoutExtension: String get() = name.substringBeforeLast(
 
 internal val Path.mimeType: String? get() = extension?.extension2MimeType()
 
-val fileProviderAuthority: String = "${LawnchairApp.instance.packageName}.fileprovider"
+val fileProviderAuthority: String = "${YitapApp.instance.packageName}.fileprovider"
 
 fun String.path2Uri(): Uri? = File(this).file2Uri()
 
 fun File.file2Uri(): Uri? = try {
-    FileProvider.getUriForFile(LawnchairApp.instance, fileProviderAuthority, this)
+    FileProvider.getUriForFile(YitapApp.instance, fileProviderAuthority, this)
 } catch (e: Exception) {
     e.printStackTrace()
     null

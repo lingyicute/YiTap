@@ -1,4 +1,4 @@
-package app.lawnchair.theme
+package app.yitap.theme
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,13 +9,13 @@ import android.os.Looper
 import android.os.PatternMatcher
 import android.util.SparseArray
 import androidx.core.graphics.ColorUtils
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.theme.color.AndroidColor
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.theme.color.MonetColorSchemeCompat
-import app.lawnchair.theme.color.SystemColorScheme
-import app.lawnchair.ui.theme.getSystemAccent
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.theme.color.AndroidColor
+import app.yitap.theme.color.ColorOption
+import app.yitap.theme.color.MonetColorSchemeCompat
+import app.yitap.theme.color.SystemColorScheme
+import app.yitap.ui.theme.getSystemAccent
+import app.yitap.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.MainThreadInitializedObject
 import com.patrykmichalik.opto.core.firstBlocking
@@ -77,10 +77,10 @@ class ThemeProvider(private val context: Context) {
         is ColorOption.SystemAccent -> systemColorScheme
         is ColorOption.WallpaperPrimary -> {
             val wallpaperPrimary = wallpaperManager.wallpaperColors?.primaryColor
-            getColorScheme(wallpaperPrimary ?: ColorOption.LawnchairBlue.color)
+            getColorScheme(wallpaperPrimary ?: ColorOption.YitapBlue.color)
         }
         is ColorOption.CustomColor -> getColorScheme(accentColor.color)
-        else -> getColorScheme(ColorOption.LawnchairBlue.color)
+        else -> getColorScheme(ColorOption.YitapBlue.color)
     }
 
     private val systemColorScheme get() = when {

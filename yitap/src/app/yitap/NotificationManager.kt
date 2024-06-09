@@ -1,9 +1,9 @@
-package app.lawnchair
+package app.yitap
 
 import android.content.Context
 import android.content.pm.PackageManager
 import android.service.notification.StatusBarNotification
-import app.lawnchair.util.checkPackagePermission
+import app.yitap.util.checkPackagePermission
 import com.android.launcher3.notification.NotificationListener
 import com.android.launcher3.util.MainThreadInitializedObject
 import kotlinx.coroutines.Dispatchers

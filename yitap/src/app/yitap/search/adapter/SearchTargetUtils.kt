@@ -1,4 +1,4 @@
-package app.lawnchair.search.adapter
+package app.yitap.search.adapter
 
 import android.content.pm.ShortcutInfo
 import android.os.Bundle

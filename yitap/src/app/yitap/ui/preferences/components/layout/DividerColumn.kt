@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -14,7 +14,7 @@ import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.theme.dividerColor
+import app.yitap.ui.theme.dividerColor
 import kotlin.math.roundToInt
 
 @Composable

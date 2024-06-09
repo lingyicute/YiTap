@@ -54,9 +54,9 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
-import app.lawnchair.icons.ExtendedBitmapDrawable;
-import app.lawnchair.icons.IconPreferencesKt;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.ExtendedBitmapDrawable;
+import app.yitap.icons.IconPreferencesKt;
 
 /**
  * Class to handle monochrome themed app icons

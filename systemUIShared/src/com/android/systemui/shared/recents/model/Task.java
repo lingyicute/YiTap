@@ -42,7 +42,7 @@ import com.android.internal.util.ArrayUtils;
 import java.io.PrintWriter;
 import java.util.Objects;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * A task in the recent tasks list.
@@ -247,7 +247,7 @@ public class Task {
 
     // Last snapshot data, only used for recent tasks
     public ActivityManager.RecentTaskInfo.PersistedTaskSnapshotData lastSnapshotData =
-            LawnchairQuickstepCompat.ATLEAST_S
+            YitapQuickstepCompat.ATLEAST_S
                     ? new ActivityManager.RecentTaskInfo.PersistedTaskSnapshotData()
                     : null;
 
@@ -262,7 +262,7 @@ public class Task {
         ActivityManager.TaskDescription td = taskInfo.taskDescription;
         // Also consider undefined activity type to include tasks in overview right after rebooting
         // the device.
-        final boolean isDockable = LawnchairQuickstepCompat.ATLEAST_S && taskInfo.supportsMultiWindow
+        final boolean isDockable = YitapQuickstepCompat.ATLEAST_S && taskInfo.supportsMultiWindow
                 && ArrayUtils.contains(
                         CONTROLLED_WINDOWING_MODES_WHEN_ACTIVE, taskInfo.getWindowingMode())
                 && (taskInfo.getActivityType() == ACTIVITY_TYPE_UNDEFINED
@@ -281,7 +281,7 @@ public class Task {
     public Task(Task other) {
         this(other.key, other.colorPrimary, other.colorBackground, other.isDockable,
                 other.isLocked, other.taskDescription, other.topActivity);
-        if (LawnchairQuickstepCompat.ATLEAST_S) {
+        if (YitapQuickstepCompat.ATLEAST_S) {
             ((ActivityManager.RecentTaskInfo.PersistedTaskSnapshotData) lastSnapshotData)
                     .set((ActivityManager.RecentTaskInfo.PersistedTaskSnapshotData) other.lastSnapshotData);
         }
@@ -315,7 +315,7 @@ public class Task {
     }
 
     public void setLastSnapshotData(ActivityManager.RecentTaskInfo rawTask) {
-        if (LawnchairQuickstepCompat.ATLEAST_S) {
+        if (YitapQuickstepCompat.ATLEAST_S) {
             ((ActivityManager.RecentTaskInfo.PersistedTaskSnapshotData) lastSnapshotData)
                     .set(rawTask.lastSnapshotData);
         }

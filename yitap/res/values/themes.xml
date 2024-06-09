@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.Lawnchair" parent="Base.Theme.Lawnchair">
+    <style name="Theme.Yitap" parent="Base.Theme.Yitap">
         <!-- Let the activity handle icon colors -->
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
     </style>
 
-    <style name="Base.Theme.Lawnchair" parent="Base.Theme.MaterialThemeBuilder">
+    <style name="Base.Theme.Yitap" parent="Base.Theme.MaterialThemeBuilder">
         <item name="android:colorBackground">@color/white_50</item>
     </style>
 

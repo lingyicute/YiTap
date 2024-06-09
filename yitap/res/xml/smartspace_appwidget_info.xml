@@ -6,7 +6,7 @@
     android:targetCellHeight="1"
     android:updatePeriodMillis="0"
     android:description="@string/smartspace_widget"
-    android:configure="app.lawnchair.smartspace.SmartspacePreferencesShortcut"
+    android:configure="app.yitap.smartspace.SmartspacePreferencesShortcut"
     android:initialLayout="@layout/smartspace_widget_placeholder"
     android:previewLayout="@layout/smartspace_widget_placeholder"
     android:resizeMode="horizontal|vertical"

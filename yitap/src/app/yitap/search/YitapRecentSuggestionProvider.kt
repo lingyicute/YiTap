@@ -1,11 +1,11 @@
-package app.lawnchair.search
+package app.yitap.search
 
 import android.content.SearchRecentSuggestionsProvider
 import com.android.launcher3.BuildConfig
 
-class LawnchairRecentSuggestionProvider : SearchRecentSuggestionsProvider() {
+class YitapRecentSuggestionProvider : SearchRecentSuggestionsProvider() {
     companion object {
-        const val AUTHORITY = BuildConfig.APPLICATION_ID + ".search.LawnchairRecentSuggestionProvider"
+        const val AUTHORITY = BuildConfig.APPLICATION_ID + ".search.YitapRecentSuggestionProvider"
         const val MODE = DATABASE_MODE_QUERIES
     }
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.compatlib.utils;
+package app.yitap.compatlib.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.ColorSpace;

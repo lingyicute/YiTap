@@ -16,7 +16,7 @@
 -->
 <!-- NOTE! don't add dimensions for margins / gravity to root view in this file, they need to be
      loaded at runtime. -->
-<app.lawnchair.overview.LawnchairOverviewActionsView xmlns:android="http://schemas.android.com/apk/res/android"
+<app.yitap.overview.YitapOverviewActionsView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal|bottom">
@@ -33,7 +33,7 @@
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <app.lawnchair.views.CustomButton
+        <app.yitap.views.CustomButton
             android:id="@+id/action_screenshot"
             style="@style/OverviewActionButton"
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_weight="1"
             android:visibility="gone" />
 
-        <app.lawnchair.views.CustomButton
+        <app.yitap.views.CustomButton
             android:id="@+id/action_share"
             style="@style/OverviewActionButton"
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
             android:layout_height="1dp"
             android:visibility="gone" />
 
-        <app.lawnchair.views.CustomButton
+        <app.yitap.views.CustomButton
             android:id="@+id/action_lens"
             style="@style/OverviewActionButton"
             android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
             android:layout_weight="1"
             android:visibility="gone" />
 
-        <app.lawnchair.views.CustomButton
+        <app.yitap.views.CustomButton
             style="@style/OverviewActionButton"
             android:id="@+id/action_clear_all"
             android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
             android:layout_weight="1"
             android:visibility="gone" />
 
-        <app.lawnchair.views.CustomButton
+        <app.yitap.views.CustomButton
             style="@style/OverviewActionButton"
             android:id="@+id/action_locked"
             android:layout_width="wrap_content"
@@ -125,4 +125,4 @@
             android:visibility="gone" />
     </LinearLayout>
 
-</app.lawnchair.overview.LawnchairOverviewActionsView>
+</app.yitap.overview.YitapOverviewActionsView>

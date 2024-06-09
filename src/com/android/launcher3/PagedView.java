@@ -64,7 +64,7 @@ import com.android.launcher3.views.ActivityContext;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-import app.lawnchair.ui.StretchEdgeEffect;
+import app.yitap.ui.StretchEdgeEffect;
 
 /**
  * An abstraction of the original Workspace which supports browsing through a

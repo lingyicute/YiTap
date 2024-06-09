@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.R as AndroidR
 import android.app.Activity
@@ -14,13 +14,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.gestures.config.GestureHandlerOption
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.LocalBottomSheetHandler
+import app.yitap.gestures.config.GestureHandlerConfig
+import app.yitap.gestures.config.GestureHandlerOption
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.components.layout.PreferenceDivider
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.util.LocalBottomSheetHandler
 import kotlinx.coroutines.launch
 
 val options = listOf(

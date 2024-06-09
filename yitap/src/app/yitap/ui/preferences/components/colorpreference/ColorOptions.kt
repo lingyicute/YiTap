@@ -1,6 +1,6 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
-import app.lawnchair.theme.color.ColorOption
+import app.yitap.theme.color.ColorOption
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toPersistentList
 
@@ -9,7 +9,7 @@ val staticColors: ImmutableList<ColorPreferenceEntry<ColorOption>> = sequenceOf(
     ColorOption.CustomColor(0xFFF20D69),
     ColorOption.CustomColor(0xFF7452FF),
     ColorOption.CustomColor(0xFF2C41C9),
-    ColorOption.LawnchairBlue,
+    ColorOption.YitapBlue,
     ColorOption.CustomColor(0xFF00BAD6),
     ColorOption.CustomColor(0xFF00A399),
     ColorOption.CustomColor(0xFF47B84F),

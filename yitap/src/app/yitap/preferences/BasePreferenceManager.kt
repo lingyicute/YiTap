@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences
+package app.yitap.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import app.lawnchair.font.FontCache
+import app.yitap.font.FontCache
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.Utilities
 import java.util.concurrent.CopyOnWriteArraySet

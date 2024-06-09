@@ -75,10 +75,10 @@ import java.io.PrintWriter;
 import java.util.Locale;
 import java.util.function.Consumer;
 
-import app.lawnchair.DeviceProfileOverrides;
-import app.lawnchair.hotseat.HotseatMode;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorOption;
+import app.yitap.DeviceProfileOverrides;
+import app.yitap.hotseat.HotseatMode;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.theme.color.ColorOption;
 
 @SuppressLint("NewApi")
 public class DeviceProfile {

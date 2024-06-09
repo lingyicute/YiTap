@@ -1,4 +1,4 @@
-package app.lawnchair.nexuslauncher
+package app.yitap.nexuslauncher
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetManager

@@ -39,8 +39,8 @@ import com.android.launcher3.popup.PopupContainerWithArrow;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.BubbleTextHolder;
 
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.util.DrawableUtilsKt;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.util.DrawableUtilsKt;
 
 /**
  * A {@link android.widget.FrameLayout} that contains an icon and a {@link BubbleTextView} for text.

@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.eleven;
+package app.yitap.compatlib.eleven;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_BOTTOM;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_INVALID;

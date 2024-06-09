@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.bubbles
+package app.yitap.bubbles
 
 import android.animation.ObjectAnimator
 import android.content.Context
@@ -35,7 +35,7 @@ import androidx.core.content.ContextCompat
 import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.SpringForce.DAMPING_RATIO_LOW_BOUNCY
 import androidx.dynamicanimation.animation.SpringForce.STIFFNESS_LOW
-import app.lawnchair.animation.PhysicsAnimator
+import app.yitap.animation.PhysicsAnimator
 import com.android.launcher3.Utilities
 import com.android.wm.shell.common.bubbles.DismissCircleView
 

@@ -52,8 +52,8 @@ import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.icons.LawnchairIconProvider;
+import app.yitap.YitapApp;
+import app.yitap.icons.YitapIconProvider;
 
 /**
  * Singleton class to load and manage recents model.
@@ -82,12 +82,12 @@ public class RecentsModel implements IconChangeListener, TaskStackChangeListener
                 context.getSystemService(KeyguardManager.class),
                 SystemUiProxy.INSTANCE.get(context));
 
-        IconProvider iconProvider = new LawnchairIconProvider(context);
+        IconProvider iconProvider = new YitapIconProvider(context);
         mIconCache = new TaskIconCache(context, RECENTS_MODEL_EXECUTOR, iconProvider);
         mIconCache.registerTaskVisualsChangeListener(this);
         mThumbnailCache = new TaskThumbnailCache(context, RECENTS_MODEL_EXECUTOR);
 
-        if (LawnchairApp.isRecentsEnabled()) {
+        if (YitapApp.isRecentsEnabled()) {
             TaskStackChangeListeners.getInstance().registerTaskStackListener(this);
         }
         iconProvider.registerIconChangeListener(this, MAIN_EXECUTOR.getHandler());

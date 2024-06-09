@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Box
@@ -19,14 +19,14 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.asPreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.GridOverridesPreview
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.preferences.asPreferenceAdapter
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.GridOverridesPreview
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
 

@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib;
+package app.yitap.compatlib;
 
 import android.app.Activity;
 import android.app.ActivityManager;

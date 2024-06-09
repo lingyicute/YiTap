@@ -1,12 +1,12 @@
-package app.lawnchair.nexuslauncher
+package app.yitap.nexuslauncher
 
 import android.app.Activity
 import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.os.Bundle
-import app.lawnchair.FeedBridge
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.FeedBridge
+import app.yitap.YitapLauncher
+import app.yitap.preferences2.PreferenceManager2
 import com.android.launcher3.Launcher
 import com.android.launcher3.Utilities
 import com.android.systemui.plugins.shared.LauncherOverlayManager
@@ -25,7 +25,7 @@ import com.patrykmichalik.opto.core.firstBlocking
  *
  * Implements [LauncherClientCallbacks] and sends all the corresponding callbacks to [Launcher].
  */
-class OverlayCallbackImpl(private val mLauncher: LawnchairLauncher) :
+class OverlayCallbackImpl(private val mLauncher: YitapLauncher) :
     LauncherOverlay,
     LauncherClientCallbacks,
     LauncherOverlayManager,

@@ -1,4 +1,4 @@
-package app.lawnchair.theme.drawable
+package app.yitap.theme.drawable
 
 import android.content.Context
 import android.content.res.Resources
@@ -8,9 +8,9 @@ import android.util.TypedValue
 import androidx.annotation.AttrRes
 import androidx.annotation.DrawableRes
 import androidx.appcompat.content.res.AppCompatResources
-import app.lawnchair.theme.ResourceToken
-import app.lawnchair.theme.UiColorMode
-import app.lawnchair.theme.color.ColorToken
+import app.yitap.theme.ResourceToken
+import app.yitap.theme.UiColorMode
+import app.yitap.theme.color.ColorToken
 import com.android.launcher3.util.Themes
 import dev.kdrag0n.monet.theme.ColorScheme
 

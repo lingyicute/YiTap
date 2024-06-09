@@ -1,9 +1,9 @@
-package app.lawnchair
+package app.yitap
 
 import android.content.Context
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.firstBlocking
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.preferences2.firstBlocking
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.InvariantDeviceProfile.INDEX_DEFAULT
 import com.android.launcher3.InvariantDeviceProfile.INDEX_LANDSCAPE

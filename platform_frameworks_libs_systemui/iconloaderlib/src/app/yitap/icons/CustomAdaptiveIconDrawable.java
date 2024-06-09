@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.icons;
+package app.yitap.icons;
 
 import android.content.res.ColorStateList;
 import android.content.res.Resources;

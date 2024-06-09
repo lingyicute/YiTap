@@ -1,4 +1,4 @@
-package app.lawnchair.data
+package app.yitap.data
 
 import androidx.room.TypeConverter
 import com.android.launcher3.util.ComponentKey

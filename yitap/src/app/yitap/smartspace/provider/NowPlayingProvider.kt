@@ -1,17 +1,17 @@
-package app.lawnchair.smartspace.provider
+package app.yitap.smartspace.provider
 
 import android.app.Activity
 import android.content.Context
 import android.graphics.drawable.Icon
-import app.lawnchair.BlankActivity
-import app.lawnchair.getAppName
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.components.isNotificationServiceEnabled
-import app.lawnchair.ui.preferences.components.notificationDotsEnabled
-import app.lawnchair.ui.preferences.navigation.Routes
+import app.yitap.BlankActivity
+import app.yitap.getAppName
+import app.yitap.smartspace.model.SmartspaceAction
+import app.yitap.smartspace.model.SmartspaceScores
+import app.yitap.smartspace.model.SmartspaceTarget
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.components.isNotificationServiceEnabled
+import app.yitap.ui.preferences.components.notificationDotsEnabled
+import app.yitap.ui.preferences.navigation.Routes
 import com.android.launcher3.R
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow

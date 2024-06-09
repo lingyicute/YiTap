@@ -1,18 +1,18 @@
-package app.lawnchair.compat
+package app.yitap.compat
 
 import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast
-import app.lawnchair.compatlib.ActivityManagerCompat
-import app.lawnchair.compatlib.ActivityOptionsCompat
-import app.lawnchair.compatlib.QuickstepCompatFactory
-import app.lawnchair.compatlib.RemoteTransitionCompat
-import app.lawnchair.compatlib.eleven.QuickstepCompatFactoryVR
-import app.lawnchair.compatlib.fourteen.QuickstepCompatFactoryVU
-import app.lawnchair.compatlib.ten.QuickstepCompatFactoryVQ
-import app.lawnchair.compatlib.thirteen.QuickstepCompatFactoryVT
-import app.lawnchair.compatlib.twelve.QuickstepCompatFactoryVS
+import app.yitap.compatlib.ActivityManagerCompat
+import app.yitap.compatlib.ActivityOptionsCompat
+import app.yitap.compatlib.QuickstepCompatFactory
+import app.yitap.compatlib.RemoteTransitionCompat
+import app.yitap.compatlib.eleven.QuickstepCompatFactoryVR
+import app.yitap.compatlib.fourteen.QuickstepCompatFactoryVU
+import app.yitap.compatlib.ten.QuickstepCompatFactoryVQ
+import app.yitap.compatlib.thirteen.QuickstepCompatFactoryVT
+import app.yitap.compatlib.twelve.QuickstepCompatFactoryVS
 
-object LawnchairQuickstepCompat {
+object YitapQuickstepCompat {
 
     @ChecksSdkIntAtLeast(api = Build.VERSION_CODES.Q)
     @JvmField

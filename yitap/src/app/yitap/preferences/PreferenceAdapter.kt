@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences
+package app.yitap.preferences
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -26,9 +26,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences2.IdpPreference
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.firstBlocking
+import app.yitap.preferences2.IdpPreference
+import app.yitap.preferences2.asState
+import app.yitap.preferences2.firstBlocking
 import com.android.launcher3.InvariantDeviceProfile
 import com.patrykmichalik.opto.domain.Preference
 import kotlin.reflect.KProperty

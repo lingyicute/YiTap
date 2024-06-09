@@ -1,10 +1,10 @@
-package app.lawnchair.ui.preferences.views
+package app.yitap.ui.preferences.views
 
 import android.content.Context
 import androidx.appcompat.widget.AppCompatTextView
-import app.lawnchair.font.FontCache
-import app.lawnchair.ui.util.ViewPool
-import app.lawnchair.util.runOnMainThread
+import app.yitap.font.FontCache
+import app.yitap.ui.util.ViewPool
+import app.yitap.util.runOnMainThread
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

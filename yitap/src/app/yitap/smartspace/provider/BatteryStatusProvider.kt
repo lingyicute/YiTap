@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider
+package app.yitap.smartspace.provider
 
 import android.content.Context
 import android.content.Intent
@@ -6,11 +6,11 @@ import android.content.IntentFilter
 import android.graphics.drawable.Icon
 import android.os.BatteryManager
 import androidx.core.content.getSystemService
-import app.lawnchair.smartspace.model.SmartspaceAction
-import app.lawnchair.smartspace.model.SmartspaceScores
-import app.lawnchair.smartspace.model.SmartspaceTarget
-import app.lawnchair.util.broadcastReceiverFlow
-import app.lawnchair.util.formatShortElapsedTimeRoundingUpToMinutes
+import app.yitap.smartspace.model.SmartspaceAction
+import app.yitap.smartspace.model.SmartspaceScores
+import app.yitap.smartspace.model.SmartspaceTarget
+import app.yitap.util.broadcastReceiverFlow
+import app.yitap.util.formatShortElapsedTimeRoundingUpToMinutes
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import kotlinx.coroutines.flow.map

@@ -1,14 +1,14 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.GestureHandlerPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.GestureHandlerPreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.R
 
 @Composable

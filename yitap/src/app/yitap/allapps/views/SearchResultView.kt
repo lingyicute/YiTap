@@ -1,16 +1,16 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import app.lawnchair.search.adapter.CONTACT
-import app.lawnchair.search.adapter.FILES
-import app.lawnchair.search.adapter.MARKET_STORE
-import app.lawnchair.search.adapter.START_PAGE
-import app.lawnchair.search.adapter.SearchResultActionCallBack
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.WEB_SUGGESTION
+import app.yitap.search.adapter.CONTACT
+import app.yitap.search.adapter.FILES
+import app.yitap.search.adapter.MARKET_STORE
+import app.yitap.search.adapter.START_PAGE
+import app.yitap.search.adapter.SearchResultActionCallBack
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.search.adapter.WEB_SUGGESTION
 import com.android.app.search.LayoutType
 
 sealed interface SearchResultView {

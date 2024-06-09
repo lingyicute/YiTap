@@ -60,7 +60,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 public abstract class BaseIconCache {
 

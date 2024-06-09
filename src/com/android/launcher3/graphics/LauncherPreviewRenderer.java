@@ -115,16 +115,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import app.lawnchair.DeviceProfileOverrides;
-import app.lawnchair.data.iconoverride.IconOverrideRepository;
-import app.lawnchair.font.FontCache;
-import app.lawnchair.font.FontManager;
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
-import app.lawnchair.icons.IconPackProvider;
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.smartspace.provider.SmartspaceProvider;
-import app.lawnchair.theme.ThemeProvider;
+import app.yitap.DeviceProfileOverrides;
+import app.yitap.data.iconoverride.IconOverrideRepository;
+import app.yitap.font.FontCache;
+import app.yitap.font.FontManager;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.IconPackProvider;
+import app.yitap.preferences.PreferenceManager;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.smartspace.provider.SmartspaceProvider;
+import app.yitap.theme.ThemeProvider;
 
 /**
  * Utility class for generating the preview of Launcher for a given

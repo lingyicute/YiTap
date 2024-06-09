@@ -1,11 +1,11 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import kotlinx.collections.immutable.toPersistentList

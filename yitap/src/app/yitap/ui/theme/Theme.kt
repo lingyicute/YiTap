@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.theme
+package app.yitap.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
@@ -26,18 +26,18 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.theme.ThemeProvider
-import app.lawnchair.theme.toM3ColorScheme
-import app.lawnchair.ui.preferences.components.ThemeChoice
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.yitap.preferences.observeAsState
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.asState
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.theme.ThemeProvider
+import app.yitap.theme.toM3ColorScheme
+import app.yitap.ui.preferences.components.ThemeChoice
+import app.yitap.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.Utilities
 
 @Composable
-fun LawnchairTheme(
+fun YitapTheme(
     darkTheme: Boolean = isSelectedThemeDark,
     content: @Composable () -> Unit,
 ) {

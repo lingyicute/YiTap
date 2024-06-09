@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences2
+package app.yitap.preferences2
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -26,22 +26,22 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import app.lawnchair.font.FontCache
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.hotseat.HotseatMode
-import app.lawnchair.icons.CustomAdaptiveIconDrawable
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.icons.shape.IconShapeManager
-import app.lawnchair.preferences.PreferenceManager as LawnchairPreferenceManager
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.smartspace.model.SmartspaceCalendar
-import app.lawnchair.smartspace.model.SmartspaceMode
-import app.lawnchair.smartspace.model.SmartspaceTimeFormat
-import app.lawnchair.theme.color.ColorMode
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearch
-import app.lawnchair.util.kotlinxJson
+import app.yitap.font.FontCache
+import app.yitap.gestures.config.GestureHandlerConfig
+import app.yitap.hotseat.HotseatMode
+import app.yitap.icons.CustomAdaptiveIconDrawable
+import app.yitap.icons.shape.IconShape
+import app.yitap.icons.shape.IconShapeManager
+import app.yitap.preferences.PreferenceManager as YitapPreferenceManager
+import app.yitap.qsb.providers.QsbSearchProvider
+import app.yitap.search.algorithms.YitapSearchAlgorithm
+import app.yitap.smartspace.model.SmartspaceCalendar
+import app.yitap.smartspace.model.SmartspaceMode
+import app.yitap.smartspace.model.SmartspaceTimeFormat
+import app.yitap.theme.color.ColorMode
+import app.yitap.theme.color.ColorOption
+import app.yitap.ui.preferences.components.HiddenAppsInSearch
+import app.yitap.util.kotlinxJson
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.R
@@ -272,7 +272,7 @@ class PreferenceManager2 private constructor(private val context: Context) : Pre
 
     val searchAlgorithm = preference(
         key = stringPreferencesKey(name = "search_algorithm"),
-        defaultValue = LawnchairSearchAlgorithm.APP_SEARCH,
+        defaultValue = YitapSearchAlgorithm.APP_SEARCH,
         onSet = { reloadHelper.recreate() },
     )
 
@@ -288,7 +288,7 @@ class PreferenceManager2 private constructor(private val context: Context) : Pre
         onSet = { newValue ->
             if (!newValue) {
                 val fontCache = FontCache.INSTANCE.get(context)
-                LawnchairPreferenceManager.getInstance(context).fontWorkspace.set(newValue = fontCache.uiText)
+                YitapPreferenceManager.getInstance(context).fontWorkspace.set(newValue = fontCache.uiText)
             }
         },
     )

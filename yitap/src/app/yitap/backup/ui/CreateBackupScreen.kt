@@ -1,4 +1,4 @@
-package app.lawnchair.backup.ui
+package app.yitap.backup.ui
 
 import android.Manifest
 import android.app.Activity
@@ -37,20 +37,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.backup.LawnchairBackup
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.DummyLauncherBox
-import app.lawnchair.ui.preferences.components.WallpaperPreview
-import app.lawnchair.ui.preferences.components.controls.FlagSwitchPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.util.BackHandler
-import app.lawnchair.util.checkAndRequestFilesPermission
-import app.lawnchair.util.filesAndStorageGranted
-import app.lawnchair.util.hasFlag
-import app.lawnchair.util.removeFlag
+import app.yitap.backup.YitapBackup
+import app.yitap.preferences.PreferenceManager
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.DummyLauncherBox
+import app.yitap.ui.preferences.components.WallpaperPreview
+import app.yitap.ui.preferences.components.controls.FlagSwitchPreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.util.BackHandler
+import app.yitap.util.checkAndRequestFilesPermission
+import app.yitap.util.filesAndStorageGranted
+import app.yitap.util.hasFlag
+import app.yitap.util.removeFlag
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
@@ -95,7 +95,7 @@ fun CreateBackupScreen(
         scope.launch {
             creatingBackup = true
             try {
-                LawnchairBackup.create(context, contents, screenshot, uri)
+                YitapBackup.create(context, contents, screenshot, uri)
                 navController.popBackStack()
                 Toast.makeText(context, R.string.backup_create_success, Toast.LENGTH_SHORT).show()
             } catch (t: Throwable) {
@@ -111,7 +111,7 @@ fun CreateBackupScreen(
         val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
         intent.addCategory(Intent.CATEGORY_OPENABLE)
         intent.type = "*/*"
-        intent.putExtra(Intent.EXTRA_TITLE, LawnchairBackup.generateBackupFileName())
+        intent.putExtra(Intent.EXTRA_TITLE, YitapBackup.generateBackupFileName())
         request.launch(intent)
     }
 
@@ -123,8 +123,8 @@ fun CreateBackupScreen(
     ) {
         DisposableEffect(contents, hasLiveWallpaper, hasStoragePermission) {
             val canBackupWallpaper = hasLiveWallpaper || !hasStoragePermission
-            if (contents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER) && canBackupWallpaper) {
-                viewModel.setBackupContents(contents.removeFlag(LawnchairBackup.INCLUDE_WALLPAPER))
+            if (contents.hasFlag(YitapBackup.INCLUDE_WALLPAPER) && canBackupWallpaper) {
+                viewModel.setBackupContents(contents.removeFlag(YitapBackup.INCLUDE_WALLPAPER))
             }
             onDispose { }
         }
@@ -137,10 +137,10 @@ fun CreateBackupScreen(
                     .align(Alignment.CenterHorizontally)
                     .clip(MaterialTheme.shapes.large),
             ) {
-                if (contents.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER)) {
+                if (contents.hasFlag(YitapBackup.INCLUDE_WALLPAPER)) {
                     WallpaperPreview(modifier = Modifier.fillMaxSize())
                 }
-                if (contents.hasFlag(LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS)) {
+                if (contents.hasFlag(YitapBackup.INCLUDE_LAYOUT_AND_SETTINGS)) {
                     Image(
                         bitmap = screenshot.asImageBitmap(),
                         contentDescription = null,
@@ -155,19 +155,19 @@ fun CreateBackupScreen(
             FlagSwitchPreference(
                 flags = contents,
                 setFlags = viewModel::setBackupContents,
-                mask = LawnchairBackup.INCLUDE_LAYOUT_AND_SETTINGS,
+                mask = YitapBackup.INCLUDE_LAYOUT_AND_SETTINGS,
                 label = stringResource(id = R.string.backup_content_layout_and_settings),
             )
             FlagSwitchPreference(
                 flags = contents,
                 setFlags = {
-                    if (it.hasFlag(LawnchairBackup.INCLUDE_WALLPAPER) && !hasStoragePermission) {
+                    if (it.hasFlag(YitapBackup.INCLUDE_WALLPAPER) && !hasStoragePermission) {
                         checkAndRequestFilesPermission(context, PreferenceManager.getInstance(context))
                     } else {
                         viewModel.setBackupContents(it)
                     }
                 },
-                mask = LawnchairBackup.INCLUDE_WALLPAPER,
+                mask = YitapBackup.INCLUDE_WALLPAPER,
                 label = stringResource(id = R.string.backup_content_wallpaper),
                 enabled = !hasLiveWallpaper,
             )

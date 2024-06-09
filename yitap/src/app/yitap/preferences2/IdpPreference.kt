@@ -1,4 +1,4 @@
-package app.lawnchair.preferences2
+package app.yitap.preferences2
 
 import androidx.compose.runtime.Composable
 import androidx.datastore.core.DataStore

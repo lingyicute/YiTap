@@ -1,8 +1,8 @@
-package app.lawnchair.qsb.providers
+package app.yitap.qsb.providers
 
-import app.lawnchair.animateToAllApps
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.qsb.ThemingMethod
+import app.yitap.animateToAllApps
+import app.yitap.preferences.PreferenceManager
+import app.yitap.qsb.ThemingMethod
 import com.android.launcher3.Launcher
 import com.android.launcher3.R
 
@@ -12,7 +12,7 @@ data object Startpage : QsbSearchProvider(
     icon = R.drawable.ic_startpage,
     themingMethod = ThemingMethod.TINT,
     packageName = "",
-    website = "https://startpage.com/?segment=startpage.lawnchair",
+    website = "https://startpage.com/?segment=startpage.yitap",
     type = QsbSearchProviderType.LOCAL,
     sponsored = true,
 ) {

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-option java_package = "app.lawnchair";
-option java_outer_classname = "LawnchairProto";
+option java_package = "app.yitap";
+option java_outer_classname = "YitapProto";
 
 import "google/protobuf/timestamp.proto";
 
 message BackupInfo {
-    int32 lawnchair_version = 1;
+    int32 yitap_version = 1;
     int32 backup_version = 2;
     google.protobuf.Timestamp created_at = 3;
 

@@ -1,18 +1,18 @@
-package app.lawnchair.search.algorithms
+package app.yitap.search.algorithms
 
 import android.content.Context
 import android.content.pm.ShortcutInfo
 import android.os.Handler
-import app.lawnchair.launcher
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.search.LawnchairSearchAdapterProvider
-import app.lawnchair.search.adapter.GenerateSearchTarget
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.createSearchTarget
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearch
-import app.lawnchair.util.isDefaultLauncher
+import app.yitap.launcher
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.search.YitapSearchAdapterProvider
+import app.yitap.search.adapter.GenerateSearchTarget
+import app.yitap.search.adapter.SPACE
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.search.adapter.createSearchTarget
+import app.yitap.ui.preferences.components.HiddenAppsInSearch
+import app.yitap.util.isDefaultLauncher
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.model.AllAppsList
@@ -32,7 +32,7 @@ import kotlinx.coroutines.launch
 import me.xdrop.fuzzywuzzy.FuzzySearch
 import me.xdrop.fuzzywuzzy.algorithms.WeightedRatio
 
-class LawnchairAppSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(context) {
+class YitapAppSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) {
 
     private val appState = LauncherAppState.getInstance(context)
     private val resultHandler = Handler(Executors.MAIN_EXECUTOR.looper)
@@ -114,7 +114,7 @@ class LawnchairAppSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(c
         generateSearchTarget.getMarketSearchItem(query)?.let { searchTargets.add(it) }
 
         val adapterItems = transformSearchResults(searchTargets)
-        LawnchairSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
+        YitapSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
         return ArrayList(adapterItems)
     }
 

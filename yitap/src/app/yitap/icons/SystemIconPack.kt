@@ -1,11 +1,11 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.LauncherApps
 import android.graphics.drawable.Drawable
 import android.os.Process
-import app.lawnchair.util.requireSystemService
+import app.yitap.util.requireSystemService
 import com.android.launcher3.R
 import com.android.launcher3.pm.UserCache
 import com.android.launcher3.util.ComponentKey

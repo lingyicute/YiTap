@@ -1,4 +1,4 @@
-package app.lawnchair.factory
+package app.yitap.factory
 
 import android.appwidget.AppWidgetHost
 import android.content.Context
@@ -8,10 +8,10 @@ import com.android.launcher3.config.FeatureFlags
 import com.android.launcher3.widget.LauncherWidgetHolder
 import java.util.function.IntConsumer
 
-class LawnchairWidgetHolder(context: Context, intConsumer: IntConsumer?) : LauncherWidgetHolder(context, intConsumer) {
+class YitapWidgetHolder(context: Context, intConsumer: IntConsumer?) : LauncherWidgetHolder(context, intConsumer) {
 
     @Keep
-    class LawnchairHolderFactory
+    class YitapHolderFactory
     @Suppress("unused")
     constructor(@Suppress("UNUSED_PARAMETER") context: Context) :
         HolderFactory() {
@@ -51,7 +51,7 @@ class LawnchairWidgetHolder(context: Context, intConsumer: IntConsumer?) : Launc
                     }
                 }
             } else {
-                LawnchairWidgetHolder(context, appWidgetRemovedCallback)
+                YitapWidgetHolder(context, appWidgetRemovedCallback)
             }
         }
     }

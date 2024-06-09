@@ -30,7 +30,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * A {@link BubbleTextView} that has the shortcut icon on the left and drag handle on the right.

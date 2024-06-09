@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Indstil Lawnchair som din standard launcher for at få adgang til genveje og meget mere.</string>
+    <string name="set_default_launcher_tip">Indstil Yitap som din standard launcher for at få adgang til genveje og meget mere.</string>
     <string name="settings">Indstillinger</string>
     <string name="general_label">Generelt</string>
     <string name="general_description">Notifikationsprikker, Ikon pakke</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Ryd alle knap, Hjørne radius</string>
     <string name="about_label">Om</string>
     <string name="app_info_drop_target_label">App Info</string>
-    <string name="debug_restart_launcher">Genstart Lawnchair</string>
+    <string name="debug_restart_launcher">Genstart Yitap</string>
     <string name="experimental_features_label">Eksperimentelle funktioner</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Indsæt</string>
     <string name="copied_toast">Kopieret til udklipsholderen.</string>
     <string name="invalid_color">Ugyldig farve</string>
-    <string name="launcher_default_color">Administreret af Lawnchair</string>
+    <string name="launcher_default_color">Administreret af Yitap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Tilføj nye apps til startskærmen</string>
     <string name="minus_one_enable">Vis Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persisk</string>
     <string name="smartspace_preferences">Præferencer</string>
     <string name="smartspace_widget_toggle_label">Vis på startskærmen</string>
-    <string name="smartspace_widget_toggle_description">Overblik kan manuelt tilføjes til startskærmen ved at placere \"Lawnchair\"-widgeten</string>
+    <string name="smartspace_widget_toggle_description">Overblik kan manuelt tilføjes til startskærmen ved at placere \"Yitap\"-widgeten</string>
     <string name="smartspace_mode_label">Udbyder af Overblik</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google søgning</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bundafstand</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Appsøgning</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair har en indtægtsdelingsaftale. \n\nSøgninger med %1$s hjælper med at støtte Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Yitap har en indtægtsdelingsaftale. \n\nSøgninger med %1$s hjælper med at støtte Yitap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Hjemmside</string>
     <string name="qsb_search_provider_app_required">App påkrævet</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Åben søgning</string>
     <string name="pick_app_for_gesture">Vælg app</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Disse indstillinger vil blive ignoreret da Lawnchair ikke er sat som app-skifter leverandøren.</string>
+    <string name="quickswitch_ignored_warning">Disse indstillinger vil blive ignoreret da Yitap ikke er sat som app-skifter leverandøren.</string>
     <string name="translucent_background">Gennemsigtig baggrund</string>
     <string name="translucent_background_alpha">Baggrunds Gennemsigtighed</string>
     <string name="recents_actions_label">Hurtighandlinger</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Element fjernet</string>
     <string name="all_apps_no_search_results">Ingen apps fundet, der matcher “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Administratorrettigheder Påkrævet</string>
-    <string name="dt2s_admin_hint">For at bruge dobbelttryk for at sove, skal du indstille Lawnchair som en enhedsadminstrator-app. Tryk på Åbn indstillinger, og tryk derefter på \"Aktiver denne enhedsadminstrator-app\"</string>
+    <string name="dt2s_admin_hint">For at bruge dobbelttryk for at sove, skal du indstille Yitap som en enhedsadminstrator-app. Tryk på Åbn indstillinger, og tryk derefter på \"Aktiver denne enhedsadminstrator-app\"</string>
     <string name="dt2s_admin_warning">Dobbelttryk for at sove vil blive slået fra.</string>
     <string name="dt2s_a11y_hint_title">Slå tilgængelighedstjeneste til</string>
-    <string name="dt2s_a11y_hint">For at bruge dobbelttryk for at sove, skal du slå tilgængelighedsservice for Lawnchair til. Tryk på Åbn indstillinger\", og slå \"Brug Lawnchair\" til.</string>
+    <string name="dt2s_a11y_hint">For at bruge dobbelttryk for at sove, skal du slå tilgængelighedsservice for Yitap til. Tryk på Åbn indstillinger\", og slå \"Brug Yitap\" til.</string>
     <string name="dt2s_warning_open_settings">Åbn Indstillinger</string>
     <string name="loading">Indlæser…</string>
     <string name="system">System</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Forslag</string>
     <string name="show_suggested_apps_at_drawer_top">Vis forslåede apps i toppen af appskuffen</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Lawnchair-fejlrapport</string>
+    <string name="yitap_bug_report">Yitap-fejlrapport</string>
     <string name="crash_report_notif_title">%1$s crashede</string>
     <string name="action_upload_crash_report">Upload crashlog</string>
     <string name="action_copy_link">Kopier link</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Medier, filer og mere</string>
     <string name="search_pref_result_contacts_description">Kontakter og mere</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Giv Lawnchair Kontaker- og Telefon-tilladelserne for at søge efter kontakter.</string>
-    <string name="warn_files_permission_content">Giv Lawnchair lagringstilladelser for at søge i dine filer.</string>
+    <string name="warn_contact_permission_content">Giv Yitap Kontaker- og Telefon-tilladelserne for at søge efter kontakter.</string>
+    <string name="warn_files_permission_content">Giv Yitap lagringstilladelser for at søge i dine filer.</string>
     <string name="grant_requested_permissions">Giv tilladelser</string>
     <string name="pref_suggestion_label">Forslag</string>
     <string name="all_apps_device_search_hint">Søg</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global søgning (via ASI)</string>
     <string name="app_search_algorithm">Søgealgoritme</string>
     <string name="all_apps_search_result_calculator">Lommeregner</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

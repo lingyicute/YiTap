@@ -1,4 +1,4 @@
-package app.lawnchair.baseline
+package app.yitap.baseline
 
 import androidx.benchmark.macro.BaselineProfileMode
 import androidx.benchmark.macro.CompilationMode

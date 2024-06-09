@@ -1,11 +1,11 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.drawable.GradientDrawable
-import app.lawnchair.theme.color.generateColor
+import app.yitap.theme.color.generateColor
 
 fun GradientDrawable.getCornerRadiiCompat(): FloatArray? = try {
     cornerRadii

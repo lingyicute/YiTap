@@ -53,7 +53,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Widgets data model that is used by the adapters of the widget views and controllers.

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.controls
+package app.yitap.ui.preferences.components.controls
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Column
@@ -10,8 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
 
 /**
  * A toggle to enable a list of preferences.

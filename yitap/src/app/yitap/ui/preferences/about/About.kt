@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about
+package app.yitap.ui.preferences.about
 
 import android.content.Intent
 import android.net.Uri
@@ -43,11 +43,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.NavigationActionPreference
+import app.yitap.ui.preferences.components.controls.ClickablePreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 
@@ -178,7 +178,7 @@ private val links = listOf(
     Link(
         iconResId = R.drawable.ic_new_releases,
         labelResId = R.string.news,
-        url = "https://t.me/lawnchairci",
+        url = "https://t.me/yitapci",
     ),
     Link(
         iconResId = R.drawable.ic_help,
@@ -188,7 +188,7 @@ private val links = listOf(
     Link(
         iconResId = R.drawable.ic_x_twitter,
         labelResId = R.string.x_twitter,
-        url = "https://x.com/lawnchairapp",
+        url = "https://x.com/yitapapp",
     ),
     Link(
         iconResId = R.drawable.ic_github,
@@ -254,7 +254,7 @@ fun About(
                     .padding(horizontal = 16.dp),
             ) {
                 links.forEach { link ->
-                    LawnchairLink(
+                    YitapLink(
                         iconResId = link.iconResId,
                         label = stringResource(id = link.labelResId),
                         modifier = Modifier.weight(weight = 1f),
@@ -302,4 +302,4 @@ fun About(
     }
 }
 
-private const val CROWDIN_URL = "https://lawnchair.crowdin.com/lawnchair"
+private const val CROWDIN_URL = "https://yitap.crowdin.com/yitap"

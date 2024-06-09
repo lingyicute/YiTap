@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalSerializationApi::class)
 
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.Intent
 import android.os.UserHandle

@@ -47,9 +47,9 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 public class AppWidgetResizeFrame extends AbstractFloatingView implements View.OnKeyListener {
     private static final int SNAP_DURATION = 150;

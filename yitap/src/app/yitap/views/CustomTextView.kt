@@ -1,9 +1,9 @@
-package app.lawnchair.views
+package app.yitap.views
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import app.lawnchair.font.FontManager
+import app.yitap.font.FontManager
 
 abstract class CustomTextView @JvmOverloads constructor(
     context: Context,

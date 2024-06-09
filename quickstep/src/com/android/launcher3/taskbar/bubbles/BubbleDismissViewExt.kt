@@ -17,7 +17,7 @@
 
 package com.android.launcher3.taskbar.bubbles
 
-import app.lawnchair.bubbles.DismissView
+import app.yitap.bubbles.DismissView
 import com.android.launcher3.R
 
 /**

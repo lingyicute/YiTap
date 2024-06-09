@@ -1,4 +1,4 @@
-package app.lawnchair.overview
+package app.yitap.overview
 
 import android.app.ActivityManagerNative
 import android.app.ActivityOptions
@@ -13,9 +13,9 @@ import android.view.Display
 import android.view.View
 import android.view.WindowManagerGlobal
 import android.widget.Toast
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.compat.LawnchairQuickstepCompat
-import app.lawnchair.compatlib.eleven.WindowManagerCompatVR
+import app.yitap.YitapLauncher
+import app.yitap.compat.YitapQuickstepCompat
+import app.yitap.compatlib.eleven.WindowManagerCompatVR
 import com.android.launcher3.BaseDraggingActivity
 import com.android.launcher3.R
 import com.android.launcher3.logging.StatsLogManager.LauncherEvent
@@ -147,7 +147,7 @@ object TaskShortcutFactory {
         }
 
         private fun isAvailable(activity: BaseDraggingActivity, displayId: Int): Boolean {
-            return if (LawnchairQuickstepCompat.ATLEAST_T) {
+            return if (YitapQuickstepCompat.ATLEAST_T) {
                 false
             } else {
                 (
@@ -182,7 +182,7 @@ object TaskShortcutFactory {
                         Toast.LENGTH_SHORT,
                     )
                     appKilled.show()
-                    val rv: RecentsView<LawnchairLauncher, *> = mActivity.getOverviewPanel()
+                    val rv: RecentsView<YitapLauncher, *> = mActivity.getOverviewPanel()
                     rv.dismissTask(mTaskView, true, true)
                 } catch (e: RemoteException) {
                     Log.e("KillSystemShortcut", "onClick: ", e.cause)

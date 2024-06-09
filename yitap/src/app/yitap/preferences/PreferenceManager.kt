@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package app.lawnchair.preferences
+package app.yitap.preferences
 
 import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.font.FontCache
-import app.lawnchair.util.isOnePlusStock
+import app.yitap.YitapLauncher
+import app.yitap.font.FontCache
+import app.yitap.util.isOnePlusStock
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.model.DeviceGridState
 import com.android.launcher3.util.ComponentKey
@@ -33,7 +33,7 @@ class PreferenceManager private constructor(private val context: Context) : Base
     private val reloadGrid: () -> Unit = { idp.onPreferencesChanged(context) }
 
     private val recreate = {
-        LawnchairLauncher.instance?.recreateIfNotScheduled()
+        YitapLauncher.instance?.recreateIfNotScheduled()
         Unit
     }
 

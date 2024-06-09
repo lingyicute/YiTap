@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences
+package app.yitap.ui.preferences
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.requiredWidth
@@ -37,12 +37,12 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import app.lawnchair.ui.preferences.destinations.PreferencesDashboard
-import app.lawnchair.ui.preferences.navigation.InnerNavigation
-import app.lawnchair.ui.preferences.navigation.PreferencePane
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.ui.util.ProvideBottomSheetHandler
-import app.lawnchair.util.ProvideLifecycleState
+import app.yitap.ui.preferences.destinations.PreferencesDashboard
+import app.yitap.ui.preferences.navigation.InnerNavigation
+import app.yitap.ui.preferences.navigation.PreferencePane
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.ui.util.ProvideBottomSheetHandler
+import app.yitap.util.ProvideLifecycleState
 import com.google.accompanist.adaptive.HorizontalTwoPaneStrategy
 import com.google.accompanist.adaptive.TwoPane
 import soup.compose.material.motion.animation.rememberSlideDistance

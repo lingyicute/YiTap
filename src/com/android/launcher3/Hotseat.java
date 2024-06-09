@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2022 Lawnchair
+ * Modifications copyright 2022 Yitap
  */
 
 package com.android.launcher3;
@@ -31,10 +31,10 @@ import android.widget.FrameLayout;
 
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 
-import app.lawnchair.hotseat.DisabledHotseat;
-import app.lawnchair.hotseat.HotseatMode;
-import app.lawnchair.hotseat.LawnchairHotseat;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.hotseat.DisabledHotseat;
+import app.yitap.hotseat.HotseatMode;
+import app.yitap.hotseat.YitapHotseat;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * View class that represents the bottom row of the home screen.
@@ -75,7 +75,7 @@ public class Hotseat extends CellLayout implements Insettable {
         if (!hotseatMode.isAvailable(context)) {
             // The current hotseat mode is not available,
             // setting the hotseat mode to one that is always available
-            hotseatMode = LawnchairHotseat.INSTANCE;
+            hotseatMode = YitapHotseat.INSTANCE;
             PreferenceExtensionsKt.setBlocking(preferenceManager2.getHotseatMode(), hotseatMode);
         }
         int layoutId = hotseatMode.getLayoutResourceId();

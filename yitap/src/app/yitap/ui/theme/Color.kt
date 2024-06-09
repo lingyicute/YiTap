@@ -1,4 +1,4 @@
-package app.lawnchair.ui.theme
+package app.yitap.ui.theme
 
 import android.content.Context
 import android.graphics.Color
@@ -8,8 +8,8 @@ import androidx.annotation.ColorInt
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.core.graphics.ColorUtils
-import app.lawnchair.theme.UiColorMode
-import app.lawnchair.theme.color.ColorTokens
+import app.yitap.theme.UiColorMode
+import app.yitap.theme.color.ColorTokens
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.Themes

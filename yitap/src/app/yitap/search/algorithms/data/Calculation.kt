@@ -1,6 +1,6 @@
-package app.lawnchair.search.algorithms.data
+package app.yitap.search.algorithms.data
 
-import app.lawnchair.search.algorithms.data.calculator.Expressions
+import app.yitap.search.algorithms.data.calculator.Expressions
 
 data class Calculation(
     val equation: String,

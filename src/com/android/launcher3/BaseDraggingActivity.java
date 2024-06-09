@@ -50,7 +50,7 @@ import com.android.launcher3.util.TraceHelper;
 import com.android.launcher3.util.WallpaperColorHints;
 import com.android.launcher3.util.WindowBounds;
 
-import app.lawnchair.wallpaper.WallpaperManagerCompat;
+import app.yitap.wallpaper.WallpaperManagerCompat;
 
 /**
  * Extension of BaseActivity allowing support for drag-n-drop

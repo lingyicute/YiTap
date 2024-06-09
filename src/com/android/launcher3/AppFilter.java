@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 /**
  * Utility class to filter out components from various lists
  */

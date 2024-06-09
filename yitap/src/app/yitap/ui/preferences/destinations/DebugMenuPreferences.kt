@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
@@ -6,17 +6,17 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.datastore.preferences.core.Preferences
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.components.controls.ClickablePreference
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.TextPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.components.controls.ClickablePreference
+import app.yitap.ui.preferences.components.controls.MainSwitchPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.controls.TextPreference
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.settings.SettingsActivity
 import com.android.launcher3.uioverrides.flags.DeveloperOptionsFragment
 import com.patrykmichalik.opto.domain.Preference

@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.ContentUris
 import android.content.Context
@@ -8,7 +8,7 @@ import android.graphics.drawable.Icon
 import android.provider.CalendarContract
 import android.util.Log
 import android.view.View
-import app.lawnchair.smartspace.model.SmartspaceAction
+import app.yitap.smartspace.model.SmartspaceAction
 import com.android.launcher3.R
 
 object BcSmartSpaceUtil {

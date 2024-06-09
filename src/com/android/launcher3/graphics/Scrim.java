@@ -22,7 +22,7 @@ import android.graphics.Canvas;
 import android.util.FloatProperty;
 import android.view.View;
 
-import app.lawnchair.theme.color.ColorTokens;
+import app.yitap.theme.color.ColorTokens;
 
 /**
  * Contains general scrim properties such as wallpaper-extracted color that subclasses can use.

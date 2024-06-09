@@ -1,10 +1,10 @@
-package app.lawnchair.bugreport
+package app.yitap.bugreport
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Parcelable
-import app.lawnchair.LawnchairApp
+import app.yitap.YitapApp
 import com.android.launcher3.R
 import java.io.File
 import kotlinx.parcelize.Parcelize
@@ -42,7 +42,7 @@ data class BugReport(
     }
 
     fun getFileUri(context: Context): Uri? = file?.let {
-        LawnchairApp.getUriForFile(context, it)
+        YitapApp.getUriForFile(context, it)
     }
 
     fun createShareIntent(context: Context): Intent {
@@ -55,7 +55,7 @@ data class BugReport(
             }
             type = "text/plain"
         }
-        return Intent.createChooser(sendIntent, context.getText(R.string.lawnchair_bug_report))
+        return Intent.createChooser(sendIntent, context.getText(R.string.yitap_bug_report))
     }
 
     companion object {

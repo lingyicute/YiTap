@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.content.Context
 import android.os.Build
@@ -13,26 +13,26 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.not
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.search.algorithms.LawnchairSearchAlgorithm
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.HiddenAppsInSearchPreference
-import app.lawnchair.ui.preferences.components.SearchSuggestionPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.util.checkAndRequestFilesPermission
-import app.lawnchair.util.filesAndStorageGranted
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.not
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.search.algorithms.YitapSearchAlgorithm
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.HiddenAppsInSearchPreference
+import app.yitap.ui.preferences.components.SearchSuggestionPreference
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.controls.MainSwitchPreference
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.util.checkAndRequestFilesPermission
+import app.yitap.util.filesAndStorageGranted
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberPermissionState
@@ -70,7 +70,7 @@ fun SearchPreferences() {
 
             PreferenceGroup(heading = stringResource(id = R.string.show_search_result_types)) {
                 val searchAlgorithm = preferenceManager2().searchAlgorithm.getAdapter().state.value
-                if (searchAlgorithm != LawnchairSearchAlgorithm.ASI_SEARCH) {
+                if (searchAlgorithm != YitapSearchAlgorithm.ASI_SEARCH) {
                     @OptIn(ExperimentalPermissionsApi::class)
                     SearchSuggestionPreference(
                         adapter = prefs.searchResultApps.getAdapter(),
@@ -87,14 +87,14 @@ fun SearchPreferences() {
                     }
                 }
                 when (searchAlgorithm) {
-                    LawnchairSearchAlgorithm.LOCAL_SEARCH -> {
+                    YitapSearchAlgorithm.LOCAL_SEARCH -> {
                         LocalSearchSettings(
                             prefs = prefs,
                             prefs2 = prefs2,
                             context = context,
                         )
                     }
-                    LawnchairSearchAlgorithm.ASI_SEARCH -> {
+                    YitapSearchAlgorithm.ASI_SEARCH -> {
                         ASISearchSettings(prefs)
                     }
                 }
@@ -124,12 +124,12 @@ private fun SearchProvider(
     context: Context,
 ) {
     val searchAlgorithmEntries = sequenceOf(
-        ListPreferenceEntry(LawnchairSearchAlgorithm.APP_SEARCH) { stringResource(R.string.search_algorithm_app_search) },
-        ListPreferenceEntry(LawnchairSearchAlgorithm.LOCAL_SEARCH) { stringResource(R.string.search_algorithm_global_search_on_device) },
-        ListPreferenceEntry(LawnchairSearchAlgorithm.ASI_SEARCH) { stringResource(R.string.search_algorithm_global_search_via_asi) },
+        ListPreferenceEntry(YitapSearchAlgorithm.APP_SEARCH) { stringResource(R.string.search_algorithm_app_search) },
+        ListPreferenceEntry(YitapSearchAlgorithm.LOCAL_SEARCH) { stringResource(R.string.search_algorithm_global_search_on_device) },
+        ListPreferenceEntry(YitapSearchAlgorithm.ASI_SEARCH) { stringResource(R.string.search_algorithm_global_search_via_asi) },
     ).filter {
         when (it.value) {
-            LawnchairSearchAlgorithm.ASI_SEARCH -> LawnchairSearchAlgorithm.isASISearchEnabled(context)
+            YitapSearchAlgorithm.ASI_SEARCH -> YitapSearchAlgorithm.isASISearchEnabled(context)
             else -> true
         }
     }.toPersistentList()

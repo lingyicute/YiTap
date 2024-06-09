@@ -1,8 +1,8 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.yitap.ui.preferences.data.liveinfo
 
 import android.util.Log
-import app.lawnchair.ui.preferences.data.liveinfo.model.LiveInformation
-import app.lawnchair.util.kotlinxJson
+import app.yitap.ui.preferences.data.liveinfo.model.LiveInformation
+import app.yitap.util.kotlinxJson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
@@ -14,7 +14,7 @@ import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import retrofit2.create
 
 private val retrofit = Retrofit.Builder()
-    .baseUrl("https://lawnchair.app/")
+    .baseUrl("https://yitap.app/")
     .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
     .build()
 

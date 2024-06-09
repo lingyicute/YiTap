@@ -148,8 +148,8 @@ import java.lang.ref.WeakReference;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.YitapApp;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Service connected by system-UI for handling touch interaction.
@@ -164,7 +164,7 @@ public class TouchInteractionService extends Service {
 
     private static final String HAS_ENABLED_QUICKSTEP_ONCE = "launcher.has_enabled_quickstep_once";
 
-    private final TISBinder mTISBinder = LawnchairApp.isRecentsEnabled() ? new TISBinder(this) : null;
+    private final TISBinder mTISBinder = YitapApp.isRecentsEnabled() ? new TISBinder(this) : null;
 
     /**
      * Local IOverviewProxy implementation with some methods for local components
@@ -225,7 +225,7 @@ public class TouchInteractionService extends Service {
         @BinderThread
         @Override
         public void onTaskbarToggled() {
-            if (!FeatureFlags.ENABLE_KEYBOARD_TASKBAR_TOGGLE.get() || !LawnchairQuickstepCompat.ATLEAST_S)
+            if (!FeatureFlags.ENABLE_KEYBOARD_TASKBAR_TOGGLE.get() || !YitapQuickstepCompat.ATLEAST_S)
                 return;
             MAIN_EXECUTOR.execute(() -> executeForTouchInteractionService(tis -> {
                 TaskbarActivityContext activityContext = tis.mTaskbarManager.getCurrentActivityContext();
@@ -400,7 +400,7 @@ public class TouchInteractionService extends Service {
         @Nullable
         public TaskbarManager getTaskbarManager() {
             TouchInteractionService tis = mTis.get();
-            if (tis == null || !LawnchairQuickstepCompat.ATLEAST_S)
+            if (tis == null || !YitapQuickstepCompat.ATLEAST_S)
                 return null;
             return tis.mTaskbarManager;
         }
@@ -488,21 +488,21 @@ public class TouchInteractionService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        if (!LawnchairApp.isRecentsEnabled())
+        if (!YitapApp.isRecentsEnabled())
             return;
         // Initialize anything here that is needed in direct boot mode.
         // Everything else should be initialized in onUserUnlocked() below.
         mMainChoreographer = Choreographer.getInstance();
         mAM = ActivityManagerWrapper.getInstance();
         mDeviceState = new RecentsAnimationDeviceState(this, true);
-        mTaskbarManager = LawnchairQuickstepCompat.ATLEAST_S ? new TaskbarManager(this) : null;
+        mTaskbarManager = YitapQuickstepCompat.ATLEAST_S ? new TaskbarManager(this) : null;
         mRotationTouchHelper = mDeviceState.getRotationTouchHelper();
         BootAwarePreloader.start(this);
 
         // Call runOnUserUnlocked() before any other callbacks to ensure everything is
         // initialized.
         LockedUserState.get(this).runOnUserUnlocked(this::onUserUnlocked);
-        if (LawnchairQuickstepCompat.ATLEAST_S) {
+        if (YitapQuickstepCompat.ATLEAST_S) {
             LockedUserState.get(this).runOnUserUnlocked(mTaskbarManager::onUserUnlocked);
         }
         mDeviceState.addNavigationModeChangedCallback(this::onNavigationModeChanged);
@@ -528,7 +528,7 @@ public class TouchInteractionService extends Service {
             return;
         }
 
-        if (LawnchairQuickstepCompat.ATLEAST_S) {
+        if (YitapQuickstepCompat.ATLEAST_S) {
             mInputMonitorCompat = new InputMonitorCompat("swipe-up", mDeviceState.getDisplayId());
         } else {
             if (!SystemUiProxy.INSTANCE.get(this).isActive()) {
@@ -559,7 +559,7 @@ public class TouchInteractionService extends Service {
         mOverviewComponentObserver = new OverviewComponentObserver(this, mDeviceState);
         mOverviewCommandHelper = new OverviewCommandHelper(this,
                 mOverviewComponentObserver, mTaskAnimationManager);
-        if (LawnchairQuickstepCompat.ATLEAST_S && mTaskbarManager != null) {
+        if (YitapQuickstepCompat.ATLEAST_S && mTaskbarManager != null) {
             mResetGestureInputConsumer = new ResetGestureInputConsumer(
                     mTaskAnimationManager, mTaskbarManager::getCurrentActivityContext);
         }
@@ -604,7 +604,7 @@ public class TouchInteractionService extends Service {
     private void onOverviewTargetChange(boolean isHomeAndOverviewSame) {
         AccessibilityManager am = getSystemService(AccessibilityManager.class);
 
-        if (LawnchairQuickstepCompat.ATLEAST_R) {
+        if (YitapQuickstepCompat.ATLEAST_R) {
             if (isHomeAndOverviewSame) {
                 am.registerSystemAction(createAllAppsAction(), GLOBAL_ACTION_ACCESSIBILITY_ALL_APPS);
             } else {
@@ -680,7 +680,7 @@ public class TouchInteractionService extends Service {
 
     @Override
     public void onDestroy() {
-        if (!LawnchairApp.isRecentsEnabled()) {
+        if (!YitapApp.isRecentsEnabled()) {
             super.onDestroy();
             return;
         }
@@ -694,7 +694,7 @@ public class TouchInteractionService extends Service {
         mDeviceState.destroy();
         SystemUiProxy.INSTANCE.get(this).clearProxy();
 
-        if (LawnchairQuickstepCompat.ATLEAST_R) {
+        if (YitapQuickstepCompat.ATLEAST_R) {
             getSystemService(AccessibilityManager.class)
                     .unregisterSystemAction(GLOBAL_ACTION_ACCESSIBILITY_ALL_APPS);
         }

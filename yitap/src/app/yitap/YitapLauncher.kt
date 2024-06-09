@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair
+package app.yitap
 
 import android.app.ActivityOptions
 import android.content.Context
@@ -47,21 +47,21 @@ import androidx.lifecycle.lifecycleScope
 import androidx.savedstate.SavedStateRegistry
 import androidx.savedstate.SavedStateRegistryController
 import androidx.savedstate.SavedStateRegistryOwner
-import app.lawnchair.LawnchairApp.Companion.showQuickstepWarningIfNecessary
-import app.lawnchair.compat.LawnchairQuickstepCompat
-import app.lawnchair.factory.LawnchairWidgetHolder
-import app.lawnchair.gestures.GestureController
-import app.lawnchair.gestures.VerticalSwipeTouchController
-import app.lawnchair.gestures.config.GestureHandlerConfig
-import app.lawnchair.nexuslauncher.OverlayCallbackImpl
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.root.RootHelperManager
-import app.lawnchair.root.RootNotAvailableException
-import app.lawnchair.theme.ThemeProvider
-import app.lawnchair.ui.popup.LawnchairShortcut
-import app.lawnchair.util.getThemedIconPacksInstalled
-import app.lawnchair.util.unsafeLazy
+import app.yitap.YitapApp.Companion.showQuickstepWarningIfNecessary
+import app.yitap.compat.YitapQuickstepCompat
+import app.yitap.factory.YitapWidgetHolder
+import app.yitap.gestures.GestureController
+import app.yitap.gestures.VerticalSwipeTouchController
+import app.yitap.gestures.config.GestureHandlerConfig
+import app.yitap.nexuslauncher.OverlayCallbackImpl
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.root.RootHelperManager
+import app.yitap.root.RootNotAvailableException
+import app.yitap.theme.ThemeProvider
+import app.yitap.ui.popup.YitapShortcut
+import app.yitap.util.getThemedIconPacksInstalled
+import app.yitap.util.unsafeLazy
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.BaseActivity
 import com.android.launcher3.BubbleTextView
@@ -98,7 +98,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
-class LawnchairLauncher :
+class YitapLauncher :
     QuickstepLauncher(),
     LifecycleOwner,
     SavedStateRegistryOwner,
@@ -144,7 +144,7 @@ class LawnchairLauncher :
             input: I,
             options: ActivityOptionsCompat?,
         ) {
-            val activity = this@LawnchairLauncher
+            val activity = this@YitapLauncher
 
             // Immediate result path
             val synchronousResult = contract.getSynchronousResult(activity, input)
@@ -218,7 +218,7 @@ class LawnchairLauncher :
     override val lifecycle: LifecycleRegistry = LifecycleRegistry(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        layoutInflater.factory2 = LawnchairLayoutFactory(this)
+        layoutInflater.factory2 = YitapLayoutFactory(this)
         savedStateRegistryController.performRestore(savedInstanceState)
         super.onCreate(savedInstanceState)
         lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_CREATE)
@@ -232,7 +232,7 @@ class LawnchairLauncher :
         if (prefs.autoLaunchRoot.get()) {
             lifecycleScope.launch {
                 try {
-                    RootHelperManager.INSTANCE.get(this@LawnchairLauncher).getService()
+                    RootHelperManager.INSTANCE.get(this@YitapLauncher).getService()
                 } catch (_: RootNotAvailableException) {
                 }
             }
@@ -308,7 +308,7 @@ class LawnchairLauncher :
     }
 
     override fun getSupportedShortcuts(): Stream<SystemShortcut.Factory<*>> =
-        Stream.concat(super.getSupportedShortcuts(), Stream.of(LawnchairShortcut.UNINSTALL, LawnchairShortcut.CUSTOMIZE))
+        Stream.concat(super.getSupportedShortcuts(), Stream.of(YitapShortcut.UNINSTALL, YitapShortcut.CUSTOMIZE))
 
     override fun updateTheme() {
         if (themeProvider.colorScheme != colorScheme) {
@@ -328,13 +328,13 @@ class LawnchairLauncher :
     }
 
     override fun registerBackDispatcher() {
-        if (LawnchairApp.isAtleastT) {
+        if (YitapApp.isAtleastT) {
             super.registerBackDispatcher()
         }
     }
 
     override fun handleGestureContract(intent: Intent?) {
-        if (!LawnchairApp.isRecentsEnabled) {
+        if (!YitapApp.isRecentsEnabled) {
             val gnc = GestureNavContract.fromIntent(intent)
             if (gnc != null) {
                 AbstractFloatingView.closeOpenViews(
@@ -354,7 +354,7 @@ class LawnchairLauncher :
     }
 
     override fun createAppWidgetHolder(): LauncherWidgetHolder {
-        val factory = LauncherWidgetHolder.HolderFactory.newFactory(this) as LawnchairWidgetHolder.LawnchairHolderFactory
+        val factory = LauncherWidgetHolder.HolderFactory.newFactory(this) as YitapWidgetHolder.YitapHolderFactory
         return factory.newInstance(
             this,
         ) { appWidgetId: Int ->
@@ -367,7 +367,7 @@ class LawnchairLauncher :
     override fun makeDefaultActivityOptions(splashScreenStyle: Int): ActivityOptionsWrapper {
         val callbacks = RunnableList()
         val options = if (Utilities.ATLEAST_Q) {
-            LawnchairQuickstepCompat.activityOptionsCompat.makeCustomAnimation(
+            YitapQuickstepCompat.activityOptionsCompat.makeCustomAnimation(
                 this,
                 0,
                 0,
@@ -499,7 +499,7 @@ class LawnchairLauncher :
 
     private fun restartIfPending() {
         when {
-            sRestartFlags and FLAG_RESTART != 0 -> lawnchairApp.restart(false)
+            sRestartFlags and FLAG_RESTART != 0 -> yitapApp.restart(false)
             sRestartFlags and FLAG_RECREATE != 0 -> {
                 sRestartFlags = 0
                 recreate()
@@ -525,14 +525,14 @@ class LawnchairLauncher :
 
         var sRestartFlags = 0
 
-        val instance get() = LauncherAppState.getInstanceNoCreate()?.launcher as? LawnchairLauncher
+        val instance get() = LauncherAppState.getInstanceNoCreate()?.launcher as? YitapLauncher
     }
 }
 
-val Context.launcher: LawnchairLauncher
+val Context.launcher: YitapLauncher
     get() = BaseActivity.fromContext(this)
 
-val Context.launcherNullable: LawnchairLauncher? get() = try {
+val Context.launcherNullable: YitapLauncher? get() = try {
     launcher
 } catch (_: IllegalArgumentException) {
     null

@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.content.Context
 import android.icu.text.MeasureFormat

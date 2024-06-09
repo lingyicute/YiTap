@@ -1,15 +1,15 @@
-package app.lawnchair.search
+package app.yitap.search
 
 import android.util.SparseIntArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.util.contains
-import app.lawnchair.allapps.views.SearchItemDecorator
-import app.lawnchair.allapps.views.SearchResultView
-import app.lawnchair.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
-import app.lawnchair.search.adapter.SearchAdapterItem
-import app.lawnchair.search.adapter.SearchResultActionCallBack
+import app.yitap.allapps.views.SearchItemDecorator
+import app.yitap.allapps.views.SearchResultView
+import app.yitap.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
+import app.yitap.search.adapter.SearchAdapterItem
+import app.yitap.search.adapter.SearchResultActionCallBack
 import com.android.app.search.LayoutType
 import com.android.launcher3.DeviceProfile
 import com.android.launcher3.R
@@ -19,7 +19,7 @@ import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.allapps.search.DefaultSearchAdapterProvider
 import com.android.launcher3.views.ActivityContext
 
-class LawnchairSearchAdapterProvider(
+class YitapSearchAdapterProvider(
     launcher: ActivityContext,
     private val appsView: ActivityAllAppsContainerView<*>,
 ) : DefaultSearchAdapterProvider(launcher) {

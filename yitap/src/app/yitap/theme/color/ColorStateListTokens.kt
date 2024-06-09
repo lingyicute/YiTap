@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color
+package app.yitap.theme.color
 
 import android.content.res.ColorStateList
 

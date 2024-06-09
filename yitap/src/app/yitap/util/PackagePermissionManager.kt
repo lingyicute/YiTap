@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import android.Manifest
 import android.app.Activity
@@ -13,7 +13,7 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import app.lawnchair.preferences.PreferenceManager
+import app.yitap.preferences.PreferenceManager
 
 private const val TAG: String = "PackagePermissionManager"
 

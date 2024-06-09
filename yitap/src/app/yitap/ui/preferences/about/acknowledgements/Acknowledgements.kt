@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.about.acknowledgements
+package app.yitap.ui.preferences.about.acknowledgements
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.clickable
@@ -37,13 +37,13 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.layout.LoadingScreen
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayoutLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.ui.util.bottomSheetHandler
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.LocalPreferenceInteractor
+import app.yitap.ui.preferences.components.layout.LoadingScreen
+import app.yitap.ui.preferences.components.layout.PreferenceLayoutLazyColumn
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.preferences.components.layout.preferenceGroupItems
+import app.yitap.ui.util.bottomSheetHandler
 import com.android.launcher3.R
 
 @Composable

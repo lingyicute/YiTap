@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string name="app_filter_class" translatable="false">app.lawnchair.DefaultAppFilter</string>
+    <string name="app_filter_class" translatable="false">app.yitap.DefaultAppFilter</string>
     <string name="calendar_component_name" translatable="false">com.google.android.calendar/com.android.calendar.AllInOneActivity</string>
     <string-array name="dynamic_calendar_components_name">
         <item>com.android.calendar</item>
@@ -32,15 +32,15 @@
         <item>org.withouthat.acalendar</item>
         <item>ws.xsoh.etar</item>
     </string-array>
-    <string name="icon_packs_intent_name" translatable="false">app.lawnchair.icons.THEMED_ICON</string>
+    <string name="icon_packs_intent_name" translatable="false">app.yitap.icons.THEMED_ICON</string>
     <string name="clock_component_name" translatable="false">com.google.android.deskclock/com.android.deskclock.DeskClock</string>
-    <string name="launcher_activity_logic_class" translatable="false">app.lawnchair.LauncherActivityCachingLogic</string>
-    <string name="main_process_initializer_class" translatable="false">app.lawnchair.LawnchairProcessInitializer</string>
-    <string name="task_overlay_factory_class" translatable="false">app.lawnchair.overview.TaskOverlayFactoryImpl</string>
+    <string name="launcher_activity_logic_class" translatable="false">app.yitap.LauncherActivityCachingLogic</string>
+    <string name="main_process_initializer_class" translatable="false">app.yitap.YitapProcessInitializer</string>
+    <string name="task_overlay_factory_class" translatable="false">app.yitap.overview.TaskOverlayFactoryImpl</string>
     <string name="wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
     <string name="wallpaper_picker_package_alt" translatable="false">com.google.android.apps.wallpaper</string>
-    <string name="widget_holder_factory_class" translatable="false">app.lawnchair.factory.LawnchairWidgetHolder$LawnchairHolderFactory</string>
-    <string name="window_manager_proxy_class" translatable="false">app.lawnchair.util.LawnchairWindowManagerProxy</string>
+    <string name="widget_holder_factory_class" translatable="false">app.yitap.factory.YitapWidgetHolder$YitapHolderFactory</string>
+    <string name="window_manager_proxy_class" translatable="false">app.yitap.util.YitapWindowManagerProxy</string>
 
     <bool name="config_header_protection_supported">true</bool>
 
@@ -51,7 +51,7 @@
         <item>com.google.android.launcher/.StubApp</item>
         <!-- Action Services -->
         <item>com.google.android.as/com.google.android.apps.miphone.aiai.allapps.main.MainDummyActivity</item>
-        <!-- Lawnchair -->
+        <!-- Yitap -->
         <item>@string/launcher_component</item>
     </string-array>
 
@@ -73,13 +73,13 @@
     <string name="config_default_folder_color" translatable="false">default</string>
 
     <!-- which smartspace mode to use by default -->
-    <string name="config_default_smartspace_mode" translatable="false">lawnchair</string>
+    <string name="config_default_smartspace_mode" translatable="false">yitap</string>
 
     <!-- which time format to use by default on smartspace -->
     <string name="config_default_smartspace_time_format" translatable="false">system</string>
 
     <!-- which hotseat mode to use by default -->
-    <string name="config_default_hotseat_mode" translatable="false">lawnchair</string>
+    <string name="config_default_hotseat_mode" translatable="false">yitap</string>
 
     <bool name="config_default_show_hotseat">true</bool>
     <bool name="config_default_always_reload_icons">true</bool>

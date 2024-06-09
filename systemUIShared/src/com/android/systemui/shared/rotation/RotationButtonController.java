@@ -301,7 +301,7 @@ public class RotationButtonController {
             Class<?> rotationPolicyClass = Class.forName("com.android.internal.view.RotationPolicy");
             Method setRotationLockAtAngleMethod = rotationPolicyClass.getDeclaredMethod("setRotationLockAtAngle", Context.class, boolean.class, int.class, String.class);
             setRotationLockAtAngleMethod.setAccessible(true);
-            setRotationLockAtAngleMethod.invoke(null, mContext, isLocked, rotationSuggestion, "Lawnchair");
+            setRotationLockAtAngleMethod.invoke(null, mContext, isLocked, rotationSuggestion, "Yitap");
         } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException |
                  InvocationTargetException e) {
             RotationPolicy.setRotationLockAtAngle(mContext, /* enabled= */ isLocked,

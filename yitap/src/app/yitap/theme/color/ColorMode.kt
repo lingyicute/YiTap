@@ -1,8 +1,8 @@
-package app.lawnchair.theme.color
+package app.yitap.theme.color
 
 import androidx.annotation.StringRes
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
 import com.android.launcher3.R
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toPersistentList

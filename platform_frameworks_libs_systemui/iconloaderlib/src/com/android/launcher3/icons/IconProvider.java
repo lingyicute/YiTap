@@ -61,7 +61,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 /**
  * Class to handle icon loading from different packages

@@ -1,4 +1,4 @@
-package app.lawnchair.search.adapter
+package app.yitap.search.adapter
 
 import android.content.res.ColorStateList
 import android.graphics.drawable.InsetDrawable
@@ -6,8 +6,8 @@ import android.graphics.drawable.RippleDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.RoundRectShape
 import android.view.View
-import app.lawnchair.allapps.views.SearchItemBackground
-import app.lawnchair.search.LawnchairSearchAdapterProvider
+import app.yitap.allapps.views.SearchItemBackground
+import app.yitap.search.YitapSearchAdapterProvider
 import com.android.launcher3.allapps.BaseAllAppsAdapter
 
 data class SearchAdapterItem(
@@ -46,7 +46,7 @@ data class SearchAdapterItem(
             target: SearchTargetCompat,
             background: SearchItemBackground?,
         ): SearchAdapterItem? {
-            val type = LawnchairSearchAdapterProvider.viewTypeMap[target.layoutType] ?: return null
+            val type = YitapSearchAdapterProvider.viewTypeMap[target.layoutType] ?: return null
             return SearchAdapterItem(target, background, type)
         }
     }

@@ -32,8 +32,8 @@ import com.android.quickstep.util.LayoutUtils;
 import com.android.quickstep.views.RecentsView;
 import com.android.quickstep.views.TaskView;
 
-import app.lawnchair.preferences.PreferenceManager;
-import app.lawnchair.theme.color.ColorTokens;
+import app.yitap.preferences.PreferenceManager;
+import app.yitap.theme.color.ColorTokens;
 
 /**
  * Definition for overview state

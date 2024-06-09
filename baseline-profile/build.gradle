@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace 'app.lawnchair.baseline'
+    namespace 'app.yitap.baseline'
 
     defaultConfig {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

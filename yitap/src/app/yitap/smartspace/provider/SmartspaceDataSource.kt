@@ -1,10 +1,10 @@
-package app.lawnchair.smartspace.provider
+package app.yitap.smartspace.provider
 
 import android.app.Activity
 import android.content.Context
 import android.util.Log
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.smartspace.model.SmartspaceTarget
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.smartspace.model.SmartspaceTarget
 import com.patrykmichalik.opto.domain.Preference
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow

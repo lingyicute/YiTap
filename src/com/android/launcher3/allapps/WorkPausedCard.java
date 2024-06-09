@@ -32,8 +32,8 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.model.StringCache;
 import com.android.launcher3.views.ActivityContext;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.color.ColorTokens;
+import app.yitap.font.FontManager;
+import app.yitap.theme.color.ColorTokens;
 
 /**
  * Work profile toggle switch shown at the bottom of AllApps work tab

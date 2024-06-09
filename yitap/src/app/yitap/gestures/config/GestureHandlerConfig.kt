@@ -1,15 +1,15 @@
-package app.lawnchair.gestures.config
+package app.yitap.gestures.config
 
 import android.content.Context
-import app.lawnchair.gestures.handlers.GestureHandler
-import app.lawnchair.gestures.handlers.NoOpGestureHandler
-import app.lawnchair.gestures.handlers.OpenAppDrawerGestureHandler
-import app.lawnchair.gestures.handlers.OpenAppGestureHandler
-import app.lawnchair.gestures.handlers.OpenAppSearchGestureHandler
-import app.lawnchair.gestures.handlers.OpenAppTarget
-import app.lawnchair.gestures.handlers.OpenNotificationsHandler
-import app.lawnchair.gestures.handlers.OpenSearchGestureHandler
-import app.lawnchair.gestures.handlers.SleepGestureHandler
+import app.yitap.gestures.handlers.GestureHandler
+import app.yitap.gestures.handlers.NoOpGestureHandler
+import app.yitap.gestures.handlers.OpenAppDrawerGestureHandler
+import app.yitap.gestures.handlers.OpenAppGestureHandler
+import app.yitap.gestures.handlers.OpenAppSearchGestureHandler
+import app.yitap.gestures.handlers.OpenAppTarget
+import app.yitap.gestures.handlers.OpenNotificationsHandler
+import app.yitap.gestures.handlers.OpenSearchGestureHandler
+import app.yitap.gestures.handlers.SleepGestureHandler
 import com.android.launcher3.R
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.Context
 import android.content.Intent
@@ -8,13 +8,13 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
-import app.lawnchair.font.FontManager
-import app.lawnchair.launcher
-import app.lawnchair.search.adapter.SearchResultActionCallBack
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.util.AppInfo
-import app.lawnchair.util.AppInfoHelper
-import app.lawnchair.util.ImageViewWrapper
+import app.yitap.font.FontManager
+import app.yitap.launcher
+import app.yitap.search.adapter.SearchResultActionCallBack
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.util.AppInfo
+import app.yitap.util.AppInfoHelper
+import app.yitap.util.ImageViewWrapper
 import com.android.app.search.LayoutType
 import com.android.launcher3.DeviceProfile
 import com.android.launcher3.R

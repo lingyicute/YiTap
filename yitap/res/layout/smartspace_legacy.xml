@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<app.lawnchair.nexuslauncher.SmartspaceQsb
+<app.yitap.nexuslauncher.SmartspaceQsb
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@id/search_container_workspace"
@@ -24,10 +24,10 @@
     android:layout_gravity="center_vertical">
 
     <fragment
-        android:name="app.lawnchair.nexuslauncher.SmartspaceQsb$SmartSpaceFragment"
+        android:name="app.yitap.nexuslauncher.SmartspaceQsb$SmartSpaceFragment"
         android:layout_width="match_parent"
         android:tag="smart_space_view"
         android:layout_height="match_parent"
         tools:ignore="FragmentTagUsage" />
 
-</app.lawnchair.nexuslauncher.SmartspaceQsb>
+</app.yitap.nexuslauncher.SmartspaceQsb>

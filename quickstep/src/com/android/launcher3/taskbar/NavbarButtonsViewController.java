@@ -232,7 +232,7 @@ public class NavbarButtonsViewController implements TaskbarControllers.LoggableT
                         TaskbarManager.isPhoneMode(deviceProfile));
         mNavButtonsView.getLayoutParams().height = p.y;
 
-        mIsImeRenderingNavButtons = app.lawnchair.LawnchairApp.isAtleastT()
+        mIsImeRenderingNavButtons = app.yitap.YitapApp.isAtleastT()
                 ? InputMethodService.canImeRenderGesturalNavButtons() && mContext.imeDrawsImeNavBar()
                 : mContext.imeDrawsImeNavBar();
         mDisplayController = DisplayController.INSTANCE.get(mContext);

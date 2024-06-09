@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components.controls
+package app.yitap.ui.preferences.components.controls
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
@@ -36,9 +36,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.util.PreviewLawnchair
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.ui.util.PreviewYitap
 import com.android.launcher3.R
 
 @Composable
@@ -92,10 +92,10 @@ fun PreferenceCategory(
     )
 }
 
-@PreviewLawnchair
+@PreviewYitap
 @Composable
 private fun PreferenceCategoryPreview() {
-    LawnchairTheme {
+    YitapTheme {
         PreferenceCategory(
             label = "Example",
             description = "Example description here",

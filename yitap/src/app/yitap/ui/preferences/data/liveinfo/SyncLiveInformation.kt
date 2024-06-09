@@ -1,9 +1,9 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.yitap.ui.preferences.data.liveinfo
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import app.lawnchair.preferences2.asState
+import app.yitap.preferences2.asState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

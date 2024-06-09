@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.layout
+package app.yitap.ui.preferences.components.layout
 
 import androidx.compose.foundation.MutatePriority
 import androidx.compose.foundation.ScrollState
@@ -19,7 +19,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.util.addIf
+import app.yitap.ui.util.addIf
 import kotlinx.coroutines.awaitCancellation
 
 @Composable

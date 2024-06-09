@@ -30,7 +30,7 @@ import com.android.launcher3.LauncherAppState;
 import java.util.ArrayList;
 import java.util.function.IntConsumer;
 
-import app.lawnchair.LawnchairAppWidgetHostView;
+import app.yitap.YitapAppWidgetHostView;
 
 /**
  * Specific {@link AppWidgetHost} that creates our

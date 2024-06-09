@@ -86,9 +86,9 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.font.FontManager;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /**
  * Popup for showing the full list of available widgets

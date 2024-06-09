@@ -1,11 +1,11 @@
-package app.lawnchair.gestures.config
+package app.yitap.gestures.config
 
 import android.app.Activity
 import android.content.Context
-import app.lawnchair.BlankActivity
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.util.kotlinxJson
+import app.yitap.BlankActivity
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.util.kotlinxJson
 import com.android.launcher3.R
 
 sealed class GestureHandlerOption(

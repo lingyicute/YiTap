@@ -107,8 +107,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CancellationException;
 
-import app.lawnchair.LawnchairAppKt;
-import app.lawnchair.preferences.PreferenceManager;
+import app.yitap.YitapAppKt;
+import app.yitap.preferences.PreferenceManager;
 
 /**
  * Runnable for the thread that loads the contents of the launcher:

@@ -1,9 +1,9 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.graphics.Canvas
 import android.util.AttributeSet
-import app.lawnchair.views.CustomTextView
+import app.yitap.views.CustomTextView
 import com.android.launcher3.views.DoubleShadowBubbleTextView.ShadowInfo
 
 open class DoubleShadowTextView @JvmOverloads constructor(

@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -19,15 +19,15 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.ui.theme.dividerColor
-import app.lawnchair.ui.util.PreviewLawnchair
-import app.lawnchair.ui.util.bottomSheetHandler
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.components.controls.MainSwitchPreference
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.ui.theme.dividerColor
+import app.yitap.ui.util.PreviewYitap
+import app.yitap.ui.util.bottomSheetHandler
 import com.android.launcher3.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
@@ -230,10 +230,10 @@ private fun SearchSuggestionsSwitchPreference(
     )
 }
 
-@PreviewLawnchair
+@PreviewYitap
 @Composable
 private fun SearchSuggestionsSwitchPreferencePreview() {
-    LawnchairTheme {
+    YitapTheme {
         SearchSuggestionsSwitchPreference(
             label = "example",
             checked = true,

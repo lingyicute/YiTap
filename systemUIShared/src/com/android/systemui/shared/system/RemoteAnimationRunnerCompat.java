@@ -43,7 +43,7 @@ import com.android.wm.shell.util.CounterRotator;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 public abstract class RemoteAnimationRunnerCompat extends IRemoteAnimationRunner.Stub {
     private static final String TAG = "RemoteAnimRunnerCompat";

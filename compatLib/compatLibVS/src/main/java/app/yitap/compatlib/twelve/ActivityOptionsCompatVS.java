@@ -1,7 +1,7 @@
-package app.lawnchair.compatlib.twelve;
+package app.yitap.compatlib.twelve;
 
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.eleven.ActivityOptionsCompatVR;
+import app.yitap.compatlib.eleven.ActivityOptionsCompatVR;
 
 @RequiresApi(31)
 public class ActivityOptionsCompatVS extends ActivityOptionsCompatVR {}

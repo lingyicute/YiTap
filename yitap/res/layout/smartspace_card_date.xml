@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<app.lawnchair.smartspace.BcSmartspaceCard xmlns:android="http://schemas.android.com/apk/res/android"
+<app.yitap.smartspace.BcSmartspaceCard xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
@@ -12,7 +12,7 @@
         android:clipChildren="false"
         android:clipToPadding="false">
 
-        <app.lawnchair.smartspace.IcuDateTextView
+        <app.yitap.smartspace.IcuDateTextView
             android:id="@+id/date"
             style="@style/EnhancedSmartspaceTextTitle"
             android:layout_width="0dp"
@@ -42,4 +42,4 @@
             <include layout="@layout/smartspace_extras" />
         </LinearLayout>
     </RelativeLayout>
-</app.lawnchair.smartspace.BcSmartspaceCard>
+</app.yitap.smartspace.BcSmartspaceCard>

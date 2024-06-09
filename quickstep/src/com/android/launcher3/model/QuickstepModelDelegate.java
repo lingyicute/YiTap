@@ -85,8 +85,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.YitapApp;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Model delegate which loads prediction items
@@ -247,7 +247,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
         // ModelDelegate
         // instance, as there will be additional instances that may be destroyed at any
         // time.
-        if (mIsPrimaryInstance && LawnchairApp.isRecentsEnabled()) {
+        if (mIsPrimaryInstance && YitapApp.isRecentsEnabled()) {
             registerSnapshotLoggingCallback();
         }
     }
@@ -260,7 +260,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
      * atom.
      */
     protected void registerSnapshotLoggingCallback() {
-        if (mStatsManager == null || !LawnchairQuickstepCompat.ATLEAST_R) {
+        if (mStatsManager == null || !YitapQuickstepCompat.ATLEAST_R) {
             Log.d(TAG, "Failed to get StatsManager");
             return;
         }
@@ -332,7 +332,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
         super.destroy();
         mActive = false;
         StatsLogCompatManager.LOGS_CONSUMER.remove(mAppEventProducer);
-        if (mIsPrimaryInstance && LawnchairQuickstepCompat.ATLEAST_R) {
+        if (mIsPrimaryInstance && YitapQuickstepCompat.ATLEAST_R) {
             mStatsManager.clearPullAtomCallback(SysUiStatsLog.LAUNCHER_LAYOUT_SNAPSHOT);
         }
         destroyPredictors();

@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms
+package app.yitap.search.algorithms
 
 import android.app.search.Query
 import android.app.search.SearchContext
@@ -9,12 +9,12 @@ import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import androidx.core.os.bundleOf
-import app.lawnchair.compat.LawnchairQuickstepCompat
-import app.lawnchair.preferences.PreferenceChangeListener
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.search.LawnchairSearchAdapterProvider
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.util.requireSystemService
+import app.yitap.compat.YitapQuickstepCompat
+import app.yitap.preferences.PreferenceChangeListener
+import app.yitap.preferences.PreferenceManager
+import app.yitap.search.YitapSearchAdapterProvider
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.util.requireSystemService
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.search.SearchCallback
@@ -22,8 +22,8 @@ import com.android.launcher3.util.Executors
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.function.Consumer
 
-class LawnchairASISearchAlgorithm(context: Context) :
-    LawnchairSearchAlgorithm(context),
+class YitapASISearchAlgorithm(context: Context) :
+    YitapSearchAlgorithm(context),
     PreferenceChangeListener {
     private val prefs: PreferenceManager
     private var searchSession: SearchSession? = null
@@ -69,7 +69,7 @@ class LawnchairASISearchAlgorithm(context: Context) :
     }
 
     private fun createSearchSession() {
-        if (LawnchairQuickstepCompat.ATLEAST_U) return
+        if (YitapQuickstepCompat.ATLEAST_U) return
         Executors.UI_HELPER_EXECUTOR.execute {
             searchSession?.destroy()
             val idp = LauncherAppState.getIDP(context)
@@ -111,7 +111,7 @@ class LawnchairASISearchAlgorithm(context: Context) :
             if (!canceled) {
                 val targets = platformTargets.map { SearchTargetCompat.wrap(it) }
                 val adapterItems = transformSearchResults(targets)
-                LawnchairSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
+                YitapSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
                 callback.onSearchResult(
                     query,
                     ArrayList<BaseAllAppsAdapter.AdapterItem>(adapterItems),
@@ -126,7 +126,7 @@ class LawnchairASISearchAlgorithm(context: Context) :
 
     companion object {
         fun checkSearchCompatibility(context: Context) {
-            if (LawnchairQuickstepCompat.ATLEAST_U) return
+            if (YitapQuickstepCompat.ATLEAST_U) return
             Executors.UI_HELPER_EXECUTOR.execute {
                 val searchContext = SearchContext(1 or 2, 200, Bundle())
                 val searchManager = context.requireSystemService<SearchUiManager>()

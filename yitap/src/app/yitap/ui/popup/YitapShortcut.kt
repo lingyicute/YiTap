@@ -1,4 +1,4 @@
-package app.lawnchair.ui.popup
+package app.yitap.ui.popup
 
 import android.content.ComponentName
 import android.content.Context
@@ -12,10 +12,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.ui.unit.dp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.override.CustomizeAppDialog
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.views.ComposeBottomSheet
+import app.yitap.YitapLauncher
+import app.yitap.override.CustomizeAppDialog
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.views.ComposeBottomSheet
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.BaseDraggingActivity
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_APPLICATION
@@ -31,12 +31,12 @@ import com.android.launcher3.util.PackageManagerHelper
 import com.patrykmichalik.opto.core.firstBlocking
 import java.net.URISyntaxException
 
-class LawnchairShortcut {
+class YitapShortcut {
 
     companion object {
 
         val CUSTOMIZE =
-            SystemShortcut.Factory { activity: LawnchairLauncher, itemInfo, originalView ->
+            SystemShortcut.Factory { activity: YitapLauncher, itemInfo, originalView ->
                 if (PreferenceManager2.getInstance(activity).lockHomeScreen.firstBlocking()) {
                     null
                 } else {
@@ -44,7 +44,7 @@ class LawnchairShortcut {
                 }
             }
 
-        private fun getAppInfo(launcher: LawnchairLauncher, itemInfo: ItemInfo): ModelAppInfo? {
+        private fun getAppInfo(launcher: YitapLauncher, itemInfo: ItemInfo): ModelAppInfo? {
             if (itemInfo is ModelAppInfo) return itemInfo
             if (itemInfo.itemType != ITEM_TYPE_APPLICATION) return null
             val key = ComponentKey(itemInfo.targetComponent, itemInfo.user)
@@ -68,11 +68,11 @@ class LawnchairShortcut {
     }
 
     class Customize(
-        private val launcher: LawnchairLauncher,
+        private val launcher: YitapLauncher,
         private val appInfo: ModelAppInfo,
         itemInfo: ItemInfo,
         originalView: View,
-    ) : SystemShortcut<LawnchairLauncher>(R.drawable.ic_edit, R.string.customize_button_text, launcher, itemInfo, originalView) {
+    ) : SystemShortcut<YitapLauncher>(R.drawable.ic_edit, R.string.customize_button_text, launcher, itemInfo, originalView) {
 
         override fun onClick(v: View) {
             val outObj = Array<Any?>(1) { null }

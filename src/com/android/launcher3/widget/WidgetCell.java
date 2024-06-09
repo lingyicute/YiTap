@@ -54,8 +54,8 @@ import com.android.launcher3.views.ActivityContext;
 
 import java.util.function.Consumer;
 
-import app.lawnchair.LawnchairAppWidgetHostView;
-import app.lawnchair.font.FontManager;
+import app.yitap.YitapAppWidgetHostView;
+import app.yitap.font.FontManager;
 
 /**
  * Represents the individual cell of the widget inside the widget tray. The
@@ -259,7 +259,7 @@ public class WidgetCell extends LinearLayout {
             // LauncherAppWidgetHostView,
             // which supports applying local color extraction during drag & drop.
             mAppWidgetHostViewPreview = isLauncherContext(context)
-                    ? new LawnchairAppWidgetHostView(context)
+                    ? new YitapAppWidgetHostView(context)
                     : createAppWidgetHostView(context);
             LauncherAppWidgetProviderInfo providerInfo = fromProviderInfo(context, item.widgetInfo.clone());
             // A hack to force the initial layout to be the preview layout since there is no

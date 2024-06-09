@@ -1,4 +1,4 @@
-package app.lawnchair.compatlib.ten;
+package app.yitap.compatlib.ten;
 
 import android.app.ActivityOptions;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.view.RemoteAnimationAdapter;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityOptionsCompat;
+import app.yitap.compatlib.ActivityOptionsCompat;
 
 @RequiresApi(29)
 public class ActivityOptionsCompatVQ implements ActivityOptionsCompat {

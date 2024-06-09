@@ -21,7 +21,7 @@ import android.widget.EdgeEffect;
 
 import com.android.launcher3.Utilities;
 
-import app.lawnchair.ui.StretchEdgeEffect;
+import app.yitap.ui.StretchEdgeEffect;
 
 /**
  * Extension of {@link EdgeEffect} to allow backwards compatibility

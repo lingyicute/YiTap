@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -14,7 +14,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.theme.isSelectedThemeDark
+import app.yitap.ui.theme.isSelectedThemeDark
 
 @Composable
 fun <T> ColorDot(

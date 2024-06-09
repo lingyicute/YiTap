@@ -163,10 +163,10 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-import app.lawnchair.icons.shape.IconShapeManager;
-import app.lawnchair.theme.color.ColorTokens;
+import app.yitap.YitapApp;
+import app.yitap.compat.YitapQuickstepCompat;
+import app.yitap.icons.shape.IconShapeManager;
+import app.yitap.theme.color.ColorTokens;
 
 /**
  * Manages the opening and closing app transitions from Launcher
@@ -267,7 +267,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
         mDragLayer = mLauncher.getDragLayer();
         mHandler = new Handler(Looper.getMainLooper());
         mDeviceProfile = mLauncher.getDeviceProfile();
-        mBackAnimationController = LawnchairApp.isAtleastT() ? new LauncherBackAnimationController(mLauncher, this)
+        mBackAnimationController = YitapApp.isAtleastT() ? new LauncherBackAnimationController(mLauncher, this)
                 : null;
         Resources res = mLauncher.getResources();
         mClosingWindowTransY = res.getDimensionPixelSize(R.dimen.closing_window_trans_y);
@@ -336,11 +336,11 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
 
         long statusBarTransitionDelay = duration - STATUS_BAR_TRANSITION_DURATION
                 - STATUS_BAR_TRANSITION_PRE_DELAY;
-        ActivityOptions options = LawnchairQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
+        ActivityOptions options = YitapQuickstepCompat.getActivityOptionsCompat().makeRemoteAnimation(
                 new RemoteAnimationAdapter(runner, duration, statusBarTransitionDelay),
-                LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(runner.toRemoteTransition(),
+                YitapQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(runner.toRemoteTransition(),
                         mLauncher.getIApplicationThread(), "QuickstepLaunch"),
-                "Lawnchair");
+                "Yitap");
 
         return new ActivityOptionsWrapper(options, onEndCallback);
     }
@@ -1152,11 +1152,11 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
     public void registerRemoteTransitions() {
         if (SEPARATE_RECENTS_ACTIVITY.get() || !Utilities.ATLEAST_T) return;
 
-        if (ENABLE_SHELL_TRANSITIONS && LawnchairQuickstepCompat.ATLEAST_U)
+        if (ENABLE_SHELL_TRANSITIONS && YitapQuickstepCompat.ATLEAST_U)
             SystemUiProxy.INSTANCE.get(mLauncher).shareTransactionQueue();
-        if (hasControlRemoteAppTransitionPermission() && LawnchairQuickstepCompat.ATLEAST_Q) {
+        if (hasControlRemoteAppTransitionPermission() && YitapQuickstepCompat.ATLEAST_Q) {
             mWallpaperOpenTransitionRunner = createWallpaperOpenRunner(false /* fromUnlock */);
-            mLauncherOpenTransition = LawnchairQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(
+            mLauncherOpenTransition = YitapQuickstepCompat.getRemoteTransitionCompat().getRemoteTransition(
                     new LauncherAnimationRunner(mHandler, mWallpaperOpenTransitionRunner,
                             false /* startAtFrontOfQueue */).toRemoteTransition(),
                     mLauncher.getIApplicationThread(), "QuickstepLaunchHome");
@@ -1572,7 +1572,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
      * Returns true if we have permission to control remote app transisions
      */
     public boolean hasControlRemoteAppTransitionPermission() {
-        if (!LawnchairApp.isRecentsEnabled())
+        if (!YitapApp.isRecentsEnabled())
             return false;
         return mLauncher
                 .checkSelfPermission(CONTROL_REMOTE_APP_TRANSITION_PERMISSION) == PackageManager.PERMISSION_GRANTED;
@@ -2088,7 +2088,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
     private static class LaunchDepthController extends DepthController {
         LaunchDepthController(QuickstepLauncher launcher) {
             super(launcher);
-            if (LawnchairApp.isAtleastT()) {
+            if (YitapApp.isAtleastT()) {
                 setCrossWindowBlursEnabled(
                         CrossWindowBlurListeners.getInstance().isCrossWindowBlurEnabled());
             }

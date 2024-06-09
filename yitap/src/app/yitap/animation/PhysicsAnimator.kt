@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.animation
+package app.yitap.animation
 
 import android.util.ArrayMap
 import android.util.Log
@@ -25,7 +25,7 @@ import androidx.dynamicanimation.animation.FlingAnimation
 import androidx.dynamicanimation.animation.FloatPropertyCompat
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
-import app.lawnchair.animation.PhysicsAnimator.Companion.getInstance
+import app.yitap.animation.PhysicsAnimator.Companion.getInstance
 import java.lang.ref.WeakReference
 import java.util.WeakHashMap
 import kotlin.math.abs

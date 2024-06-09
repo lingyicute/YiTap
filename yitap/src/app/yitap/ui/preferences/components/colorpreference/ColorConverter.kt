@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components.colorpreference
+package app.yitap.ui.preferences.components.colorpreference
 
 import android.graphics.Color.HSVToColor
 import android.graphics.Color.colorToHSV

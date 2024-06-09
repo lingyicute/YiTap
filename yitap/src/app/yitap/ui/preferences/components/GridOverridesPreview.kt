@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
@@ -7,8 +7,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import app.lawnchair.DeviceProfileOverrides
-import app.lawnchair.preferences.preferenceManager
+import app.yitap.DeviceProfileOverrides
+import app.yitap.preferences.preferenceManager
 import com.android.launcher3.InvariantDeviceProfile
 
 @Composable

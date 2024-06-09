@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import app.lawnchair.hotseat.HotseatMode
-import app.lawnchair.hotseat.LawnchairHotseat
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.qsb.providers.QsbSearchProvider
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.controls.MainSwitchPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.hotseat.HotseatMode
+import app.yitap.hotseat.YitapHotseat
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.qsb.providers.QsbSearchProvider
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.NavigationActionPreference
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.controls.MainSwitchPreference
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.layout.DividerColumn
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import com.android.launcher3.R
 import kotlinx.collections.immutable.toPersistentList
 
@@ -64,7 +64,7 @@ fun DockPreferences(
                 HotseatModePreference(
                     adapter = hotseatModeAdapter,
                 )
-                ExpandAndShrink(visible = hotseatModeAdapter.state.value == LawnchairHotseat) {
+                ExpandAndShrink(visible = hotseatModeAdapter.state.value == YitapHotseat) {
                     DividerColumn {
                         SwitchPreference(
                             adapter = prefs2.themedHotseatQsb.getAdapter(),

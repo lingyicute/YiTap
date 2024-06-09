@@ -1,14 +1,14 @@
-package app.lawnchair.compatlib.twelve;
+package app.yitap.compatlib.twelve;
 
 import android.app.IApplicationThread;
 import android.window.IRemoteTransition;
 import android.window.RemoteTransition;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import app.lawnchair.compatlib.ActivityManagerCompat;
-import app.lawnchair.compatlib.ActivityOptionsCompat;
-import app.lawnchair.compatlib.RemoteTransitionCompat;
-import app.lawnchair.compatlib.eleven.QuickstepCompatFactoryVR;
+import app.yitap.compatlib.ActivityManagerCompat;
+import app.yitap.compatlib.ActivityOptionsCompat;
+import app.yitap.compatlib.RemoteTransitionCompat;
+import app.yitap.compatlib.eleven.QuickstepCompatFactoryVR;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 

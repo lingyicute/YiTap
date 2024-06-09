@@ -1,15 +1,15 @@
-package app.lawnchair.views
+package app.yitap.views
 
 import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
-import app.lawnchair.preferences.PreferenceManager
+import app.yitap.preferences.PreferenceManager
 import com.android.launcher3.R
 import com.android.launcher3.util.SystemUiController
 import com.android.launcher3.util.Themes
 import com.android.launcher3.views.ScrimView
 
-class LawnchairScrimView(context: Context, attrs: AttributeSet?) : ScrimView(context, attrs) {
+class YitapScrimView(context: Context, attrs: AttributeSet?) : ScrimView(context, attrs) {
 
     private var drawerOpacity = 0f
 

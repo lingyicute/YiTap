@@ -53,7 +53,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * This class tracked the top-most task and  some 'approximate' task history to allow faster
@@ -84,13 +84,13 @@ public class TopTaskTracker extends ISplitScreenListener.Stub implements TaskSta
 
     @Override
     public void onTaskRemoved(int taskId) {
-        if (!LawnchairQuickstepCompat.ATLEAST_T) return;
+        if (!YitapQuickstepCompat.ATLEAST_T) return;
         mOrderedTaskList.removeIf(rto -> rto.taskId == taskId);
     }
 
     @Override
     public void onTaskMovedToFront(RunningTaskInfo taskInfo) {
-        if (!LawnchairQuickstepCompat.ATLEAST_T) return;
+        if (!YitapQuickstepCompat.ATLEAST_T) return;
 
         mOrderedTaskList.removeIf(rto -> rto.taskId == taskInfo.taskId);
         mOrderedTaskList.addFirst(taskInfo);
@@ -186,7 +186,7 @@ public class TopTaskTracker extends ISplitScreenListener.Stub implements TaskSta
      */
     @UiThread
     public CachedTaskInfo getCachedTopTask(boolean filterOnlyVisibleRecents) {
-        if (!LawnchairQuickstepCompat.ATLEAST_U) {
+        if (!YitapQuickstepCompat.ATLEAST_U) {
             RunningTaskInfo task = TraceHelper.allowIpcs("getCachedTopTask.false", () ->
                     ActivityManagerWrapper.getInstance().getRunningTask(
                             false /* filterOnlyVisibleRecents */));
@@ -252,7 +252,7 @@ public class TopTaskTracker extends ISplitScreenListener.Stub implements TaskSta
                 return null;
             }
             List<RunningTaskInfo> visibleNonExcludedTasks = mAllCachedTasks.stream()
-                    .filter(t -> (LawnchairQuickstepCompat.ATLEAST_S && t.isVisible)
+                    .filter(t -> (YitapQuickstepCompat.ATLEAST_S && t.isVisible)
                             && (t.baseIntent.getFlags() & FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS) == 0)
                     .collect(Collectors.toList());
             return visibleNonExcludedTasks.isEmpty() ? null

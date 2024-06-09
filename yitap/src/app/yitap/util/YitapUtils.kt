@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.util
+package app.yitap.util
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
@@ -37,9 +37,9 @@ import android.view.View
 import android.widget.TextView
 import androidx.core.graphics.ColorUtils
 import androidx.core.os.UserManagerCompat
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.theme.color.ColorTokens
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.theme.color.ColorTokens
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.Executors.MAIN_EXECUTOR

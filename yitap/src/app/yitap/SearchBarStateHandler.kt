@@ -1,9 +1,9 @@
-package app.lawnchair
+package app.yitap
 
 import android.os.CancellationSignal
 import android.view.WindowInsets
 import androidx.core.view.WindowInsetsCompat
-import app.lawnchair.preferences2.PreferenceManager2
+import app.yitap.preferences2.PreferenceManager2
 import com.android.app.animation.Interpolators
 import com.android.launcher3.LauncherState
 import com.android.launcher3.Utilities
@@ -17,7 +17,7 @@ import com.patrykmichalik.opto.core.onEach
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 
-class SearchBarStateHandler(private val launcher: LawnchairLauncher) :
+class SearchBarStateHandler(private val launcher: YitapLauncher) :
     StateManager.StateHandler<LauncherState> {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)

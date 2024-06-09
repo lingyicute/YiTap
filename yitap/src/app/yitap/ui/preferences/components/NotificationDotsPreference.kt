@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.content.ComponentName
 import android.content.Context
@@ -42,10 +42,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.os.bundleOf
 import androidx.lifecycle.Lifecycle
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.bottomSheetHandler
-import app.lawnchair.util.lifecycleState
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.util.bottomSheetHandler
+import app.yitap.util.lifecycleState
 import com.android.launcher3.R
 import com.android.launcher3.notification.NotificationListener
 import com.android.launcher3.settings.SettingsActivity.EXTRA_FRAGMENT_ARG_KEY

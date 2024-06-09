@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
 import android.view.View
-import app.lawnchair.theme.color.ColorTokens
+import app.yitap.theme.color.ColorTokens
 import com.android.launcher3.R
 
 class SearchItemBackground(

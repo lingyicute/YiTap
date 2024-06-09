@@ -1,4 +1,4 @@
-package app.lawnchair.preferences
+package app.yitap.preferences
 
 import android.view.View
 import androidx.core.util.Consumer

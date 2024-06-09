@@ -154,8 +154,8 @@ import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.function.Consumer;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-import app.lawnchair.util.CompatibilityKt;
+import app.yitap.compat.YitapQuickstepCompat;
+import app.yitap.util.CompatibilityKt;
 
 /**
  * Handles the navigation gestures when Launcher is the default home activity.
@@ -2453,7 +2453,7 @@ public abstract class AbsSwipeUpHandler<T extends StatefulActivity<S>, Q extends
                     transaction.forSurface(target.leash).setAlpha(1).setLayer(-1).setShow();
                 }
                 surfaceApplier.scheduleApply(transaction);
-                if (!LawnchairQuickstepCompat.ATLEAST_S)
+                if (!YitapQuickstepCompat.ATLEAST_S)
                     return;
                 SplashScreenExitAnimationUtils.startAnimations(splashView, taskTarget.leash,
                         mSplashMainWindowShiftLength, new TransactionPool(), new Rect(),

@@ -1,10 +1,10 @@
-package app.lawnchair.smartspace.model
+package app.yitap.smartspace.model
 
 import android.content.Context
 import android.os.Build
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
-import app.lawnchair.util.isPackageInstalledAndEnabled
+import app.yitap.util.isPackageInstalledAndEnabled
 import com.android.launcher3.R
 import kotlinx.collections.immutable.persistentListOf
 
@@ -17,14 +17,14 @@ sealed class SmartspaceMode(
             "google" -> GoogleSmartspace
             "google_search" -> GoogleSearchSmartspace
             "smartspacer" -> Smartspacer
-            else -> LawnchairSmartspace
+            else -> YitapSmartspace
         }
 
         /**
          * @return The list of all time format options.
          */
         fun values() = persistentListOf(
-            LawnchairSmartspace,
+            YitapSmartspace,
             GoogleSmartspace,
             GoogleSearchSmartspace,
             Smartspacer,
@@ -34,11 +34,11 @@ sealed class SmartspaceMode(
     abstract fun isAvailable(context: Context): Boolean
 }
 
-object LawnchairSmartspace : SmartspaceMode(
-    nameResourceId = R.string.smartspace_mode_lawnchair,
+object YitapSmartspace : SmartspaceMode(
+    nameResourceId = R.string.smartspace_mode_yitap,
     layoutResourceId = R.layout.smartspace_container,
 ) {
-    override fun toString() = "lawnchair"
+    override fun toString() = "yitap"
     override fun isAvailable(context: Context): Boolean = true
 }
 

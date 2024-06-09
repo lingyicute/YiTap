@@ -1,15 +1,15 @@
-package app.lawnchair.search.algorithms
+package app.yitap.search.algorithms
 
 import android.content.Context
-import app.lawnchair.LawnchairApp
-import app.lawnchair.allapps.views.SearchItemBackground
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.preferences2.PreferenceManager2
-import app.lawnchair.search.LawnchairSearchAdapterProvider
-import app.lawnchair.search.adapter.SearchAdapterItem
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_APPLICATION
-import app.lawnchair.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_SHORTCUT
+import app.yitap.YitapApp
+import app.yitap.allapps.views.SearchItemBackground
+import app.yitap.preferences.PreferenceManager
+import app.yitap.preferences2.PreferenceManager2
+import app.yitap.search.YitapSearchAdapterProvider
+import app.yitap.search.adapter.SearchAdapterItem
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_APPLICATION
+import app.yitap.search.adapter.SearchTargetCompat.Companion.RESULT_TYPE_SHORTCUT
 import com.android.app.search.LayoutType.CALCULATOR
 import com.android.app.search.LayoutType.EMPTY_DIVIDER
 import com.android.app.search.LayoutType.HORIZONTAL_MEDIUM_TEXT
@@ -27,7 +27,7 @@ import com.android.launcher3.allapps.BaseAllAppsAdapter
 import com.android.launcher3.search.SearchAlgorithm
 import com.patrykmichalik.opto.core.firstBlocking
 
-sealed class LawnchairSearchAlgorithm(
+sealed class YitapSearchAlgorithm(
     protected val context: Context,
 ) : SearchAlgorithm<BaseAllAppsAdapter.AdapterItem> {
 
@@ -66,7 +66,7 @@ sealed class LawnchairSearchAlgorithm(
         val filtered = results
             .asSequence()
             .filter { it.packageName != BuildConfig.APPLICATION_ID }
-            .filter { LawnchairSearchAdapterProvider.viewTypeMap[it.layoutType] != null }
+            .filter { YitapSearchAdapterProvider.viewTypeMap[it.layoutType] != null }
             .removeDuplicateDividers()
             .toList()
 
@@ -152,24 +152,24 @@ sealed class LawnchairSearchAlgorithm(
 
         fun isASISearchEnabled(context: Context): Boolean {
             if (!Utilities.ATLEAST_S) return false
-            if (!LawnchairApp.isRecentsEnabled) return false
+            if (!YitapApp.isRecentsEnabled) return false
 
             val prefs = PreferenceManager.getInstance(context)
             if (!ranCompatibilityCheck) {
                 ranCompatibilityCheck = true
-                LawnchairASISearchAlgorithm.checkSearchCompatibility(context)
+                YitapASISearchAlgorithm.checkSearchCompatibility(context)
             }
             return prefs.deviceSearch.get()
         }
 
-        fun create(context: Context): LawnchairSearchAlgorithm {
+        fun create(context: Context): YitapSearchAlgorithm {
             val prefs = PreferenceManager2.getInstance(context)
             val searchAlgorithm = prefs.searchAlgorithm.firstBlocking()
 
             return when {
-                searchAlgorithm == ASI_SEARCH && isASISearchEnabled(context) -> LawnchairASISearchAlgorithm(context)
-                searchAlgorithm == LOCAL_SEARCH -> LawnchairLocalSearchAlgorithm(context)
-                else -> LawnchairAppSearchAlgorithm(context)
+                searchAlgorithm == ASI_SEARCH && isASISearchEnabled(context) -> YitapASISearchAlgorithm(context)
+                searchAlgorithm == LOCAL_SEARCH -> YitapLocalSearchAlgorithm(context)
+                else -> YitapAppSearchAlgorithm(context)
             }
         }
     }

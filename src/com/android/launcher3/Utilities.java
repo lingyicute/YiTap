@@ -97,7 +97,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import app.lawnchair.preferences.PreferenceManager;
+import app.yitap.preferences.PreferenceManager;
 
 /**
  * Various utilities shared amongst the Launcher's classes.

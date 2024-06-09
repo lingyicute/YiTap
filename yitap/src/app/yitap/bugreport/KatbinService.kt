@@ -1,6 +1,6 @@
-package app.lawnchair.bugreport
+package app.yitap.bugreport
 
-import app.lawnchair.util.kotlinxJson
+import app.yitap.util.kotlinxJson
 import kotlinx.serialization.Serializable
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit

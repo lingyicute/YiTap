@@ -74,7 +74,7 @@ import com.android.systemui.unfold.util.ScopedUnfoldTransitionProgressProvider;
 import java.io.PrintWriter;
 import java.util.StringJoiner;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Class to manage taskbar lifecycle
@@ -213,11 +213,11 @@ public class TaskbarManager {
     public TaskbarManager(TouchInteractionService service) {
         Display display =
                 service.getSystemService(DisplayManager.class).getDisplay(DEFAULT_DISPLAY);
-        mContext = (LawnchairQuickstepCompat.ATLEAST_T) ?
+        mContext = (YitapQuickstepCompat.ATLEAST_T) ?
                 service.createWindowContext(display, TYPE_NAVIGATION_BAR_PANEL, null) :
-                (LawnchairQuickstepCompat.ATLEAST_S) ?
+                (YitapQuickstepCompat.ATLEAST_S) ?
                         service.createWindowContext(display, TYPE_APPLICATION_OVERLAY, null) :
-                        (LawnchairQuickstepCompat.ATLEAST_R) ?
+                        (YitapQuickstepCompat.ATLEAST_R) ?
                                 service.createWindowContext(TYPE_APPLICATION_OVERLAY, null) :
                                 service;
 
@@ -229,7 +229,7 @@ public class TaskbarManager {
 
             @Override
             public void onConfigurationChanged(Configuration newConfig) {
-                if (LawnchairQuickstepCompat.ATLEAST_T) {
+                if (YitapQuickstepCompat.ATLEAST_T) {
                     Trace.instantForTrack(Trace.TRACE_TAG_APP, "TaskbarManager",
                             "onConfigurationChanged: " + newConfig);
                 }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 
 package com.android.launcher3;
@@ -258,7 +258,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-import app.lawnchair.LawnchairApp;
+import app.yitap.YitapApp;
 
 /**
  * Default launcher application.
@@ -1720,7 +1720,7 @@ public class Launcher extends StatefulActivity<LauncherState>
                     // Only change state, if not already the same. This prevents cancelling any
                     // animations running as part of resume
                     boolean animate = mStateManager.shouldAnimateStateChange();
-                    if (!LawnchairApp.isRecentsEnabled()) {
+                    if (!YitapApp.isRecentsEnabled()) {
                         animate &= alreadyOnHome;
                     }
                     mStateManager.goToState(NORMAL, animate);

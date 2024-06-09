@@ -1,8 +1,8 @@
-package app.lawnchair.data.iconoverride
+package app.yitap.data.iconoverride
 
 import android.content.Context
-import app.lawnchair.data.AppDatabase
-import app.lawnchair.icons.IconPickerItem
+import app.yitap.data.AppDatabase
+import app.yitap.icons.IconPickerItem
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.util.ComponentKey
 import com.android.launcher3.util.MainThreadInitializedObject

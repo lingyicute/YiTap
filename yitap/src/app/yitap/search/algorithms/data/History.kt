@@ -1,11 +1,11 @@
-package app.lawnchair.search.algorithms.data
+package app.yitap.search.algorithms.data
 
 import android.content.ContentResolver
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import android.util.Log
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
+import app.yitap.search.YitapRecentSuggestionProvider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -29,7 +29,7 @@ suspend fun getRecentKeyword(context: Context, query: String, max: Int, callback
         withContext(Dispatchers.IO) {
             val contentResolver: ContentResolver = context.contentResolver
             val uri: Uri =
-                Uri.parse("content://${LawnchairRecentSuggestionProvider.AUTHORITY}/suggestions")
+                Uri.parse("content://${YitapRecentSuggestionProvider.AUTHORITY}/suggestions")
             val cursor: Cursor? = contentResolver.query(uri, null, null, null, null)
             val recentKeywords = mutableListOf<RecentKeyword>()
 

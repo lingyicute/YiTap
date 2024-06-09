@@ -66,7 +66,7 @@ import com.android.launcher3.util.SettingsCache;
 
 import java.util.Optional;
 
-import app.lawnchair.LawnchairApp;
+import app.yitap.YitapApp;
 
 /**
  * Represents an item in the launcher.
@@ -418,7 +418,7 @@ public class ItemInfo {
         LauncherAtom.ItemInfo.Builder itemBuilder = LauncherAtom.ItemInfo.newBuilder();
         itemBuilder.setIsWork(!Process.myUserHandle().equals(user));
         SettingsCache settingsCache = SettingsCache.INSTANCE.getNoCreate();
-        boolean isKidsMode = settingsCache != null && LawnchairApp.isRecentsEnabled () && settingsCache.getValue(NAV_BAR_KIDS_MODE, 0);
+        boolean isKidsMode = settingsCache != null && YitapApp.isRecentsEnabled () && settingsCache.getValue(NAV_BAR_KIDS_MODE, 0);
         itemBuilder.setIsKidsMode(isKidsMode);
         itemBuilder.setRank(rank);
         return itemBuilder;

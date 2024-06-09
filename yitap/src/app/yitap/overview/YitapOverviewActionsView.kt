@@ -1,4 +1,4 @@
-package app.lawnchair.overview
+package app.yitap.overview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -9,10 +9,10 @@ import android.widget.Space
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
-import app.lawnchair.preferences.PreferenceManager
-import app.lawnchair.util.RecentHelper
-import app.lawnchair.util.isDefaultLauncher
-import app.lawnchair.util.isOnePlusStock
+import app.yitap.preferences.PreferenceManager
+import app.yitap.util.RecentHelper
+import app.yitap.util.isDefaultLauncher
+import app.yitap.util.isOnePlusStock
 import com.android.launcher3.Launcher
 import com.android.launcher3.LauncherState
 import com.android.launcher3.R
@@ -21,7 +21,7 @@ import com.android.quickstep.views.OverviewActionsView
 import com.android.quickstep.views.RecentsView
 import com.android.systemui.shared.recents.model.Task
 
-class LawnchairOverviewActionsView @JvmOverloads constructor(
+class YitapOverviewActionsView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,

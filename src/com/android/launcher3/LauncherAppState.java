@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 
 package com.android.launcher3;
@@ -60,8 +60,8 @@ import com.android.launcher3.util.SimpleBroadcastReceiver;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.widget.custom.CustomWidgetManager;
 
-import app.lawnchair.LawnchairAppKt;
-import app.lawnchair.icons.LawnchairIconProvider;
+import app.yitap.YitapAppKt;
+import app.yitap.icons.YitapIconProvider;
 
 public class LauncherAppState implements SafeCloseable {
 
@@ -76,7 +76,7 @@ public class LauncherAppState implements SafeCloseable {
         @Override
         protected void onPostInit(Context context) {
             super.onPostInit(context);
-            LawnchairAppKt.getLawnchairApp(context).onLauncherAppStateCreated();
+            YitapAppKt.getYitapApp(context).onLauncherAppStateCreated();
         }
     };
 
@@ -163,7 +163,7 @@ public class LauncherAppState implements SafeCloseable {
         mContext = context;
 
         mInvariantDeviceProfile = InvariantDeviceProfile.INSTANCE.get(context);
-        mIconProvider = new LawnchairIconProvider(context, Themes.isThemedIconEnabled(context));
+        mIconProvider = new YitapIconProvider(context, Themes.isThemedIconEnabled(context));
         mIconCache = new IconCache(mContext, mInvariantDeviceProfile,
                 iconCacheFileName, mIconProvider);
         mModel = new LauncherModel(context, this, mIconCache, new AppFilter(mContext),

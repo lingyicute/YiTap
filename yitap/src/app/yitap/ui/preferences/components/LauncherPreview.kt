@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.components
+package app.yitap.ui.preferences.components
 
 import android.view.View
 import androidx.compose.animation.Crossfade
@@ -15,11 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.Lifecycle
-import app.lawnchair.LauncherPreviewManager
-import app.lawnchair.ui.theme.LawnchairTheme
-import app.lawnchair.util.lifecycleState
-import app.lawnchair.wallpaper.WallpaperColorsCompat
-import app.lawnchair.wallpaper.WallpaperManagerCompat
+import app.yitap.LauncherPreviewManager
+import app.yitap.ui.theme.YitapTheme
+import app.yitap.util.lifecycleState
+import app.yitap.wallpaper.WallpaperColorsCompat
+import app.yitap.wallpaper.WallpaperManagerCompat
 import com.android.launcher3.InvariantDeviceProfile
 import com.android.launcher3.LauncherAppState
 
@@ -35,7 +35,7 @@ fun DummyLauncherBox(
     val ratio = dp.widthPx.toFloat() / dp.heightPx.toFloat()
 
     Box(modifier = modifier.aspectRatio(ratio, matchHeightConstraintsFirst = true)) {
-        LawnchairTheme(darkTheme = !darkText) {
+        YitapTheme(darkTheme = !darkText) {
             Spacer(
                 modifier = Modifier
                     .fillMaxSize()

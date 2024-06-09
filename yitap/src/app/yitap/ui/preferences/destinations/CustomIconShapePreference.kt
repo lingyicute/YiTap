@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.widget.Toast
 import androidx.compose.animation.core.animateFloatAsState
@@ -38,21 +38,21 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import app.lawnchair.icons.shape.IconCornerShape
-import app.lawnchair.icons.shape.IconShape
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.ModalBottomSheetContent
-import app.lawnchair.ui.preferences.components.controls.getSteps
-import app.lawnchair.ui.preferences.components.controls.snapSliderValue
-import app.lawnchair.ui.preferences.components.layout.BottomSpacer
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.util.LocalBottomSheetHandler
-import app.lawnchair.util.copyToClipboard
-import app.lawnchair.util.getClipboardContent
+import app.yitap.icons.shape.IconCornerShape
+import app.yitap.icons.shape.IconShape
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.ModalBottomSheetContent
+import app.yitap.ui.preferences.components.controls.getSteps
+import app.yitap.ui.preferences.components.controls.snapSliderValue
+import app.yitap.ui.preferences.components.layout.BottomSpacer
+import app.yitap.ui.preferences.components.layout.PreferenceDivider
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.util.LocalBottomSheetHandler
+import app.yitap.util.copyToClipboard
+import app.yitap.util.getClipboardContent
 import com.android.launcher3.R
 import kotlin.math.roundToInt
 

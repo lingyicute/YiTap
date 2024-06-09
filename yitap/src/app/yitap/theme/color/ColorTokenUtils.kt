@@ -1,7 +1,7 @@
-package app.lawnchair.theme.color
+package app.yitap.theme.color
 
 import android.content.Context
-import app.lawnchair.preferences.PreferenceManager
+import app.yitap.preferences.PreferenceManager
 
 fun ColorToken.setAlpha(alpha: Float) = SetAlphaColorToken(this, alpha)
 fun ColorToken.setLStar(lStar: Double) = SetLStarColorToken(this, lStar)

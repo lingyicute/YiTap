@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Lawnchair
+  ~ Copyright 2021, Yitap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Kısayollara ve daha fazlasına erişmek için Lawnchair\'i varsayılan başlatıcınız olarak ayarlayın.</string>
+    <string name="set_default_launcher_tip">Kısayollara ve daha fazlasına erişmek için Yitap\'i varsayılan başlatıcınız olarak ayarlayın.</string>
     <string name="settings">Ayarlar</string>
     <string name="general_label">Genel</string>
     <string name="general_description">Renkler, Simge Paketi, Bildirim Noktaları</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Tümünü Temizle Tuşu, Köşe Yarıçapı</string>
     <string name="about_label">Hakkında</string>
     <string name="app_info_drop_target_label">Uygulama Bilgileri</string>
-    <string name="debug_restart_launcher">Lawnchair\'i Yeniden Başlat</string>
+    <string name="debug_restart_launcher">Yitap\'i Yeniden Başlat</string>
     <string name="experimental_features_label">Deneysel Özellikler</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Yapıştır</string>
     <string name="copied_toast">Panoya kopyalandı.</string>
     <string name="invalid_color">Geçersiz Renk</string>
-    <string name="launcher_default_color">Lawnchair tarafından yönetilmektedir</string>
+    <string name="launcher_default_color">Yitap tarafından yönetilmektedir</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Ana Ekrana Yeni Uygulamalar Ekleyin</string>
     <string name="minus_one_enable">Akışı göster</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persian</string>
     <string name="smartspace_preferences">Tercihler</string>
     <string name="smartspace_widget_toggle_label">Ana ekrannda göster</string>
-    <string name="smartspace_widget_toggle_description">Bir Bakışta, “Lawnchair” widget\'ı yerleştirilerek ana ekrana manuel olarak eklenebilir</string>
+    <string name="smartspace_widget_toggle_description">Bir Bakışta, “Yitap” widget\'ı yerleştirilerek ana ekrana manuel olarak eklenebilir</string>
     <string name="smartspace_mode_label">Bir Bakışta Widget\'ı</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Arama</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Alt dolgu</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Uygulama Araması</string>
-    <string name="search_provider_sponsored_description">Lawnchar\'ın %1$s &amp; ile sponsorluk anlaşması vardır\n\n %1$s ile arama yaparak Lawnchair\'a katkı sağlayabilirsiniz.</string>
+    <string name="search_provider_sponsored_description">Lawnchar\'ın %1$s &amp; ile sponsorluk anlaşması vardır\n\n %1$s ile arama yaparak Yitap\'a katkı sağlayabilirsiniz.</string>
     <string name="app_label">Uygulama</string>
     <string name="website_label">Web sitesi</string>
     <string name="qsb_search_provider_app_required">Uygulama gerekli</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Aramayı Aç</string>
     <string name="pick_app_for_gesture">Uygulama Seç</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Lawnchair, Son Kullanılanlar sağlayıcısı olarak ayarlanmadığından bu ayarlar göz ardı edilecektir.</string>
+    <string name="quickswitch_ignored_warning">Yitap, Son Kullanılanlar sağlayıcısı olarak ayarlanmadığından bu ayarlar göz ardı edilecektir.</string>
     <string name="translucent_background">Hafif Saydam Arka Plan</string>
     <string name="translucent_background_alpha">Arka Plan Opaklığı</string>
     <string name="recents_actions_label">Hızlı Eylemler</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Öğe kaldırıldı</string>
     <string name="all_apps_no_search_results">“<xliff:g example="Android" id="query">%1$s</xliff:g>” ile eşleşen bir uygulama bulunamadı.</string>
     <string name="dt2s_admin_hint_title">Admin izni gerekli</string>
-    <string name="dt2s_admin_hint">Ekranı Kapatmak İçin Çift Dokunun\'u kullanmak için Lawnchair\'i bir cihaz yöneticisi uygulaması olarak ayarlayın. Ayarları Aç\'a tıklayın, ardından \"Bu cihaz yöneticisi uygulamasını aktif et\"\'e tıklayın.</string>
+    <string name="dt2s_admin_hint">Ekranı Kapatmak İçin Çift Dokunun\'u kullanmak için Yitap\'i bir cihaz yöneticisi uygulaması olarak ayarlayın. Ayarları Aç\'a tıklayın, ardından \"Bu cihaz yöneticisi uygulamasını aktif et\"\'e tıklayın.</string>
     <string name="dt2s_admin_warning">Ekranı Kapatmak İçin Çift Dokunun kapatılacaktır.</string>
     <string name="dt2s_a11y_hint_title">Erişebilirlik servisi gereklidir</string>
-    <string name="dt2s_a11y_hint">Ekranı Kapatmak İçin Çift Dokunun\'u kullanabilmek için erişilebilirlik servisini açın. Ayarları Aç\'a tıklayın, ardından Lawnchair\'i seç ve Lawnchair\'i kullan\'ı aç.</string>
+    <string name="dt2s_a11y_hint">Ekranı Kapatmak İçin Çift Dokunun\'u kullanabilmek için erişilebilirlik servisini açın. Ayarları Aç\'a tıklayın, ardından Yitap\'i seç ve Yitap\'i kullan\'ı aç.</string>
     <string name="dt2s_warning_open_settings">Ayarları Aç</string>
     <string name="loading">Yükleniyor…</string>
     <string name="system">Sistem</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Öneriler</string>
     <string name="show_suggested_apps_at_drawer_top">Önerilen uygulamaları uygulama çekmecesinin en üstünde göster</string>
     <!-- Bug reporting -->
-    <string name="lawnchair_bug_report">Lawnchair Hata Bildirme</string>
+    <string name="yitap_bug_report">Yitap Hata Bildirme</string>
     <string name="crash_report_notif_title">%1$s Çalışmayı Durdurdu</string>
     <string name="action_upload_crash_report">Çökme günlüklerini yükle</string>
     <string name="action_copy_link">Bağlantıyı Kopyala</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Medya, dosyalar vb.</string>
     <string name="search_pref_result_contacts_description">Kişiler ve fazlası</string>
     <string name="search_pref_result_web_description"><xliff:g id="startpage">Startpage</xliff:g> ile</string>
-    <string name="warn_contact_permission_content">Kişiler içinde arama yapmak için Lawnchair\'a Kişiler ve Arama izinlerini verin.</string>
-    <string name="warn_files_permission_content">Dosyalarınızda arama yapmak için Lawnchair\'a Depolama izinlerini verin.</string>
+    <string name="warn_contact_permission_content">Kişiler içinde arama yapmak için Yitap\'a Kişiler ve Arama izinlerini verin.</string>
+    <string name="warn_files_permission_content">Dosyalarınızda arama yapmak için Yitap\'a Depolama izinlerini verin.</string>
     <string name="grant_requested_permissions">İzinleri Verin</string>
     <string name="pref_suggestion_label">Öneriler</string>
     <string name="all_apps_device_search_hint">Ara</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Arama algoritması</string>
     <string name="all_apps_search_result_calculator">Hesap makinesi</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Lawnchair requires accessibility access.\n\nLawnchair doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Lawnchair discards any event sent by the system.\n\nIn order to lock your phone, Lawnchair uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
 </resources>

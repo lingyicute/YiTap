@@ -53,8 +53,8 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.YitapApp;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * Manages the recent task list from the system, caching it as necessary.
@@ -88,8 +88,8 @@ public class RecentTasksList {
         mChangeId = 1;
         mSysUiProxy = sysUiProxy;
 
-        if (LawnchairApp.isRecentsEnabled()) {
-            if (LawnchairQuickstepCompat.ATLEAST_U) {
+        if (YitapApp.isRecentsEnabled()) {
+            if (YitapQuickstepCompat.ATLEAST_U) {
                 sysUiProxy.registerRecentTasksListener(new IRecentTasksListener.Stub() {
                     @Override
                     public void onRecentTasksChanged() throws RemoteException {
@@ -110,7 +110,7 @@ public class RecentTasksList {
                         });
                     }
                 });
-            } else if (LawnchairQuickstepCompat.ATLEAST_Q) {
+            } else if (YitapQuickstepCompat.ATLEAST_Q) {
                 TaskStackChangeListeners.getInstance().registerTaskStackListener(new TaskStackChangeListener () {
                     @Override
                     public void onTaskStackChanged() {

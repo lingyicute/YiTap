@@ -1,4 +1,4 @@
-package app.lawnchair.search.adapter
+package app.yitap.search.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -12,19 +12,19 @@ import android.provider.ContactsContract
 import android.provider.MediaStore
 import android.util.Log
 import androidx.core.os.bundleOf
-import app.lawnchair.allapps.views.SearchResultView
-import app.lawnchair.search.algorithms.data.Calculation
-import app.lawnchair.search.algorithms.data.ContactInfo
-import app.lawnchair.search.algorithms.data.FileInfo
-import app.lawnchair.search.algorithms.data.FileInfo.Companion.isImageType
-import app.lawnchair.search.algorithms.data.FolderInfo
-import app.lawnchair.search.algorithms.data.IFileInfo
-import app.lawnchair.search.algorithms.data.RecentKeyword
-import app.lawnchair.search.algorithms.data.SettingInfo
-import app.lawnchair.theme.color.ColorTokens
-import app.lawnchair.util.createTextBitmap
-import app.lawnchair.util.file2Uri
-import app.lawnchair.util.mimeCompat
+import app.yitap.allapps.views.SearchResultView
+import app.yitap.search.algorithms.data.Calculation
+import app.yitap.search.algorithms.data.ContactInfo
+import app.yitap.search.algorithms.data.FileInfo
+import app.yitap.search.algorithms.data.FileInfo.Companion.isImageType
+import app.yitap.search.algorithms.data.FolderInfo
+import app.yitap.search.algorithms.data.IFileInfo
+import app.yitap.search.algorithms.data.RecentKeyword
+import app.yitap.search.algorithms.data.SettingInfo
+import app.yitap.theme.color.ColorTokens
+import app.yitap.util.createTextBitmap
+import app.yitap.util.file2Uri
+import app.yitap.util.mimeCompat
 import com.android.app.search.LayoutType
 import com.android.launcher3.R
 import com.android.launcher3.util.ComponentKey
@@ -286,7 +286,7 @@ class GenerateSearchTarget(private val context: Context) {
     }
 
     private fun getStartPageUrl(query: String): String {
-        return "https://www.startpage.com/do/search?segment=startpage.lawnchair&query=$query&cat=web"
+        return "https://www.startpage.com/do/search?segment=startpage.yitap&query=$query&cat=web"
     }
 
     private fun resolveMarketSearchActivity(): ComponentKey? {

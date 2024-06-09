@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.ComponentName
 import android.content.Context
@@ -10,11 +10,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
-import app.lawnchair.launcher
-import app.lawnchair.search.adapter.SHORTCUT
-import app.lawnchair.search.adapter.SearchResultActionCallBack
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.util.runOnMainThread
+import app.yitap.launcher
+import app.yitap.search.adapter.SHORTCUT
+import app.yitap.search.adapter.SearchResultActionCallBack
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.util.runOnMainThread
 import com.android.launcher3.BubbleTextView
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.LauncherSettings

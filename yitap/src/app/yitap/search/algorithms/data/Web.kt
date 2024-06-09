@@ -1,7 +1,7 @@
-package app.lawnchair.search.algorithms.data
+package app.yitap.search.algorithms.data
 
 import android.util.Log
-import app.lawnchair.util.kotlinxJson
+import app.yitap.util.kotlinxJson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.MediaType.Companion.toMediaType
@@ -29,8 +29,8 @@ suspend fun getStartPageSuggestions(query: String, max: Int): List<String> = wit
     try {
         val response: Response<ResponseBody> = startPageService.getStartPageSuggestions(
             query = query,
-            segment = "startpage.lawnchair",
-            partner = "lawnchair",
+            segment = "startpage.yitap",
+            partner = "yitap",
             format = "opensearch",
         )
 

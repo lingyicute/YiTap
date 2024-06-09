@@ -28,9 +28,9 @@ import com.android.launcher3.ExtendedEditText;
 import com.android.launcher3.R;
 import com.android.launcher3.popup.PopupDataProvider;
 
-import app.lawnchair.font.FontManager;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.font.FontManager;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /**
  * View for a search bar with an edit text with a cancel button.

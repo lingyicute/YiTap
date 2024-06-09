@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace
+package app.yitap.smartspace
 
 import android.content.Context
 import android.content.Intent
@@ -6,10 +6,10 @@ import android.graphics.Rect
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.launcher
-import app.lawnchair.ui.preferences.PreferenceActivity
-import app.lawnchair.ui.preferences.navigation.Routes
+import app.yitap.YitapLauncher
+import app.yitap.launcher
+import app.yitap.ui.preferences.PreferenceActivity
+import app.yitap.ui.preferences.navigation.Routes
 import com.android.launcher3.R
 import com.android.launcher3.logging.StatsLogManager
 import com.android.launcher3.views.OptionsPopupView
@@ -44,7 +44,7 @@ class SmartspacerView(context: Context, attrs: AttributeSet?) : BcSmartspaceView
                     getDismissOption(target, dismissAction),
                 ).ifEmpty { listOf(getCustomizeOptionFallback()) }
                 val popup = OptionsPopupView
-                    .show<LawnchairLauncher>(launcher, RectF(pos), options, true)
+                    .show<YitapLauncher>(launcher, RectF(pos), options, true)
                 return object : Popup {
                     override fun dismiss() {
                         popup.close(true)

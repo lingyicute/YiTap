@@ -58,8 +58,8 @@ import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import java.net.URISyntaxException;
 import java.security.InvalidParameterException;
 
-import app.lawnchair.LawnchairApp;
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.YitapApp;
+import app.yitap.preferences2.PreferenceManager2;
 
 /**
  * Extension of {@link Cursor} with utility methods for workspace loading.

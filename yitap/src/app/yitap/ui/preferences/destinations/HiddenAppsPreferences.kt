@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Spacer
@@ -27,17 +27,17 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.components.AppItem
-import app.lawnchair.ui.preferences.components.AppItemPlaceholder
-import app.lawnchair.ui.preferences.components.layout.PreferenceLazyColumn
-import app.lawnchair.ui.preferences.components.layout.PreferenceScaffold
-import app.lawnchair.ui.preferences.components.layout.preferenceGroupItems
-import app.lawnchair.util.App
-import app.lawnchair.util.appComparator
-import app.lawnchair.util.appsState
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.components.AppItem
+import app.yitap.ui.preferences.components.AppItemPlaceholder
+import app.yitap.ui.preferences.components.layout.PreferenceLazyColumn
+import app.yitap.ui.preferences.components.layout.PreferenceScaffold
+import app.yitap.ui.preferences.components.layout.preferenceGroupItems
+import app.yitap.util.App
+import app.yitap.util.appComparator
+import app.yitap.util.appsState
 import com.android.launcher3.R
 import java.util.Comparator.comparing
 import kotlinx.collections.immutable.ImmutableSet

@@ -24,7 +24,7 @@ import android.view.InputChannel;
 import android.view.InputEvent;
 import android.view.MotionEvent;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 /**
  * @see android.view.InputChannel
@@ -83,7 +83,7 @@ public class InputChannelCompat {
          * @see BatchedInputEventReceiver#setBatchingEnabled()
          */
         public void setBatchingEnabled(boolean batchingEnabled) {
-            if (LawnchairQuickstepCompat.ATLEAST_S) {
+            if (YitapQuickstepCompat.ATLEAST_S) {
                 mReceiver.setBatchingEnabled(batchingEnabled);
             }
         }

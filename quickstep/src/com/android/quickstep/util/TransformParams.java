@@ -29,7 +29,7 @@ import com.android.quickstep.RemoteAnimationTargets;
 import com.android.quickstep.util.SurfaceTransaction.SurfaceProperties;
 import com.android.systemui.shared.system.ActivityManagerWrapper;
 
-import app.lawnchair.compat.LawnchairQuickstepCompat;
+import app.yitap.compat.YitapQuickstepCompat;
 
 public class TransformParams {
 
@@ -167,7 +167,7 @@ public class TransformParams {
                 } else {
                     // Fade out translucent overlay.
                     // TODO(b/303351074): use app.isNotInRecents directly once it is fixed.
-                    boolean isNotInRecents = LawnchairQuickstepCompat.ATLEAST_S && app.taskInfo != null
+                    boolean isNotInRecents = YitapQuickstepCompat.ATLEAST_S && app.taskInfo != null
                             && (app.taskInfo.baseIntent.getFlags()
                                     & FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS) != 0;
                     if (app.isTranslucent && isNotInRecents) {

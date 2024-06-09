@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 data class ClockMetadata(
     val hourLayerIndex: Int,

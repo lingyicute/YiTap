@@ -36,7 +36,7 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.util.ActivityOptionsWrapper;
 import com.android.launcher3.widget.LauncherAppWidgetHostView;
 
-import app.lawnchair.LawnchairApp;
+import app.yitap.YitapApp;
 import dev.rikka.tools.refine.Refine;
 
 /**
@@ -76,7 +76,7 @@ public class QuickstepInteractionHandler implements RemoteViews.InteractionHandl
             launchCookie = mLauncher.getLaunchCookie((ItemInfo) itemInfo);
             activityOptions.options.setLaunchCookie(launchCookie);
         }
-        if (Utilities.ATLEAST_S && !pendingIntent.isActivity() && LawnchairApp.isRecentsEnabled()) {
+        if (Utilities.ATLEAST_S && !pendingIntent.isActivity() && YitapApp.isRecentsEnabled()) {
             // In the event this pending intent eventually launches an activity, i.e. a
             // trampoline,
             // use the Quickstep transition animation.

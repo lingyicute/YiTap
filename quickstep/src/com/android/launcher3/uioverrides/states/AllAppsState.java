@@ -28,8 +28,8 @@ import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.ActivityContext;
 
-import app.lawnchair.LawnchairLauncher;
-import app.lawnchair.util.LawnchairUtilsKt;
+import app.yitap.YitapLauncher;
+import app.yitap.util.YitapUtilsKt;
 
 /**
  * Definition for AllApps state
@@ -158,6 +158,6 @@ public class AllAppsState extends LauncherState {
 
     @Override
     public int getWorkspaceScrimColor(Launcher launcher) {
-        return LawnchairUtilsKt.getAllAppsScrimColor(launcher);
+        return YitapUtilsKt.getAllAppsScrimColor(launcher);
     }
 }

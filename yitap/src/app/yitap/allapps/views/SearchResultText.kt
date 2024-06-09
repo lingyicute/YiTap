@@ -1,4 +1,4 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.content.Context
 import android.provider.SearchRecentSuggestions
@@ -7,15 +7,15 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.ViewCompat
-import app.lawnchair.font.FontManager
-import app.lawnchair.launcher
-import app.lawnchair.search.LawnchairRecentSuggestionProvider
-import app.lawnchair.search.adapter.HEADER_JUSTIFY
-import app.lawnchair.search.adapter.SPACE
-import app.lawnchair.search.adapter.SPACE_MINI
-import app.lawnchair.search.adapter.SearchResultActionCallBack
-import app.lawnchair.search.adapter.SearchTargetCompat
-import app.lawnchair.theme.color.ColorTokens
+import app.yitap.font.FontManager
+import app.yitap.launcher
+import app.yitap.search.YitapRecentSuggestionProvider
+import app.yitap.search.adapter.HEADER_JUSTIFY
+import app.yitap.search.adapter.SPACE
+import app.yitap.search.adapter.SPACE_MINI
+import app.yitap.search.adapter.SearchResultActionCallBack
+import app.yitap.search.adapter.SearchTargetCompat
+import app.yitap.theme.color.ColorTokens
 import com.android.launcher3.R
 
 class SearchResultText(context: Context, attrs: AttributeSet?) :
@@ -52,8 +52,8 @@ class SearchResultText(context: Context, attrs: AttributeSet?) :
             clearHistory.setOnClickListener {
                 val suggestionsRecent = SearchRecentSuggestions(
                     launcher,
-                    LawnchairRecentSuggestionProvider.AUTHORITY,
-                    LawnchairRecentSuggestionProvider.MODE,
+                    YitapRecentSuggestionProvider.AUTHORITY,
+                    YitapRecentSuggestionProvider.MODE,
                 )
                 suggestionsRecent.clearHistory()
                 callBack?.action()

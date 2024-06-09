@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.yitap
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import app.lawnchair.font.FontManager
+import app.yitap.font.FontManager
 import com.android.launcher3.BubbleTextView
 import com.android.launcher3.views.DoubleShadowBubbleTextView
 
-class LawnchairLayoutFactory(context: Context) : LayoutInflater.Factory2 {
+class YitapLayoutFactory(context: Context) : LayoutInflater.Factory2 {
 
     private val fontManager by lazy { FontManager.INSTANCE.get(context) }
     private val constructorMap = mapOf<String, (Context, AttributeSet) -> View>(

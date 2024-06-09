@@ -1,4 +1,4 @@
-package app.lawnchair.search.algorithms.data
+package app.yitap.search.algorithms.data
 
 interface SearchCallback {
     fun onSearchLoaded(items: List<Any>)

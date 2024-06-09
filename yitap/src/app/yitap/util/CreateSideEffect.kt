@@ -1,4 +1,4 @@
-package app.lawnchair.util
+package app.yitap.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect

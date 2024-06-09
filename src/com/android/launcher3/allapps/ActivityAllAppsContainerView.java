@@ -98,11 +98,11 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import app.lawnchair.allapps.LawnchairAlphabeticalAppsList;
-import app.lawnchair.font.FontManager;
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.theme.color.ColorTokens;
-import app.lawnchair.ui.StretchRecyclerViewContainer;
+import app.yitap.allapps.YitapAlphabeticalAppsList;
+import app.yitap.font.FontManager;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.theme.color.ColorTokens;
+import app.yitap.ui.StretchRecyclerViewContainer;
 
 /**
  * All apps container view with search support for use in a dragging activity.
@@ -266,11 +266,11 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
         mMainAdapterProvider = mSearchUiDelegate.createMainAdapterProvider();
 
         mAH.set(AdapterHolder.MAIN, new AdapterHolder(AdapterHolder.MAIN,
-                new LawnchairAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, null)));
+                new YitapAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, null)));
         mAH.set(AdapterHolder.WORK, new AdapterHolder(AdapterHolder.WORK,
-                new LawnchairAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, mWorkManager)));
+                new YitapAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, mWorkManager)));
         mAH.set(SEARCH, new AdapterHolder(SEARCH,
-                new LawnchairAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, null)));
+                new YitapAlphabeticalAppsList<>(mActivityContext, mAllAppsStore, null)));
 
         getLayoutInflater().inflate(R.layout.all_apps_content, this);
         mHeader = findViewById(R.id.all_apps_header);

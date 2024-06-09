@@ -41,7 +41,7 @@ import com.android.launcher3.widget.util.WidgetSizes;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.lawnchair.theme.drawable.DrawableTokens;
+import app.yitap.theme.drawable.DrawableTokens;
 
 /** A {@link TableLayout} for showing recommended widgets. */
 public final class WidgetsRecommendationTableLayout extends TableLayout {

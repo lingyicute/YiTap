@@ -1,4 +1,4 @@
-package app.lawnchair.qsb.providers
+package app.yitap.qsb.providers
 
 import com.android.launcher3.R
 

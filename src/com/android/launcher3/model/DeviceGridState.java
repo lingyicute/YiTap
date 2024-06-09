@@ -42,7 +42,7 @@ import com.android.launcher3.util.MainThreadInitializedObject.SandboxContext;
 import java.util.Locale;
 import java.util.Objects;
 
-import app.lawnchair.LawnchairProto;
+import app.yitap.YitapProto;
 
 /**
  * Utility class representing persisted grid properties.
@@ -75,7 +75,7 @@ public class DeviceGridState implements Comparable<DeviceGridState> {
     }
 
     @SuppressLint("WrongConstant")
-    public DeviceGridState(LawnchairProto.GridState protoGridState) {
+    public DeviceGridState(YitapProto.GridState protoGridState) {
         mGridSizeString = protoGridState.getGridSize();
         mNumHotseat = protoGridState.getHotseatCount();
         mDeviceType = protoGridState.getDeviceType();
@@ -129,8 +129,8 @@ public class DeviceGridState implements Comparable<DeviceGridState> {
         }
     }
 
-    public LawnchairProto.GridState toProtoMessage() {
-        return LawnchairProto.GridState.newBuilder()
+    public YitapProto.GridState toProtoMessage() {
+        return YitapProto.GridState.newBuilder()
                 .setGridSize(mGridSizeString)
                 .setHotseatCount(mNumHotseat)
                 .setDeviceType(mDeviceType)

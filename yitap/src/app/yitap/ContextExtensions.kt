@@ -1,4 +1,4 @@
-package app.lawnchair
+package app.yitap
 
 import android.content.Context
 import android.content.Intent

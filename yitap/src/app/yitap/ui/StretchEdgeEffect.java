@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui;
+package app.yitap.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

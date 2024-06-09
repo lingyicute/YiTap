@@ -1,4 +1,4 @@
-# The rules from AOSP are located in proguard.flags file, we can just maintain Lawnchair related rules here.
+# The rules from AOSP are located in proguard.flags file, we can just maintain Yitap related rules here.
 
 # Optimization options.
 -allowaccessmodification
@@ -38,11 +38,11 @@
   public static final ** CREATOR;
 }
 
-# Lawnchair specific rules.
--keep class app.lawnchair.LawnchairProto$* { *; }
--keep class app.lawnchair.LawnchairApp { *; }
--keep class app.lawnchair.LawnchairLauncher { *; }
--keep class app.lawnchair.compatlib.** { *; }
+# Yitap specific rules.
+-keep class app.yitap.YitapProto$* { *; }
+-keep class app.yitap.YitapApp { *; }
+-keep class app.yitap.YitapLauncher { *; }
+-keep class app.yitap.compatlib.** { *; }
 
 -keep class com.google.protobuf.Timestamp { *; }
 

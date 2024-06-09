@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Modifications copyright 2021, Lawnchair
+ * Modifications copyright 2021, Yitap
  */
 
 package com.android.launcher3;
@@ -138,10 +138,10 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences2.PreferenceManager2;
-import app.lawnchair.smartspace.SmartspaceAppWidgetProvider;
-import app.lawnchair.smartspace.model.LawnchairSmartspace;
-import app.lawnchair.smartspace.model.SmartspaceMode;
+import app.yitap.preferences2.PreferenceManager2;
+import app.yitap.smartspace.SmartspaceAppWidgetProvider;
+import app.yitap.smartspace.model.YitapSmartspace;
+import app.yitap.smartspace.model.SmartspaceMode;
 
 /**
  * The workspace is a wide area with a wallpaper and a finite number of pages.
@@ -662,7 +662,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
             if (!smartspaceMode.isAvailable(this.mLauncher)) {
                 // The current smartspace mode is not available,
                 // setting the smartspace mode to one that is always available
-                smartspaceMode = LawnchairSmartspace.INSTANCE;
+                smartspaceMode = YitapSmartspace.INSTANCE;
                 PreferenceExtensionsKt.setBlocking(mPreferenceManager2.getSmartspaceMode(), smartspaceMode);
             }
             // In transposed layout, we add the QSB in the Grid. As workspace does not touch

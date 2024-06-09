@@ -1,4 +1,4 @@
-package app.lawnchair.smartspace.provider;
+package app.yitap.smartspace.provider;
 
 import android.app.Notification;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.view.KeyEvent;
 
 import androidx.core.util.Consumer;
 
-import app.lawnchair.NotificationManager;
-import app.lawnchair.util.FlowCollector;
+import app.yitap.NotificationManager;
+import app.yitap.util.FlowCollector;
 
 import java.util.ArrayList;
 import java.util.Collections;

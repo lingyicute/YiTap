@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.app.Activity
 import android.content.ComponentName
@@ -27,24 +27,24 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.getSystemService
-import app.lawnchair.LawnchairApp
-import app.lawnchair.LawnchairLauncher
-import app.lawnchair.backup.ui.restoreBackupOpener
-import app.lawnchair.preferences.observeAsState
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.OverflowMenu
-import app.lawnchair.ui.preferences.LocalNavController
-import app.lawnchair.ui.preferences.components.AnnouncementPreference
-import app.lawnchair.ui.preferences.components.controls.PreferenceCategory
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
-import app.lawnchair.ui.preferences.components.layout.ClickableIcon
-import app.lawnchair.ui.preferences.components.layout.PreferenceDivider
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
-import app.lawnchair.ui.preferences.data.liveinfo.SyncLiveInformation
-import app.lawnchair.ui.preferences.navigation.Routes
-import app.lawnchair.util.isDefaultLauncher
-import app.lawnchair.util.restartLauncher
+import app.yitap.YitapApp
+import app.yitap.YitapLauncher
+import app.yitap.backup.ui.restoreBackupOpener
+import app.yitap.preferences.observeAsState
+import app.yitap.preferences.preferenceManager
+import app.yitap.ui.OverflowMenu
+import app.yitap.ui.preferences.LocalNavController
+import app.yitap.ui.preferences.components.AnnouncementPreference
+import app.yitap.ui.preferences.components.controls.PreferenceCategory
+import app.yitap.ui.preferences.components.controls.WarningPreference
+import app.yitap.ui.preferences.components.layout.ClickableIcon
+import app.yitap.ui.preferences.components.layout.PreferenceDivider
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.components.layout.PreferenceTemplate
+import app.yitap.ui.preferences.data.liveinfo.SyncLiveInformation
+import app.yitap.ui.preferences.navigation.Routes
+import app.yitap.util.isDefaultLauncher
+import app.yitap.util.restartLauncher
 import com.android.launcher3.BuildConfig
 import com.android.launcher3.R
 
@@ -140,7 +140,7 @@ fun PreferencesDashboard(
             isSelected = currentRoute.contains(Routes.GESTURES),
         )
 
-        if (LawnchairApp.isRecentsEnabled || BuildConfig.DEBUG) {
+        if (YitapApp.isRecentsEnabled || BuildConfig.DEBUG) {
             PreferenceCategory(
                 label = stringResource(id = R.string.quickstep_label),
                 description = stringResource(id = R.string.quickstep_description),
@@ -266,6 +266,6 @@ fun PreferencesSetDefaultLauncherWarning(
 
 fun openAppInfo(context: Context) {
     val launcherApps = context.getSystemService<LauncherApps>()
-    val componentName = ComponentName(context, LawnchairLauncher::class.java)
+    val componentName = ComponentName(context, YitapLauncher::class.java)
     launcherApps?.startAppDetailsActivity(componentName, Process.myUserHandle(), null, null)
 }

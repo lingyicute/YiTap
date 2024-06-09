@@ -1,4 +1,4 @@
-package app.lawnchair.theme.color
+package app.yitap.theme.color
 
 import androidx.annotation.ColorInt
 import com.android.systemui.monet.ColorScheme as MonetColorScheme

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import android.content.res.Configuration
 import android.graphics.drawable.Drawable
@@ -51,23 +51,23 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences.PreferenceAdapter
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.DummyLauncherBox
-import app.lawnchair.ui.preferences.components.DummyLauncherLayout
-import app.lawnchair.ui.preferences.components.WallpaperPreview
-import app.lawnchair.ui.preferences.components.controls.ListPreference
-import app.lawnchair.ui.preferences.components.controls.ListPreferenceEntry
-import app.lawnchair.ui.preferences.components.invariantDeviceProfile
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.NestedScrollStretch
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.util.Constants
-import app.lawnchair.util.getThemedIconPacksInstalled
-import app.lawnchair.util.isPackageInstalled
+import app.yitap.preferences.PreferenceAdapter
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.ui.preferences.LocalPreferenceInteractor
+import app.yitap.ui.preferences.components.DummyLauncherBox
+import app.yitap.ui.preferences.components.DummyLauncherLayout
+import app.yitap.ui.preferences.components.WallpaperPreview
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
+import app.yitap.ui.preferences.components.invariantDeviceProfile
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.NestedScrollStretch
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.util.Constants
+import app.yitap.util.getThemedIconPacksInstalled
+import app.yitap.util.isPackageInstalled
 import com.android.launcher3.R
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import kotlinx.collections.immutable.toPersistentList

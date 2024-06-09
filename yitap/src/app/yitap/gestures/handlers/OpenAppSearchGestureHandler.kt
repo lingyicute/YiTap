@@ -1,11 +1,11 @@
-package app.lawnchair.gestures.handlers
+package app.yitap.gestures.handlers
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.yitap.YitapLauncher
 
 class OpenAppSearchGestureHandler(context: Context) : OpenAppDrawerGestureHandler(context) {
 
-    override suspend fun onTrigger(launcher: LawnchairLauncher) {
+    override suspend fun onTrigger(launcher: YitapLauncher) {
         super.onTrigger(launcher)
         launcher.appsView.searchUiManager.editText?.showKeyboard(true)
     }

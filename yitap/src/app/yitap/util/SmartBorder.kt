@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 // Adapted from https://gist.github.com/Gowsky/4613829b2e94c846a5bbcd41367662d9.
 
-package app.lawnchair.util
+package app.yitap.util
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.ui.Modifier

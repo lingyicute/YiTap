@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, Lawnchair
+ * Copyright 2021, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package app.lawnchair.gestures.handlers
+package app.yitap.gestures.handlers
 
 import android.content.Context
-import app.lawnchair.LawnchairLauncher
+import app.yitap.YitapLauncher
 
 sealed class GestureHandler(val context: Context) {
-    abstract suspend fun onTrigger(launcher: LawnchairLauncher)
+    abstract suspend fun onTrigger(launcher: YitapLauncher)
 }
 
 class NoOpGestureHandler(context: Context) : GestureHandler(context) {
-    override suspend fun onTrigger(launcher: LawnchairLauncher) = Unit
+    override suspend fun onTrigger(launcher: YitapLauncher) = Unit
 }

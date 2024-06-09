@@ -1,4 +1,4 @@
-package app.lawnchair.ui.preferences.data.liveinfo
+package app.yitap.ui.preferences.data.liveinfo
 
 import okhttp3.ResponseBody
 import retrofit2.Response

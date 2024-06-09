@@ -1,11 +1,11 @@
-package app.lawnchair.allapps.views
+package app.yitap.allapps.views
 
 import android.graphics.Canvas
 import android.graphics.Rect
 import android.view.View
 import androidx.core.view.children
 import androidx.recyclerview.widget.RecyclerView
-import app.lawnchair.search.adapter.SearchAdapterItem
+import app.yitap.search.adapter.SearchAdapterItem
 import com.android.launcher3.R
 import com.android.launcher3.allapps.ActivityAllAppsContainerView
 

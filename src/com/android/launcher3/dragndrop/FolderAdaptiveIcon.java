@@ -40,7 +40,7 @@ import com.android.launcher3.icons.BitmapRenderer;
 import com.android.launcher3.util.Preconditions;
 import com.android.launcher3.views.ActivityContext;
 
-import app.lawnchair.icons.CustomAdaptiveIconDrawable;
+import app.yitap.icons.CustomAdaptiveIconDrawable;
 
 /**
  * {@link AdaptiveIconDrawable} representation of a {@link FolderIcon}

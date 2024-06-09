@@ -1,4 +1,4 @@
-package app.lawnchair.icons
+package app.yitap.icons
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

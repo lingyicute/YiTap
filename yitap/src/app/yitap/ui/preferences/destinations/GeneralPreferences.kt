@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, Lawnchair
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package app.lawnchair.ui.preferences.destinations
+package app.yitap.ui.preferences.destinations
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -23,28 +23,28 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import app.lawnchair.preferences.getAdapter
-import app.lawnchair.preferences.preferenceManager
-import app.lawnchair.preferences2.asState
-import app.lawnchair.preferences2.preferenceManager2
-import app.lawnchair.theme.color.ColorOption
-import app.lawnchair.ui.preferences.LocalIsExpandedScreen
-import app.lawnchair.ui.preferences.LocalPreferenceInteractor
-import app.lawnchair.ui.preferences.components.FontPreference
-import app.lawnchair.ui.preferences.components.NavigationActionPreference
-import app.lawnchair.ui.preferences.components.NotificationDotsPreference
-import app.lawnchair.ui.preferences.components.ThemePreference
-import app.lawnchair.ui.preferences.components.colorpreference.ColorContrastWarning
-import app.lawnchair.ui.preferences.components.colorpreference.ColorPreference
-import app.lawnchair.ui.preferences.components.controls.SliderPreference
-import app.lawnchair.ui.preferences.components.controls.SwitchPreference
-import app.lawnchair.ui.preferences.components.controls.WarningPreference
-import app.lawnchair.ui.preferences.components.layout.DividerColumn
-import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
-import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
-import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
-import app.lawnchair.ui.preferences.components.notificationDotsEnabled
-import app.lawnchair.ui.preferences.components.notificationServiceEnabled
+import app.yitap.preferences.getAdapter
+import app.yitap.preferences.preferenceManager
+import app.yitap.preferences2.asState
+import app.yitap.preferences2.preferenceManager2
+import app.yitap.theme.color.ColorOption
+import app.yitap.ui.preferences.LocalIsExpandedScreen
+import app.yitap.ui.preferences.LocalPreferenceInteractor
+import app.yitap.ui.preferences.components.FontPreference
+import app.yitap.ui.preferences.components.NavigationActionPreference
+import app.yitap.ui.preferences.components.NotificationDotsPreference
+import app.yitap.ui.preferences.components.ThemePreference
+import app.yitap.ui.preferences.components.colorpreference.ColorContrastWarning
+import app.yitap.ui.preferences.components.colorpreference.ColorPreference
+import app.yitap.ui.preferences.components.controls.SliderPreference
+import app.yitap.ui.preferences.components.controls.SwitchPreference
+import app.yitap.ui.preferences.components.controls.WarningPreference
+import app.yitap.ui.preferences.components.layout.DividerColumn
+import app.yitap.ui.preferences.components.layout.ExpandAndShrink
+import app.yitap.ui.preferences.components.layout.PreferenceGroup
+import app.yitap.ui.preferences.components.layout.PreferenceLayout
+import app.yitap.ui.preferences.components.notificationDotsEnabled
+import app.yitap.ui.preferences.components.notificationServiceEnabled
 import com.android.launcher3.R
 
 object GeneralRoutes {

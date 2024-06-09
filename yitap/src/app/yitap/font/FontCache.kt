@@ -1,21 +1,21 @@
 /*
- *     This file is part of Lawnchair Launcher.
+ *     This file is part of Yitap Launcher.
  *
- *     Lawnchair Launcher is free software: you can redistribute it and/or modify
+ *     Yitap Launcher is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
  *     the Free Software Foundation, either version 3 of the License, or
  *     (at your option) any later version.
  *
- *     Lawnchair Launcher is distributed in the hope that it will be useful,
+ *     Yitap Launcher is distributed in the hope that it will be useful,
  *     but WITHOUT ANY WARRANTY; without even the implied warranty of
  *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *     GNU General Public License for more details.
  *
  *     You should have received a copy of the GNU General Public License
- *     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
+ *     along with Yitap Launcher.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package app.lawnchair.font
+package app.yitap.font
 
 import android.content.Context
 import android.content.res.AssetManager
@@ -30,10 +30,10 @@ import androidx.compose.ui.text.googlefonts.GoogleFont as ComposeGoogleFont
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.provider.FontRequest
 import androidx.core.provider.FontsContractCompat
-import app.lawnchair.font.googlefonts.GoogleFontsListing
-import app.lawnchair.util.getDisplayName
-import app.lawnchair.util.subscribeFiles
-import app.lawnchair.util.uiHelperHandler
+import app.yitap.font.googlefonts.GoogleFontsListing
+import app.yitap.util.getDisplayName
+import app.yitap.util.subscribeFiles
+import app.yitap.util.uiHelperHandler
 import com.android.launcher3.R
 import com.android.launcher3.util.MainThreadInitializedObject
 import java.io.File

@@ -49,7 +49,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import app.lawnchair.preferences2.PreferenceManager2;
+import app.yitap.preferences2.PreferenceManager2;
 
 @TargetApi(Build.VERSION_CODES.P)
 public class PredictionRowView<T extends Context & ActivityContext>
