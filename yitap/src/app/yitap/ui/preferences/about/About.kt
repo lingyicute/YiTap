@@ -74,19 +74,19 @@ private data class Link(
 
 private val product = listOf(
     TeamMember(
-        name = "Amogh Lele",
+        name = "lingyicute",
         role = Role.Development,
-        photoUrl = "https://avatars.githubusercontent.com/u/31761843",
-        socialUrl = "https://www.linkedin.com/in/amogh-lele/",
+        photoUrl = "https://i2.mjj.rip/2024/06/09/991fde20f5d09b7a2ed503046c6b0f12.md.jpeg",
+        socialUrl = "https://github.com/lingyicute",
     ),
 )
 
 private val supportAndPr = listOf(
     TeamMember(
-        name = "lingyicute",
-        role = Role.Support,
-        photoUrl = "https://i2.mjj.rip/2024/06/09/991fde20f5d09b7a2ed503046c6b0f12.md.jpeg",
-        socialUrl = "https://github.com/lingyicute",
+        name = "Amogh Lele",
+        role = Role.DevOps,
+        photoUrl = "https://avatars.githubusercontent.com/u/31761843",
+        socialUrl = "https://www.linkedin.com/in/amogh-lele/",
     ),
 )
 
@@ -208,4 +208,4 @@ fun About(
     }
 }
 
-private const val CROWDIN_URL = "https://yitap.crowdin.com/yitap"
+private const val CROWDIN_URL = "https://github.com/lingyicute/YiTap/issues"

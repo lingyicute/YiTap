@@ -18,15 +18,6 @@ If applicable, attach log files.
 
 Please make sure to be civil during discussion of your contribution (refer to the [Code of Conduct](CODE_OF_CONDUCT.md))
 
-### 🌐 Translation
-
-For translation, visit [YiTap on Crowdin](https://yitap.crowdin.com) and follow these tips:
-
--   When using quotation marks, insert the symbols specific to the target language, as listed in this [this summary table](https://en.wikipedia.org/wiki/Quotation_mark#Summary_table);
--   YiTap uses title case for some English UI text while other languages do not use title case; opt for sentence case instead;
--   Some English terminology may have not have commonly-used equivalents in other languages. In such cases, use short descriptive phrases—for example, the equivalent of _bottom row_ for _dock_;
--   Some languages (e.g. French) have variations of words depending if it's masculine or feminine (gender-specific); we recommend opting for gender-neutral words instead.
-
 ### 🧑‍💻 Code
 
 > [!NOTE]
