@@ -214,11 +214,11 @@ android {
 
         debug {
             applicationIdSuffix ".debug"
-            resValue("string", "derived_app_name", "YiTap (Debug)")
+            resValue("string", "derived_app_name", "Yitap (Debug)")
         }
 
         release {
-            resValue("string", "derived_app_name", "YiTap")
+            resValue("string", "derived_app_name", "Yitap")
             minifyEnabled true
             shrinkResources true
             proguardFiles proguardFilesFromAosp + "proguard.pro"
