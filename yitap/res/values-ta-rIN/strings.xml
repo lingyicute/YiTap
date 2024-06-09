@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -168,7 +168,7 @@
     <string name="action_paste">ஒட்டவும்</string>
     <string name="copied_toast">நகலகத்திற்கு நகலெடுக்கப்பட்டது.</string>
     <string name="invalid_color">தவறான வண்ணம்</string>
-    <string name="launcher_default_color">Managed by Yitap</string>
+    <string name="launcher_default_color">Managed by YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">முகப்புத் திரையில் புதிய செயலிகளை சேர்</string>
     <string name="minus_one_enable">Show Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persian</string>
     <string name="smartspace_preferences">சுமார்ட் இடம் விருப்பங்கள்</string>
     <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “YiTap” widget</string>
     <string name="smartspace_mode_label">At a Glance Provider</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Search</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">செயலி தேடல்</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap have a revenue share agreement.\n\nSearching with %1$s helps support YiTap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Open Search</string>
     <string name="pick_app_for_gesture">Pick App</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as YiTap is not set as the Recents provider.</string>
     <string name="translucent_background">Translucent Background</string>
     <string name="translucent_background_alpha">பின்னணி ஒளிபுகாமை</string>
     <string name="recents_actions_label">விரைவு செயல்கள்</string>
@@ -348,7 +348,7 @@
     <string name="dt2s_admin_hint">அணைக்க இரட்டைத்தட்டலைப் பயன்படுத்த Yitapஐச் சாதன நிர்வாகிச் செயலியாக அமை. அமைப்பைத் திற என்பதைத் தட்டி, “இந்தச் சாதன நிர்வாகி ஆப்ஸைச் செயல்படுத்து” என்பதைத் தட்டுக</string>
     <string name="dt2s_admin_warning">Double Tap to Sleep will be disabled.</string>
     <string name="dt2s_a11y_hint_title">Accessibility service required</string>
-    <string name="dt2s_a11y_hint">அணைக்க இரட்டைத்தட்டலைப் பயன்படுத்த, Yitap அணுகல்தன்மை சேவையை இயக்கு. அமைப்பைத் திற என்பதைத் தட்டி Yitapஐத் தேர்ந்தெடுத்து Yitapஐப் பயன்படுத்து என்பதை இயக்கு.</string>
+    <string name="dt2s_a11y_hint">அணைக்க இரட்டைத்தட்டலைப் பயன்படுத்த, YiTap அணுகல்தன்மை சேவையை இயக்கு. அமைப்பைத் திற என்பதைத் தட்டி Yitapஐத் தேர்ந்தெடுத்து Yitapஐப் பயன்படுத்து என்பதை இயக்கு.</string>
     <string name="dt2s_warning_open_settings">அமைப்புகளை திறக்க</string>
     <string name="loading">ஏற்றுகிறது…</string>
     <string name="system">இயங்குதளம்</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">பரிந்துரைகள்</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Yitap பிழை அறிக்கை</string>
+    <string name="yitap_bug_report">YiTap பிழை அறிக்கை</string>
     <string name="crash_report_notif_title">%1$s சிதைந்தது</string>
     <string name="action_upload_crash_report">Upload Crash Log</string>
     <string name="action_copy_link">தொடுப்பை நகலெடு</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">பரிந்துரைகள்</string>
     <string name="all_apps_device_search_hint">தேடு</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

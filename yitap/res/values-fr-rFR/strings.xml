@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Définissez Yitap en tant que lanceur d\'applications par défaut pour accéder aux raccourcis et bien plus.</string>
+    <string name="set_default_launcher_tip">Définissez YiTap en tant que lanceur d\'applications par défaut pour accéder aux raccourcis et bien plus.</string>
     <string name="settings">Paramètres</string>
     <string name="general_label">Général</string>
     <string name="general_description">Couleurs, pack d\'icônes, pastilles de notification</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Bouton « Tout effacer », rayon d\'angle</string>
     <string name="about_label">À propos</string>
     <string name="app_info_drop_target_label">Infos sur l\'appli</string>
-    <string name="debug_restart_launcher">Redémarrer Yitap</string>
+    <string name="debug_restart_launcher">Redémarrer YiTap</string>
     <string name="experimental_features_label">Fonctionnalités expérimentales</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Coller</string>
     <string name="copied_toast">Copié dans le presse-papiers.</string>
     <string name="invalid_color">Couleur invalide</string>
-    <string name="launcher_default_color">Géré par Yitap</string>
+    <string name="launcher_default_color">Géré par YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Ajouter les nouvelles applications à l\'écran d\'accueil</string>
     <string name="minus_one_enable">Afficher le flux</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persan</string>
     <string name="smartspace_preferences">Préférences</string>
     <string name="smartspace_widget_toggle_label">Afficher sur l\'écran d\'accueil</string>
-    <string name="smartspace_widget_toggle_description">Aperçu peut être ajouté manuellement à l\'écran d\'accueil en plaçant le widget « Yitap »</string>
+    <string name="smartspace_widget_toggle_description">Aperçu peut être ajouté manuellement à l\'écran d\'accueil en plaçant le widget « YiTap »</string>
     <string name="smartspace_mode_label">Fournisseur d\'Aperçu</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Recherche Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Décalage vers le haut</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Recherche d\'applications</string>
-    <string name="search_provider_sponsored_description">Yitap a un accord de partage des revenus avec %1$s.\n\nEn effectuant vos recherches avec %1$s, vous soutenez Yitap.</string>
+    <string name="search_provider_sponsored_description">YiTap a un accord de partage des revenus avec %1$s.\n\nEn effectuant vos recherches avec %1$s, vous soutenez YiTap.</string>
     <string name="app_label">Application</string>
     <string name="website_label">Site Web</string>
     <string name="qsb_search_provider_app_required">Application requise</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Ouvrir la recherche</string>
     <string name="pick_app_for_gesture">Sélectionnez une application</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Ces paramètres seront ignorés car Yitap n\'est pas défini comme fournisseur de Récents.</string>
+    <string name="quickswitch_ignored_warning">Ces paramètres seront ignorés car YiTap n\'est pas défini comme fournisseur de Récents.</string>
     <string name="translucent_background">Arrière-plan translucide</string>
     <string name="translucent_background_alpha">Opacité de l\'arrière-plan</string>
     <string name="recents_actions_label">Actions rapides</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Élément supprimé</string>
     <string name="all_apps_no_search_results">Aucune application correspondant à « <xliff:g example="Android" id="query">%1$s</xliff:g> » n\'a pu être trouvée.</string>
     <string name="dt2s_admin_hint_title">Autorisations d\'administration requises</string>
-    <string name="dt2s_admin_hint">Pour mettre en veille votre appareil à l\'aide d\'un double appui, définissez Yitap comme application d\'administration de l\'appareil. Appuyez sur Ouvrir les paramètres puis appuyez sur « Activer l\'appli d\'administration de cet appareil ».</string>
+    <string name="dt2s_admin_hint">Pour mettre en veille votre appareil à l\'aide d\'un double appui, définissez YiTap comme application d\'administration de l\'appareil. Appuyez sur Ouvrir les paramètres puis appuyez sur « Activer l\'appli d\'administration de cet appareil ».</string>
     <string name="dt2s_admin_warning">Vous ne pourrez plus mettre en veille votre appareil à l\'aide d\'un double appui.</string>
     <string name="dt2s_a11y_hint_title">Activez le service d\'accessibilité</string>
-    <string name="dt2s_a11y_hint">Pour mettre en veille votre appareil à l\'aide d\'un double appui, activez le service d\'accessibilité Yitap. Appuyez sur Ouvrir les paramètres, sélectionnez Yitap puis activez Utiliser Yitap.</string>
+    <string name="dt2s_a11y_hint">Pour mettre en veille votre appareil à l\'aide d\'un double appui, activez le service d\'accessibilité YiTap. Appuyez sur Ouvrir les paramètres, sélectionnez YiTap puis activez Utiliser YiTap.</string>
     <string name="dt2s_warning_open_settings">Ouvrir les paramètres</string>
     <string name="loading">Chargement…</string>
     <string name="system">Système</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Suggestions</string>
     <string name="show_suggested_apps_at_drawer_top">Afficher des applications suggérées en haut du tiroir d\'applications</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Signalement de bug Yitap</string>
+    <string name="yitap_bug_report">Signalement de bug YiTap</string>
     <string name="crash_report_notif_title">%1$s a planté</string>
     <string name="action_upload_crash_report">Envoyer le journal de plantage</string>
     <string name="action_copy_link">Copier le lien</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Médias, fichiers et autres</string>
     <string name="search_pref_result_contacts_description">Contacts et autres</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Pour pouvoir rechercher des contacts, accordez à Yitap les autorisations Contacts et Téléphone.</string>
-    <string name="warn_files_permission_content">Pour pouvoir rechercher parmi vos fichiers, autorisez Yitap à accéder au stockage.</string>
+    <string name="warn_contact_permission_content">Pour pouvoir rechercher des contacts, accordez à YiTap les autorisations Contacts et Téléphone.</string>
+    <string name="warn_files_permission_content">Pour pouvoir rechercher parmi vos fichiers, autorisez YiTap à accéder au stockage.</string>
     <string name="grant_requested_permissions">Accorder les autorisations</string>
     <string name="pref_suggestion_label">Suggestions</string>
     <string name="all_apps_device_search_hint">Rechercher</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Recherche globale (via ASI)</string>
     <string name="app_search_algorithm">Algorithme de recherche</string>
     <string name="all_apps_search_result_calculator">Calculatrice</string>
-    <string name="accessibility_service_description">Pour pouvoir verrouiller votre téléphone en un seul geste, Yitap a besoin des droits d\'accessibilité.\n\nYitap n\'observe aucune action utilisateur, mais ce privilège est accordé à tous les services d\'accessibilité. Yitap rejette tout événement envoyé par le système.\n\nAfin de verrouiller votre téléphone, Yitap utilise le service d\'accessibilité performGlobalAction.</string>
+    <string name="accessibility_service_description">Pour pouvoir verrouiller votre téléphone en un seul geste, YiTap a besoin des droits d\'accessibilité.\n\nYitap n\'observe aucune action utilisateur, mais ce privilège est accordé à tous les services d\'accessibilité. YiTap rejette tout événement envoyé par le système.\n\nAfin de verrouiller votre téléphone, YiTap utilise le service d\'accessibilité performGlobalAction.</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Ορίστε τον εκκινητή Yitap ως προεπιλεγμένο πρόγραμμα εκκίνησης για πρόσβαση σε συντομεύσεις και πολλά άλλα.</string>
+    <string name="set_default_launcher_tip">Ορίστε τον εκκινητή YiTap ως προεπιλεγμένο πρόγραμμα εκκίνησης για πρόσβαση σε συντομεύσεις και πολλά άλλα.</string>
     <string name="settings">Ρυθμίσεις</string>
     <string name="general_label">Γενικά</string>
     <string name="general_description">Κουκκκίδες Ειδοποιήσεων, Πακέτο Εικονιδίων</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Κουμπί Καθαρισμού Όλων, Ακτίνα Γωνίας</string>
     <string name="about_label">Πληροφορίες</string>
     <string name="app_info_drop_target_label">Πληροφορίες Εφαρμογής</string>
-    <string name="debug_restart_launcher">Επανεκκίνηση του Yitap</string>
+    <string name="debug_restart_launcher">Επανεκκίνηση του YiTap</string>
     <string name="experimental_features_label">Πειραματικά Χαρακτηριστικά</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Επικόλληση</string>
     <string name="copied_toast">Αντιγράφηκε στο πρόχειρο.</string>
     <string name="invalid_color">Μη Έγκυρο Χρώμα</string>
-    <string name="launcher_default_color">Διαχειριζόμενο από τον εκκινητή Yitap</string>
+    <string name="launcher_default_color">Διαχειριζόμενο από τον εκκινητή YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Προσθήκη Nέων Eφαρμογών Στην Αρχική Οθόνη</string>
     <string name="minus_one_enable">Εμφάνιση Ροής</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Περσικό</string>
     <string name="smartspace_preferences">Προτιμήσεις</string>
     <string name="smartspace_widget_toggle_label">Εμφάνιση στην Αρχική Οθόνη</string>
-    <string name="smartspace_widget_toggle_description">Το γραφικό στοιχείο “Με μια Ματιά” μπορεί να προστεθεί χειροκίνητα τοποθετώντας το γραφικό με ονομασία “Yitap”</string>
+    <string name="smartspace_widget_toggle_description">Το γραφικό στοιχείο “Με μια Ματιά” μπορεί να προστεθεί χειροκίνητα τοποθετώντας το γραφικό με ονομασία “YiTap”</string>
     <string name="smartspace_mode_label">Πάροχος γραφικού \"Με μια Ματιά\"</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Αναζήτηση Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Κάτω Περιθώριο</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Αναζήτηση Εφαρμογής</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap έχουν συμφωνία μεριδίου εσόδων.\n\nΑναζήτηση με το %1$s βοηθά στην υποστήριξη του Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap έχουν συμφωνία μεριδίου εσόδων.\n\nΑναζήτηση με το %1$s βοηθά στην υποστήριξη του YiTap.</string>
     <string name="app_label">Εφαρμογή</string>
     <string name="website_label">Ιστοσελίδα</string>
     <string name="qsb_search_provider_app_required">Απαιτείται η εφαρμογή</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Άνοιγμα Αναζήτησης</string>
     <string name="pick_app_for_gesture">Επιλογή Εφαρμογής</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Αυτές οι ρυθμίσεις θα αγνοηθούν καθώς ο εκκινητής Yitap δεν έχει οριστεί ως η υπηρεσία παροχής Πρόσφατων εφαρμογών.</string>
+    <string name="quickswitch_ignored_warning">Αυτές οι ρυθμίσεις θα αγνοηθούν καθώς ο εκκινητής YiTap δεν έχει οριστεί ως η υπηρεσία παροχής Πρόσφατων εφαρμογών.</string>
     <string name="translucent_background">Ημιδιαφανές Φόντο</string>
     <string name="translucent_background_alpha">Αδιαφάνεια Φόντου</string>
     <string name="recents_actions_label">Γρήγορες Ενέργειες</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Το στοιχείο αφαιρέθηκε</string>
     <string name="all_apps_no_search_results">Δεν βρέθηκαν εφαρμογές που να ταιριάζουν με “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Admin permission required</string>
-    <string name="dt2s_admin_hint">Για να χρησιμοποιήσετε το διπλό πάτημα για ύπνο, ορίστε τον εκκινητή Yitap ως εφαρμογή διαχείρισης συσκευής. Πατήστε στο Ανοίξτε τις ρυθμίσεις και μετά πατήστε «Ενεργοποίηση αυτής της εφαρμογής ως διαχειριστή της συσκευής.»</string>
+    <string name="dt2s_admin_hint">Για να χρησιμοποιήσετε το διπλό πάτημα για ύπνο, ορίστε τον εκκινητή YiTap ως εφαρμογή διαχείρισης συσκευής. Πατήστε στο Ανοίξτε τις ρυθμίσεις και μετά πατήστε «Ενεργοποίηση αυτής της εφαρμογής ως διαχειριστή της συσκευής.»</string>
     <string name="dt2s_admin_warning">Double Tap to Sleep will be disabled.</string>
     <string name="dt2s_a11y_hint_title">Accessibility service required</string>
-    <string name="dt2s_a11y_hint">Για να χρησιμοποιήσετε το διπλό πάτημα για ύπνο, ενεργοποιήστε την υπηρεσία προσβασιμότητας του εκκινητή Yitap. Πατήστε στο Άνοιγμα Ρυθμίσεων και μετά επιλέξτε τον Yitap και ενεργοποιήστε την Χρήση του Yitap.</string>
+    <string name="dt2s_a11y_hint">Για να χρησιμοποιήσετε το διπλό πάτημα για ύπνο, ενεργοποιήστε την υπηρεσία προσβασιμότητας του εκκινητή YiTap. Πατήστε στο Άνοιγμα Ρυθμίσεων και μετά επιλέξτε τον YiTap και ενεργοποιήστε την Χρήση του YiTap.</string>
     <string name="dt2s_warning_open_settings">Άνοιγμα Ρυθμίσεων</string>
     <string name="loading">Φόρτωση…</string>
     <string name="system">Σύστημα</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Προτάσεις</string>
     <string name="show_suggested_apps_at_drawer_top">Εμφάνιση προτεινόμενων εφαρμογών στο επάνω μέρος του συρταριού εφαρμογών</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Αναφορά σφάλματος του Yitap</string>
+    <string name="yitap_bug_report">Αναφορά σφάλματος του YiTap</string>
     <string name="crash_report_notif_title">%1$s Κράσαρε</string>
     <string name="action_upload_crash_report">Μεταφόρτωση Καταγραφής Κατάρρευσης</string>
     <string name="action_copy_link">Αντιγραφή Συνδέσμου</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Πολυμέσα, αρχεία, &amp; άλλα</string>
     <string name="search_pref_result_contacts_description">Επαφές και άλλα</string>
     <string name="search_pref_result_web_description">Μέσω <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Για αναζήτηση επαφών, εκχωρήστε δικαιώματα Επαφών και Τηλεφώνου στον εκκινητή Yitap.</string>
-    <string name="warn_files_permission_content">Για αναζήτηση στα αρχεία σας, εκχωρήστε δικαιώματα Αποθήκευσης στον εκκινητή Yitap.</string>
+    <string name="warn_contact_permission_content">Για αναζήτηση επαφών, εκχωρήστε δικαιώματα Επαφών και Τηλεφώνου στον εκκινητή YiTap.</string>
+    <string name="warn_files_permission_content">Για αναζήτηση στα αρχεία σας, εκχωρήστε δικαιώματα Αποθήκευσης στον εκκινητή YiTap.</string>
     <string name="grant_requested_permissions">Εκχώρηση Δικαιωμάτων</string>
     <string name="pref_suggestion_label">Προτάσεις</string>
     <string name="all_apps_device_search_hint">Αναζήτηση</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Γενική Αναζήτηση (μέσω ASI)</string>
     <string name="app_search_algorithm">Αλγόριθμος Αναζήτησης</string>
     <string name="all_apps_search_result_calculator">Αριθμομηχανή</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

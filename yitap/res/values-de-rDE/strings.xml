@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Lege Yitap als Standard-Launcher fest, um auf Verknüpfungen und mehr zuzugreifen.</string>
+    <string name="set_default_launcher_tip">Lege YiTap als Standard-Launcher fest, um auf Verknüpfungen und mehr zuzugreifen.</string>
     <string name="settings">Einstellungen</string>
     <string name="general_label">Allgemein</string>
     <string name="general_description">Farben, Symbolpaket, Benachrichtigungspunkte</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Alles entfernen Taste, Eckradius</string>
     <string name="about_label">Über</string>
     <string name="app_info_drop_target_label">App Info</string>
-    <string name="debug_restart_launcher">Yitap neustarten</string>
+    <string name="debug_restart_launcher">YiTap neustarten</string>
     <string name="experimental_features_label">Experimentelle Funktionen</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Einfügen</string>
     <string name="copied_toast">In Zwischenablage kopiert.</string>
     <string name="invalid_color">Ungültige Farbe</string>
-    <string name="launcher_default_color">Von Yitap verwaltet</string>
+    <string name="launcher_default_color">Von YiTap verwaltet</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Neue Apps zum Startbildschirm hinzufügen</string>
     <string name="minus_one_enable">Feed anzeigen</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persisch</string>
     <string name="smartspace_preferences">Voreinstellungen</string>
     <string name="smartspace_widget_toggle_label">Auf Startbildschirm anzeigen</string>
-    <string name="smartspace_widget_toggle_description">Auf einen Blick kann manuell zum Startbildschirm hinzugefügt werden, indem man das Widget „Yitap“ platziert</string>
+    <string name="smartspace_widget_toggle_description">Auf einen Blick kann manuell zum Startbildschirm hinzugefügt werden, indem man das Widget „YiTap“ platziert</string>
     <string name="smartspace_mode_label">Auf-einen-Blick-Anbieter</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google-Suche</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Unterer Abstand</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">App-Suche</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap hat eine Umsatzbeteiligungsvereinbarung.\n\nSuche mit %1$s unterstützt Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap hat eine Umsatzbeteiligungsvereinbarung.\n\nSuche mit %1$s unterstützt YiTap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Webseite</string>
     <string name="qsb_search_provider_app_required">App erforderlich</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Suche öffnen</string>
     <string name="pick_app_for_gesture">App auswählen</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Diese Einstellungen werden ignoriert, da Yitap nicht als \"Recents-Provider\" eingestellt ist.</string>
+    <string name="quickswitch_ignored_warning">Diese Einstellungen werden ignoriert, da YiTap nicht als \"Recents-Provider\" eingestellt ist.</string>
     <string name="translucent_background">Transluzenter Hintergrund</string>
     <string name="translucent_background_alpha">Hintergrundtransparenz</string>
     <string name="recents_actions_label">Schnelle Aktionen</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Element entfernt</string>
     <string name="all_apps_no_search_results">Keine Apps gefunden mit “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Adminberechtigung erforderlich</string>
-    <string name="dt2s_admin_hint">Um Doppeltippen zum Display Ausschalten zu verwenden, aktiviere Yitap als App zur Geräteverwaltung. Öffne die Einstellungen und tippe auf „Diese App zur Geräteverwaltung aktivieren“</string>
+    <string name="dt2s_admin_hint">Um Doppeltippen zum Display Ausschalten zu verwenden, aktiviere YiTap als App zur Geräteverwaltung. Öffne die Einstellungen und tippe auf „Diese App zur Geräteverwaltung aktivieren“</string>
     <string name="dt2s_admin_warning">Doppeltes Tippen zum Schlafen wird deaktiviert.</string>
     <string name="dt2s_a11y_hint_title">Bedienungshilfen erforderlich</string>
-    <string name="dt2s_a11y_hint">Um Doppel-Tippen zum Display Ausschalten zu verwenden, aktiviere die Bedienungshilfe für Yitap. Öffne die Einstellungen, wähle Yitap aus und aktiviere den Dienst.</string>
+    <string name="dt2s_a11y_hint">Um Doppel-Tippen zum Display Ausschalten zu verwenden, aktiviere die Bedienungshilfe für YiTap. Öffne die Einstellungen, wähle YiTap aus und aktiviere den Dienst.</string>
     <string name="dt2s_warning_open_settings">Einstellungen öffnen</string>
     <string name="loading">Laden…</string>
     <string name="system">System</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Vorschläge</string>
     <string name="show_suggested_apps_at_drawer_top">Zeige App-Vorschläge oben in der Übersicht</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Yitap-Fehlerbericht</string>
+    <string name="yitap_bug_report">YiTap-Fehlerbericht</string>
     <string name="crash_report_notif_title">%1$s abgestürzt</string>
     <string name="action_upload_crash_report">Absturzprotokoll hochladen</string>
     <string name="action_copy_link">Link kopieren</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Medien, Dateien und mehr</string>
     <string name="search_pref_result_contacts_description">Kontakte und mehr</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Um nach Kontakten zu suchen, erteile Yitap Berechtigungen für Kontakte und Telefon.</string>
-    <string name="warn_files_permission_content">Um Deine Dateien zu durchsuchen, erteile Yitap Speicher-Berechtigungen.</string>
+    <string name="warn_contact_permission_content">Um nach Kontakten zu suchen, erteile YiTap Berechtigungen für Kontakte und Telefon.</string>
+    <string name="warn_files_permission_content">Um Deine Dateien zu durchsuchen, erteile YiTap Speicher-Berechtigungen.</string>
     <string name="grant_requested_permissions">Berechtigungen erteilen</string>
     <string name="pref_suggestion_label">Vorschläge</string>
     <string name="all_apps_device_search_hint">Suchen</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Globale Suche (über ASI)</string>
     <string name="app_search_algorithm">Such-Algorithmus</string>
     <string name="all_apps_search_result_calculator">Rechner</string>
-    <string name="accessibility_service_description">Um Dein Gerät mit einer Geste zu sperren, benötigt Yitap Bedienungshilfen-Zugriff.\n\nYitap beobachtet keine Nutzeraktionen, auch wenn die Bedienungshilfen dies ermöglichen würden. Yitap verwirft alle vom System gesendeten Ereignisse.\n\nUm Dein Gerät zu sperren, verwendet Yitap den performGlobalAction-Dienst.</string>
+    <string name="accessibility_service_description">Um Dein Gerät mit einer Geste zu sperren, benötigt YiTap Bedienungshilfen-Zugriff.\n\nYitap beobachtet keine Nutzeraktionen, auch wenn die Bedienungshilfen dies ermöglichen würden. YiTap verwirft alle vom System gesendeten Ereignisse.\n\nUm Dein Gerät zu sperren, verwendet YiTap den performGlobalAction-Dienst.</string>
 </resources>

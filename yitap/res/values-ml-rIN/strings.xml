@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Set Yitap as your default launcher to access shortcuts and more.</string>
+    <string name="set_default_launcher_tip">Set YiTap as your default launcher to access shortcuts and more.</string>
     <string name="settings">ക്രമീകരണം</string>
     <string name="general_label">പൊതുവായ</string>
     <string name="general_description">നിറങ്ങൾ, ഐക്കൺ പായ്ക്ക്, അറിയിപ്പ് ഡോട്ടുകൾ</string>
@@ -168,7 +168,7 @@
     <string name="action_paste">Paste</string>
     <string name="copied_toast">ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി.</string>
     <string name="invalid_color">അസാധുവായ നിറം</string>
-    <string name="launcher_default_color">Managed by Yitap</string>
+    <string name="launcher_default_color">Managed by YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">പുതിയ ആപ്പുകൾ ഹോം സ്ക്രീനിൽ ചേർക്കുക</string>
     <string name="minus_one_enable">Show Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persian</string>
     <string name="smartspace_preferences">മുൻഗണനകൾ</string>
     <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “YiTap” widget</string>
     <string name="smartspace_mode_label">At a Glance Provider</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Search</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">App Search</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap have a revenue share agreement.\n\nSearching with %1$s helps support YiTap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Open Search</string>
     <string name="pick_app_for_gesture">Pick App</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as YiTap is not set as the Recents provider.</string>
     <string name="translucent_background">അല്പം സുതാര്യമായ പശ്ചാത്തലം</string>
     <string name="translucent_background_alpha">പശ്ചാത്തല ഒപാസിറ്റി</string>
     <string name="recents_actions_label">ക്വിക്ക് ഏക്ഷനുകൾ</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">നിർദ്ദേശങ്ങൾ</string>
     <string name="all_apps_device_search_hint">തിരയുക</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

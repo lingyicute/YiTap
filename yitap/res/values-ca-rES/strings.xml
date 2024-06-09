@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Estableix Yitap com el teu launcher per defecte per accedir a dreceres i més.</string>
+    <string name="set_default_launcher_tip">Estableix YiTap com el teu launcher per defecte per accedir a dreceres i més.</string>
     <string name="settings">Configuració</string>
     <string name="general_label">General</string>
     <string name="general_description">Colors, Paquet d\'icones, Punts de notificació</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Botó de «Neteja-ho tot», radi dels cantons</string>
     <string name="about_label">Quant a</string>
     <string name="app_info_drop_target_label">Informació de l\'aplicació</string>
-    <string name="debug_restart_launcher">Reinicia Yitap</string>
+    <string name="debug_restart_launcher">Reinicia YiTap</string>
     <string name="experimental_features_label">Funcions experimentals</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Enganxar</string>
     <string name="copied_toast">S\'ha copiat al porta-retalls.</string>
     <string name="invalid_color">Color invàlid</string>
-    <string name="launcher_default_color">Gestionat per Yitap</string>
+    <string name="launcher_default_color">Gestionat per YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Afegeix les apps noves a la Pantalla d\'inici</string>
     <string name="minus_one_enable">Mostra el Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persa</string>
     <string name="smartspace_preferences">Preferències</string>
     <string name="smartspace_widget_toggle_label">Mostrar a la pantalla principal</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “YiTap” widget</string>
     <string name="smartspace_mode_label">Proveïdor d\'una ullada</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Busqueda de Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Farcit inferior</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Buscar aplicacions</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap té un acord de compartir els ingressos.\n\nBuscant amb %1$s ajuda a finançar Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap té un acord de compartir els ingressos.\n\nBuscant amb %1$s ajuda a finançar YiTap.</string>
     <string name="app_label">Aplicació</string>
     <string name="website_label">Lloc web</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Obrir cerca</string>
     <string name="pick_app_for_gesture">Escollir aplicació</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Aquests ajustaments seran ignorats, ja que Yitap no està configurat al proveïdor de recents.</string>
+    <string name="quickswitch_ignored_warning">Aquests ajustaments seran ignorats, ja que YiTap no està configurat al proveïdor de recents.</string>
     <string name="translucent_background">Fons Translúcid</string>
     <string name="translucent_background_alpha">Opacitat del fons</string>
     <string name="recents_actions_label">Accions ràpides</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">No s\'han trobat apps que coincideixin amb \"<xliff:g example="Android" id="query">%1$s</xliff:g>\".</string>
     <string name="dt2s_admin_hint_title">Es necessiten permisos d\'administrador</string>
-    <string name="dt2s_admin_hint">Per a utilitzar el «Doble toc per a adormir», selecciona Yitap com a aplicació d\'administració del dispositiu. Toca «Obre la Configuració», i toca «Activa aquesta aplicació administradora del dispositiu»</string>
+    <string name="dt2s_admin_hint">Per a utilitzar el «Doble toc per a adormir», selecciona YiTap com a aplicació d\'administració del dispositiu. Toca «Obre la Configuració», i toca «Activa aquesta aplicació administradora del dispositiu»</string>
     <string name="dt2s_admin_warning">\"Toca dos cops per apagar la pantalla\" s\'apagarà.</string>
     <string name="dt2s_a11y_hint_title">Cal activar el Servei d\'Accessibilitat</string>
-    <string name="dt2s_a11y_hint">Per a utilitzar «Doble toc per a adormir», activa el servei d\'accessibilitat de Yitap. Toca «Obre la Configuració», selecciona «Yitap» i activa «Utilitza Yitap».</string>
+    <string name="dt2s_a11y_hint">Per a utilitzar «Doble toc per a adormir», activa el servei d\'accessibilitat de YiTap. Toca «Obre la Configuració», selecciona «YiTap» i activa «Utilitza YiTap».</string>
     <string name="dt2s_warning_open_settings">Obre la configuració</string>
     <string name="loading">Carregant…</string>
     <string name="system">Sistema</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Suggeriments</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Informa un error de Yitap</string>
+    <string name="yitap_bug_report">Informa un error de YiTap</string>
     <string name="crash_report_notif_title">%1$s ha deixat de funcionar</string>
     <string name="action_upload_crash_report">Pujar register d\'errors</string>
     <string name="action_copy_link">Copia l\'enllaç</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contactes i més</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Per buscar contactes, permet el permís de Contactes i Telèfon a Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">Per buscar contactes, permet el permís de Contactes i Telèfon a YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Suggeriments</string>
     <string name="all_apps_device_search_hint">Busca</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Cerca Global (amb ASI)</string>
     <string name="app_search_algorithm">Algoritme de Cerca</string>
     <string name="all_apps_search_result_calculator">Calculador</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

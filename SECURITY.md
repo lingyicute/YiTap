@@ -3,10 +3,10 @@
 ## Supported Versions
 
 > [!WARNING]
-> Yitap v2 (Play Store version) is **unsupported**. Use the newer alphas instead.
+> YiTap v2 (Play Store version) is **unsupported**. Use the newer alphas instead.
 > See [this FAQ page](https://yitap.app/faq#do-you-still-support-the-play-store-version) for additional information.
 
-The latest version of Yitap is the only supported version.
+The latest version of YiTap is the only supported version.
 
 | Version        | Supported          |
 | -------------- | ------------------ |

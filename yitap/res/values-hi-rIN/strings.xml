@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Set Yitap as your default launcher to access shortcuts and more.</string>
+    <string name="set_default_launcher_tip">Set YiTap as your default launcher to access shortcuts and more.</string>
     <string name="settings">सेटिंग्स</string>
     <string name="general_label">सामान्य</string>
     <string name="general_description">नोटिफिकेशन डॉट्स, आइकन पैक</string>
@@ -168,7 +168,7 @@
     <string name="action_paste">पेस्ट</string>
     <string name="copied_toast">क्लिपबोर्ड पर कॉपी हो गया</string>
     <string name="invalid_color">अमान्य रंग।</string>
-    <string name="launcher_default_color">Yitap द्वारा प्रबंधित</string>
+    <string name="launcher_default_color">YiTap द्वारा प्रबंधित</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">होम स्क्रीन पर नए ऐप्स जोड़ें</string>
     <string name="minus_one_enable">फ़ीड दिखाएं</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">फ़ारसी</string>
     <string name="smartspace_preferences">पसंद</string>
     <string name="smartspace_widget_toggle_label">होम स्क्रीन पर दिखाएं</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “YiTap” widget</string>
     <string name="smartspace_mode_label">ऐट अ ग्लैन्स प्रदाता</string>
     <string name="smartspace_mode_google">गूगल</string>
     <string name="smartspace_mode_google_search">गूगल खोज</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">ऐप खोजें</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap have a revenue share agreement.\n\nSearching with %1$s helps support YiTap.</string>
     <string name="app_label">ऐप</string>
     <string name="website_label">वेबसाइट</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">खोज खोलें</string>
     <string name="pick_app_for_gesture">ऐप चुनें</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as YiTap is not set as the Recents provider.</string>
     <string name="translucent_background">धुंधला बैकग्राउंड</string>
     <string name="translucent_background_alpha">चित्रभूमि अपारदर्शिता</string>
     <string name="recents_actions_label">क्विक एक्शंस</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">सुझाव</string>
     <string name="all_apps_device_search_hint">ऐप खोजें</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

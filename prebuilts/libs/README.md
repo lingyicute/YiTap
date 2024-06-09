@@ -1,7 +1,7 @@
-# Yitap Prebuilt JARs
+# YiTap Prebuilt JARs
 
 Launcher3 has some dependencies on internal AOSP modules. 
-To build Yitap, you have to build AOSP and obtain these JARs.
+To build YiTap, you have to build AOSP and obtain these JARs.
 
 | File                    | Path                                                                                                                             |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|

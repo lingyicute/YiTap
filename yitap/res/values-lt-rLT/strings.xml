@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Nustatykite Yitap kaip numatyta paleidėja, kad naudoti nuorodas ir daugiau.</string>
+    <string name="set_default_launcher_tip">Nustatykite YiTap kaip numatyta paleidėja, kad naudoti nuorodas ir daugiau.</string>
     <string name="settings">Nustatymai</string>
     <string name="general_label">Pagrindinis</string>
     <string name="general_description">Pranešimu taškai, Ikonu Paketas</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Išvalyti Visus Mygtukas, Kampo Spindulys</string>
     <string name="about_label">Apie</string>
     <string name="app_info_drop_target_label">Programelės Informacija</string>
-    <string name="debug_restart_launcher">Iš Naujo Paleiskite \"Yitap\"</string>
+    <string name="debug_restart_launcher">Iš Naujo Paleiskite \"YiTap\"</string>
     <string name="experimental_features_label">Expermentinės funkcijos</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Įklijuoti</string>
     <string name="copied_toast">Nukopijuota į iškarpinę.</string>
     <string name="invalid_color">Netinkama Spalva</string>
-    <string name="launcher_default_color">Valdoma „Yitap“</string>
+    <string name="launcher_default_color">Valdoma „YiTap“</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Pridėkite Naujas Programas į Namu Ekrana</string>
     <string name="minus_one_enable">Rodyti šoninį menių</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persų</string>
     <string name="smartspace_preferences">Parinktys</string>
     <string name="smartspace_widget_toggle_label">Rodyti Pagrindiniame Ekrane</string>
-    <string name="smartspace_widget_toggle_description">„At a Glance“ pranešimų valdiklį galima pridėti rankiniu būdu, įdėjus „Yitap“ valdiklį</string>
+    <string name="smartspace_widget_toggle_description">„At a Glance“ pranešimų valdiklį galima pridėti rankiniu būdu, įdėjus „YiTap“ valdiklį</string>
     <string name="smartspace_mode_label">„At a Glance“ Teikėjas</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Paieška</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Apačios tarpas</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Programų Paieška</string>
-    <string name="search_provider_sponsored_description">%1$s&amp; Yitap turi pelno dalinimosi sutartį.\n\nIeškojimas su %1$s padeda išlaikyti Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s&amp; YiTap turi pelno dalinimosi sutartį.\n\nIeškojimas su %1$s padeda išlaikyti YiTap.</string>
     <string name="app_label">Programėlė</string>
     <string name="website_label">Interneto Svetainė</string>
     <string name="qsb_search_provider_app_required">Reikalinga programėlė</string>
@@ -311,7 +311,7 @@
     <string name="gesture_handler_open_search">Atidaryti Paiešką</string>
     <string name="pick_app_for_gesture">Pasirinkite Programėlę</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as YiTap is not set as the Recents provider.</string>
     <string name="translucent_background">Permatomas Fonas</string>
     <string name="translucent_background_alpha">Fono Skaidrumas</string>
     <string name="recents_actions_label">Greiti Veiksmai</string>
@@ -347,10 +347,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">Nerasta programelių atitinkančių „<xliff:g example="Android" id="query">%1$s</xliff:g>“.</string>
     <string name="dt2s_admin_hint_title">Reikalinga Administratoriaus Prieiga</string>
-    <string name="dt2s_admin_hint">Jei norite naudoti dvigubą paspaudimą miegojimui, nustatykite „Yitap“ programelę kaip prietaiso administratoriaus programėlę. Paspauskite Atidaryti Nustatymus, po to paspauskite „Aktivuoti šią prietaiso administratoriaus programėlę.“</string>
+    <string name="dt2s_admin_hint">Jei norite naudoti dvigubą paspaudimą miegojimui, nustatykite „YiTap“ programelę kaip prietaiso administratoriaus programėlę. Paspauskite Atidaryti Nustatymus, po to paspauskite „Aktivuoti šią prietaiso administratoriaus programėlę.“</string>
     <string name="dt2s_admin_warning">Dvigubas paspaudimas miegojimui bus išjungtas.</string>
     <string name="dt2s_a11y_hint_title">Įjunkite Prieinamumo Paslaugą</string>
-    <string name="dt2s_a11y_hint">Jei norite naudoti „Double-Tap to Sleep“, įjunkite „Yitap“ prieinamumo paslaugą. Bakstelėkite „Atidaryti nustatymus“, tada pasirinkite „Yitap“ ir įjunkite „Naudoti Yitap“.</string>
+    <string name="dt2s_a11y_hint">Jei norite naudoti „Double-Tap to Sleep“, įjunkite „YiTap“ prieinamumo paslaugą. Bakstelėkite „Atidaryti nustatymus“, tada pasirinkite „YiTap“ ir įjunkite „Naudoti YiTap“.</string>
     <string name="dt2s_warning_open_settings">Atidaryti nustatymus</string>
     <string name="loading">Kraunasi…</string>
     <string name="system">Sistema</string>
@@ -360,7 +360,7 @@
     <string name="suggestion_pref_screen_title">Pasiūlymai</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">„Yitap“ problemų pranešimas</string>
+    <string name="yitap_bug_report">„YiTap“ problemų pranešimas</string>
     <string name="crash_report_notif_title">%1$s Užlūžo</string>
     <string name="action_upload_crash_report">Įkelti Gedimo Įrašą</string>
     <string name="action_copy_link">Nukopijuoti Nuorodą</string>
@@ -384,8 +384,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Pasiūlymai</string>
     <string name="all_apps_device_search_hint">Ieškoti</string>
@@ -443,5 +443,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

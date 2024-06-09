@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">ตั้งค่า Yitap ให้เป็น Launcher เริ่มต้นเพื่อเข้าถึงทางลัดและอีกมากมาย</string>
+    <string name="set_default_launcher_tip">ตั้งค่า YiTap ให้เป็น Launcher เริ่มต้นเพื่อเข้าถึงทางลัดและอีกมากมาย</string>
     <string name="settings">การตั้งค่า</string>
     <string name="general_label">ทั่วไป</string>
     <string name="general_description">สี, ชุดไอคอน, จุดแจ้งเตือน</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">ล้างปุ่มทั้งหมด, รัศมีมุม</string>
     <string name="about_label">เกี่ยวกับ</string>
     <string name="app_info_drop_target_label">ข้อมูลแอป</string>
-    <string name="debug_restart_launcher">เริ่มต้น Yitap ใหม่</string>
+    <string name="debug_restart_launcher">เริ่มต้น YiTap ใหม่</string>
     <string name="experimental_features_label">ฟีเจอร์ทดลอง</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">วาง</string>
     <string name="copied_toast">คัดลอกไปยังคลิปบอร์ด</string>
     <string name="invalid_color">สีไม่ถูกต้อง</string>
-    <string name="launcher_default_color">จัดการโดย Yitap</string>
+    <string name="launcher_default_color">จัดการโดย YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">เพิ่มไอคอนแอปในหน้าจอหลัก</string>
     <string name="minus_one_enable">แสดงฟีด</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">เปอร์เซีย</string>
     <string name="smartspace_preferences">ปรับแต่ง</string>
     <string name="smartspace_widget_toggle_label">แสดงบนหน้าจอหลัก</string>
-    <string name="smartspace_widget_toggle_description">สามารถเพิ่มข้อมูลสรุปในหน้าหลักได้ด้วยตนเองโดยวางวิดเจ็ต \"Yitap\"</string>
+    <string name="smartspace_widget_toggle_description">สามารถเพิ่มข้อมูลสรุปในหน้าหลักได้ด้วยตนเองโดยวางวิดเจ็ต \"YiTap\"</string>
     <string name="smartspace_mode_label">ผู้ให้บริการข้อมูลโดยย่อ</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">แถบค้นหาของ Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">เว้นขอบล่าง</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">ค้นหาแอพ</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap have a revenue share agreement.\n\nSearching with %1$s helps support YiTap.</string>
     <string name="app_label">แอป</string>
     <string name="website_label">เว็บไซต์</string>
     <string name="qsb_search_provider_app_required">จำเป็นต้องมีแอป</string>
@@ -308,7 +308,7 @@
     <string name="gesture_handler_open_search">เปิดการค้นหา</string>
     <string name="pick_app_for_gesture">เลือกแอป</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">การตั้งค่าเหล่านี้จะถูกเพิกเฉยเนื่องจาก Yitap ไม่ได้ถูกตั้งค่าเป็นผู้ให้บริการล่าสุด</string>
+    <string name="quickswitch_ignored_warning">การตั้งค่าเหล่านี้จะถูกเพิกเฉยเนื่องจาก YiTap ไม่ได้ถูกตั้งค่าเป็นผู้ให้บริการล่าสุด</string>
     <string name="translucent_background">พื้นหลังโปร่งแสง</string>
     <string name="translucent_background_alpha">ความทึบของพื้นหลัง</string>
     <string name="recents_actions_label">การกระทำด่วน</string>
@@ -344,10 +344,10 @@
     <string name="item_removed">นำรายการออกแล้ว</string>
     <string name="all_apps_no_search_results">ไม่พบแอปที่ตรงกับ \"<xliff:g example="Android" id="query">%1$s</xliff:g>\"</string>
     <string name="dt2s_admin_hint_title">จำเป็นต้องมีสิทธิ์ผู้จัดการระบบ</string>
-    <string name="dt2s_admin_hint">หากต้องการใช้ แตะ 2 ครั้งเพี่อปิดจอ ให้ตั้งค่า Yitap เป็นแอปผู้ดูแลอุปกรณ์ แตะเปิดการตั้งค่า จากนั้นแตะ “เปิดใช้งานแอปผู้ดูแลระบบอุปกรณ์นี้”</string>
+    <string name="dt2s_admin_hint">หากต้องการใช้ แตะ 2 ครั้งเพี่อปิดจอ ให้ตั้งค่า YiTap เป็นแอปผู้ดูแลอุปกรณ์ แตะเปิดการตั้งค่า จากนั้นแตะ “เปิดใช้งานแอปผู้ดูแลระบบอุปกรณ์นี้”</string>
     <string name="dt2s_admin_warning">แตะสองครั้งเพื่อเข้าสู่โหมดสลีป หน้าจอจะถูกปิด</string>
     <string name="dt2s_a11y_hint_title">เปิดบริการการช่วยการเข้าถึง</string>
-    <string name="dt2s_a11y_hint">หากต้องการใช้การแตะสองครั้งเพื่อเข้าสู่โหมด sleep อนุญาติให้ Yitap เข้าถึงบริการ แตะเปิดการตั้งค่า จากนั้นเลือก Yitap และเปิดใช้ Yitap</string>
+    <string name="dt2s_a11y_hint">หากต้องการใช้การแตะสองครั้งเพื่อเข้าสู่โหมด sleep อนุญาติให้ YiTap เข้าถึงบริการ แตะเปิดการตั้งค่า จากนั้นเลือก YiTap และเปิดใช้ YiTap</string>
     <string name="dt2s_warning_open_settings">เปิดการตั้งค่า</string>
     <string name="loading">กำลังโหลด…</string>
     <string name="system">ระบบ</string>
@@ -357,7 +357,7 @@
     <string name="suggestion_pref_screen_title">คำแนะนำ</string>
     <string name="show_suggested_apps_at_drawer_top">แสดงแอพที่แนะนำด้านบนสุดของลิ้นชักแอพ</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">รายงานข้อผิดพลาดให้กับ Yitap</string>
+    <string name="yitap_bug_report">รายงานข้อผิดพลาดให้กับ YiTap</string>
     <string name="crash_report_notif_title">%1$s ทำงานผิดพลาด</string>
     <string name="action_upload_crash_report">อัปโหลด Log ข้อผิดพลาด</string>
     <string name="action_copy_link">คัดลอกลิงก์</string>
@@ -381,8 +381,8 @@
     <string name="search_pref_result_files_description">สื่อ, ไฟล์, และอื่นๆ</string>
     <string name="search_pref_result_contacts_description">รายชื่อและอื่น ๆ</string>
     <string name="search_pref_result_web_description">ผ่าน <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">เพื่อค้นหารายชื่อติดต่อ, ให้สิทธิ Yitap ในการเข้าถึงรายชื่อติดต่อ และการโทร</string>
-    <string name="warn_files_permission_content">เพื่อค้นหาไฟล์, ให้สิทธิ Yitap ในการเข้าถึงที่เก็บข้อมูล</string>
+    <string name="warn_contact_permission_content">เพื่อค้นหารายชื่อติดต่อ, ให้สิทธิ YiTap ในการเข้าถึงรายชื่อติดต่อ และการโทร</string>
+    <string name="warn_files_permission_content">เพื่อค้นหาไฟล์, ให้สิทธิ YiTap ในการเข้าถึงที่เก็บข้อมูล</string>
     <string name="grant_requested_permissions">ให้สิทธิ์</string>
     <string name="pref_suggestion_label">คำแนะนำ</string>
     <string name="all_apps_device_search_hint">ค้นหา</string>
@@ -440,5 +440,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">เครื่องคิดเลข</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

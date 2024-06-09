@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Set Yitap as your default launcher to access shortcuts and more.</string>
+    <string name="set_default_launcher_tip">Set YiTap as your default launcher to access shortcuts and more.</string>
     <string name="settings">Settings</string>
     <string name="general_label">General</string>
     <string name="general_description">Colours, Icon Pack, Notification Dots</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Clear All Button, Corner Radius</string>
     <string name="about_label">About</string>
     <string name="app_info_drop_target_label">App Info</string>
-    <string name="debug_restart_launcher">Restart Yitap</string>
+    <string name="debug_restart_launcher">Restart YiTap</string>
     <string name="experimental_features_label">Experimental Features</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Paste</string>
     <string name="copied_toast">Copied to clipboard.</string>
     <string name="invalid_color">Invalid Colour</string>
-    <string name="launcher_default_color">Managed by Yitap</string>
+    <string name="launcher_default_color">Managed by YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Add New Apps to Home Screen</string>
     <string name="minus_one_enable">Show Feed</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persian</string>
     <string name="smartspace_preferences">Preferences</string>
     <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
-    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “Yitap” widget</string>
+    <string name="smartspace_widget_toggle_description">At a Glance can be manually added to the home screen by placing the “YiTap” widget</string>
     <string name="smartspace_mode_label">At a Glance Provider</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google Search</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bottom Padding</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">App Search</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap have a revenue share agreement.\n\nSearching with %1$s helps support Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap have a revenue share agreement.\n\nSearching with %1$s helps support YiTap.</string>
     <string name="app_label">App</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">App required</string>
@@ -309,7 +309,7 @@
     <string name="gesture_handler_open_search">Open Search</string>
     <string name="pick_app_for_gesture">Pick App</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Yitap is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">These settings will be ignored as YiTap is not set as the Recents provider.</string>
     <string name="translucent_background">Translucent Background</string>
     <string name="translucent_background_alpha">Background Opacity</string>
     <string name="recents_actions_label">Quick Actions</string>
@@ -345,10 +345,10 @@
     <string name="item_removed">Item removed</string>
     <string name="all_apps_no_search_results">No apps found matching “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Admin Permissions Required</string>
-    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set Yitap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
+    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set YiTap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
     <string name="dt2s_admin_warning">Double-Tap to Sleep will be turned off.</string>
     <string name="dt2s_a11y_hint_title">Turn on Accessibility Service</string>
-    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the Yitap accessibility service. Tap Open Settings, then select Yitap and turn on Use Yitap.</string>
+    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the YiTap accessibility service. Tap Open Settings, then select YiTap and turn on Use YiTap.</string>
     <string name="dt2s_warning_open_settings">Open Settings</string>
     <string name="loading">Loading…</string>
     <string name="system">System</string>
@@ -358,7 +358,7 @@
     <string name="suggestion_pref_screen_title">Suggestions</string>
     <string name="show_suggested_apps_at_drawer_top">Show suggested apps at the top of the app drawer</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Yitap Bug Report</string>
+    <string name="yitap_bug_report">YiTap Bug Report</string>
     <string name="crash_report_notif_title">%1$s Crashed</string>
     <string name="action_upload_crash_report">Upload Crash Log</string>
     <string name="action_copy_link">Copy Link</string>
@@ -382,8 +382,8 @@
     <string name="search_pref_result_files_description">Media, files, and more</string>
     <string name="search_pref_result_contacts_description">Contacts and more</string>
     <string name="search_pref_result_web_description">Via <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to Yitap.</string>
-    <string name="warn_files_permission_content">To search your files, grant Storage permissions to Yitap.</string>
+    <string name="warn_contact_permission_content">To search for contacts, grant Contacts and Phone permissions to YiTap.</string>
+    <string name="warn_files_permission_content">To search your files, grant Storage permissions to YiTap.</string>
     <string name="grant_requested_permissions">Grant Permissions</string>
     <string name="pref_suggestion_label">Suggestions</string>
     <string name="all_apps_device_search_hint">Search</string>
@@ -441,5 +441,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

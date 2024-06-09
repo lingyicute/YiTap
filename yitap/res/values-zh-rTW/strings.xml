@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">將 Yitap 設為預設啟動器來存取捷徑和更多選項</string>
+    <string name="set_default_launcher_tip">將 YiTap 設為預設啟動器來存取捷徑和更多選項</string>
     <string name="settings">設定</string>
     <string name="general_label">一般</string>
     <string name="general_description">色彩、圖示套件、通知圓點</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">「清除全部」按鈕、圓角大小</string>
     <string name="about_label">關於</string>
     <string name="app_info_drop_target_label">應用程式資訊</string>
-    <string name="debug_restart_launcher">Restart Yitap</string>
+    <string name="debug_restart_launcher">Restart YiTap</string>
     <string name="experimental_features_label">實驗性功能</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">貼上</string>
     <string name="copied_toast">已複製到剪貼簿</string>
     <string name="invalid_color">無效色彩</string>
-    <string name="launcher_default_color">由 Yitap 管理</string>
+    <string name="launcher_default_color">由 YiTap 管理</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">將應用程式圖示新增到主螢幕</string>
     <string name="minus_one_enable">顯示動態消息</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">伊朗曆</string>
     <string name="smartspace_preferences">偏好設定</string>
     <string name="smartspace_widget_toggle_label">在主畫面上顯示</string>
-    <string name="smartspace_widget_toggle_description">在主畫面上放置「Yitap」小工具即可手動新增「資訊一覽」。</string>
+    <string name="smartspace_widget_toggle_description">在主畫面上放置「YiTap」小工具即可手動新增「資訊一覽」。</string>
     <string name="smartspace_mode_label">資訊一覽服務來源</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google 搜尋</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">底部邊距</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">應用程式搜尋</string>
-    <string name="search_provider_sponsored_description">%1$s 是 Yitap 的收益合作夥伴。\n\n使用 %1$s 搜尋來協助 Yitap 的未來發展。</string>
+    <string name="search_provider_sponsored_description">%1$s 是 YiTap 的收益合作夥伴。\n\n使用 %1$s 搜尋來協助 YiTap 的未來發展。</string>
     <string name="app_label">應用程式</string>
     <string name="website_label">網站</string>
     <string name="qsb_search_provider_app_required">需要應用程式</string>
@@ -308,7 +308,7 @@
     <string name="gesture_handler_open_search">開啟搜尋</string>
     <string name="pick_app_for_gesture">選取應用程式</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">尚未設定 Yitap 為預設 [最近使用的應用程式] 服務，這些設定將無法生效。</string>
+    <string name="quickswitch_ignored_warning">尚未設定 YiTap 為預設 [最近使用的應用程式] 服務，這些設定將無法生效。</string>
     <string name="translucent_background">透明背景</string>
     <string name="translucent_background_alpha">背景透明度</string>
     <string name="recents_actions_label">快速操作</string>
@@ -344,10 +344,10 @@
     <string name="item_removed">已移除物件</string>
     <string name="all_apps_no_search_results">找不到應用程式「<xliff:g example="Android" id="query">%1$s</xliff:g>」。</string>
     <string name="dt2s_admin_hint_title">需要管理員權限</string>
-    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set Yitap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
+    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set YiTap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
     <string name="dt2s_admin_warning">將停用「輕觸兩下來關閉螢幕」</string>
     <string name="dt2s_a11y_hint_title">啟用無障礙服務</string>
-    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the Yitap accessibility service. Tap Open Settings, then select Yitap and turn on Use Yitap.</string>
+    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the YiTap accessibility service. Tap Open Settings, then select YiTap and turn on Use YiTap.</string>
     <string name="dt2s_warning_open_settings">開啟設定</string>
     <string name="loading">正在載入…</string>
     <string name="system">系統</string>
@@ -357,7 +357,7 @@
     <string name="suggestion_pref_screen_title">建議</string>
     <string name="show_suggested_apps_at_drawer_top">在「所有應用程式」清單中顯示建議</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Yitap 問題回報</string>
+    <string name="yitap_bug_report">YiTap 問題回報</string>
     <string name="crash_report_notif_title">%1$s 已停止運作</string>
     <string name="action_upload_crash_report">上傳錯誤日誌</string>
     <string name="action_copy_link">複製連結</string>
@@ -381,8 +381,8 @@
     <string name="search_pref_result_files_description">媒體、檔案、雜項</string>
     <string name="search_pref_result_contacts_description">聯絡人與其他項目</string>
     <string name="search_pref_result_web_description">由 <xliff:g id="startpage">Startpage</xliff:g> 提供</string>
-    <string name="warn_contact_permission_content">如要搜尋聯絡人，請授予 Yitap 聯絡人與電話權限。</string>
-    <string name="warn_files_permission_content">如要搜尋檔案，請授予 Yitap 儲存空間權限。</string>
+    <string name="warn_contact_permission_content">如要搜尋聯絡人，請授予 YiTap 聯絡人與電話權限。</string>
+    <string name="warn_files_permission_content">如要搜尋檔案，請授予 YiTap 儲存空間權限。</string>
     <string name="grant_requested_permissions">授予權限</string>
     <string name="pref_suggestion_label">建議</string>
     <string name="all_apps_device_search_hint">搜尋</string>
@@ -440,5 +440,5 @@
     <string name="search_algorithm_global_search_via_asi">全域搜尋（由 ASI 提供）</string>
     <string name="app_search_algorithm">搜尋演算法</string>
     <string name="all_apps_search_result_calculator">計算</string>
-    <string name="accessibility_service_description">Yitap 需要無障礙設定存取權來啟用手勢鎖定螢幕。\n\n由於權限所需，系統可能提示您授予畫面權限，但請放心，Yitap 不會監看、存取您的畫面。\n\nYitap 使用 performGlobalAction 無障礙服務來鎖定您的裝置。</string>
+    <string name="accessibility_service_description">YiTap 需要無障礙設定存取權來啟用手勢鎖定螢幕。\n\n由於權限所需，系統可能提示您授予畫面權限，但請放心，YiTap 不會監看、存取您的畫面。\n\nYitap 使用 performGlobalAction 無障礙服務來鎖定您的裝置。</string>
 </resources>

@@ -1,4 +1,4 @@
-# Yitap 14
+# YiTap 14
 
 [![Build debug APK](https://github.com/lingyicute/YiTap/actions/workflows/ci.yml/badge.svg)](https://github.com/lingyicute/YiTap/actions/workflows/ci.yml)
 [![Build release APK](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml/badge.svg)](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml)
@@ -8,14 +8,14 @@
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
-    <!-- ❤️ Credit to Raine on the Yitap Discord --->
+    <!-- ❤️ Credit to Raine on the YiTap Discord --->
     <source media="(prefers-color-scheme: dark)" srcset="docs/device-frame.png" width="250px">
-    <img alt="Google Pixel running Yitap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
+    <img alt="Google Pixel running YiTap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
 </picture>
 
-Yitap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
+YiTap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
 
-This branch houses the codebase of Yitap 14, which is currently in beta and is based on Launcher3 from Android 14. For Yitap 9 to 13, see the branches with the `9-` to `13-` prefixes, respectively.
+This branch houses the codebase of YiTap 14, which is currently in beta and is based on Launcher3 from Android 14. For YiTap 9 to 13, see the branches with the `9-` to `13-` prefixes, respectively.
 
 ## Features
 
@@ -33,13 +33,13 @@ beta build. For development builds with new icons, use the nightly builds.
 
 ## Contributing
 
-Please visit the [Yitap Contributing Guidelines](CONTRIBUTING.md) for information and tips on contributing to Yitap.
+Please visit the [YiTap Contributing Guidelines](CONTRIBUTING.md) for information and tips on contributing to YiTap.
 
 ## Quick links
 
 -   [News](https://t.me/yitapci)
--   [Yitap on Twitter](https://twitter.com/yitapapp)
+-   [YiTap on Twitter](https://twitter.com/yitapapp)
 -   [Website](https://yitap.app)
 -   [_XDA_ thread](https://forum.xda-developers.com/t/yitap-customizable-pixel-launcher.3627137/)
 
-You can view all our links in the [Yitap Wiki](https://github.com/lingyicute/YiTap/wiki).
+You can view all our links in the [YiTap Wiki](https://github.com/lingyicute/YiTap/wiki).

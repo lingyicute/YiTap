@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Atur Yitap sebagai peluncur default Anda untuk mengakses pintasan dan lainnya.</string>
+    <string name="set_default_launcher_tip">Atur YiTap sebagai peluncur default Anda untuk mengakses pintasan dan lainnya.</string>
     <string name="settings">Pengaturan</string>
     <string name="general_label">Umum</string>
     <string name="general_description">Warna, Titik Notifikasi, Paket Ikon</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Tombol Hapus Semua, Radius Sudut</string>
     <string name="about_label">Tentang</string>
     <string name="app_info_drop_target_label">Info Aplikasi</string>
-    <string name="debug_restart_launcher">Muat ulang Yitap</string>
+    <string name="debug_restart_launcher">Muat ulang YiTap</string>
     <string name="experimental_features_label">Fitur Eksperimental</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Tempel</string>
     <string name="copied_toast">Disalin ke papan klip.</string>
     <string name="invalid_color">Warna tidak valid</string>
-    <string name="launcher_default_color">Dikelola oleh Yitap</string>
+    <string name="launcher_default_color">Dikelola oleh YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Tambahkan Aplikasi Baru ke Layar Beranda</string>
     <string name="minus_one_enable">Tampilkan Umpan</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Persia</string>
     <string name="smartspace_preferences">Preferensi</string>
     <string name="smartspace_widget_toggle_label">Tampilkan di Beranda</string>
-    <string name="smartspace_widget_toggle_description">At a Glance dapat ditambahkan secara manual ke layar utama dengan menempatkan widget \"Yitap\"</string>
+    <string name="smartspace_widget_toggle_description">At a Glance dapat ditambahkan secara manual ke layar utama dengan menempatkan widget \"YiTap\"</string>
     <string name="smartspace_mode_label">Provider At a Glance</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Pencarian Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Bantalan Bawah</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Pencarian Aplikasi</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap memiliki perjanjian bagi hasil.\n\nMencari dengan %1$s membantu mendukung Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap memiliki perjanjian bagi hasil.\n\nMencari dengan %1$s membantu mendukung YiTap.</string>
     <string name="app_label">Aplikasi</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">Aplikasi diperlukan</string>
@@ -308,7 +308,7 @@
     <string name="gesture_handler_open_search">Buka Pencarian</string>
     <string name="pick_app_for_gesture">Pilih Aplikasi</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Pengaturan ini akan diabaikan karena Yitap tidak diatur sebagai penyedia Terbaru.</string>
+    <string name="quickswitch_ignored_warning">Pengaturan ini akan diabaikan karena YiTap tidak diatur sebagai penyedia Terbaru.</string>
     <string name="translucent_background">Latar Belakang Tembus</string>
     <string name="translucent_background_alpha">Transparansi Latar Belakang</string>
     <string name="recents_actions_label">Tindakan Cepat</string>
@@ -344,10 +344,10 @@
     <string name="item_removed">Item dihapus</string>
     <string name="all_apps_no_search_results">Tidak ada aplikasi yang cocok dengan “<xliff:g example="Android" id="query">%1$s</xliff:g>”.</string>
     <string name="dt2s_admin_hint_title">Izin Admin Diperlukan</string>
-    <string name="dt2s_admin_hint">Untuk menggunakan Tap Dua Kali untuk Tidur, atur Yitap sebagai aplikasi admin perangkat. Ketuk Buka Pengaturan, lalu ketuk \"Aktifkan aplikasi admin perangkat ini.\"</string>
+    <string name="dt2s_admin_hint">Untuk menggunakan Tap Dua Kali untuk Tidur, atur YiTap sebagai aplikasi admin perangkat. Ketuk Buka Pengaturan, lalu ketuk \"Aktifkan aplikasi admin perangkat ini.\"</string>
     <string name="dt2s_admin_warning">Tap Dua Kali untuk Tidur akan dimatikan.</string>
     <string name="dt2s_a11y_hint_title">Aktifkan Layanan Aksesibilitas</string>
-    <string name="dt2s_a11y_hint">Untuk menggunakan Tap Dua Kali untuk Tidur, aktifkan layanan aksesibilitas Yitap. Ketuk Buka Pengaturan, lalu pilih Yitap dan aktifkan Gunakan Yitap.</string>
+    <string name="dt2s_a11y_hint">Untuk menggunakan Tap Dua Kali untuk Tidur, aktifkan layanan aksesibilitas YiTap. Ketuk Buka Pengaturan, lalu pilih YiTap dan aktifkan Gunakan YiTap.</string>
     <string name="dt2s_warning_open_settings">Buka Pengaturan</string>
     <string name="loading">Memuat…</string>
     <string name="system">Sistem</string>
@@ -357,7 +357,7 @@
     <string name="suggestion_pref_screen_title">Saran</string>
     <string name="show_suggested_apps_at_drawer_top">Menampilkan saran aplikasi di bagian atas laci aplikasi</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Laporkan Bug Yitap</string>
+    <string name="yitap_bug_report">Laporkan Bug YiTap</string>
     <string name="crash_report_notif_title">%1$s Crash</string>
     <string name="action_upload_crash_report">Unggah Log Crash</string>
     <string name="action_copy_link">Salin Tautan</string>
@@ -381,8 +381,8 @@
     <string name="search_pref_result_files_description">Media, file, dan lainnya</string>
     <string name="search_pref_result_contacts_description">Kontak dan lainnya</string>
     <string name="search_pref_result_web_description">Melalui <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Untuk mencari kontak, berikan izin Kontak dan Telepon ke Yitap.</string>
-    <string name="warn_files_permission_content">Untuk mencari file Anda, berikan izin Penyimpanan ke Yitap.</string>
+    <string name="warn_contact_permission_content">Untuk mencari kontak, berikan izin Kontak dan Telepon ke YiTap.</string>
+    <string name="warn_files_permission_content">Untuk mencari file Anda, berikan izin Penyimpanan ke YiTap.</string>
     <string name="grant_requested_permissions">Berikan Izin</string>
     <string name="pref_suggestion_label">Saran</string>
     <string name="all_apps_device_search_hint">Pencarian</string>
@@ -440,5 +440,5 @@
     <string name="search_algorithm_global_search_via_asi">Global Search (via ASI)</string>
     <string name="app_search_algorithm">Search Algorithm</string>
     <string name="all_apps_search_result_calculator">Calculator</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>

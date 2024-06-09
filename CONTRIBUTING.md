@@ -1,4 +1,4 @@
-# Yitap Contributing Guidelines
+# YiTap Contributing Guidelines
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
@@ -6,31 +6,31 @@
     <img alt="" src="docs/yitap-round.webp" width="100">
 </picture>
 
-First and foremost, welcome to the **Yitap** Contributing Guidelines!
+First and foremost, welcome to the **YiTap** Contributing Guidelines!
 
 ### 💫 Bug reports & feature requests
 
 For bug reports, please describe the bug in detail to the best of your ability
 and steps on how to reproduce it. If applicable, attach log files.
 
-For feature requests, please describe the feature you'd like to see added to Yitap.
+For feature requests, please describe the feature you'd like to see added to YiTap.
 If applicable, attach log files.
 
 Please make sure to be civil during discussion of your contribution (refer to the [Code of Conduct](CODE_OF_CONDUCT.md))
 
 ### 🌐 Translation
 
-For translation, visit [Yitap on Crowdin](https://yitap.crowdin.com) and follow these tips:
+For translation, visit [YiTap on Crowdin](https://yitap.crowdin.com) and follow these tips:
 
 -   When using quotation marks, insert the symbols specific to the target language, as listed in this [this summary table](https://en.wikipedia.org/wiki/Quotation_mark#Summary_table);
--   Yitap uses title case for some English UI text while other languages do not use title case; opt for sentence case instead;
+-   YiTap uses title case for some English UI text while other languages do not use title case; opt for sentence case instead;
 -   Some English terminology may have not have commonly-used equivalents in other languages. In such cases, use short descriptive phrases—for example, the equivalent of _bottom row_ for _dock_;
 -   Some languages (e.g. French) have variations of words depending if it's masculine or feminine (gender-specific); we recommend opting for gender-neutral words instead.
 
 ### 🧑‍💻 Code
 
 > [!NOTE]
-> For Yitap 9 to 13, see the branches with the `9-` to `13-` prefixes respectively.
+> For YiTap 9 to 13, see the branches with the `9-` to `13-` prefixes respectively.
 
 For code, it's highly recommended that you use [Android Studio](https://developer.android.com/studio),
 know [Java](https://www.java.com) or preferably [Kotlin](https://kotlinlang.org/), and [Git](https://git-scm.com/).
@@ -42,20 +42,20 @@ know [Java](https://www.java.com) or preferably [Kotlin](https://kotlinlang.org/
 > git clone --recursive https://github.com/lingyicute/YiTap.git
 > ```
 
-To build **Yitap**, select the `lawnWithQuickstepGithubDebug` build type.
+To build **YiTap**, select the `lawnWithQuickstepGithubDebug` build type.
 Should you face errors relating to the `iconloaderlib` and `searchuilib` projects,
 run `git submodule update --init --recursive`.
 
 Here are some contribution tips to help you get started:
 
--   Always make sure that you're up-to-date with **Yitap** by setting your base branch to `14-dev`.
+-   Always make sure that you're up-to-date with **YiTap** by setting your base branch to `14-dev`.
 -   Make sure your code is logical and well-formatted. If using Kotlin, see [“Coding conventions” in the Kotlin documentation](https://kotlinlang.org/docs/coding-conventions.html);
--   [The `yitap` package](https://github.com/lingyicute/YiTap/tree/14-dev/yitap) houses Yitap’s own code, whereas [the `src` package](https://github.com/lingyicute/YiTap/tree/14-dev/src) includes a clone of the Launcher3 codebase with modifications. Generally, place new files in the former, keeping changes to the latter to a minimum.
+-   [The `yitap` package](https://github.com/lingyicute/YiTap/tree/14-dev/yitap) houses YiTap’s own code, whereas [the `src` package](https://github.com/lingyicute/YiTap/tree/14-dev/src) includes a clone of the Launcher3 codebase with modifications. Generally, place new files in the former, keeping changes to the latter to a minimum.
 
 #### Additional documentation
 
--   Yitap Quickstep Compat Lib ([README.md](compatLib/README.md))
--   Yitap Preferences Components ([README.md](yitap/src/app/yitap/ui/preferences/components/README.md))
+-   YiTap Quickstep Compat Lib ([README.md](compatLib/README.md))
+-   YiTap Preferences Components ([README.md](yitap/src/app/yitap/ui/preferences/components/README.md))
 -   SystemUI ViewCapture ([README.md](systemUIViewCapture/README.md))
 -   SystemUI Common ([README.md](systemUICommon/README.md))
 -   Prebuilt Library ([README.md](prebuilts/libs/README.md))
@@ -63,7 +63,7 @@ Here are some contribution tips to help you get started:
 #### Versioning scheme
 
 As of [#4361](https://github.com/lingyicute/YiTap/pull/4361),
-Yitap’s version code is separated by four parts:
+YiTap’s version code is separated by four parts:
 
 <p align="center">
     <picture>
@@ -75,8 +75,8 @@ Yitap’s version code is separated by four parts:
 
 1. Android's major version
 2. Android's minor version
-3. Yitap's development status
-4. Yitap's development version
+3. YiTap's development status
+4. YiTap's development version
 
 ##### Android's major & minor versions
 
@@ -85,7 +85,7 @@ For example: Android 11 will be `11_00_XX_XX` while Android 12.1 will be `12_01_
 
 ##### Development status & version
 
-The third part of the version code indicates Yitap's stability status, while the fourth part indicates the version number.
+The third part of the version code indicates YiTap's stability status, while the fourth part indicates the version number.
 
 For example, Alpha 4's version code will be `XX_XX_01_04`.
 

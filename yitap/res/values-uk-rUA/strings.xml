@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, Yitap
+  ~ Copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">Встановити Yitap як панель запуску за замовчуванням для доступу до ярликів та багато іншого.</string>
+    <string name="set_default_launcher_tip">Встановити YiTap як панель запуску за замовчуванням для доступу до ярликів та багато іншого.</string>
     <string name="settings">Налаштування</string>
     <string name="general_label">Загальні</string>
     <string name="general_description">Значки сповіщень, Набір значків</string>
@@ -38,7 +38,7 @@
     <string name="quickstep_description">Очистити всі кнопки, Радіус заокруглення</string>
     <string name="about_label">Про додаток</string>
     <string name="app_info_drop_target_label">Про додаток</string>
-    <string name="debug_restart_launcher">Перезавантажте Yitap</string>
+    <string name="debug_restart_launcher">Перезавантажте YiTap</string>
     <string name="experimental_features_label">Експериментальні можливості</string>
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
@@ -168,7 +168,7 @@
     <string name="action_paste">Вставити</string>
     <string name="copied_toast">Скопійовано до буфера обміну.</string>
     <string name="invalid_color">Невірний колір</string>
-    <string name="launcher_default_color">Керується Yitap</string>
+    <string name="launcher_default_color">Керується YiTap</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">Додавання Нових Програм на Головний Екран</string>
     <string name="minus_one_enable">Показати Стрічку</string>
@@ -240,7 +240,7 @@
     <string name="smartspace_calendar_persian">Перська</string>
     <string name="smartspace_preferences">Налаштування</string>
     <string name="smartspace_widget_toggle_label">Показувати на головному екрані</string>
-    <string name="smartspace_widget_toggle_description">Віджет At a Glance можна додати вручну на робочий стіл, помістивши віджет \"Yitap\".</string>
+    <string name="smartspace_widget_toggle_description">Віджет At a Glance можна додати вручну на робочий стіл, помістивши віджет \"YiTap\".</string>
     <string name="smartspace_mode_label">Постачальник \"At a Glance\"</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Пошук Google</string>
@@ -259,7 +259,7 @@
     <string name="hotseat_bottom_space_label">Нижній відступ</string>
     <!-- SearchProviderPreferences -->
     <string name="search_provider_app_search">Пошук застосунків</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Yitap має угоду про розподіл доходів.\n\nПошук з %1$s допомагає Yitap.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; YiTap має угоду про розподіл доходів.\n\nПошук з %1$s допомагає YiTap.</string>
     <string name="app_label">Застосунок</string>
     <string name="website_label">Веб-сайт</string>
     <string name="qsb_search_provider_app_required">Необхідний додаток</string>
@@ -311,7 +311,7 @@
     <string name="gesture_handler_open_search">Відкрити пошук</string>
     <string name="pick_app_for_gesture">Обрати додаток</string>
     <!-- QuickstepPreferences -->
-    <string name="quickswitch_ignored_warning">Ці параметри буде проігноровано, оскільки Yitap не є постачальником нещодавніх.</string>
+    <string name="quickswitch_ignored_warning">Ці параметри буде проігноровано, оскільки YiTap не є постачальником нещодавніх.</string>
     <string name="translucent_background">Напівпрозорий фон</string>
     <string name="translucent_background_alpha">Прозорість фону</string>
     <string name="recents_actions_label">Швидкі дії</string>
@@ -350,7 +350,7 @@
     <string name="dt2s_admin_hint">Щоб використовувати «Подвійне Натискання в Сплячий Режим», надайте дозвіл адміністратора. Натисніть «Відкрити Налаштування», потім натисніть «Активувати цю програму адміністратора пристрою.»</string>
     <string name="dt2s_admin_warning">«Подвійне Натискання в Сплячий Режим» буде відключено.</string>
     <string name="dt2s_a11y_hint_title">Увімкнути службу Спеціальних Можливостей</string>
-    <string name="dt2s_a11y_hint">Для використання функції подвійного дотику, щоб перейти в режим сну, увімкніть службу доступності Yitap. Торкніться «Відкрити налаштування», потім виберіть «Yitap» і ввімкніть «Використовувати Yitap».</string>
+    <string name="dt2s_a11y_hint">Для використання функції подвійного дотику, щоб перейти в режим сну, увімкніть службу доступності YiTap. Торкніться «Відкрити налаштування», потім виберіть «YiTap» і ввімкніть «Використовувати YiTap».</string>
     <string name="dt2s_warning_open_settings">Відкрити Налаштування</string>
     <string name="loading">Завантаження…</string>
     <string name="system">Системний</string>
@@ -360,7 +360,7 @@
     <string name="suggestion_pref_screen_title">Пропозиції</string>
     <string name="show_suggested_apps_at_drawer_top">Показати запропоновані додатки зверху списку додатків</string>
     <!-- Bug reporting -->
-    <string name="yitap_bug_report">Звіт про помилку Yitap</string>
+    <string name="yitap_bug_report">Звіт про помилку YiTap</string>
     <string name="crash_report_notif_title">%1$s Збій</string>
     <string name="action_upload_crash_report">Завантажити журнал збоїв</string>
     <string name="action_copy_link">Скопіювати посилання</string>
@@ -384,8 +384,8 @@
     <string name="search_pref_result_files_description">Медія, файли та інше</string>
     <string name="search_pref_result_contacts_description">Контакти та інше</string>
     <string name="search_pref_result_web_description">Через <xliff:g id="startpage">Startpage</xliff:g></string>
-    <string name="warn_contact_permission_content">Щоб шукати контакти, надайте доступ Yitap до Контактів і Телефону.</string>
-    <string name="warn_files_permission_content">Щоб шукати файли, надайте доступ Yitap до сховища.</string>
+    <string name="warn_contact_permission_content">Щоб шукати контакти, надайте доступ YiTap до Контактів і Телефону.</string>
+    <string name="warn_files_permission_content">Щоб шукати файли, надайте доступ YiTap до сховища.</string>
     <string name="grant_requested_permissions">Надати дозвіл</string>
     <string name="pref_suggestion_label">Пропозиції</string>
     <string name="all_apps_device_search_hint">Пошук</string>
@@ -443,5 +443,5 @@
     <string name="search_algorithm_global_search_via_asi">Глобальний пошук (через ASI)</string>
     <string name="app_search_algorithm">Пошуковий алгоритм</string>
     <string name="all_apps_search_result_calculator">Калькулятор</string>
-    <string name="accessibility_service_description">To lock your phone when performing a gesture, Yitap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. Yitap discards any event sent by the system.\n\nIn order to lock your phone, Yitap uses the performGlobalAction Accessibility service.</string>
+    <string name="accessibility_service_description">To lock your phone when performing a gesture, YiTap requires accessibility access.\n\nYitap doesn\'t watch any user action, though the privilege to do so is required for all accessibility services. YiTap discards any event sent by the system.\n\nIn order to lock your phone, YiTap uses the performGlobalAction Accessibility service.</string>
 </resources>
