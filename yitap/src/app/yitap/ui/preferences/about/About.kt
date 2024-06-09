@@ -76,7 +76,7 @@ private val product = listOf(
     TeamMember(
         name = "lingyicute",
         role = Role.Development,
-        photoUrl = "https://i2.mjj.rip/2024/06/09/991fde20f5d09b7a2ed503046c6b0f12.md.jpeg",
+        photoUrl = "https://avatars.githubusercontent.com/u/160479206",
         socialUrl = "https://github.com/lingyicute",
     ),
 )
