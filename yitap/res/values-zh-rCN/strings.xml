@@ -168,7 +168,7 @@
     <string name="action_paste">粘贴</string>
     <string name="copied_toast">已复制到剪切板。</string>
     <string name="invalid_color">无效颜色</string>
-    <string name="launcher_default_color">由 YiTap 管理</string>
+    <string name="launcher_default_color">由 YiTap 自动取色</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">向主屏幕添加新应用</string>
     <string name="minus_one_enable">显示订阅</string>

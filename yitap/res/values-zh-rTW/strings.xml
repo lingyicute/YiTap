@@ -168,7 +168,7 @@
     <string name="action_paste">貼上</string>
     <string name="copied_toast">已複製到剪貼簿</string>
     <string name="invalid_color">無效色彩</string>
-    <string name="launcher_default_color">由 YiTap 管理</string>
+    <string name="launcher_default_color">由 YiTap 自动取色</string>
     <!-- HomeScreenPreferences -->
     <string name="auto_add_shortcuts_label">將應用程式圖示新增到主螢幕</string>
     <string name="minus_one_enable">顯示動態消息</string>
