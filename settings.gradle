@@ -1,0 +1,73 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex(".*google.*")
+                includeGroupByRegex(".*android.*")
+            }
+        }
+        gradlePluginPortal()
+    }
+}
+
+// https://docs.gradle.com/enterprise/gradle-plugin/
+plugins {
+    id "com.gradle.develocity" version "3.17.4"
+}
+
+def isCI = providers.environmentVariable('CI').present
+
+develocity {
+    buildScan {
+        termsOfUseUrl = "https://gradle.com/terms-of-service"
+        termsOfUseAgree = "yes"
+        publishing {
+            onlyIf { isCI }
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google {
+            content {
+                includeGroupByRegex(".*google.*")
+                includeGroupByRegex(".*android.*")
+            }
+        }
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+include ':iconloaderlib'
+project(':iconloaderlib').projectDir = new File(rootDir, 'platform_frameworks_libs_systemui/iconloaderlib')
+
+include ':searchuilib'
+project(':searchuilib').projectDir = new File(rootDir, 'platform_frameworks_libs_systemui/searchuilib')
+
+include ':animationlib'
+project(':animationlib').projectDir = new File(rootDir, 'platform_frameworks_libs_systemui/animationlib')
+
+include ':hidden-api'
+include ':systemUIShared'
+include ':systemUIPlugin'
+include ':systemUIPluginCore'
+include ':systemUICommon'
+include ':systemUILog'
+include ':systemUIAnim'
+include ':systemUnFold'
+include ':systemUIViewCapture'
+
+include ':compatLib'
+include ':compatLib:compatLibVQ'
+include ':compatLib:compatLibVR'
+include ':compatLib:compatLibVS'
+include ':compatLib:compatLibVT'
+include ':compatLib:compatLibVU'
+
+include ':baseline-profile'

@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.android.launcher3.icons"
+    sourceSets {
+        main {
+            java.srcDirs = ['src', 'src_full_lib']
+            res.srcDirs = ['res']
+        }
+    }
+}
+
+addFrameworkJar('framework-13.jar')
+
+dependencies {
+    implementation "androidx.palette:palette-ktx:1.0.0"
+    compileOnly fileTree(dir: FRAMEWORK_PREBUILTS_DIR, include: 'framework-12l.jar')
+}
