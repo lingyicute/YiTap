@@ -232,16 +232,16 @@
     <string name="smartspace_time_24_hour_format">24 小时制</string>
     <string name="smartspace_weather">天气</string>
     <string name="smartspace_battery_status">电池状态</string>
-    <string name="smartspace_now_playing">正在播放</string>
-    <string name="smartspace_requires_setup">开始设置</string>
-    <string name="event_provider_missing_notification_dots">要使用 <xliff:g example="My Provider" id="providerName">%1$s</xliff:g>, 请启用通知角标。</string>
+    <string name="smartspace_now_playing">音乐控制器</string>
+    <string name="smartspace_requires_setup">点此进行最初的配置～</string>
+    <string name="event_provider_missing_notification_dots">请启用通知角标～</string>
     <string name="smartspace_media_info_separator">" — "</string>
     <string name="smartspace_calendar_gregorian">公历</string>
     <string name="smartspace_calendar_persian">波斯历</string>
     <string name="smartspace_preferences">设置</string>
     <string name="smartspace_widget_toggle_label">在主屏幕上显示</string>
     <string name="smartspace_widget_toggle_description">“信息一览”也可以作为小组件被手动添加喔～</string>
-    <string name="smartspace_mode_label">信息一览源</string>
+    <string name="smartspace_mode_label">来源</string>
     <string name="smartspace_mode_google">Google</string>
     <string name="smartspace_mode_google_search">Google 搜索</string>
     <!-- DockPreferences -->
