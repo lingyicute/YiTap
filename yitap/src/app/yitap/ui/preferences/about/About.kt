@@ -94,7 +94,7 @@ private val links = listOf(
     Link(
         iconResId = R.drawable.ic_new_releases,
         labelResId = R.string.news,
-        url = "https://t.me/xns_channel",
+        url = "https://t.me/lyi_channel",
     ),
     Link(
         iconResId = R.drawable.ic_github,
