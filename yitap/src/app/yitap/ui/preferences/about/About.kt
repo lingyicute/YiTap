@@ -85,7 +85,7 @@ private val supportAndPr = listOf(
     TeamMember(
         name = "lingyicute",
         role = Role.Support,
-        photoUrl = "https://mjj.today/i/TkCAnV",
+        photoUrl = "https://i2.mjj.rip/2024/06/09/991fde20f5d09b7a2ed503046c6b0f12.md.jpeg",
         socialUrl = "https://github.com/lingyicute",
     ),
 )
