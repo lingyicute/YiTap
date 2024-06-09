@@ -160,7 +160,7 @@ fun About(
                     .padding(horizontal = 16.dp),
             ) {
                 links.forEach { link ->
-                    YiTapLink(
+                    YitapLink(
                         iconResId = link.iconResId,
                         label = stringResource(id = link.labelResId),
                         modifier = Modifier.weight(weight = 1f),
