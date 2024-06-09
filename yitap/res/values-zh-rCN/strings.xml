@@ -48,8 +48,8 @@
     <string name="smartspace_calendar_description">显示其他历法日期</string>
     <string name="workspace_increase_max_grid_size_label">增加主屏幕最大网格大小</string>
     <string name="workspace_increase_max_grid_size_description">将主屏幕网格大小限制从 10 × 10 提升到 20 × 20</string>
-    <string name="always_reload_icons_label">使用最新的图标</string>
-    <string name="always_reload_icons_description">不使用图标包中的已缓存图标</string>
+    <string name="always_reload_icons_label">总是加载最新的图标</string>
+    <string name="always_reload_icons_description">不使用图标包缓存，每次都重新加载</string>
     <string name="recents_lock_unlock">锁定/解锁</string>
     <string name="recents_lock_unlock_description">在全部清除时保留选中的应用</string>
     <!-- Relating to label/icon size -->
@@ -59,8 +59,8 @@
     <string name="label_size">应用名称大小</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">主屏幕旋转</string>
-    <string name="home_screen_rotation_description">当设备旋转时不保持竖屏</string>
-    <string name="font_label">字体（实验性功能）</string>
+    <string name="home_screen_rotation_description">开启后主屏幕可以随设备方向旋转～偷偷耍手机的时候再也不怕扭断脖子啦！</string>
+    <string name="font_label">字体</string>
     <string name="fontWorkspace">通用</string>
     <string name="fontHeading">标题</string>
     <string name="fontHeadingMedium">标题（中）</string>
@@ -269,9 +269,9 @@
     <string name="show_enable_smart_hide">在输入全名时显示</string>
     <string name="hide_hidden_apps_search">在搜索结果中隐藏</string>
     <string name="pref_all_apps_bulk_icon_loading_title">批量加载应用图标</string>
-    <string name="pref_all_apps_bulk_icon_loading_description">并行而不是逐个加载和显示图标。可以解决搜索时的问题，但会影响加载速度。</string>
+    <string name="pref_all_apps_bulk_icon_loading_description">并行（而非逐个）加载和显示图标。可以解决搜索问题，但会影响加载速度。正常情况下无需开启～</string>
     <string name="pref_all_apps_remember_position_title">记住位置</string>
-    <string name="pref_all_apps_remember_position_description">离开抽屉后记住应用抽屉位置</string>
+    <string name="pref_all_apps_remember_position_description">离开抽屉后记住抽屉位置</string>
     <string name="pref_all_apps_show_scrollbar_title">显示滚动条</string>
     <string name="pref_category_search">搜索</string>
     <string name="show_app_search_bar">显示搜索栏</string>
