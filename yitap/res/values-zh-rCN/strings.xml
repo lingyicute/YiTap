@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Todo: find common strings and centralize them here. Should we make all strings specific though?  -->
     <!-- PreferenceDashboard -->
-    <string name="set_default_launcher_tip">设置 YiTap 为您的默认启动器，即可体验更多拓展功能～</string>
+    <string name="set_default_launcher_tip">设置 YiTap 为默认启动器，即可体验更多拓展功能，让你的桌面更好看～</string>
     <string name="settings">设置</string>
     <string name="general_label">通用</string>
     <string name="general_description">颜色、图标包与通知圆点</string>
