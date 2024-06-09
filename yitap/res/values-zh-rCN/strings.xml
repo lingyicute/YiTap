@@ -322,11 +322,11 @@
     <string name="taskbar_label">任务栏</string>
     <string name="enable_taskbar_experimental">启用任务栏（实验性）</string>
     <!-- about/About.kt -->
-    <string name="news">新闻</string>
+    <string name="news">动态</string>
     <string name="support">支持</string>
     <string name="product">Made with heart ❤️</string>
     <string name="design_and_development">设计 &amp; 开发</string>
-    <string name="development">开发者</string>
+    <string name="development">项目开发者</string>
     <string name="quickswitch_maintenance">QuickSwitch 维护</string>
     <string name="devops">项目原开发者</string>
     <string name="support_and_pr">致敬</string>
