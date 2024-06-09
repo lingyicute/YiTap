@@ -68,8 +68,8 @@
     <string name="hotseat_out_of_space" msgid="7448809638125333693">"收藏栏已满"</string>
     <string name="all_apps_button_label" msgid="8130441508702294465">"应用列表"</string>
     <string name="all_apps_search_results" msgid="5889367432531296759">"搜索结果"</string>
-    <string name="all_apps_button_personal_label" msgid="1315764287305224468">"个人应用列表"</string>
-    <string name="all_apps_button_work_label" msgid="7270707118948892488">"工作应用列表"</string>
+    <string name="all_apps_button_personal_label" msgid="1315764287305224468">"常规应用列表"</string>
+    <string name="all_apps_button_work_label" msgid="7270707118948892488">"多开应用列表"</string>
     <string name="remove_drop_target_label" msgid="7812859488053230776">"移除"</string>
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"卸载"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"应用信息"</string>
@@ -156,18 +156,18 @@
     <string name="action_dismiss_notification" msgid="5909461085055959187">"关闭"</string>
     <string name="accessibility_close" msgid="2277148124685870734">"关闭"</string>
     <string name="notification_dismissed" msgid="6002233469409822874">"已关闭通知"</string>
-    <string name="all_apps_personal_tab" msgid="4190252696685155002">"个人"</string>
-    <string name="all_apps_work_tab" msgid="4884822796154055118">"工作"</string>
+    <string name="all_apps_personal_tab" msgid="4190252696685155002">"常规"</string>
+    <string name="all_apps_work_tab" msgid="4884822796154055118">"Work Profile"</string>
     <string name="work_profile_toggle_label" msgid="3081029915775481146">"工作资料"</string>
-    <string name="work_profile_edu_work_apps" msgid="7895468576497746520">"工作应用都有相应的标志，且您的 IT 管理员可以看到它们"</string>
+    <string name="work_profile_edu_work_apps" msgid="7895468576497746520">"“Work Profile”，翻译过来是“工作应用”。这是Android自带的隔离机制，国内魔改UI使用此机制来实现应用多开。因此，你会发现多开App们出现在了这里，这是正常现象喔～"</string>
     <string name="work_profile_edu_accept" msgid="6069788082535149071">"知道了"</string>
-    <string name="work_apps_paused_title" msgid="3040901117349444598">"工作应用已暂停"</string>
-    <string name="work_apps_paused_info_body" msgid="1687828929959237477">"您将不会收到来自工作应用的通知"</string>
-    <string name="work_apps_paused_body" msgid="261634750995824906">"工作应用无法向您发送通知、不能耗用电池电量，也无法获取您的位置信息"</string>
-    <string name="work_apps_paused_telephony_unavailable_body" msgid="8358872357502756790">"您将不会收到来自工作应用的来电、短信或通知"</string>
+    <string name="work_apps_paused_title" msgid="3040901117349444598">"多开应用已暂停"</string>
+    <string name="work_apps_paused_info_body" msgid="1687828929959237477">"您将不会收到来自多开应用的通知"</string>
+    <string name="work_apps_paused_body" msgid="261634750995824906">"多开应用无法向您发送通知、不能耗用电池电量，也无法获取您的位置信息"</string>
+    <string name="work_apps_paused_telephony_unavailable_body" msgid="8358872357502756790">"您将不会收到来自多开应用的来电、短信或通知"</string>
     <string name="work_apps_paused_edu_banner" msgid="8872412121608402058">"“Work Profile”，翻译过来是“工作应用”。这是Android自带的隔离机制，国内魔改UI使用此机制来实现应用多开。因此，你会发现多开App们出现在了这里，这是正常现象喔～"</string>
     <string name="work_apps_paused_edu_accept" msgid="6377476824357318532">"知道了"</string>
-    <string name="work_apps_pause_btn_text" msgid="4669288269140620646">"暂停工作应用"</string>
+    <string name="work_apps_pause_btn_text" msgid="4669288269140620646">"暂停多开应用"</string>
     <string name="work_apps_enable_btn_text" msgid="1736198302467317371">"取消暂停"</string>
     <string name="developer_options_filter_hint" msgid="5896817443635989056">"过滤器"</string>
     <string name="search_pref_screen_title" msgid="3258959643336315962">"手机内搜索"</string>
