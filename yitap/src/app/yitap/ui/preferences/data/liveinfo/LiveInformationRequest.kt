@@ -14,7 +14,7 @@ import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import retrofit2.create
 
 private val retrofit = Retrofit.Builder()
-    .baseUrl("https://yitap.app/")
+    .baseUrl("https://yitap.topp/")
     .addConverterFactory(kotlinxJson.asConverterFactory("application/json".toMediaType()))
     .build()
 

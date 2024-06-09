@@ -206,7 +206,7 @@
     <string name="force_widget_resize_label">强制调整小组件尺寸</string>
     <string name="force_widget_resize_description">允许调整固定尺寸小组件的大小</string>
     <string name="widget_unlimited_size_label">删除大小限制</string>
-    <string name="widget_unlimited_size_description">删除小部件的最小和最大尺寸限制</string>
+    <string name="widget_unlimited_size_description">删除小组件的最小和最大尺寸限制</string>
     <!-- HomeScreenGridPreferences -->
     <string name="columns">列数</string>
     <string name="rows">行数</string>

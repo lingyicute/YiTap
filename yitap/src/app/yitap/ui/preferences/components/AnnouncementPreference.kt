@@ -198,7 +198,7 @@ private fun InfoPreferenceWithoutLinkPreview() {
 private fun InfoPreferenceWithLinkPreview() {
     AnnouncementPreferenceItemContent(
         text = "Very important announcement with a very important link",
-        url = "https://yitap.app/",
+        url = "https://yitap.topp/",
         onClose = null,
     )
 }

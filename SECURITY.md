@@ -1,22 +1,5 @@
 # Security Policy
 
-## Supported Versions
-
-> [!WARNING]
-> YiTap v2 (Play Store version) is **unsupported**. Use the newer alphas instead.
-> See [this FAQ page](https://yitap.app/faq#do-you-still-support-the-play-store-version) for additional information.
-
-The latest version of YiTap is the only supported version.
-
-| Version        | Supported          |
-| -------------- | ------------------ |
-| 14             | :white_check_mark: |
-| 13             | :x:                |
-| 12.1           | :x:                |
-| 12             | :x:                |
-| 11             | :x:                |
-| Older (legacy) | :x:                |
-
 ## Reporting Security issues
 
 We appreciate your efforts to responsibly disclose your findings and will make every effort to
