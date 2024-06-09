@@ -136,7 +136,7 @@
     <string name="icon_shape_teardrop">泪珠形</string>
     <!-- FontSelectionPreferences -->
     <string name="pref_fonts_add_fonts">添加字体</string>
-    <string name="pref_fonts_add_fonts_summary">支持 OTF &amp或 TTF 字体</string>
+    <string name="pref_fonts_add_fonts_summary">支持 OTF &amp;或 TTF 字体</string>
     <string name="pref_fonts_missing_font">未找到字体</string>
     <string name="font_variant_italic">斜体</string>
     <string name="font_weight_thin">细体</string>
