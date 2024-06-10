@@ -5,8 +5,8 @@
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
-    <source media="(prefers-color-scheme: dark)" srcset="docs/device-frame.png" width="250px">
-    <img alt="Google Pixel running YiTap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
+    <source media="(prefers-color-scheme: dark)" srcset="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
+    <img alt="" src="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
 </picture>
 
 YiTap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
@@ -14,6 +14,12 @@ YiTap is a free, open-source home app for Android. Taking Launcher3 — Android�
 This branch houses the codebase of YiTap 14, which is currently in beta and is based on Launcher3 from Android 14.
 
 ## Features
+
+<picture>
+    <!-- Avoid image being clickable with slight workaround --->
+    <source media="(prefers-color-scheme: dark)" srcset="docs/device-frame.png" width="250px">
+    <img alt="Google Pixel running YiTap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
+</picture>
 
 -   Pixel Launcher-like UI with Material You design
 -   At a Glance widget with Smartspacer support

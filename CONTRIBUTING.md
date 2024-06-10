@@ -2,8 +2,8 @@
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
-    <source media="(prefers-color-scheme: dark)" srcset="docs/yitap-round.webp" width="100">
-    <img alt="" src="docs/yitap-round.webp" width="100">
+    <source media="(prefers-color-scheme: dark)" srcset="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
+    <img alt="" src="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
 </picture>
 
 First and foremost, welcome to the **YiTap** Contributing Guidelines!
