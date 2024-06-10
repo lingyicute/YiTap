@@ -71,7 +71,7 @@
     <string name="transparent_background_icons_description">在带主题的图标上使用透明背景</string>
     <string name="icon_shape_label">图标形状</string>
     <string name="auto_adaptive_icons_label">图标自适应</string>
-    <string name="auto_adaptive_icons_description">（专门对付国内App）自动纠正不符合规范（奇奇怪怪）的图标，使其更加合群～</string>
+    <string name="auto_adaptive_icons_description">（专门对付国内App）自动纠正不符合规范、奇奇怪怪的图标，使其更加合群～</string>
     <string name="background_lightness_label">背景亮度</string>
     <string name="adaptive_icon_background_description">100% 背景亮度即为白色。</string>
     <string name="reset_custom_icons">重置自定义图标</string>
@@ -85,7 +85,7 @@
     <!-- Notification popup -->
     <string name="missing_notification_access_label">需要通知权限</string>
     <string name="missing_notification_access_description">需要通知使用权来读取内容</string>
-    <string name="msg_missing_notification_access">要使用通知角标，请允许 <xliff:g id="name" example="My App">%1$s</xliff:g> 读取通知数量。</string>
+    <string name="msg_missing_notification_access">要使用通知角标，请允许 <xliff:g id="name" example="My App">%1$s</xliff:g> 读取通知。</string>
     <string name="title_change_settings">更改设置</string>
     <string name="colors">颜色</string>
     <string name="theme_label">主题</string>
@@ -178,7 +178,7 @@
     <string name="feed_default">默认</string>
     <string name="wallpaper">从壁纸自动取色</string>
     <string name="wallpaper_scrolling_label">壁纸跟随屏幕滚动</string>
-    <string name="wallpaper_depth_effect_label">壁纸深度效果</string>
+    <string name="wallpaper_depth_effect_label">壁纸缩放效果</string>
     <string name="wallpaper_depth_effect_description">在打开应用抽屉时缩放壁纸</string>
     <string name="show_sys_ui_scrim">顶部阴影</string>
     <string name="layout">布局</string>
