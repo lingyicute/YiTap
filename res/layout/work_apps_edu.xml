@@ -39,7 +39,7 @@
             android:layout_marginEnd="@dimen/work_card_margin"
             android:text="@string/work_profile_edu_work_apps"
             android:textDirection="locale"
-            android:textSize="18sp" />
+            android:textSize="13sp" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/padded_rounded_button_height"

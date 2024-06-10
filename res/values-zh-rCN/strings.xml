@@ -163,7 +163,7 @@
     <string name="work_profile_edu_accept" msgid="6069788082535149071">"知道了"</string>
     <string name="work_apps_paused_title" msgid="3040901117349444598">"多开应用已暂停"</string>
     <string name="work_apps_paused_info_body" msgid="1687828929959237477">"您将不会收到来自多开应用的通知"</string>
-    <string name="work_apps_paused_body" msgid="261634750995824906">"多开应用无法向您发送通知、不能耗用电池电量，也无法获取您的位置信息"</string>
+    <string name="work_apps_paused_body" msgid="261634750995824906">"多开应用无法向您发送通知、不会消耗电池电量，也无法获取您的位置信息"</string>
     <string name="work_apps_paused_telephony_unavailable_body" msgid="8358872357502756790">"您将不会收到来自多开应用的来电、短信或通知"</string>
     <string name="work_apps_paused_edu_banner" msgid="8872412121608402058">"“Work Profile”，翻译过来也就是“工作应用”。这是 Android 自带的隔离机制，国内魔改系统使用此机制来实现应用多开。因此，你会发现多开 App 出现在了这里。这是正常现象喔～"</string>
     <string name="work_apps_paused_edu_accept" msgid="6377476824357318532">"知道了"</string>
