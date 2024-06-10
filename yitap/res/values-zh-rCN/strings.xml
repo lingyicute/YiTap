@@ -176,7 +176,7 @@
     <string name="minus_one">订阅内容</string>
     <string name="feed_provider">Feed 源</string>
     <string name="feed_default">默认</string>
-    <string name="wallpaper">从壁纸自动取色</string>
+    <string name="wallpaper">壁纸</string>
     <string name="wallpaper_scrolling_label">壁纸跟随屏幕滚动</string>
     <string name="wallpaper_depth_effect_label">壁纸缩放效果</string>
     <string name="wallpaper_depth_effect_description">在打开应用抽屉时缩放壁纸</string>
@@ -347,7 +347,7 @@
     <string name="dt2s_admin_hint">若要使用双击息屏，请将 YiTap 设置为设备管理应用。点击\"打开设置\"，然后点击\"启用此设备管理应用\"。</string>
     <string name="dt2s_admin_warning">双击息屏功能将被关闭。</string>
     <string name="dt2s_a11y_hint_title">启用无障碍服务</string>
-    <string name="dt2s_a11y_hint">若要使用双击息屏，请先启用 YiTap 无障碍服务。点击\"打开设置\"，然后选择 \"YiTap \"并启用 YiTap 无障碍服务。</string>
+    <string name="dt2s_a11y_hint">若要使用双击息屏，请先启用 YiTap 无障碍服务。点击\"打开设置\"，然后选择 \"YiTap\" 并启用 YiTap 无障碍服务。</string>
     <string name="dt2s_warning_open_settings">打开设置</string>
     <string name="loading">正在加载…</string>
     <string name="system">系统主题色</string>
