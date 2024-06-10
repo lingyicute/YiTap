@@ -11,7 +11,7 @@
 
 YiTap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
 
-This branch houses the codebase of YiTap 14, which is currently in beta and is based on Launcher3 from Android 14.
+This branch houses the codebase of YiTap 14, which is based on Launcher3 from Android 14.
 
 ## Features
 
