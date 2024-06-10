@@ -63,9 +63,9 @@
     <string name="font_label">字体</string>
     <string name="fontWorkspace">通用</string>
     <string name="fontHeading">标题</string>
-    <string name="fontHeadingMedium">小标题</string>
+    <string name="fontHeadingMedium">标题（粗）</string>
     <string name="fontBody">常规文字</string>
-    <string name="fontBodyMedium">常规文字（小）</string>
+    <string name="fontBodyMedium">常规文字（粗）</string>
     <string name="icon_style">图标样式</string>
     <string name="transparent_background_icons">透明的带主题图标</string>
     <string name="transparent_background_icons_description">在带主题的图标上使用透明背景</string>
