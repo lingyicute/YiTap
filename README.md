@@ -1,13 +1,13 @@
-# YiTap 14～Made for My Best Xyc ❤️
-
-[![Build release APK](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml/badge.svg)](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml)
-[![Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Flyi_channel)](https://t.me/lyi_channel)
+# YiTap 14～Made for My Best Xyc 
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
     <source media="(prefers-color-scheme: dark)" srcset="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
     <img alt="" src="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
 </picture>
+
+[![Build release APK](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml/badge.svg)](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml)
+[![Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Flyi_channel)](https://t.me/lyi_channel)
 
 YiTap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
 
