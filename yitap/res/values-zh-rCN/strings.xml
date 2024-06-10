@@ -70,8 +70,8 @@
     <string name="transparent_background_icons">透明的带主题图标</string>
     <string name="transparent_background_icons_description">在带主题的图标上使用透明背景</string>
     <string name="icon_shape_label">图标形状</string>
-    <string name="auto_adaptive_icons_label">自适应图标</string>
-    <string name="auto_adaptive_icons_description">将未适配的图标改为自适应</string>
+    <string name="auto_adaptive_icons_label">图标自适应</string>
+    <string name="auto_adaptive_icons_description">（专门对付国内App）自动纠正不符合规范的图标，使其合群～</string>
     <string name="background_lightness_label">背景亮度</string>
     <string name="adaptive_icon_background_description">100% 背景亮度即为白色。</string>
     <string name="reset_custom_icons">重置自定义图标</string>
