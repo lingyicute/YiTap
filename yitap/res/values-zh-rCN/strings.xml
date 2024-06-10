@@ -234,7 +234,7 @@
     <string name="smartspace_battery_status">电池状态</string>
     <string name="smartspace_now_playing">音乐控制器</string>
     <string name="smartspace_requires_setup">点此进行最初的配置～</string>
-    <string name="event_provider_missing_notification_dots">请启用通知角标～</string>
+    <string name="event_provider_missing_notification_dots">点击“更改设置”，将会跳转到通用设置页。请翻到底部，启用“通知角标”～</string>
     <string name="smartspace_media_info_separator">" — "</string>
     <string name="smartspace_calendar_gregorian">公历</string>
     <string name="smartspace_calendar_persian">波斯历</string>
