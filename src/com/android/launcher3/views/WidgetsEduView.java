@@ -25,7 +25,7 @@ import com.android.launcher3.Insettable;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 
 /**
  * Education view about widgets.

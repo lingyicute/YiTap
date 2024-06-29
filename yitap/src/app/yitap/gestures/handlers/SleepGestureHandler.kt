@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, YiTap
+ * copyright 2021, YiTap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,7 +68,7 @@ class SleepMethodRoot(context: Context) : SleepGestureHandler.SleepMethod(contex
     override suspend fun isSupported() = Shell.getShell().isRoot
 
     override suspend fun sleep(launcher: YitapLauncher) {
-        Shell.su("input keyevent 26").exec()
+        Shell.cmd("input keyevent 26").exec()
     }
 }
 

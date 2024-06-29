@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, YiTap
+  ~ copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -74,10 +74,10 @@
         <item quantity="other">%1$d Apps</item>
     </plurals>
     <string name="dt2s_admin_hint_title">Admin permission required</string>
-    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set YiTap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
+    <string name="dt2s_admin_hint">To use Double-Tap to Sleep, set Yitap as a device admin app. Tap Open Settings, then tap “Activate this device admin app.”</string>
     <string name="dt2s_admin_warning">Double Tap to Sleep will be disabled.</string>
     <string name="dt2s_a11y_hint_title">Accessibility service required</string>
-    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the YiTap accessibility service. Tap Open Settings, then select YiTap and turn on Use YiTap.</string>
+    <string name="dt2s_a11y_hint">To use Double-Tap to Sleep, turn on the Yitap accessibility service. Tap Open Settings, then select Yitap and turn on Use Yitap.</string>
     <string name="dt2s_warning_open_settings">פתיחת הגדרות</string>
     <string name="minus_one_enable">פיד</string>
     <string name="minus_one_unavailable">ההזנה אינה מותקנת.</string>
@@ -107,7 +107,7 @@
     <string name="missing_notification_access_description">נדרשת גישה להתראות.</string>
     <string name="msg_missing_notification_access">To use Notification Dots, grant <xliff:g id="name" example="My App">%1$s</xliff:g> access to notifications.</string>
     <string name="title_change_settings">שינוי הגדרות</string>
-    <string name="debug_restart_launcher">Restart YiTap</string>
+    <string name="debug_restart_launcher">Restart Yitap</string>
     <string name="pref_fonts_missing_font">פונט לא נמצא.</string>
     <string name="font_variant_italic">נטוי</string>
     <string name="font_weight_thin">דק</string>
@@ -146,7 +146,7 @@
     <string name="dynamic">Dynamic</string>
     <string name="all_apps_search_market_message">Search for More Apps</string>
     <string name="show_app_search_bar">הצגת סרגל חיפוש</string>
-    <string name="yitap_bug_report">YiTap Bug Report</string>
+    <string name="yitap_bug_report">Yitap Bug Report</string>
     <string name="crash_report_notif_title">%1$s Crashed</string>
     <string name="action_copy_link">העתקת קישור</string>
     <string name="action_copy">העתקה</string>

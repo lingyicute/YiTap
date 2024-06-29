@@ -50,13 +50,12 @@ import androidx.core.graphics.ColorUtils;
 import com.android.launcher3.CellLayout;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.R;
-import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.ActivityContext;
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 
 import app.yitap.preferences2.PreferenceManager2;
 import app.yitap.theme.color.ColorOption;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.util.YitapUtilsKt;
 
 /**

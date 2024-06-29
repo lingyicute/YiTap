@@ -23,6 +23,7 @@ import app.yitap.search.algorithms.YitapSearchAlgorithm
 import app.yitap.ui.preferences.LocalIsExpandedScreen
 import app.yitap.ui.preferences.components.HiddenAppsInSearchPreference
 import app.yitap.ui.preferences.components.SearchSuggestionPreference
+import app.yitap.ui.preferences.components.WebSearchProvider
 import app.yitap.ui.preferences.components.controls.ListPreference
 import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
 import app.yitap.ui.preferences.components.controls.MainSwitchPreference
@@ -156,13 +157,14 @@ private fun LocalSearchSettings(
             android.Manifest.permission.READ_EXTERNAL_STORAGE,
         )
 
+    val webSuggestionProvider = stringResource(prefs2.webSuggestionProvider.getAdapter().state.value.label)
     SearchSuggestionPreference(
         adapter = prefs.searchResultStartPageSuggestion.getAdapter(),
-        maxCountAdapter = prefs2.maxSuggestionResultCount.getAdapter(),
+        maxCountAdapter = prefs2.maxWebSuggestionResultCount.getAdapter(),
         maxCountRange = 3..10,
         label = stringResource(id = R.string.search_pref_result_web_title),
         maxCountLabel = stringResource(id = R.string.max_suggestion_result_count_title),
-        description = stringResource(id = R.string.search_pref_result_web_description),
+        description = stringResource(id = R.string.search_pref_result_web_provider_description, webSuggestionProvider),
     ) {
         SliderPreference(
             label = stringResource(id = R.string.max_web_suggestion_delay),
@@ -170,6 +172,13 @@ private fun LocalSearchSettings(
             step = 500,
             valueRange = 500..5000,
             showUnit = "ms",
+        )
+        WebSearchProvider(
+            adapter = prefs2.webSuggestionProvider.getAdapter(),
+        )
+        SwitchPreference(
+            label = stringResource(R.string.allapps_use_web_suggestion_icon_label),
+            adapter = prefs2.useDrawerSearchIcon.getAdapter(),
         )
     }
     SearchSuggestionPreference(

@@ -1,4 +1,4 @@
-package app.yitap.theme.color
+package app.yitap.theme.color.tokens
 
 import android.content.Context
 import android.util.Log
@@ -6,6 +6,7 @@ import androidx.core.graphics.ColorUtils
 import app.yitap.theme.ResourceToken
 import app.yitap.theme.ThemeProvider
 import app.yitap.theme.UiColorMode
+import app.yitap.theme.color.AndroidColor
 import app.yitap.theme.toAndroidColor
 import com.android.launcher3.R
 import com.android.launcher3.util.Themes

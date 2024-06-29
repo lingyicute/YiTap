@@ -23,8 +23,8 @@ import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 
-import app.yitap.theme.color.ColorTokens;
-import com.android.launcher3.util.Themes;
+import app.yitap.theme.color.tokens.ColorTokens;
+
 import com.android.quickstep.views.DesktopTaskView;
 
 /**

@@ -75,7 +75,6 @@ import com.android.launcher3.util.CellAndSpan;
 import com.android.launcher3.util.GridOccupancy;
 import com.android.launcher3.util.MultiTranslateDelegate;
 import com.android.launcher3.util.ParcelableSparseArray;
-import com.android.launcher3.util.Themes;
 import com.android.launcher3.util.Thunk;
 import com.android.launcher3.views.ActivityContext;
 import com.android.launcher3.widget.LauncherAppWidgetHostView;
@@ -92,7 +91,7 @@ import java.util.Stack;
 import java.util.stream.Collectors;
 
 import app.yitap.preferences2.PreferenceManager2;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 public class CellLayout extends ViewGroup {

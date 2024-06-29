@@ -12,7 +12,6 @@ import androidx.core.os.bundleOf
 import app.yitap.compat.YitapQuickstepCompat
 import app.yitap.preferences.PreferenceChangeListener
 import app.yitap.preferences.PreferenceManager
-import app.yitap.search.YitapSearchAdapterProvider
 import app.yitap.search.adapter.SearchTargetCompat
 import app.yitap.util.requireSystemService
 import com.android.launcher3.LauncherAppState
@@ -110,8 +109,8 @@ class YitapASISearchAlgorithm(context: Context) :
         override fun accept(platformTargets: List<SearchTarget>) {
             if (!canceled) {
                 val targets = platformTargets.map { SearchTargetCompat.wrap(it) }
+                setFirstItemQuickLaunch(targets)
                 val adapterItems = transformSearchResults(targets)
-                YitapSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
                 callback.onSearchResult(
                     query,
                     ArrayList<BaseAllAppsAdapter.AdapterItem>(adapterItems),

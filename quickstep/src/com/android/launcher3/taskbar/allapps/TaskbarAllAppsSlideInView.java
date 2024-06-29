@@ -168,6 +168,7 @@ public class TaskbarAllAppsSlideInView extends AbstractSlideInView<TaskbarOverla
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         mActivityContext.addOnDeviceProfileChangeListener(this);
+        // TODO LAWNCHAIR
         if (FeatureFlags.ENABLE_BACK_SWIPE_LAUNCHER_ANIMATION.get()) {
             mAppsView.getAppsRecyclerViewContainer().setOutlineProvider(mViewOutlineProvider);
             mAppsView.getAppsRecyclerViewContainer().setClipToOutline(true);

@@ -3,9 +3,9 @@ import com.android.build.gradle.api.AndroidBasePlugin
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id 'com.android.application' version "8.4.1"
-    id 'com.android.library' version "8.4.1" apply false
-    id 'com.android.test' version '8.4.1' apply false
+    id 'com.android.application' version "8.5.0"
+    id 'com.android.library' version "8.5.0" apply false
+    id 'com.android.test' version '8.5.0' apply false
     id 'androidx.baselineprofile' version '1.2.4'
     id 'org.jetbrains.kotlin.android' version "2.0.0"
     id 'org.jetbrains.kotlin.plugin.compose' version "2.0.0"
@@ -24,7 +24,7 @@ allprojects {
         apply plugin: 'org.gradle.android.cache-fix'
 
         android {
-            compileSdk 34
+            compileSdk 35
             defaultConfig {
                 minSdk 26
                 targetSdk 34
@@ -42,7 +42,7 @@ allprojects {
     }
 
     plugins.withId('com.google.protobuf') {
-        def protocVersion = '4.27.1'
+        def protocVersion = '4.27.2'
         protobuf {
             // Configure the protoc executable
             protoc {
@@ -66,7 +66,7 @@ allprojects {
 
     plugins.withType(JavaBasePlugin).configureEach {
         java {
-            toolchain.languageVersion = JavaLanguageVersion.of(21)
+            toolchain.languageVersion = JavaLanguageVersion.of(17)
         }
     }
 
@@ -122,11 +122,11 @@ final def buildCommit = providers.exec {
 final def ciBuild = System.getenv("CI") == "true"
 final def ciRef = System.getenv("GITHUB_REF") ?: ""
 final def ciRunNumber = System.getenv("GITHUB_RUN_NUMBER") ?: ""
-final def isReleaseBuild = ciBuild && ciRef.contains("stable")
-final def devReleaseName = ciBuild ? "Dev (#${ciRunNumber})" : "Dev (${buildCommit})"
+final def isReleaseBuild = ciBuild && ciRef.contains("beta")
+final def devReleaseName = ciBuild ? "Dev.(#${ciRunNumber})" : "Dev.(${buildCommit})"
 final def version = "14"
-final def releaseName = "Stable"
-final def versionDisplayName = "${version} ${isReleaseBuild ? releaseName : devReleaseName}"
+final def releaseName = "Beta 2"
+final def versionDisplayName = "${version}.${isReleaseBuild ? releaseName : devReleaseName}"
 final def majorVersion = versionDisplayName.split("\\.")[0]
 
 final def quickstepMinSdk = "29"
@@ -135,6 +135,8 @@ final def quickstepMaxSdk = "34"
 android {
     namespace "com.android.launcher3"
     defaultConfig {
+        // Yitap Launcher 14.0 Beta 2
+        // See CONTRIBUTING.md#versioning-scheme
         versionCode 14_00_02_02
         versionName "${versionDisplayName}"
         buildConfigField "String", "VERSION_DISPLAY_NAME", "\"${versionDisplayName}\""
@@ -151,7 +153,7 @@ android {
     applicationVariants.configureEach { variant ->
         variant.outputs.configureEach {
             def channel = variant.productFlavors.last().name
-            outputFileName = "Yitap ${variant.versionName} $channel ${variant.buildType.name}.apk"
+            outputFileName = "Yitap.${variant.versionName}.$channel.${variant.buildType.name}.apk"
         }
     }
 
@@ -212,11 +214,11 @@ android {
 
         debug {
             applicationIdSuffix ".debug"
-            resValue("string", "derived_app_name", "YiTap (Debug)")
+            resValue("string", "derived_app_name", "Yitap (Debug)")
         }
 
         release {
-            resValue("string", "derived_app_name", "YiTap")
+            resValue("string", "derived_app_name", "Yitap")
             minifyEnabled true
             shrinkResources true
             proguardFiles proguardFilesFromAosp + "proguard.pro"
@@ -358,12 +360,12 @@ dependencies {
     implementation "androidx.preference:preference-ktx:1.2.1"
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1'
     implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7"
     implementation 'com.github.ChickenHook:RestrictionBypass:2.2'
     implementation 'dev.rikka.tools.refine:runtime:4.4.0'
 
-    implementation platform("androidx.compose:compose-bom:2024.05.00")
+    implementation platform("androidx.compose:compose-bom:2024.06.00")
     implementation "androidx.compose.ui:ui"
     implementation "androidx.compose.ui:ui-util"
     debugImplementation "androidx.compose.ui:ui-tooling"
@@ -373,12 +375,12 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended"
     implementation "androidx.compose.material:material"
     implementation "androidx.compose.runtime:runtime-livedata"
-    implementation 'androidx.compose.material3:material3:1.3.0-beta02'
-    implementation 'androidx.compose.material3:material3-window-size-class:1.3.0-beta02'
+    implementation 'androidx.compose.material3:material3:1.3.0-beta04'
+    implementation 'androidx.compose.material3:material3-window-size-class:1.3.0-beta04'
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     implementation "androidx.activity:activity-compose:1.9.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1"
-    implementation "androidx.navigation:navigation-compose:2.8.0-beta02"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.8.2"
+    implementation "androidx.navigation:navigation-compose:2.8.0-beta04"
     implementation "androidx.palette:palette-ktx:1.0.0"
     implementation "androidx.slice:slice-core:1.1.0-alpha02"
     def accompanistVersion = '0.34.0'
@@ -404,7 +406,7 @@ dependencies {
     implementation "androidx.room:room-ktx:$roomVersion"
     ksp "androidx.room:room-compiler:$roomVersion"
 
-    implementation "com.github.topjohnwu.libsu:service:5.2.2"
+    implementation "com.github.topjohnwu.libsu:service:6.0.0"
 
     // Persian Date
     implementation 'com.github.samanzamani:PersianDate:1.7.1'
@@ -443,8 +445,8 @@ licensee {
     allow("Apache-2.0")
     allow("BSD-3-Clause")
     allow("GPL-2.0-or-later")
-    allowDependency("com.github.topjohnwu.libsu", "core", "5.2.2")
-    allowDependency("com.github.topjohnwu.libsu", "service", "5.2.2")
+    allowDependency("com.github.topjohnwu.libsu", "core", "6.0.0")
+    allowDependency("com.github.topjohnwu.libsu", "service", "6.0.0")
     allowUrl("https://github.com/patrykmichalik/opto/blob/master/LICENSE")
     allowUrl("https://github.com/RikkaApps/HiddenApiRefinePlugin/blob/main/LICENSE")
     allowUrl("https://opensource.org/licenses/mit-license.php")

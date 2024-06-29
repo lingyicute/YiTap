@@ -48,7 +48,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.yitap.preferences2.PreferenceManager2;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 public class AppWidgetResizeFrame extends AbstractFloatingView implements View.OnKeyListener {

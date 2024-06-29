@@ -3,6 +3,7 @@ package app.yitap.search.algorithms
 import android.content.Context
 import app.yitap.YitapApp
 import app.yitap.allapps.views.SearchItemBackground
+import app.yitap.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
 import app.yitap.preferences.PreferenceManager
 import app.yitap.preferences2.PreferenceManager2
 import app.yitap.search.YitapSearchAdapterProvider
@@ -82,21 +83,35 @@ sealed class YitapSearchAlgorithm(
         return filtered.mapIndexedNotNull { index, target ->
             val isFirst = index == 0 || filtered[index - 1].isDivider
             val isLast = index == filtered.lastIndex || filtered[index + 1].isDivider
-            val background = getBackground(
-                target.layoutType,
-                index,
-                isFirst,
-                isLast,
-                smallIconIndices,
-                iconRowIndices,
-                peopleTileIndices,
-                suggestionIndices,
-                fileIndices,
-                settingIndices,
-                recentIndices,
-                calculator,
-            )
-            SearchAdapterItem.createAdapterItem(target, background)
+
+            if (target.extras.getBoolean(EXTRA_QUICK_LAUNCH, false)) {
+                SearchAdapterItem.createAdapterItem(target, normalBackground)
+            } else {
+                val background = getBackground(
+                    target.layoutType,
+                    index,
+                    isFirst,
+                    isLast,
+                    smallIconIndices,
+                    iconRowIndices,
+                    peopleTileIndices,
+                    suggestionIndices,
+                    fileIndices,
+                    settingIndices,
+                    recentIndices,
+                    calculator,
+                )
+                SearchAdapterItem.createAdapterItem(target, background)
+            }
+        }
+    }
+
+    protected fun setFirstItemQuickLaunch(searchTargets: List<SearchTargetCompat>) {
+        val hasQuickLaunch = searchTargets.any { it.extras.getBoolean(EXTRA_QUICK_LAUNCH, false) }
+        if (!hasQuickLaunch) {
+            searchTargets.firstOrNull()?.extras?.apply {
+                putBoolean(EXTRA_QUICK_LAUNCH, true)
+            }
         }
     }
 

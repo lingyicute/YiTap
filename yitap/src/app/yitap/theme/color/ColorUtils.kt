@@ -1,6 +1,7 @@
 package app.yitap.theme.color
 
 import android.content.Context
+import app.yitap.theme.color.tokens.ColorTokens
 
 fun generateColor(context: Context): Int {
     val accentColors = listOf(

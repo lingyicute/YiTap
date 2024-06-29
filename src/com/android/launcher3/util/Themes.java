@@ -33,10 +33,6 @@ import android.view.ContextThemeWrapper;
 
 import androidx.annotation.ColorInt;
 
-import androidx.annotation.ColorInt;
-
-import androidx.annotation.ColorInt;
-
 import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
@@ -44,7 +40,7 @@ import com.android.launcher3.icons.GraphicsUtils;
 import com.patrykmichalik.opto.core.PreferenceExtensionsKt;
 import app.yitap.preferences2.PreferenceManager2;
 import app.yitap.theme.color.ColorMode;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.wallpaper.WallpaperColorsCompat;
 import app.yitap.wallpaper.WallpaperManagerCompat;
 import app.yitap.ui.theme.ColorKt;

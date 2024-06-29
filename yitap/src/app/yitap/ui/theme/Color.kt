@@ -9,7 +9,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.core.graphics.ColorUtils
 import app.yitap.theme.UiColorMode
-import app.yitap.theme.color.ColorTokens
+import app.yitap.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.Themes

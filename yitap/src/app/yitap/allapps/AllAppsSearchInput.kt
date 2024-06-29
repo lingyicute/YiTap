@@ -27,6 +27,7 @@ import app.yitap.preferences.PreferenceManager
 import app.yitap.preferences2.PreferenceManager2
 import app.yitap.search.YitapRecentSuggestionProvider
 import app.yitap.search.algorithms.YitapSearchAlgorithm
+import app.yitap.search.algorithms.data.WebSearchProvider
 import app.yitap.theme.drawable.DrawableTokens
 import com.android.launcher3.Insettable
 import com.android.launcher3.LauncherState
@@ -111,6 +112,10 @@ class AllAppsSearchInput(context: Context, attrs: AttributeSet?) :
         searchIcon = ViewCompat.requireViewById(this, R.id.search_icon)
         with(searchIcon) {
             isVisible = true
+
+            if (prefs2.useDrawerSearchIcon.firstBlocking()) {
+                setImageResource(WebSearchProvider.fromString(prefs2.webSuggestionProvider.firstBlocking().toString()).iconRes)
+            }
             // todo implement search feature
         }
 

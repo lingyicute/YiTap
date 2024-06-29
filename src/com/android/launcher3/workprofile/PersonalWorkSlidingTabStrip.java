@@ -16,7 +16,6 @@
 package com.android.launcher3.workprofile;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.content.res.TypedArray;
 import android.graphics.drawable.RippleDrawable;
 import android.util.AttributeSet;
@@ -32,7 +31,7 @@ import com.android.launcher3.pageindicators.PageIndicator;
 import com.android.launcher3.views.ActivityContext;
 
 import app.yitap.font.FontManager;
-import app.yitap.theme.color.ColorStateListTokens;
+import app.yitap.theme.color.tokens.ColorStateListTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 /**

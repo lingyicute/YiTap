@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.core.util.contains
 import app.yitap.allapps.views.SearchItemDecorator
 import app.yitap.allapps.views.SearchResultView
-import app.yitap.allapps.views.SearchResultView.Companion.EXTRA_QUICK_LAUNCH
 import app.yitap.search.adapter.SearchAdapterItem
 import app.yitap.search.adapter.SearchResultActionCallBack
 import com.android.app.search.LayoutType
@@ -71,7 +70,7 @@ class YitapSearchAdapterProvider(
     ): BaseAllAppsAdapter.ViewHolder {
         val view = layoutInflater.inflate(layoutIdMap[viewType], parent, false)
         val grid: DeviceProfile = mLauncher.deviceProfile
-        val horizontalMargin = if (grid.isTablet) grid.allAppsLeftRightPadding + 48 else grid.allAppsLeftRightPadding
+        val horizontalMargin = if (grid.isTablet) grid.allAppsPadding.left + grid.allAppsPadding.right + 48 else grid.allAppsPadding.left + grid.allAppsPadding.right
 
         if (viewType != SEARCH_RESULT_ICON) {
             val layoutParams = ViewGroup.MarginLayoutParams(view.layoutParams)
@@ -124,14 +123,5 @@ class YitapSearchAdapterProvider(
             LayoutType.WIDGET_LIVE to SEARCH_RESULT_RECENT_TILE,
             LayoutType.CALCULATOR to SEARCH_RESULT_CALCULATOR,
         )
-
-        fun setFirstItemQuickLaunch(items: List<SearchAdapterItem>) {
-            val hasQuickLaunch = items.any { it.searchTarget.extras.getBoolean(EXTRA_QUICK_LAUNCH, false) }
-            if (!hasQuickLaunch) {
-                items.firstOrNull()?.searchTarget?.extras?.apply {
-                    putBoolean(EXTRA_QUICK_LAUNCH, true)
-                }
-            }
-        }
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, YiTap
+ * copyright 2021, YiTap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,7 +65,7 @@ fun NotificationDotsPreference(
     val context = LocalContext.current
     val showWarning = enabled && !serviceEnabled
     val summary = when {
-        showWarning -> R.string.missing_notification_access_description
+        showWarning -> R.string.missing_notification_access_label
         enabled -> R.string.notification_dots_desc_on
         else -> R.string.notification_dots_desc_off
     }
@@ -117,7 +117,7 @@ fun NotificationAccessConfirmation(
         title = { Text(text = stringResource(id = R.string.missing_notification_access_label)) },
         text = {
             val appName = stringResource(id = R.string.derived_app_name)
-            Text(text = stringResource(id = R.string.msg_missing_notification_access, appName))
+            Text(text = stringResource(id = R.string.missing_notification_access_desc, appName))
         },
         buttons = {
             OutlinedButton(

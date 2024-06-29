@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2021, YiTap
+  ~ copyright 2021, YiTap
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -71,10 +71,10 @@
         <item quantity="other">%1$d Aplikasi</item>
     </plurals>
     <string name="dt2s_admin_hint_title">Izin Admin Dibutuhkan</string>
-    <string name="dt2s_admin_hint">Untuk menggunakan Ketuk Dua Kali untuk Tidur, atur YiTap sebagai aplikasi admin perangkat. Ketuk \"Buka Pengaturan,\" lalu ketuk \"Aktifkan aplikasi admin perangkat ini.\"</string>
+    <string name="dt2s_admin_hint">Untuk menggunakan Ketuk Dua Kali untuk Tidur, atur Yitap sebagai aplikasi admin perangkat. Ketuk \"Buka Pengaturan,\" lalu ketuk \"Aktifkan aplikasi admin perangkat ini.\"</string>
     <string name="dt2s_admin_warning">Ketuk Dua Kali untuk Tidur akan dimatikan.</string>
     <string name="dt2s_a11y_hint_title">Aktifkan Layanan Aksesibilitas</string>
-    <string name="dt2s_a11y_hint">Untuk menggunakan Ketuk Dua Kali untuk Tidur, aktifkan layanan aksesibilitas YiTap. Ketuk \"Buka Pengaturan,\" lalu pilih \"YiTap\" dan aktifkan \"Gunakan YiTap\".</string>
+    <string name="dt2s_a11y_hint">Untuk menggunakan Ketuk Dua Kali untuk Tidur, aktifkan layanan aksesibilitas Yitap. Ketuk \"Buka Pengaturan,\" lalu pilih \"Yitap\" dan aktifkan \"Gunakan Yitap\".</string>
     <string name="dt2s_warning_open_settings">Buka Pengaturan</string>
     <string name="minus_one_enable">Umpan</string>
     <string name="minus_one_unavailable">Tidak ada umpan terpasang.</string>
@@ -104,7 +104,7 @@
     <string name="missing_notification_access_description">Akses notifikasi diperlukan.</string>
     <string name="msg_missing_notification_access">Untuk menggunakan Titik Notifikasi, berikan <xliff:g id="name" example="Aplikasi Saya">%1$s</xliff:g> akses ke notifikasi.</string>
     <string name="title_change_settings">Ubah Pengaturan</string>
-    <string name="debug_restart_launcher">Muat ulang YiTap</string>
+    <string name="debug_restart_launcher">Muat ulang Yitap</string>
     <string name="pref_fonts_missing_font">Font tidak ditemukan.</string>
     <string name="font_variant_italic">Miring</string>
     <string name="font_weight_thin">Tipis</string>
@@ -143,7 +143,7 @@
     <string name="dynamic">Dinamis</string>
     <string name="all_apps_search_market_message">Cari Aplikasi Lainnya</string>
     <string name="show_app_search_bar">Tampilkan Bilah Pencarian</string>
-    <string name="yitap_bug_report">Laporan Bug YiTap</string>
+    <string name="yitap_bug_report">Laporan Bug Yitap</string>
     <string name="crash_report_notif_title">%1$s berhenti</string>
     <string name="action_copy_link">Salin Tautan</string>
     <string name="action_copy">Salin</string>

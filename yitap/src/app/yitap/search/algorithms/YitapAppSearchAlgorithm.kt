@@ -1,17 +1,12 @@
 package app.yitap.search.algorithms
 
 import android.content.Context
-import android.content.pm.ShortcutInfo
 import android.os.Handler
-import app.yitap.launcher
-import app.yitap.preferences.PreferenceManager
 import app.yitap.preferences2.PreferenceManager2
-import app.yitap.search.YitapSearchAdapterProvider
 import app.yitap.search.adapter.GenerateSearchTarget
 import app.yitap.search.adapter.SPACE
 import app.yitap.search.adapter.SearchTargetCompat
 import app.yitap.search.adapter.createSearchTarget
-import app.yitap.ui.preferences.components.HiddenAppsInSearch
 import app.yitap.util.isDefaultLauncher
 import com.android.launcher3.LauncherAppState
 import com.android.launcher3.allapps.BaseAllAppsAdapter
@@ -19,18 +14,12 @@ import com.android.launcher3.model.AllAppsList
 import com.android.launcher3.model.BaseModelUpdateTask
 import com.android.launcher3.model.BgDataModel
 import com.android.launcher3.model.data.AppInfo
-import com.android.launcher3.popup.PopupPopulator
 import com.android.launcher3.search.SearchCallback
-import com.android.launcher3.search.StringMatcherUtility
-import com.android.launcher3.shortcuts.ShortcutRequest
 import com.android.launcher3.util.Executors
 import com.patrykmichalik.opto.core.onEach
-import java.util.Locale
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import me.xdrop.fuzzywuzzy.FuzzySearch
-import me.xdrop.fuzzywuzzy.algorithms.WeightedRatio
 
 class YitapAppSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) {
 
@@ -38,13 +27,12 @@ class YitapAppSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) 
     private val resultHandler = Handler(Executors.MAIN_EXECUTOR.looper)
     private val generateSearchTarget = GenerateSearchTarget(context)
 
-    private lateinit var hiddenApps: Set<String>
+    private var hiddenApps: Set<String> = setOf()
 
     private var hiddenAppsInSearch = ""
     private var enableFuzzySearch = false
     private var maxResultsCount = 5
 
-    private val prefs: PreferenceManager = PreferenceManager.getInstance(context)
     private val pref2 = PreferenceManager2.getInstance(context)
 
     val coroutineScope = CoroutineScope(context = Dispatchers.IO)
@@ -63,6 +51,8 @@ class YitapAppSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) 
             maxResultsCount = it
         }
     }
+
+    private val searchUtils = SearchUtils(maxResultsCount, hiddenApps, hiddenAppsInSearch)
 
     override fun doSearch(query: String, callback: SearchCallback<BaseAllAppsAdapter.AdapterItem>) {
         appState.model.enqueueModelUpdateTask(object : BaseModelUpdateTask() {
@@ -86,88 +76,34 @@ class YitapAppSearchAlgorithm(context: Context) : YitapSearchAlgorithm(context) 
         query: String,
     ): ArrayList<BaseAllAppsAdapter.AdapterItem> {
         val appResults = if (enableFuzzySearch) {
-            fuzzySearch(apps, query)
+            searchUtils.fuzzySearch(apps, query)
         } else {
-            normalSearch(apps, query)
+            searchUtils.normalSearch(apps, query)
         }
 
         val searchTargets = mutableListOf<SearchTargetCompat>()
 
         if (appResults.isNotEmpty()) {
-            appResults.mapTo(searchTargets, ::createSearchTarget)
-        }
-
-        if (appResults.size == 1 && context.isDefaultLauncher()) {
-            val singleAppResult = appResults.firstOrNull()
-            val shortcuts = singleAppResult?.let { getShortcuts(it) }
-            if (shortcuts != null) {
-                if (shortcuts.isNotEmpty()) {
-                    searchTargets.add(generateSearchTarget.getHeaderTarget(SPACE))
-                    searchTargets.add(createSearchTarget(singleAppResult, true))
-                    searchTargets.addAll(shortcuts.map(::createSearchTarget))
+            if (appResults.size == 1 && context.isDefaultLauncher()) {
+                val singleAppResult = appResults.firstOrNull()
+                val shortcuts = singleAppResult?.let { searchUtils.getShortcuts(it, context) }
+                if (shortcuts != null) {
+                    if (shortcuts.isNotEmpty()) {
+                        searchTargets.add(generateSearchTarget.getHeaderTarget(SPACE))
+                        searchTargets.add(createSearchTarget(singleAppResult, true))
+                        searchTargets.addAll(shortcuts.map(::createSearchTarget))
+                    }
                 }
+            } else {
+                appResults.mapTo(searchTargets, ::createSearchTarget)
             }
+            searchTargets.add(generateSearchTarget.getHeaderTarget(SPACE))
         }
-
-        searchTargets.add(generateSearchTarget.getHeaderTarget(SPACE))
 
         generateSearchTarget.getMarketSearchItem(query)?.let { searchTargets.add(it) }
 
+        setFirstItemQuickLaunch(searchTargets)
         val adapterItems = transformSearchResults(searchTargets)
-        YitapSearchAdapterProvider.setFirstItemQuickLaunch(adapterItems)
         return ArrayList(adapterItems)
-    }
-
-    private fun getShortcuts(app: AppInfo): List<ShortcutInfo> {
-        val shortcuts = ShortcutRequest(context.launcher, app.user)
-            .withContainer(app.targetComponent)
-            .query(ShortcutRequest.PUBLISHED)
-        return PopupPopulator.sortAndFilterShortcuts(shortcuts, null)
-    }
-
-    private fun normalSearch(apps: List<AppInfo>, query: String): List<AppInfo> {
-        // Do an intersection of the words in the query and each title, and filter out all the
-        // apps that don't match all of the words in the query.
-        val queryTextLower = query.lowercase(Locale.getDefault())
-        val matcher = StringMatcherUtility.StringMatcher.getInstance()
-        return apps.asSequence()
-            .filter { StringMatcherUtility.matches(queryTextLower, it.title.toString(), matcher) }
-            .filterHiddenApps(queryTextLower)
-            .take(maxResultsCount)
-            .toList()
-    }
-
-    private fun fuzzySearch(apps: List<AppInfo>, query: String): List<AppInfo> {
-        val queryTextLower = query.lowercase(Locale.getDefault())
-        val filteredApps = apps.asSequence()
-            .filterHiddenApps(queryTextLower)
-            .toList()
-        val matches = FuzzySearch.extractSorted(
-            queryTextLower,
-            filteredApps,
-            { it.sectionName + it.title },
-            WeightedRatio(),
-            65,
-        )
-
-        return matches.take(maxResultsCount)
-            .map { it.referent }
-    }
-
-    private fun Sequence<AppInfo>.filterHiddenApps(query: String): Sequence<AppInfo> {
-        return when (hiddenAppsInSearch) {
-            HiddenAppsInSearch.ALWAYS -> {
-                this
-            }
-            HiddenAppsInSearch.IF_NAME_TYPED -> {
-                filter {
-                    it.toComponentKey().toString() !in hiddenApps ||
-                        it.title.toString().lowercase(Locale.getDefault()) == query
-                }
-            }
-            else -> {
-                filter { it.toComponentKey().toString() !in hiddenApps }
-            }
-        }
     }
 }

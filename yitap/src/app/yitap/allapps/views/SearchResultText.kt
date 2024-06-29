@@ -15,7 +15,7 @@ import app.yitap.search.adapter.SPACE
 import app.yitap.search.adapter.SPACE_MINI
 import app.yitap.search.adapter.SearchResultActionCallBack
 import app.yitap.search.adapter.SearchTargetCompat
-import app.yitap.theme.color.ColorTokens
+import app.yitap.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 
 class SearchResultText(context: Context, attrs: AttributeSet?) :

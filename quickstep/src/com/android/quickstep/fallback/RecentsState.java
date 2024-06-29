@@ -26,7 +26,7 @@ import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.statemanager.BaseState;
 import com.android.quickstep.RecentsActivity;
 
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 
 /**
  * State definition for Fallback recents

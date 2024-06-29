@@ -1,4 +1,4 @@
-package app.yitap.theme.color
+package app.yitap.theme.color.tokens
 
 import android.content.Context
 import android.content.res.ColorStateList

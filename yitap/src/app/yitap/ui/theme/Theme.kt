@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, YiTap
+ * copyright 2021, YiTap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,11 +55,11 @@ fun getColorScheme(darkTheme: Boolean): ColorScheme {
     val context = LocalContext.current
     val preferenceManager2 = preferenceManager2()
     val accentColor by preferenceManager2.accentColor.asState()
-    val colorScheme = remember(accentColor) {
+    val colorStyle by preferenceManager2.colorStyle.asState()
+
+    val colorScheme = remember(accentColor, colorStyle.style) {
         ThemeProvider.INSTANCE.get(context).colorScheme
     }
-//
-//    colorScheme.accent1
 
     return colorScheme.toM3ColorScheme(isDark = darkTheme)
 }

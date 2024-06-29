@@ -1,0 +1,9 @@
+As you asked for us to release more updates, here you go, Yitap 14 beta 2! 
+Jokes asides, we are fixing some of the issues with our first Yitap 14 beta release:
+
+* Fix Yitap crashing on Android 9 and some Lenovo devices on Android 10
+* Fix spacing issue within the announcement settings
+* Fix "Apps and Shortcuts" being tied to "Files" suggestion in Drawer Search settings
+* Add support for force resizing widgets/unlimited resizing options (thanks to <a href="https://github.com/SolidTux">@SolidTux</a> for their PR!)
+
+Alongside that, after discussion with the team, we have changed the package name back to `app.yitap` because of the Play Store update conflicts.

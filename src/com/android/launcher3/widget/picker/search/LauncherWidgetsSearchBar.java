@@ -29,7 +29,6 @@ import com.android.launcher3.R;
 import com.android.launcher3.popup.PopupDataProvider;
 
 import app.yitap.font.FontManager;
-import app.yitap.theme.color.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 /**

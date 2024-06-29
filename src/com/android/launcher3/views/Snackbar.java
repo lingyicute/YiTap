@@ -37,7 +37,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.compat.AccessibilityManagerCompat;
 import com.android.launcher3.dragndrop.DragLayer;
 
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 /**

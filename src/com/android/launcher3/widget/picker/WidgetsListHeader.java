@@ -43,7 +43,6 @@ import com.android.launcher3.views.ActivityContext;
 import com.android.launcher3.widget.model.WidgetsListHeaderEntry;
 
 import app.yitap.font.FontManager;
-import app.yitap.theme.color.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 /**

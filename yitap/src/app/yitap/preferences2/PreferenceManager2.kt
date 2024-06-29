@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, YiTap
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,11 +35,13 @@ import app.yitap.icons.shape.IconShapeManager
 import app.yitap.preferences.PreferenceManager as YitapPreferenceManager
 import app.yitap.qsb.providers.QsbSearchProvider
 import app.yitap.search.algorithms.YitapSearchAlgorithm
+import app.yitap.search.algorithms.data.WebSearchProvider
 import app.yitap.smartspace.model.SmartspaceCalendar
 import app.yitap.smartspace.model.SmartspaceMode
 import app.yitap.smartspace.model.SmartspaceTimeFormat
 import app.yitap.theme.color.ColorMode
 import app.yitap.theme.color.ColorOption
+import app.yitap.theme.color.ColorStyle
 import app.yitap.ui.preferences.components.HiddenAppsInSearch
 import app.yitap.util.kotlinxJson
 import com.android.launcher3.InvariantDeviceProfile
@@ -108,6 +110,14 @@ class PreferenceManager2 private constructor(private val context: Context) : Pre
     val alwaysReloadIcons = preference(
         key = booleanPreferencesKey(name = "always_reload_icons"),
         defaultValue = context.resources.getBoolean(R.bool.config_default_always_reload_icons),
+    )
+
+    val colorStyle = preference(
+        key = stringPreferencesKey("color_style"),
+        defaultValue = ColorStyle.fromString("tonal_spot"),
+        parse = ColorStyle::fromString,
+        save = ColorStyle::toString,
+        onSet = { reloadHelper.restart() },
     )
 
     val notificationDotColor = preference(
@@ -388,12 +398,25 @@ class PreferenceManager2 private constructor(private val context: Context) : Pre
         defaultValue = context.resources.getBoolean(R.bool.config_default_enable_fuzzy_search),
     )
 
+    val useDrawerSearchIcon = preference(
+        key = booleanPreferencesKey(name = "use_drawer_search_icon"),
+        defaultValue = true,
+    )
+
+    val webSuggestionProvider = preference(
+        key = stringPreferencesKey(name = "web_suggestion_provider"),
+        defaultValue = WebSearchProvider.fromString(context.resources.getString(R.string.config_default_web_suggestion_provider)),
+        parse = { WebSearchProvider.fromString(it) },
+        save = { it.toString() },
+        onSet = { reloadHelper.recreate() },
+    )
+
     val maxAppSearchResultCount = preference(
         key = intPreferencesKey(name = "max_search_result_count"),
         defaultValue = resourceProvider.getInt(R.dimen.config_default_search_max_result_count),
     )
 
-    val maxSuggestionResultCount = preference(
+    val maxWebSuggestionResultCount = preference(
         key = intPreferencesKey(name = "max_suggestion_result_count"),
         defaultValue = resourceProvider.getInt(R.dimen.config_default_suggestion_max_result_count),
     )

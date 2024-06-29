@@ -5,7 +5,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.Gravity
 import androidx.core.graphics.ColorUtils
-import app.yitap.theme.color.ColorTokens
+import app.yitap.theme.color.tokens.ColorTokens
 import app.yitap.util.EditTextExtensions.setCursorColor
 import app.yitap.util.EditTextExtensions.setTextSelectHandleColor
 import com.android.launcher3.ExtendedEditText

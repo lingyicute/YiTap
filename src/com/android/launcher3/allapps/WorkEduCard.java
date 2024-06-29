@@ -24,12 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-
-import androidx.core.view.ViewCompat;
 import android.widget.TextView;
 
 import com.android.launcher3.LauncherPrefs;
@@ -37,8 +32,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.model.StringCache;
 import com.android.launcher3.views.ActivityContext;
 
-import app.yitap.font.FontManager;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.theme.drawable.DrawableTokens;
 
 /**

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, YiTap
+ * copyright 2021, YiTap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ import androidx.core.graphics.ColorUtils
 import androidx.core.os.UserManagerCompat
 import app.yitap.preferences.PreferenceManager
 import app.yitap.preferences2.PreferenceManager2
-import app.yitap.theme.color.ColorTokens
+import app.yitap.theme.color.tokens.ColorTokens
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.Executors.MAIN_EXECUTOR

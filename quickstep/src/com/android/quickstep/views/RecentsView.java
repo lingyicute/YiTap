@@ -222,7 +222,7 @@ import java.util.stream.Collectors;
 
 import app.yitap.YitapApp;
 import app.yitap.compat.YitapQuickstepCompat;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 import app.yitap.util.OverScrollerCompat;
 import app.yitap.util.RecentHelper;
 

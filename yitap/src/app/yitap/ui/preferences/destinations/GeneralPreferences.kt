@@ -1,5 +1,5 @@
 /*
- * Copyright 2022, YiTap
+ * Copyright 2022, Yitap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,11 +23,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import app.yitap.preferences.PreferenceAdapter
 import app.yitap.preferences.getAdapter
 import app.yitap.preferences.preferenceManager
 import app.yitap.preferences2.asState
 import app.yitap.preferences2.preferenceManager2
 import app.yitap.theme.color.ColorOption
+import app.yitap.theme.color.ColorStyle
 import app.yitap.ui.preferences.LocalIsExpandedScreen
 import app.yitap.ui.preferences.LocalPreferenceInteractor
 import app.yitap.ui.preferences.components.FontPreference
@@ -36,6 +38,8 @@ import app.yitap.ui.preferences.components.NotificationDotsPreference
 import app.yitap.ui.preferences.components.ThemePreference
 import app.yitap.ui.preferences.components.colorpreference.ColorContrastWarning
 import app.yitap.ui.preferences.components.colorpreference.ColorPreference
+import app.yitap.ui.preferences.components.controls.ListPreference
+import app.yitap.ui.preferences.components.controls.ListPreferenceEntry
 import app.yitap.ui.preferences.components.controls.SliderPreference
 import app.yitap.ui.preferences.components.controls.SwitchPreference
 import app.yitap.ui.preferences.components.controls.WarningPreference
@@ -46,6 +50,8 @@ import app.yitap.ui.preferences.components.layout.PreferenceLayout
 import app.yitap.ui.preferences.components.notificationDotsEnabled
 import app.yitap.ui.preferences.components.notificationServiceEnabled
 import com.android.launcher3.R
+import com.android.launcher3.Utilities
+import kotlinx.collections.immutable.toPersistentList
 
 object GeneralRoutes {
     const val ICON_PACK = "iconPack"
@@ -119,21 +125,21 @@ fun GeneralPreferences() {
             }
         }
         val wrapAdaptiveIcons = prefs.wrapAdaptiveIcons.getAdapter()
-        val transparentIconBackground = prefs.transparentIconBackground.getAdapter()
+
         PreferenceGroup(
             heading = stringResource(id = R.string.icons),
             description = stringResource(id = (R.string.adaptive_icon_background_description)),
             showDescription = wrapAdaptiveIcons.state.value,
         ) {
             NavigationActionPreference(
-                label = stringResource(id = R.string.icon_style),
+                label = stringResource(id = R.string.icon_style_label),
                 destination = GeneralRoutes.ICON_PACK,
                 subtitle = iconStyleSubtitle,
             )
             ExpandAndShrink(visible = themedIconsEnabled) {
                 SwitchPreference(
                     adapter = prefs.transparentIconBackground.getAdapter(),
-                    label = stringResource(id = R.string.transparent_background_icons),
+                    label = stringResource(id = R.string.transparent_background_icons_label),
                     description = stringResource(id = R.string.transparent_background_icons_description),
                 )
             }
@@ -165,6 +171,13 @@ fun GeneralPreferences() {
         PreferenceGroup(heading = stringResource(id = R.string.colors)) {
             ThemePreference()
             ColorPreference(preference = prefs2.accentColor)
+            if (Utilities.ATLEAST_S && prefs2.accentColor.getAdapter().state.value == ColorOption.SystemAccent) {
+                if (!Utilities.ATLEAST_S) {
+                    ColorStylePreference(prefs2.colorStyle.getAdapter())
+                }
+            } else {
+                ColorStylePreference(prefs2.colorStyle.getAdapter())
+            }
         }
 
         PreferenceGroup(heading = stringResource(id = R.string.notification_dots)) {
@@ -190,6 +203,28 @@ fun GeneralPreferences() {
             }
         }
     }
+}
+
+@Composable
+private fun ColorStylePreference(
+    adapter: PreferenceAdapter<ColorStyle>,
+    modifier: Modifier = Modifier,
+) {
+    val entries = remember {
+        ColorStyle.values().map { mode ->
+            ListPreferenceEntry(
+                value = mode,
+                label = { stringResource(id = mode.nameResourceId) },
+            )
+        }.toPersistentList()
+    }
+
+    ListPreference(
+        adapter = adapter,
+        entries = entries,
+        label = stringResource(id = R.string.color_style_label),
+        modifier = modifier,
+    )
 }
 
 @Composable

@@ -166,7 +166,7 @@ import java.util.List;
 import app.yitap.YitapApp;
 import app.yitap.compat.YitapQuickstepCompat;
 import app.yitap.icons.shape.IconShapeManager;
-import app.yitap.theme.color.ColorTokens;
+import app.yitap.theme.color.tokens.ColorTokens;
 
 /**
  * Manages the opening and closing app transitions from Launcher

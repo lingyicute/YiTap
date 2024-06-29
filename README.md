@@ -1,25 +1,23 @@
-# YiTap 14～Made for My Best Xyc 
+# Yitap 14
+
+[![Build debug APK](https://github.com/lingyicute/yitap/actions/workflows/ci.yml/badge.svg)](https://github.com/lingyicute/yitap/actions/workflows/ci.yml)
+[![Build release APK](https://github.com/lingyicute/yitap/actions/workflows/release_update.yml/badge.svg)](https://github.com/lingyicute/yitap/actions/workflows/release_update.yml)
+[![Crowdin](https://badges.crowdin.net/e/188ba69d884418987f0b7f1dd55e3a4e/localized.svg)](https://yitap.crowdin.com/yitap)
+[![Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Flccommunity)](https://t.me/lccommunity)
+[![Discord](https://img.shields.io/discord/803299970169700402?label=server&logo=discord)](https://discord.gg/3x8qNWxgGZ)
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
-    <source media="(prefers-color-scheme: dark)" srcset="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
-    <img alt="" src="res/mipmap-xxxhdpi/ic_launcher_home.png" width="100">
+    <!-- ❤️ Credit to Raine on the Yitap Discord --->
+    <source media="(prefers-color-scheme: dark)" srcset="docs/device-frame.png" width="250px">
+    <img alt="Google Pixel running Yitap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
 </picture>
 
-[![Build release APK](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml/badge.svg)](https://github.com/lingyicute/YiTap/actions/workflows/release_update.yml)
-[![Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Flyi_channel)](https://t.me/lyi_channel)
+Yitap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
 
-YiTap is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
-
-This branch houses the codebase of YiTap 14, which is based on Launcher3 from Android 14.
+This branch houses the codebase of Yitap 14, which is currently in beta and is based on Launcher3 from Android 14. For Yitap 9 to 13, see the branches with the `9-` to `13-` prefixes, respectively.
 
 ## Features
-
-<picture>
-    <!-- Avoid image being clickable with slight workaround --->
-    <source media="(prefers-color-scheme: dark)" srcset="docs/device-frame.png" width="250px">
-    <img alt="Google Pixel running YiTap Launcher with green wallpaper" src="docs/device-frame.png" width="250px">
-</picture>
 
 -   Pixel Launcher-like UI with Material You design
 -   At a Glance widget with Smartspacer support
@@ -30,8 +28,18 @@ This branch houses the codebase of YiTap 14, which is based on Launcher3 from An
 
 ## Download
 
-See the [Releases](https://github.com/lingyicute/YiTap/releases) section for the latest build. For development builds, use Github Actions builds.
+See the [Releases](https://github.com/lingyicute/yitap/releases) section for the latest
+beta build. For development builds with new icons, use the nightly builds.
 
 ## Contributing
 
-Please visit the [YiTap Contributing Guidelines](CONTRIBUTING.md) for information and tips on contributing to YiTap.
+Please visit the [Yitap Contributing Guidelines](CONTRIBUTING.md) for information and tips on contributing to Yitap.
+
+## Quick links
+
+-   [News](https://t.me/yitapci)
+-   [Yitap on Twitter](https://twitter.com/yitapapp)
+-   [Website](https://yitap.app)
+-   [_XDA_ thread](https://forum.xda-developers.com/t/yitap-customizable-pixel-launcher.3627137/)
+
+You can view all our links in the [Yitap Wiki](https://github.com/lingyicute/yitap/wiki).

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021, YiTap
+ * copyright 2021, YiTap
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -115,7 +115,7 @@ fun IconPackPreferences(
     val drawerThemedIconsEnabled = drawerThemedIconsAdapter.state.value
 
     PreferenceLayout(
-        label = stringResource(id = R.string.icon_style),
+        label = stringResource(id = R.string.icon_style_label),
         modifier = modifier,
         isExpandedScreen = true,
         scrollState = if (isPortrait) null else scrollState,

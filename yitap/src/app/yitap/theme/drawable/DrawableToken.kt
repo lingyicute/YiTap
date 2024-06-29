@@ -10,7 +10,7 @@ import androidx.annotation.DrawableRes
 import androidx.appcompat.content.res.AppCompatResources
 import app.yitap.theme.ResourceToken
 import app.yitap.theme.UiColorMode
-import app.yitap.theme.color.ColorToken
+import app.yitap.theme.color.tokens.ColorToken
 import com.android.launcher3.util.Themes
 import dev.kdrag0n.monet.theme.ColorScheme
 
